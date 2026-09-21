@@ -1,5 +1,5 @@
 # Builds the site and publishes it to GitHub Pages at
-# https://smcclab.github.io/thirty-five-forty-gamedev/ — the development
+# https://smcclab.au/thirty-five-forty-gamedev/ — the development
 # preview. The ANU GitLab Pages pipeline (.gitlab-ci.yml) is the eventual
 # production deploy and is unaffected by this workflow.
 
@@ -21,7 +21,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  SITE_URL: https://smcclab.github.io
+  SITE_URL: https://smcclab.au
   BASE_PATH: /thirty-five-forty-gamedev/
 
 jobs:

@@ -3,7 +3,7 @@
 Source for the COMP3540/COMP6540 course website at the ANU School of
 Computing. It is being developed as preparation for a possible future
 offering, and is published as a preview at
-<https://smcclab.github.io/thirty-five-forty-gamedev/>; if the course runs it
+<https://smcclab.au/thirty-five-forty-gamedev/>; if the course runs it
 will move to <https://comp.anu.edu.au/courses/comp3540/>.
 
 The 2023 and 2024 offerings were designed and taught by Professor Penny
