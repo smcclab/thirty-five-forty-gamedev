@@ -391,6 +391,46 @@ def deck_slug(path: pathlib.Path) -> str:
     return slugify(stem)
 
 
+#: Words left lowercase inside a title.
+SMALL_WORDS = {"a", "an", "and", "as", "at", "for", "in", "of", "on", "or",
+               "the", "to", "with"}
+
+
+def title_case(text: str) -> str:
+    """Title-case an ALL-CAPS slide title without mangling & or apostrophes."""
+    words = text.split()
+    out = []
+    for i, w in enumerate(words):
+        lower = w.lower()
+        stripped = lower.strip(",:;")
+        if i and stripped in SMALL_WORDS:
+            out.append(lower)
+        elif w.isupper() or w.istitle() or w.islower():
+            out.append(lower[:1].upper() + lower[1:])
+        else:
+            out.append(w)
+    return " ".join(out)
+
+
+def title_from_slide(z, slide_names) -> str | None:
+    """The deck's own name, from the "THEORY - WEEK n - NAME" line on slide 1.
+
+    The filenames abbreviate ("Agile-Game-Dev", "Flow-Needs-Motivation") where
+    the title slide spells the topic out, so prefer the slide.
+    """
+    if not slide_names:
+        return None
+    root = ET.fromstring(z.read(slide_names[0]))
+    for par in root.iter(A + "p"):
+        for line in para_lines(par):
+            # Match on the WEEK n part, not the leading word: two decks
+            # spell it "THOERY".
+            m = re.match(r"^[A-Za-z]+\s*[–—-]\s*WEEK\s*\d+\s*[–—-]\s*(.+)$", line)
+            if m:
+                return title_case(m.group(1).strip())
+    return None
+
+
 def deck_title(path: pathlib.Path) -> str:
     stem = re.sub(r"^GameDev-Theory-Week\d+-\d+-", "", path.stem)
     stem = stem.replace("&", " and ").replace("-", " ")
@@ -407,7 +447,6 @@ def convert(path: pathlib.Path, decks_dir: pathlib.Path, verbose=False,
             review_dir: pathlib.Path | None = None,
             review_index: list | None = None) -> dict:
     slug = deck_slug(path)
-    title = deck_title(path)
     asset_dir = decks_dir / "assets" / slug
     if asset_dir.exists():
         shutil.rmtree(asset_dir)
@@ -420,6 +459,7 @@ def convert(path: pathlib.Path, decks_dir: pathlib.Path, verbose=False,
         (n for n in names if re.fullmatch(r"ppt/slides/slide\d+\.xml", n)),
         key=lambda n: int(re.search(r"\d+", n.rsplit("/", 1)[1]).group()),
     )
+    title = title_from_slide(z, slide_names) or deck_title(path)
 
     week_no = deck_week(path)
     stats = {"slug": slug, "slides": 0, "images": 0, "tables": 0, "links": 0,

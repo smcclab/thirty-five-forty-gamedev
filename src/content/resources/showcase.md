@@ -35,9 +35,8 @@ students have been asked whether they want to be credited here.
 
 ## What the awards recognise
 
-The award went to the games that scored highest in peer playtesting. That is
-worth understanding, because it is not the same as the games that were the most
-technically ambitious.
+The award records do not state the criterion they were judged on, so what
+follows describes how the games were marked, not how the award was decided.
 
 Every game in the course is played by its peers for exactly fifteen minutes and
 rated on twenty statements, covering:
@@ -56,10 +55,9 @@ rated on twenty statements, covering:
 - **Originality and enjoyment** --- the game was original or innovative, I
   enjoyed playing it.
 
-A game wins by being finished, legible and enjoyable in fifteen minutes. Scope
-is the deciding factor far more often than skill: the games that do well are
-usually the ones whose teams cut the third mechanic in week 9 and spent that
-time on the tutorial, the feedback and the difficulty curve instead.
+Read down that list and what it rewards is a game that is finished, legible
+and enjoyable inside fifteen minutes. Almost none of it rewards technical
+ambition directly.
 
 ## What to take from this
 
@@ -67,17 +65,19 @@ If you are deciding whether to take the course: you will finish it with a
 published, playable game with your name on it, and a written record of how you
 designed it. That is a portfolio piece.
 
-If you are in the course now, three things separate the award winners from the
-rest, and none of them are about being a better programmer:
+If you are in the course now, the marking survey above is the most direct
+statement of what the course asks for, and three parts of the course speak to
+it:
 
-1. **They playtest early and act on it.** The [playtesting](/lectures/week09-1-playtesting-process/)
-   theory is not a formality; teams that put a rough build in front of strangers
-   in week 9 find out what is confusing while there is still time to fix it.
-2. **They teach the player.** Fifteen minutes includes the time it takes to
-   work out the controls. See
+1. **Playtesting.** The [playtesting process](/lectures/week09-1-playtesting-process/)
+   and [conducting playtesting](/lectures/week09-2-conducting-playtesting/)
+   decks, and the week 10 and 11 workshops, exist so you find out what is
+   confusing while there is still time to fix it.
+2. **Teaching the player.** Fifteen minutes of play includes the time it takes
+   to work out the controls. See
    [learning and training](/lectures/week08-1-learning-and-training/).
-3. **They cut scope.** A small game that is complete beats a large game that is
-   half-built, on every criterion on the marking survey.
+3. **Scope.** Most of the survey rewards completeness and clarity rather than
+   size.
 
 See the [Game Project](/assessments/project/) assessment for the full
 requirements and marking survey.

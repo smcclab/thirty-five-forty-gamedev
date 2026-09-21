@@ -79,6 +79,19 @@ worth reading if you want the argument rather than the summary.
   The source of the flow model used in week 3 to talk about the balance between
   challenge and skill.
 
+## Books on level design and practice
+
+Cited by chapter in the week 9 workshop on training the player, though the
+slides give only the author and chapter.
+
+- Rudolf Kremers. 2009. *Level Design: Concept, Theory, and Practice*. A K
+  Peters. Cited for its treatment of how a level teaches the player what it
+  expects of them.
+- Richard Rouse III. 2005. *Game Design: Theory & Practice*, 2nd edition.
+  Wordware. Cited for the chapter on the player's experience of learning a
+  game. The 2023 slides cite chapter 23 where the 2024 per-slide label says
+  chapter 7 --- check against the edition you have.
+
 ## Research papers
 
 The decks cite these directly. All are relevant to the
