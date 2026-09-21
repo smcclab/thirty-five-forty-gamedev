@@ -1,28 +1,38 @@
 ---
-title: "Design Diary"
-description: "A weekly record of what you made, what you played and what you learned."
-order: 1
+title: "Developer Diary"
+description: "A personal log of your work, your challenges, and what you learned building the group project."
+order: 3
 toc: true
 ---
 
 :::warning
-Placeholder page. The 2024 specification lives in
-`comp3540-materials/2024/Assessment/GameDev-Assessment-Diary.docx` and has not
-been converted yet.
+Placeholder. Converted from the 2024 specification
+(`Assessment/GameDev-Assessment-Diary.docx`) in outline only. Dates and
+weights below are the **2024** ones.
 :::
 
 ## Outline
 
-- **Due date:** TODO
-- **Mark weighting:** TODO
-- **Submission:** TODO
-- **Policies:** see the course [policies](/policies/).
+- **Due date:** 2024 was entry 1 in week 10 (8 October), entry 2 in the exam period (30 October)
+- **Mark weighting:** 20% — entry 1 8%, entry 2 12%
+- **Collaboration:** individual
+- **Submission:** a Word document via Wattle, using the template
 
 ## Description
 
-Each week you record what you designed, built and played, and reflect on what
-it taught you about your own game.
+While you build your [Game Project](/assessments/project/) in a team, your
+developer diary is your personal record of the work *you* did. Each entry:
+
+- logs the hours you worked and the tasks you completed
+- shows the work itself (sketches, code)
+- identifies the technical challenges or questions you hit
+- discusses how you tackled them and what you learned
+
+Entry 1 covers weeks 7--9; entry 2 covers weeks 10--12. Work involving other
+team members must be identified as such, with your own contribution described.
 
 ## Marking
 
-TODO — from the 2024 marking guides.
+TODO — the rubric marks the work log, the challenges and questions, and the
+strategies and reflections separately. See
+`GameDev-Assessment-Diary{1,2}-Marking-Guide.docx`.

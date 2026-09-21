@@ -6,19 +6,21 @@ toc: true
 ---
 
 :::warning
-Placeholder page. The engine and versions for the next offering are still to
-be confirmed.
+Placeholder page. This describes the **2024** toolchain; the engine and
+versions for the next offering are still to be confirmed.
 :::
 
 ## Game engine
 
-TODO — the 2023--2024 offerings used Unity; confirm the engine and version for
-the next offering.
+Unity. In 2024 students worked through the Unity Junior Programmer Pathway
+alongside the workshops, completing roughly one unit per week in weeks 1--5.
 
-## Source control
+## Publishing your game
 
-You will use Git and the ANU GitLab for your team's work.
+Builds are published as WebGL to [Unity Play](https://play.unity.com/), which
+is also how prototypes and the final game are submitted and playtested.
 
 ## Other software
 
-TODO
+TODO — submission is via Wattle, peer assessment via MS Forms, and research
+participation credit via [SONA](https://anupsych.sona-systems.com/).

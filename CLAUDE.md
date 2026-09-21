@@ -13,9 +13,12 @@ when something here is missing.
 **This site is a scaffold.** It was created new (there is no Jekyll history to
 convert, and therefore no converter scripts). Almost every page is a
 placeholder pending conversion of the 2023--2024 course materials, which live
-outside this repo in `../comp3540-materials/` (PowerPoint lecture and theory
-decks, Word assessment specifications and marking guides, a student game
-showreel). Those materials are not committed here.
+outside this repo in `../comp3540-materials/` and are **not** committed here.
+**`MATERIALS.md` surveys that tree and sets out the conversion plan — read it
+before doing any content work.** In short: 2024 is the source of truth, the
+material was written by Professor Penny Kyburz, almost all of the 13GB is
+video embedded in the theory decks, and the peer-assessment spreadsheets,
+tutor brief and workshop photos must not be published.
 
 **This is a running course**, so there is deliberately no archive notice.
 Year-specific values are placeholders marked `TODO` and must be filled in for
@@ -124,15 +127,14 @@ fragments are not verified.
 
 ## Source materials
 
-`../comp3540-materials/` (not in this repo, ~13GB from OneDrive) holds the
-2023 and 2024 offerings:
+See `MATERIALS.md` for the full survey, the 2024 course and assessment
+structure, and the conversion plan. `scripts/extract-ooxml.py` dumps the text
+of every `.pptx` and `.docx` in the materials tree to Markdown without
+unpacking the media:
 
-- `Theory/Week N - Complete/*.pptx` --- the game design theory lectures, the
-  main source for `src/decks/`.
-- `Lectures/*.pptx` --- orientation lecture.
-- `Assessment/*.docx` --- diary, project, proposal, experiments and progress
-  specifications plus marking guides, the source for `src/content/assessments/`.
-- `GameDev-Learning-Outline.docx` --- the week-by-week course structure.
-- `Awards/2023-Top5-*.docx` --- past student games.
-- `ANU-Games.mp4` --- student game showreel; the current hero image is a frame
-  from it and should be replaced.
+```sh
+python3 scripts/extract-ooxml.py ../comp3540-materials /tmp/comp3540-text
+```
+
+The current hero image is a frame grabbed from the student game showreel
+(`2024/ANU-Games.mp4`) and should be replaced.

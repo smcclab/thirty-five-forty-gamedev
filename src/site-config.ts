@@ -13,9 +13,11 @@ export const course = {
   /** TODO: the catalogue year, used to build the Programs and Courses links. */
   year: "TODO",
   school: "ANU School of Computing",
-  /** TODO: confirm the convenor for the next offering. */
-  convenor: "Dr Charles Martin",
-  contactEmail: "charles.martin@anu.edu.au",
+  /** TODO: confirm the convenor for the next offering. The 2023 and 2024
+   *  offerings were convened by Professor Penny Kyburz, who wrote all the
+   *  source material in ../comp3540-materials (see MATERIALS.md). */
+  convenor: "TODO: convenor",
+  contactEmail: "TODO: convenor email",
   /** TODO: the Ed Discussion URL for the offering. */
   forumUrl: "TODO: Ed Discussion URL",
   // Undated catalogue links; swap in the year-specific ones once `year` is set.
