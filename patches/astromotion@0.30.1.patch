@@ -1,0 +1,49 @@
+diff --git a/plugins/remark-deck-bg.ts b/plugins/remark-deck-bg.ts
+index 0b372a8fc54b0944d33249c35844babdba6899b1..b777aea259c8e357c17d34745e102061cb9de707 100644
+--- a/plugins/remark-deck-bg.ts
++++ b/plugins/remark-deck-bg.ts
+@@ -20,7 +20,15 @@ function resolveAssetUrl(url: string, deckPath: string | undefined): string {
+   if (!deckPath) return url;
+   if (!url.startsWith("./") && !url.startsWith("../")) return url;
+   const absPath = resolve(dirname(deckPath), url);
+-  const srcIdx = absPath.indexOf("/src/");
++  // Strip the project root when it is known, so a checkout that itself lives
++  // under a directory called `src` (e.g. ~/src/project) still maps
++  // <root>/src/decks/assets/x.jpg to /src/decks/assets/x.jpg. Fall back to
++  // the last `/src/` segment when the root was not recorded.
++  const root = buildState.root.replace(/\/$/, "");
++  if (root && absPath.startsWith(root + "/")) {
++    return withBase(absPath.slice(root.length), buildState.base);
++  }
++  const srcIdx = absPath.lastIndexOf("/src/");
+   if (srcIdx === -1) return url;
+   return withBase(absPath.slice(srcIdx), buildState.base);
+ }
+diff --git a/src/deck-text.mjs b/src/deck-text.mjs
+--- a/src/deck-text.mjs
++++ b/src/deck-text.mjs
+@@ -19,6 +19,7 @@ import { basename, dirname, resolve } from "node:path";
+ import remarkFrontmatter from "remark-frontmatter";
+ import remarkGfm from "remark-gfm";
+ import remarkMdx from "remark-mdx";
++import remarkMath from "remark-math";
+ import remarkParse from "remark-parse";
+ import remarkStringify from "remark-stringify";
+ import { unified } from "unified";
+@@ -26,11 +27,14 @@ import { parse as parseYaml } from "yaml";
+ 
+ const MAX_DEPTH = 10;
+ 
+-const parser = unified().use(remarkParse).use(remarkGfm).use(remarkFrontmatter).use(remarkMdx);
++// remark-math before remark-mdx, so the braces inside `$...$` maths (which the
++// site renders through remark-math + rehype-katex) are not read as MDX
++// expressions here. The dependency is added through pnpm packageExtensions.
++const parser = unified().use(remarkParse).use(remarkGfm).use(remarkFrontmatter).use(remarkMath).use(remarkMdx);
+ 
+ // `rule: "-"` keeps the slide separators looking like the ones in the source.
+ // Everything MDX is removed before this runs, so an unhandled node type here
+ // is a serialiser error rather than silent data loss --- which is what we
+ // want.
+-const serialiser = unified().use(remarkGfm).use(remarkStringify, {
++const serialiser = unified().use(remarkGfm).use(remarkMath).use(remarkStringify, {
+   bullet: "-",

@@ -1,0 +1,37 @@
+/* Slide styles for COMP3540 decks, layered over astromotion's deck.css.
+ * Add the course's own look here as the decks take shape; what follows is the
+ * small set of slide classes the template deck uses.
+ *
+ * Use a class on a slide with an MDX comment: {\/* _class: impact *\/} */
+
+/* Title slide: the course code and title over a full-bleed background. */
+.reveal .title-slide header {
+  background: rgb(0 0 0 / 55%);
+  padding: 0.5em 0.75em;
+  border-radius: 0.2em;
+}
+
+/* A single large statement, centred. */
+.reveal .impact h1,
+.reveal .impact h2 {
+  text-align: center;
+  text-transform: none;
+}
+
+/* Light text over a dark background image or video. */
+.reveal .bg-black,
+.reveal .bg-black h1,
+.reveal .bg-black h2,
+.reveal .bg-black h3,
+.reveal .bg-black p,
+.reveal .bg-black li {
+  color: #fff;
+}
+
+/* An in-class activity or discussion prompt. */
+.reveal .activity {
+  --slide-accent: #be830e;
+}
+.reveal .activity h2 {
+  border-bottom: 4px solid var(--slide-accent);
+}

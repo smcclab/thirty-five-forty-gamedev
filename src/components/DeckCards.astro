@@ -1,0 +1,45 @@
+---
+// Card grid of the lecture decks under src/decks, read from each deck's front
+// matter (title, description, image) and ordered by slug.
+import { parse as parseYaml } from "yaml";
+import Card from "astro-theme-university/components/Card.astro";
+import CardGrid from "astro-theme-university/components/CardGrid.astro";
+import { sortDecks } from "../deck-list";
+import { deckImage } from "../images";
+
+interface DeckFrontmatter {
+  title?: string;
+  description?: string;
+  image?: string;
+  date?: string | Date;
+  published?: boolean;
+  listed?: boolean;
+}
+
+interface Props {
+  headingLevel?: "h2" | "h3";
+}
+const { headingLevel = "h3" } = Astro.props;
+
+const rawModules = import.meta.glob<string>("/src/decks/*.deck.mdx", { query: "?raw", import: "default", eager: true });
+
+const decks = sortDecks(
+  Object.entries(rawModules).flatMap(([filePath, raw]) => {
+    const slug = (filePath.split("/").pop() ?? "").replace(/\.deck\.mdx$/, "");
+    const match = raw.match(/^---\n([\s\S]*?)\n---/);
+    const fm = (match ? (parseYaml(match[1]) ?? {}) : {}) as DeckFrontmatter;
+    if (fm.published === false || fm.listed === false) return [];
+    return [{ slug, title: fm.title ?? slug, description: fm.description, image: deckImage(fm.image), date: fm.date ? new Date(fm.date) : undefined }];
+  }),
+);
+---
+
+<CardGrid columns={2}>
+  {
+    decks.map((deck) => (
+      <Card headingLevel={headingLevel} title={deck.title} href={`/lectures/${deck.slug}/`} image={deck.image} imageAlt="">
+        {deck.description && <p>{deck.description}</p>}
+      </Card>
+    ))
+  }
+</CardGrid>

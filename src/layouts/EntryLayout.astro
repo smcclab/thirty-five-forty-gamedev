@@ -1,0 +1,27 @@
+---
+// Detail pages for a collection entry: the theme's ContentLayout (title, the
+// description as lead paragraph, optional hero image)
+// and a heading list above the body.
+import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
+import type { MarkdownHeading } from "astro";
+import Toc from "../components/Toc.astro";
+import { siteConfig, DEFAULT_HERO } from "../site-config";
+
+interface Props {
+  title: string;
+  description?: string | null;
+  heroImage?: string | null;
+  heroImageAlt?: string | null;
+  headings?: MarkdownHeading[];
+  toc?: boolean;
+}
+const { title, description, heroImage, heroImageAlt, headings, toc = true } = Astro.props;
+// The Jekyll site gave every page the course image as its banner unless the
+// page set its own; keep that default.
+const hero = heroImage ?? DEFAULT_HERO;
+---
+
+<ContentLayout title={title} description={description} heroImage={hero} heroImageAlt={heroImageAlt ?? ""} {...siteConfig}>
+  {toc && <Toc headings={headings} />}
+  <slot />
+</ContentLayout>

@@ -1,0 +1,12 @@
+---
+// Listing pages: BaseLayout with the site config and the archive notice.
+import BaseLayout, { type BaseLayoutProps } from "astro-theme-university/layouts/BaseLayout.astro";
+import { siteConfig } from "../site-config";
+
+type Props = Pick<BaseLayoutProps, "title" | "description">;
+const { title, description } = Astro.props;
+---
+
+<BaseLayout title={`${title} — ${siteConfig.name}`} description={description} {...siteConfig}>
+  <slot />
+</BaseLayout>

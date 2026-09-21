@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://comp.anu.edu.au/courses/comp3540/sitemap-index.xml
+
+# Plain-text index of this site for LLMs and agents: https://comp.anu.edu.au/courses/comp3540/llms.txt

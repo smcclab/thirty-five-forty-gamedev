@@ -1,0 +1,74 @@
+---
+// "On this page" list of the h2 (and h3) headings, standing in for the
+// Jekyll theme's show_toc. Rendered only when there is more than one heading.
+import type { MarkdownHeading } from "astro";
+
+interface Props {
+  headings?: MarkdownHeading[];
+  maxDepth?: number;
+}
+const { headings = [], maxDepth = 2 } = Astro.props;
+// The theme's autolinked headings append a "#" anchor whose text ends up in
+// heading.text, so trim it.
+const items = headings
+  .filter((h) => h.depth >= 2 && h.depth <= maxDepth)
+  .map((h) => ({ ...h, text: h.text.replace(/\s*#\s*$/, "") }));
+const minDepth = Math.min(...items.map((h) => h.depth), 2);
+---
+
+{
+  items.length > 1 && (
+    <nav class="toc" aria-label="On this page">
+      <p class="toc-title">On this page</p>
+      <ul>
+        {items.map((h) => (
+          <li class={`toc-depth-${h.depth - minDepth}`}>
+            <a href={`#${h.slug}`}>{h.text}</a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  )
+}
+
+<style>
+  .toc {
+    margin-block: var(--at-spacing-md, 1rem) var(--at-spacing-lg, 2rem);
+    padding: var(--at-spacing-sm, 0.75rem) var(--at-spacing-md, 1rem);
+    border-left: 4px solid var(--at-primary, #be830e);
+    background: var(--at-bg-elevated, rgb(0 0 0 / 3%));
+    font-size: var(--at-font-size-sm, 0.9rem);
+  }
+  .toc-title {
+    margin: 0 0 0.25rem;
+    font-weight: 700;
+  }
+  .toc ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    columns: 2;
+    column-gap: var(--at-spacing-lg, 2rem);
+  }
+  .toc li {
+    margin: 0.15rem 0;
+    break-inside: avoid;
+  }
+  .toc li.toc-depth-1 {
+    padding-left: 1rem;
+  }
+  .toc li.toc-depth-2 {
+    padding-left: 2rem;
+  }
+  .toc a {
+    text-decoration: none;
+  }
+  .toc a:hover {
+    text-decoration: underline;
+  }
+  @media (max-width: 640px) {
+    .toc ul {
+      columns: 1;
+    }
+  }
+</style>

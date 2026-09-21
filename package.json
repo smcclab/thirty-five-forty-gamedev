@@ -1,0 +1,34 @@
+{
+  "name": "comp3540",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "typecheck": "astro check"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^8.0.0",
+    "@astrojs/sitemap": "^3.7.4",
+    "@iconify-json/iconoir": "^1.2.11",
+    "astro": "^7.3.1",
+    "astro-course-university": "git+https://gitlab.anu.edu.au/u4110680/astro-course-university.git#v0.2.2",
+    "astro-theme-anu": "git+https://gitlab.anu.edu.au/u2548636/astro-theme-anu.git#astro-theme-anu@v0.9.3&path:/packages/astro-theme-anu",
+    "astro-theme-university": "git+https://gitlab.anu.edu.au/u4110680/astro-theme-university.git#v0.16.0",
+    "astromotion": "git+https://gitlab.anu.edu.au/u4110680/astromotion.git#v0.30.1",
+    "remark-math": "^6.0.0",
+    "sharp": "^0.35.4",
+    "yaml": "^2.9.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "lightningcss": "^1.32.0",
+    "pagefind": "^1.5.2",
+    "typescript": "^6.0.3"
+  },
+  "engines": {
+    "node": ">=24",
+    "pnpm": ">=11"
+  }
+}

@@ -1,0 +1,27 @@
+---
+// The layout every MDX page under src/pages renders through (see
+// `defaultLayout` in astro.config.ts). Like the Jekyll site, every page gets a
+// banner: its own heroImage/heroTitle when set, otherwise the course image
+// with the page title. Then the description as lead and,
+// when front matter sets `toc: true`, an "On this page" heading list.
+import MdxPageLayout from "astro-theme-university/layouts/MdxPageLayout.astro";
+import type { MarkdownHeading } from "astro";
+import Toc from "../components/Toc.astro";
+import { siteConfig, DEFAULT_HERO } from "../site-config";
+
+const { headings, frontmatter = {}, ...rest } = Astro.props as {
+  headings?: MarkdownHeading[];
+  frontmatter?: { title?: string; description?: string; heroTitle?: string; heroImage?: string; toc?: boolean; tocDepth?: number };
+};
+const fm = {
+  ...frontmatter,
+  heroTitle: frontmatter.heroTitle ?? frontmatter.title,
+  heroImage: frontmatter.heroImage ?? DEFAULT_HERO,
+};
+---
+
+<MdxPageLayout siteConfig={siteConfig} lead={false} {...rest} frontmatter={fm}>
+  {fm.description && <p class="lead">{fm.description}</p>}
+  {fm.toc && <Toc headings={headings} maxDepth={fm.tocDepth ?? 2} />}
+  <slot />
+</MdxPageLayout>

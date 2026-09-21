@@ -1,0 +1,33 @@
+---
+// Card grid listing a content collection, in `order` (the old numeric filename
+// prefix) then id order, leaving out unlisted entries. Used from the
+// collection index MDX pages.
+import { getPublishedCollection } from "astro-course-university/content";
+import Card from "astro-theme-university/components/Card.astro";
+import CardGrid from "astro-theme-university/components/CardGrid.astro";
+import { siteImage } from "../images";
+
+interface Props {
+  collection: "workshops" | "assessments" | "resources";
+  images?: boolean;
+  columns?: 2 | 3;
+  headingLevel?: "h2" | "h3";
+}
+const { collection, images = false, columns = 2, headingLevel = "h3" } = Astro.props;
+const entries = (await getPublishedCollection(collection))
+  .filter((e) => !e.data.unlisted)
+  .sort((a, b) => (a.data.order ?? 999) - (b.data.order ?? 999) || a.id.localeCompare(b.id, undefined, { numeric: true }));
+---
+
+<CardGrid columns={columns}>
+  {
+    entries.map((e) => {
+      const image = images ? siteImage(e.data.heroImage) : undefined;
+      return (
+        <Card headingLevel={headingLevel} title={e.data.title} href={`/${collection}/${e.id}/`} image={image} imageAlt={e.data.heroImageAlt ?? ""}>
+          {e.data.description && <p>{e.data.description}</p>}
+        </Card>
+      );
+    })
+  }
+</CardGrid>

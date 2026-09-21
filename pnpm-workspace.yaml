@@ -1,0 +1,13 @@
+# pnpm 11 build-script approval. Sharp's install/check.js falls through to
+# a source build when a system libvips is present; skip the script and rely
+# on the prebuilt @img/sharp-* platform binary at runtime.
+allowBuilds:
+  esbuild: true
+  sharp: false
+patchedDependencies:
+  astromotion@0.30.1: patches/astromotion@0.30.1.patch
+# remark-math for the patched deck-text.mjs (llms.txt deck extraction).
+packageExtensions:
+  astromotion:
+    dependencies:
+      remark-math: "^6.0.0"

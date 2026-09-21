@@ -1,0 +1,80 @@
+# Builds the site with Astro and publishes it through the CECS GitLab Pages
+# runner, which serves it at https://comp.anu.edu.au/courses/comp3540/.
+#
+# Every branch and merge request gets a build (page-test), so a broken site
+# fails as a test rather than a deploy; only master is deployed.
+
+image: node:24-alpine
+
+stages:
+  - test
+  - build
+  - deploy
+
+workflow:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH && $CI_OPEN_MERGE_REQUESTS
+      when: never
+    - if: $CI_COMMIT_BRANCH
+
+variables:
+  GIT_DEPTH: "1"
+  STAGING_DIR: /srv/gitlab-ce-pages/staging
+  BUILD_DIR: $STAGING_DIR/$CI_PIPELINE_ID/$CI_COMMIT_REF_NAME/$CI_PROJECT_PATH
+  DEPLOY_DIR: $STAGING_DIR/$CI_JOB_ID/$CI_COMMIT_REF_NAME
+  SITE_URL: https://comp.anu.edu.au
+  BASE_PATH: /$CI_PROJECT_PATH/
+
+.install: &install
+  before_script:
+    - apk add --no-cache git
+    # The runner writes its job token into .git/config as an unscoped
+    # http.extraheader, so git would offer it to every https host pnpm clones
+    # the theme packages from. Nothing after checkout fetches from origin, so
+    # drop it before pnpm install.
+    - git config --unset-all http.extraheader || true
+    - corepack enable
+    - pnpm install --frozen-lockfile
+
+page-test:
+  <<: *install
+  tags:
+    - Pages
+  stage: test
+  interruptible: true
+  script:
+    - pnpm typecheck
+    - pnpm build
+  artifacts:
+    when: on_failure
+    paths:
+      - dist
+    expire_in: 1 week
+
+page-build:
+  <<: *install
+  tags:
+    - Pages
+  stage: build
+  needs:
+    - page-test
+  script:
+    - pnpm build
+    - mkdir -p $BUILD_DIR
+    - cp -r dist/* $BUILD_DIR/
+  only:
+    - master
+
+page-deploy:
+  tags:
+    - Pages
+  stage: deploy
+  needs:
+    - page-build
+  script:
+    - mkdir -p $DEPLOY_DIR/`dirname $CI_PROJECT_PATH`
+    - mv $BUILD_DIR $DEPLOY_DIR/$CI_PROJECT_PATH
+    - rm -rf $STAGING_DIR/$CI_PIPELINE_ID
+  only:
+    - master

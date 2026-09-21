@@ -1,0 +1,38 @@
+---
+// schema.org Course data, so search engines and LLM crawlers can identify what
+// this site documents without parsing the prose.
+import { course } from "../site-config";
+import { withBase } from "../url";
+
+const site = Astro.site ?? new URL("https://comp.anu.edu.au");
+const home = new URL(withBase("/"), site).href;
+const data = {
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "@id": `${home}#course`,
+  name: course.title,
+  alternateName: ["COMP3540", "COMP6540"],
+  courseCode: "COMP3540",
+  url: home,
+  description:
+    "COMP3540/COMP6540 Game Development at the ANU School of Computing: a studio course in designing, prototyping and building digital games, covering play and formal game elements, playcentric design, prototyping and playtesting, and team game production in a game engine.",
+  inLanguage: "en-AU",
+  isAccessibleForFree: true,
+  teaches: ["Game design", "Playcentric design process", "Prototyping", "Playtesting", "Game engines", "Team game production"],
+  educationalLevel: "Undergraduate and postgraduate",
+  provider: { "@type": "CollegeOrUniversity", name: "Australian National University", url: "https://www.anu.edu.au/" },
+  sameAs: course.programsAndCourses,
+  hasCourseInstance: {
+    "@type": "CourseInstance",
+    name: course.semester,
+    courseMode: "onsite",
+    location: {
+      "@type": "Place",
+      name: "Australian National University",
+      address: { "@type": "PostalAddress", addressLocality: "Acton", addressRegion: "ACT", addressCountry: "AU" },
+    },
+  },
+};
+---
+
+<script type="application/ld+json" is:inline set:html={JSON.stringify(data)} />
