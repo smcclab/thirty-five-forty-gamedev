@@ -62,11 +62,11 @@ unset.
 
 `origin` is <https://gitlab.anu.edu.au/u4110680/comp3540> for now, and the
 `github` remote is <https://github.com/smcclab/thirty-five-forty-gamedev>,
-which publishes `master` to GitHub Pages at
+which publishes `main` to GitHub Pages at
 <https://smcclab.au/thirty-five-forty-gamedev/> through
 `.github/workflows/pages.yml`. Push to both. The
 `.gitlab-ci.yml` is the CECS GitLab Pages pipeline the other two courses use
-(`BASE_PATH=/$CI_PROJECT_PATH/`, tags `Pages`, deploys `master` only); it will
+(`BASE_PATH=/$CI_PROJECT_PATH/`, tags `Pages`, deploys `main` only); it will
 only actually run once the project moves to
 `gitlab.cecs.anu.edu.au:courses/comp3540`. Until then CI on gitlab.anu.edu.au
 will not pick up a `Pages`-tagged runner — run `pnpm build` locally as the

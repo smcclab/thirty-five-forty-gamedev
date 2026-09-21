@@ -2,7 +2,7 @@
 # runner, which serves it at https://comp.anu.edu.au/courses/comp3540/.
 #
 # Every branch and merge request gets a build (page-test), so a broken site
-# fails as a test rather than a deploy; only master is deployed.
+# fails as a test rather than a deploy; only main is deployed.
 
 image: node:24-alpine
 
@@ -64,7 +64,7 @@ page-build:
     - mkdir -p $BUILD_DIR
     - cp -r dist/* $BUILD_DIR/
   only:
-    - master
+    - main
 
 page-deploy:
   tags:
@@ -77,4 +77,4 @@ page-deploy:
     - mv $BUILD_DIR $DEPLOY_DIR/$CI_PROJECT_PATH
     - rm -rf $STAGING_DIR/$CI_PIPELINE_ID
   only:
-    - master
+    - main
