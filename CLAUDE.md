@@ -23,6 +23,18 @@ of the lecturer); no slide figure is published unless it is allow-listed in
 `scripts/deck-images.json`, which is empty; and the peer-assessment
 spreadsheets, the tutor brief and student names must not be published.
 
+**Credit and copyright.** The 2023 and 2024 offerings were designed and
+taught by Professor Penny Kyburz; the home page and the footer say so, and
+must keep saying so. The content is not openly licensed: the footer carries
+"© The Australian National University. All rights reserved." as a `meta`
+line in `src/site-config.ts`, and `siteConfig.licence` is deliberately unset.
+
+**ANU branding is switched off** while the site is a development preview off
+ANU servers: `brandCss` in `astro.config.ts` and the `anuBranding` import and
+spread in `src/site-config.ts` are commented out, so the theme falls back to a
+text wordmark and its default palette. Restore both when the site moves to
+comp.anu.edu.au. `astro-theme-anu` stays in `package.json` for that.
+
 **This is a running course**, so there is deliberately no archive notice.
 Year-specific values are placeholders marked `TODO` and must be filled in for
 each offering: the `course` object in `src/site-config.ts` (semester, year,
@@ -41,13 +53,18 @@ pnpm build          # static site in dist/; fails on a11y, broken-link, base-pat
 pnpm typecheck      # astro check
 ```
 
-`SITE_URL` and `BASE_PATH` come from `.env` locally (copy `.env.example`) and
-from `.gitlab-ci.yml` in CI; `astro.config.ts` falls back to the production
-values when they are unset.
+`SITE_URL` and `BASE_PATH` come from `.env` locally (copy `.env.example`),
+from `.gitlab-ci.yml` on ANU GitLab and from `.github/workflows/pages.yml` on
+GitHub; `astro.config.ts` falls back to the production values when they are
+unset.
 
 ## Where this repo lives
 
-`origin` is <https://gitlab.anu.edu.au/u4110680/comp3540> for now. The
+`origin` is <https://gitlab.anu.edu.au/u4110680/comp3540> for now, and the
+`github` remote is <https://github.com/smcclab/thirty-five-forty-gamedev>,
+which publishes `master` to GitHub Pages at
+<https://smcclab.github.io/thirty-five-forty-gamedev/> through
+`.github/workflows/pages.yml`. Push to both. The
 `.gitlab-ci.yml` is the CECS GitLab Pages pipeline the other two courses use
 (`BASE_PATH=/$CI_PROJECT_PATH/`, tags `Pages`, deploys `master` only); it will
 only actually run once the project moves to

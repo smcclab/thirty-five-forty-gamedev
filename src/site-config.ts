@@ -1,5 +1,9 @@
 import { defineSiteConfig } from "astro-theme-university/types";
-import { anuBranding } from "astro-theme-anu";
+// ANU branding (logos, legal links, partner logos, Acknowledgement of
+// Country) is switched off while this is a development preview off ANU
+// servers. To bring it back, restore this import, spread `...anuBranding`
+// into `siteConfig` below and re-enable `brandCss` in astro.config.ts.
+// import { anuBranding } from "astro-theme-anu";
 
 // Course facts that pages, layouts and content refer to. These are the
 // year-specific values (see CLAUDE.md): refresh them each offering. The
@@ -30,9 +34,14 @@ export const course = {
 export const DEFAULT_HERO = "/src/assets/images/photos/student-game-platformer.jpg";
 
 export const siteConfig = defineSiteConfig({
-  ...anuBranding,
+  // ...anuBranding,
   name: "COMP3540",
-  licence: "CC-BY-NC-SA-4.0",
+  // No `licence`: the content is not openly licensed. The copyright notice
+  // and the course-design credit are the footer `meta` lines below.
+  meta: [
+    "&copy; The Australian National University. All rights reserved.",
+    "The 2023 and 2024 offerings of this course were designed and taught by Professor Penny Kyburz, whose materials this site is built from.",
+  ],
   links: [
     { text: "Lectures", href: "/lectures/" },
     { text: "Workshops", href: "/workshops/" },
