@@ -10,15 +10,18 @@ astro-theme-anu / astro-course-university / astromotion stack — the same stack
 as the comp1720 and comp4350 sites, which are the worked examples to copy from
 when something here is missing.
 
-**This site is a scaffold.** It was created new (there is no Jekyll history to
-convert, and therefore no converter scripts). Almost every page is a
-placeholder pending conversion of the 2023--2024 course materials, which live
-outside this repo in `../comp3540-materials/` and are **not** committed here.
-**`MATERIALS.md` surveys that tree and sets out the conversion plan — read it
-before doing any content work.** In short: 2024 is the source of truth, the
-material was written by Professor Penny Kyburz, almost all of the 13GB is
-video embedded in the theory decks, and the peer-assessment spreadsheets,
-tutor brief and workshop photos must not be published.
+The site is built out from the 2024 offering: 18 generated lecture decks, 11
+workshop pages, 5 assessment pages with their rubrics, 5 resource pages, and
+policies. The source material lives outside this repo in
+`../comp3540-materials/` and is **not** committed here.
+**`MATERIALS.md` surveys that tree, records what was converted and how, and
+sets out the rules about images — read it before doing any content work.**
+In short: 2024 is the source of truth; the material was written by Professor
+Penny Kyburz and reuse should be confirmed with her; the deck converter must
+never extract images from the slide relationship list (they are webcam stills
+of the lecturer); no slide figure is published unless it is allow-listed in
+`scripts/deck-images.json`, which is empty; and the peer-assessment
+spreadsheets, the tutor brief and student names must not be published.
 
 **This is a running course**, so there is deliberately no archive notice.
 Year-specific values are placeholders marked `TODO` and must be filled in for
@@ -88,14 +91,18 @@ the comp1720 and comp4350 repos.
   is `.mdx` only when it needs a component; in `.mdx` there are no HTML
   comments and bare `{` must be escaped `\{`. Callouts are `:::info` /
   `:::warning` / `:::tip` / `:::error` directives.
-- `src/decks/*.deck.mdx` --- lecture decks (astromotion), served at
-  `/lectures/<slug>/` via the theme's `decks.routePrefix`. Unlike the other two
-  courses these are **not generated**: write them by hand, or write a converter
-  from the PowerPoint sources if one is worth having.
-  `src/decks/00-intro.deck.mdx` is the template. Slide classes are set with an
-  MDX comment (`{/* _class: impact */}`) and styled in `src/decks/theme.css`,
-  layered over the theme's `deck.css`. Background images are
-  `![bg contain|cover](./assets/<path>)` from `src/decks/assets/`.
+- `src/decks/*.deck.mdx` --- the 18 lecture decks (astromotion), served at
+  `/lectures/<slug>/` via the theme's `decks.routePrefix`. They are
+  **generated** from the 2024 theory PowerPoints by
+  `scripts/convert-pptx-decks.py`; edit the converter and re-run it rather
+  than hand-editing a deck, exactly as comp1720 and comp4350 do with their
+  Jekyll sources. `MATERIALS.md` documents what the converter models and why.
+  Slide classes are set with an MDX comment (`{/* _class: impact */}`) and
+  styled in `src/decks/theme.css`, layered over the theme's `deck.css`; the
+  stylesheet also has to cope with dense converted slides, so it steps the
+  font size down as a slide's bullet count grows and lays several images out
+  in a row. Background images would be `![bg contain|cover](./assets/<path>)`
+  from `src/decks/assets/`.
 - `src/pages/` --- `index.mdx` (home, with `CourseJsonLd`), `policies.mdx`,
   `404.mdx`, and the collection index pages (`lectures/index.mdx`,
   `workshops/index.mdx`, `assessments/index.mdx`, `resources/index.mdx`) which
@@ -128,13 +135,15 @@ fragments are not verified.
 ## Source materials
 
 See `MATERIALS.md` for the full survey, the 2024 course and assessment
-structure, and the conversion plan. `scripts/extract-ooxml.py` dumps the text
-of every `.pptx` and `.docx` in the materials tree to Markdown without
-unpacking the media:
+structure, what was converted and the image rules. Two scripts:
 
 ```sh
-python3 scripts/extract-ooxml.py ../comp3540-materials /tmp/comp3540-text
+python3 scripts/extract-ooxml.py ../comp3540-materials /tmp/comp3540-text  # text of every pptx/docx
+python3 scripts/convert-pptx-decks.py                                      # regenerate src/decks
+python3 scripts/convert-pptx-decks.py --review /tmp/deck-images            # triage slide figures
 ```
 
-The current hero image is a frame grabbed from the student game showreel
-(`2024/ANU-Games.mp4`) and should be replaced.
+Site photography is in `src/assets/images/photos/`: workshop prototype photos
+from `2024/WW4-Photos` (cropped, EXIF stripped, no identifiable faces — the
+one wide shot that did show faces, `IMG_9501`, is deliberately not used) and
+four frames from the student game showreel `2024/ANU-Games.mp4`.

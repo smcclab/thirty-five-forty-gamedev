@@ -27,7 +27,7 @@ export const course = {
 
 /** Banner image for pages that do not set their own heroImage.
  *  TODO: replace with a photo of the class or a current student game. */
-export const DEFAULT_HERO = "/src/assets/images/photos/student-game-showreel.jpg";
+export const DEFAULT_HERO = "/src/assets/images/photos/student-game-platformer.jpg";
 
 export const siteConfig = defineSiteConfig({
   ...anuBranding,
