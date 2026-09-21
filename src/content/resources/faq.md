@@ -109,10 +109,11 @@ history to look back at.
 
 ### Is there a lecture I have to attend?
 
-In 2024 the only timetabled lecture was the week 1 orientation. The
-[theory](/lectures/) was delivered as short decks with video, worked through in
-your own time at about an hour a week. The timetabled contact was the
-two-hour weekly [workshop](/workshops/) in weeks 2--12.
+In 2024 the only timetabled lecture was the week 1 orientation. The course ran
+as a flipped classroom: the [theory](/lectures/) was delivered as short decks
+with pre-recorded video, worked through in your own time at about an hour a
+week, and the timetabled contact was the two-hour weekly
+[workshop](/workshops/) in weeks 2--12, run by the convener with tutor support.
 
 :::info
 Delivery mode for the next offering is **TODO**.
@@ -222,8 +223,11 @@ rules apply.
 
 On the course forums, not by email. In 2024 there were separate forums for
 Unity support, general and assessment questions, and research participation,
-and emailed questions were redirected to them. Personal matters go to the
-convener; extension requests go through the university's extension application.
+and emailed questions were redirected to them. The Unity support forum was
+answered by an experienced game developer hired for the course, so technical
+questions about your own project went to someone who could actually debug them.
+Personal matters go to the convener; extension requests go through the
+university's extension application.
 
 :::info
 The forum platform and URL for the next offering are **TODO**.

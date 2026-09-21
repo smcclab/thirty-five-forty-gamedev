@@ -19,6 +19,12 @@ self-paced, nothing chases you, and the prototype assessments assume the skills
 are already there. Falling two units behind in the first month is the single
 most common reason students struggle in the second half of semester.
 
+You are not on your own with Unity, though. In 2024 the Unity support forum
+was answered by an experienced game developer hired for the course, and the
+questions that come up once you leave the tutorials and start on your own
+prototype --- a physics interaction that misbehaves, a build that will not
+publish --- are exactly what that support was for. Ask early.
+
 ## The units, week by week
 
 The pathway's project course *Create with Code* is the core. Each unit is four
@@ -92,5 +98,7 @@ describing what each step added. That item was dropped for 2024.
 :::info
 Whether the next offering marks the pathway directly is **TODO**. The 2023
 approach gives students a reason to keep pace and gives staff visibility of who
-has fallen behind; the 2024 approach costs less to mark.
+has fallen behind; the 2024 approach costs less to mark. Unity also revises the
+pathway from year to year, so the unit table above needs checking against the
+current Unity Learn content before each offering.
 :::

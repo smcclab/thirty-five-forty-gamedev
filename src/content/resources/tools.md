@@ -95,6 +95,10 @@ In 2024 the course ran on:
 | [SONA](https://anupsych.sona-systems.com/) | Booking and recording research participation credit | **TODO** |
 | Poll Everywhere | Live polls in the orientation lecture | Not required of students |
 
+Unity's Learn resources are extensive but change from year to year, so the
+[Unity pathway](/resources/unity-pathway/) page's week-by-week unit mapping
+needs re-checking against the current pathway before each offering.
+
 Note that the course did not use GitLab or GitHub in 2024; version control was
 not part of the assessed toolchain. A convener adopting this site should decide
 whether to reintroduce it --- the 2023 offering assessed Unity tutorial progress

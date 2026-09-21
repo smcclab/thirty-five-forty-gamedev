@@ -62,6 +62,19 @@ the weekly workshop. Theory ran weeks 1--5 and 7--9; workshops ran weeks 2--12.
 | 9 | Playtesting Process; Conducting Playtesting | game project |
 | 10--12 | — | game project, peer marking |
 
+Staffing and delivery (from Penny Kyburz, September 2026): a flipped
+classroom. The theory was pre-recorded short videos each week, recorded in
+PowerPoint, which she has said can be reused. The two-hour workshop was run by
+the convener with tutor support as two large classes on the superfloor. Unity
+skills came from Unity's own programming pathway, which changes from year to
+year, so the unit mapping on the site needs re-checking each offering. For
+Unity support she hired an experienced game developer to answer students'
+project questions on demand via the class forum, because those questions are
+usually too niche to search for; a convener without deep Unity experience
+should budget for the same. She also has notes of things to change for a next
+offering, written before the current generation of AI tools, which are not in
+the materials tree and should be requested.
+
 Set texts: Fullerton, *Game Design Workshop*; Schell, *The Art of Game
 Design*. Slides cite both by page throughout.
 
