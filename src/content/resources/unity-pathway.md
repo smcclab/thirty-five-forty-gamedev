@@ -33,9 +33,9 @@ lessons plus five challenge tasks, and takes roughly four to five hours.
 | 5 | Unit 5 --- User Interfaces; Next Steps | Score, lives, timers, buttons, start and game-over states |
 | 6 | Catch-up and consolidation | Finishing the prototype and writing the proposal |
 
-Each unit ends with a challenge --- Plane Programming, Play Fetch, Balloons,
-Bombs and Booleans, Soccer Scripting, Whack-A-Food --- in which you fix five
-deliberate faults in a working project. The challenges are where the learning
+Each unit ends with a challenge --- *Plane Programming*, *Play Fetch*,
+*Balloons, Bombs & Booleans*, *Soccer Scripting*, *Whack-A-Food* --- in which
+you fix five deliberate faults in a working project. The challenges are where the learning
 sticks; do not skip them.
 
 The pathway also contains a set of standalone tutorials beyond *Create with

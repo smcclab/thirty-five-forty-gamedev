@@ -3,8 +3,8 @@ title: "FAQ"
 description: "Answers to the questions students ask before week 1: prerequisites, engine, teams, assets, skills and workload."
 order: 5
 toc: true
-heroImage: /src/assets/images/photos/striped-prototype.jpg
-heroImageAlt: "A striped paper game board with clay obstacles"
+heroImage: /src/assets/images/photos/duck-characters.jpg
+heroImageAlt: "Small clay characters standing on a paper game board"
 ---
 
 Answers below describe the course as it ran in 2024. Where the answer depends
@@ -40,8 +40,9 @@ request a permission code.
 
 ### Do I need to have made a game before?
 
-No. The orientation lecture polls the room on this every year and a large part
-of the class has never made a game or used an engine. The
+No. The orientation lecture asks the class whether they have developed a game
+before and whether they have ever used a games engine, and the course is
+designed on the assumption that many people answer no to both. The
 [Unity pathway](/resources/unity-pathway/) starts from nothing.
 
 ### Do I need to be a strong programmer?
