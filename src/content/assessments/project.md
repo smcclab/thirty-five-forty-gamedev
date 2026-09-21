@@ -8,7 +8,8 @@ heroImageAlt: "A hexagonal grid strategy game made by students in the course"
 ---
 
 :::warning
-The weights, component marks and dates on this page are the **2024** ones,
+The weights, component marks, dates and submission platforms on this page
+are the **2024** ones,
 kept as the starting point while the site is rebuilt. They are reset each
 offering and are only final once the class summary for the offering is
 published. Timing is given by teaching week; the concrete dates are labelled
@@ -19,11 +20,12 @@ as 2024 dates.
 
 | Component | Weighting | Submission | Due |
 | --- | --- | --- | --- |
-| Game | 35% | Published to Unity Play | 5pm Monday of the exam period (in 2024, Monday 28 October) |
+| Game | 35% | Published to Unity Play | 5pm Monday of the week after teaching ends (in 2024, Monday 28 October) |
 | Coversheet | 0%, mandatory | PDF via Wattle, one per team member | Same deadline as the game |
 | Peer assessment | 0%, mandatory | MS Forms | One week later (in 2024, 5pm Monday 4 November) |
 
-Collaboration: **group**, in teams of about four to five. Teams are formed
+Collaboration: **group**, in teams set from enrolment numbers (four to five
+in 2024). Teams are formed
 after the [Game Proposal and Prototype](/assessments/proposal/) deadline, from
 the students who submitted it, and meet for the first time in the
 [week 7 workshop](/workshops/week-07/).

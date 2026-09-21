@@ -1,6 +1,6 @@
 ---
 title: "Game Prototype Progress"
-description: "An early Unity prototype and a report on your prototyping process, submitted in week 4 so you get feedback before the full proposal."
+description: "An early Unity prototype and a report on your prototyping process, submitted at the end of week 4 so you get feedback before the full proposal."
 order: 1
 toc: true
 heroImage: /src/assets/images/photos/grid-figure.jpg
@@ -8,7 +8,8 @@ heroImageAlt: "An early paper prototype: a grid board with a clay figure on it"
 ---
 
 :::warning
-The weights, component marks and dates on this page are the **2024** ones,
+The weights, component marks, dates and submission platforms on this page
+are the **2024** ones,
 kept as the starting point while the site is rebuilt. They are reset each
 offering and are only final once the class summary for the offering is
 published. Timing is given by teaching week; the concrete dates are labelled
@@ -21,7 +22,7 @@ as 2024 dates.
 | --- | --- |
 | Weighting | 12% total: prototype 4%, progress report 8% |
 | Collaboration | Individual |
-| Due | 5pm Monday of week 4 (in 2024, Monday 19 August) |
+| Due | 5pm on the Monday after week 4 (in 2024, Monday 19 August) |
 | Submission | Prototype published to Unity Play; report as a single Word document via Wattle |
 | Template | Prototype Progress Report template (Word) |
 
@@ -172,12 +173,11 @@ Each week's 10 marks are awarded in these bands, on both criteria:
 
 ### Standards and moderation
 
-Points the 2024 marking guide made, which are worth knowing whether you are
-writing the report or marking it:
+Points from the 2024 marking guide that are worth knowing while you write the
+report:
 
 - Completing the work to a satisfactory standard is a pass, not a high
-  distinction. Markers were told to expect most students around the credit
-  range, with roughly 20% in the HD range.
+  distinction.
 - The report should cover *your* prototyping activities, not just the course
   activities you attended, and should show both design and physical (in-class)
   prototyping and digital (Unity) prototyping.
@@ -185,10 +185,8 @@ writing the report or marking it:
 - On the asset policy the intent is that no art assets are used: basic shapes
   and colours. Work that pushes the limit, such as building models out of
   primitives, drew a warning rather than a penalty.
-- Marking was budgeted at about 20 minutes per student, with feedback aimed at
-  what to improve for the Proposal rather than at justifying the mark. In 2024
-  marks had to be released before census date, which set a tight marking
-  timeline.
+- Feedback is aimed at what to improve for the Proposal rather than at
+  justifying the mark, and in 2024 it was returned before census date.
 
 ## Where this leads
 

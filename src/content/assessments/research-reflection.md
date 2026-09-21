@@ -8,7 +8,8 @@ heroImageAlt: "A tangle of pipe cleaners used as a physical game prototype"
 ---
 
 :::warning
-The weight and dates on this page are the **2024** ones, kept as the starting
+The weight, dates and submission platforms on this page are the **2024**
+ones, kept as the starting
 point while the site is rebuilt. They are reset each offering and are only
 final once the class summary for the offering is published. Timing is given
 by teaching week; the concrete date is labelled as the 2024 date.

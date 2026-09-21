@@ -534,12 +534,21 @@ def convert(path: pathlib.Path, decks_dir: pathlib.Path, verbose=False,
             if m:
                 lens = f"{m.group(2)} (lens {m.group(1)})"
                 main_paras = main_paras[1:]
+        if not heading:
+            # No heading anywhere on the slide (an agenda, a figure-only
+            # slide, or a list continuing the slide before it). Never fall
+            # back to "Slide N" -- it would be the page's visible title.
+            if i == 2:
+                heading = "Overview"
+            elif prev_heading:
+                heading = f"{prev_heading} (cont.)"
+            else:
+                heading = topic or title
+
         if lens:
             body.append(f"## {mdx_escape(lens)}\n")
-        elif heading:
-            body.append(f"## {mdx_escape(heading)}\n")
         else:
-            body.append(f"## Slide {i}\n")
+            body.append(f"## {mdx_escape(heading)}\n")
 
         body += bullets(main_paras)
 

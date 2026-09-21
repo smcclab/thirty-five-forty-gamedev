@@ -8,7 +8,8 @@ heroImageAlt: "A game specification worksheet with a health bar and labelled mec
 ---
 
 :::warning
-The weights, component marks and dates on this page are the **2024** ones,
+The weights, component marks, dates and submission platforms on this page
+are the **2024** ones,
 kept as the starting point while the site is rebuilt. They are reset each
 offering and are only final once the class summary for the offering is
 published. Timing is given by teaching week; the concrete dates are labelled
@@ -127,7 +128,7 @@ currently implements.
 cite specific theory. References go in the template's reference table, one per
 row, in [ACM referencing style](https://www.acm.org/publications/authors/reference-formatting).
 Citing the course theory slides is acceptable, but you must reference a
-specific slide -- for example `Penny Kyburz. 2024. Week X Theory Slides: Name
+specific page -- for example `Penny Kyburz. 2024. Week X Theory Slides: Name
 of deck.` Cite by number in the text, with a page where needed, as `[1, p.3]`.
 
 ### Part 2: Prototyping Process Analysis (6%)
@@ -218,11 +219,9 @@ From the 2024 marking guide:
   working on the proposal document, which is not itself a prototyping
   activity.
 - Completing the work to a satisfactory standard is a pass, not a high
-  distinction; markers were told to expect most students around the credit
-  range, with roughly 20% in the HD range.
-- Marking was budgeted at about 30 minutes per student, weighted towards the
-  report rather than the prototype, with written comments on the prototype and
-  the Game Design Analysis only.
+  distinction.
+- Written comments are given on the prototype and the Game Design Analysis
+  only; the prototyping analysis received feedback at the Progress item.
 
 ## Where this leads
 

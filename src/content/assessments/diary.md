@@ -8,7 +8,8 @@ heroImageAlt: "Sheets of hand-drawn game storyboard sketches"
 ---
 
 :::warning
-The weights, component marks and dates on this page are the **2024** ones,
+The weights, component marks, dates and submission platforms on this page
+are the **2024** ones,
 kept as the starting point while the site is rebuilt. They are reset each
 offering and are only final once the class summary for the offering is
 published. Timing is given by teaching week; the concrete dates are labelled
@@ -22,7 +23,7 @@ as 2024 dates.
 | Weighting | 20% total: entry 1 8%, entry 2 12% |
 | Collaboration | Individual |
 | Entry 1 | Covers weeks 7--9, due early in week 10 (in 2024, 5pm Tuesday 8 October) |
-| Entry 2 | Covers weeks 10--12, due in the exam period (in 2024, 5pm Wednesday 30 October) |
+| Entry 2 | Covers weeks 10--12, due in the week after teaching ends (in 2024, 5pm Wednesday 30 October) |
 | Submission | Each entry as a single Word document via Wattle |
 | Template | Developer Diary Entry template (Word), submitted unmodified |
 
@@ -115,8 +116,7 @@ The mark bands for each criterion:
 From the 2024 marking guides:
 
 - Total effort per entry was expected to be around 30 hours, including
-  workshops (about 6 hours) and team meetings. Roughly 20 or more hours of
-  logged tasks was considered reasonable, but hours are not the measure on
+  workshops (about 6 hours) and team meetings.
   their own: what you achieved and how well you described and evidenced it
   matters more.
 - Diaries should focus on what the individual did and contributed, and on
@@ -124,8 +124,7 @@ From the 2024 marking guides:
 - "Technical" challenges are read broadly, covering design and development,
   but not team management or asset hunting.
 - Completing the work to a satisfactory standard is a pass, not a high
-  distinction; markers were told to expect most students around the credit
-  range, with roughly 20% in the HD range.
+  distinction.
 - Written feedback was given on entry 1 only, aimed at what to improve for
   entry 2. Entry 2 was returned without comments because there is nothing left
   to act on.

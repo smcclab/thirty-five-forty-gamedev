@@ -8,10 +8,26 @@
  * e.g. {/* _class: title-slide *\/}
  */
 
+/* The theme option REPLACES astromotion's stylesheet rather than layering on
+ * top of it, so the base has to be imported here first. */
+@import url("astro-theme-university/styles/deck.css");
+
 :root {
-  /* ANU gold, the accent the original PowerPoint template used. */
+  /* ANU gold, the accent the original PowerPoint template used, on the
+   * charcoal the 2024 slides were designed against. */
   --gd-accent: #be830e;
-  --gd-muted: rgb(255 255 255 / 55%);
+  --gd-bg: #1f2429;
+  --gd-text: #f2f2f2;
+  --gd-muted: rgb(242 242 242 / 55%);
+
+  --r-background-color: var(--gd-bg);
+  --r-main-color: var(--gd-text);
+  --r-heading-color: var(--gd-accent);
+  --r-link-color: #e9b44c;
+  --r-link-color-hover: var(--gd-text);
+  --r-heading1-size: 2.6rem;
+  --r-heading2-size: 1.9rem;
+  --r-heading3-size: 1.35rem;
 }
 
 /* ------------------------------------------------------------------ text */
@@ -63,6 +79,21 @@
   color: var(--gd-accent);
 }
 
+/* The sidebar column of the source slide: definitions and asides that sat
+ * beside the main bullets. Set them apart so they do not read as a second,
+ * unexplained list. */
+.reveal .slides section .slide-aside {
+  border-left: 3px solid rgb(190 131 14 / 45%);
+  padding-left: 0.8em;
+  margin-block: 0.6em;
+  color: rgb(242 242 242 / 78%);
+  font-size: 0.92em;
+}
+
+.reveal .slides section .slide-aside ul {
+  margin-left: 0;
+}
+
 /* ----------------------------------------------------------------- media */
 
 /* Several images on one slide sit in a row and share the space, instead of
@@ -107,7 +138,7 @@
 /* The topic label and the reading citation from the source slide's sidebar. */
 .reveal .slides section .image-credit {
   position: absolute;
-  right: 0;
+  right: 1em;
   bottom: -0.6em;
   font-size: 0.42em;
   color: var(--gd-muted);
@@ -123,17 +154,27 @@
 }
 
 .reveal .slides section.title-slide header {
-  display: inline-block;
-  padding: 0.6em 1em;
+  display: block;
+  padding: 0.2em 0 0.2em 0.8em;
   border-left: 6px solid var(--gd-accent);
-  background: rgb(0 0 0 / 45%);
   text-align: left;
 }
 
+/* The theme's deck.css sets h1 as uppercase dark-on-gold inline block. On the
+ * title slide that fights the rule and the subtitle, so undo it. */
 .reveal .slides section.title-slide h1 {
+  display: block;
+  background: none;
+  color: var(--gd-text);
   text-transform: none;
-  font-size: 2em;
-  margin-bottom: 0.2em;
+  padding: 0;
+  margin: 0 0 0.25em;
+}
+
+.reveal .slides section.title-slide header p {
+  color: var(--gd-muted);
+  font-size: 0.55em;
+  margin: 0.15em 0;
 }
 
 /* A single large statement. */
