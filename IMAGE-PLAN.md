@@ -1,7 +1,9 @@
 # Putting images back in the lecture decks
 
 A working plan. **Delete this file when the decks reach the target.** Phases 1
-and 2 are done and committed; Phase 3 is the work remaining.
+and 2 are done and committed; in Phase 3 the mechanism for adding an image is
+built and **no deck is at zero any more**. What is left is the thin decks ---
+and, first, a formatting pass (see the end of this file).
 
 ## Why
 
@@ -18,8 +20,8 @@ images are full-bleed image-only slides and only 23 are inline.
 | | Slides | Images | Per slide |
 |---|---|---|---|
 | Before | 294 | 0 | 0.00 |
-| **Now** | 317 | 47 | **0.15** |
-| Target | ~317 | ~190 | 0.60 |
+| **Now** | 359 | 89 | **0.25** |
+| Target | ~420 | ~250 | 0.60 |
 
 Done so far:
 
@@ -28,147 +30,160 @@ Done so far:
   `scripts/deck-images.README.md`.
 - **Phase 2** --- the 24 commercial game screenshots published under fair
   dealing, each credited. See "The game screenshots" in `MATERIALS.md`.
+- **Phase 3, task 1** --- `scripts/deck-extras.json` adds an image to a slide
+  that never had one. See "Adding an image" below.
+- **Phase 3, the five decks that were at zero** --- 42 images added:
+  week02-3-prototyping (10 workshop photographs), week01-1-play-and-games
+  (10 Unsplash), week02-2-idea-generation (3 Unsplash, 3 workshop, 2
+  figures), week09-2-conducting-playtesting (5 Unsplash, 2 workshop, 3
+  figures) and week07-1-agile-game-dev (2 Unsplash, 2 figures, plus the
+  twelve Agile principles as a table instead of the dropped poster).
+  `scripts/fetch-deck-photos.py` finds and downloads the Unsplash ones.
 
 Per-deck state (`grep -c '!\[' src/decks/*.deck.mdx` to recheck):
 
 | Deck | Slides | Images |
 |---|---|---|
-| week01-1-play-and-games | 12 | **0** |
-| week01-2-formal-elements | 17 | 1 |
-| week02-1-playcentric-design-process | 17 | 1 |
-| week02-2-idea-generation | 11 | **0** |
-| week02-3-prototyping | 15 | **0** |
+| week01-1-play-and-games | 22 | 10 |
+| week01-2-formal-elements | 17 | **1** |
+| week02-1-playcentric-design-process | 17 | **1** |
+| week02-2-idea-generation | 19 | 8 |
+| week02-3-prototyping | 25 | 10 |
 | week03-1-engaging-the-player | 20 | 6 |
-| week03-2-designing-to-engage | 18 | 1 |
+| week03-2-designing-to-engage | 18 | **1** |
 | week03-3-flow-needs-motivation | 20 | 4 |
 | week04-1-systems | 13 | 2 |
-| week04-2-mechanics | 21 | 2 |
-| week04-3-balance | 20 | 2 |
-| week05-1-interface-design | 24 | 3 |
+| week04-2-mechanics | 21 | **2** |
+| week04-3-balance | 20 | **2** |
+| week05-1-interface-design | 24 | **3** |
 | week05-2-level-design | 21 | 20 |
-| week07-1-agile-game-dev | 7 | **0** |
-| week08-1-learning-and-training | 22 | 1 |
+| week07-1-agile-game-dev | 11 | 4 |
+| week08-1-learning-and-training | 22 | **1** |
 | week08-2-challenge-difficulty-pacing | 22 | 3 |
-| week09-1-playtesting-process | 19 | 1 |
-| week09-2-conducting-playtesting | 18 | **0** |
+| week09-1-playtesting-process | 19 | **1** |
+| week09-2-conducting-playtesting | 28 | 10 |
 
-**Do the five zero-image decks first** (Charles's call, 2026-09-22): a deck at
-zero reads as unfinished in a way a thin deck does not.
+**The five zero-image decks came first** (Charles's call, 2026-09-22): a deck
+at zero reads as unfinished in a way a thin deck does not. All five are done.
+The bolded decks in the table above are the thin ones that remain, and
+`week08-1-learning-and-training` (22 slides, one image) is the worst of them.
 
-## Task 1 (blocking): a way to *add* an image
+## Adding an image (task 1 --- done)
 
 `scripts/deck-images.json` is keyed by the SHA-256 of a picture in the source
 PowerPoint, so it can only ever *replace* something that was already there.
-Phase 3 is mostly about adding images to slides that never had one, and there
-is no mechanism for that yet. Build it first.
-
-Proposed shape --- `scripts/deck-extras.json`, read by
-`scripts/convert-pptx-decks.py`:
+`scripts/deck-extras.json` is the other half: it *adds* an image to a slide,
+and `scripts/convert-pptx-decks.py` reads both.
 
 ```json
 {
   "week02-3-prototyping": [
-    { "after_source_slide": 5,
+    { "after_source_slide": 6,
       "file": "photos/paper-grid-prototype.jpg",
-      "alt": "A paper grid prototype with counters laid out on a desk.",
-      "credit": "COMP3540 workshop, 2024",
       "layout": "bg cover",
-      "caption": "Paper first: the cheapest way to find out a rule does not work." }
+      "alt": "Coloured buttons and foam triangles on a grid drawn in pencil.",
+      "caption": "A grid, some buttons, a legend down the side: enough to play a turn and find out whether the rule works.",
+      "credit": "COMP3540 workshop, 2024" }
   ]
 }
 ```
 
-Notes on the design:
-
-- **Anchor on the source slide number, not the output slide number.** The
-  source PowerPoints never change, so `after_source_slide` is stable; output
-  slide numbers shift every time a figure is added.
-- `layout` is `bg cover` (full-bleed photo), `bg contain` (fits the whole
-  image, for diagrams and screenshots) or `inline` (into the existing
-  `.slide-media` row on that slide rather than a new slide). Default to
+- **The anchor is the source slide number**, not the output slide number: the
+  PowerPoints never change, while output numbers shift every time a figure is
+  added ahead of them. Print the source numbering with the snippet under
+  "Checking". An anchor on a slide that carries no content (the title slide,
+  the closing slide) is an error rather than a silently dropped image, and so
+  is a deck name that does not exist, a missing file, a missing `alt` or an
+  unknown `layout`.
+- `layout` is `bg cover` (a new full-bleed slide, the default), `bg contain`
+  (a new slide fitting the whole image, for diagrams and screenshots) or
+  `inline` (into the anchor slide's existing `.slide-media` row). Default to
   `bg cover` for photographs: that is the comp1720/comp4350 idiom and the one
   that fixes "boring".
-- A full-bleed slide still needs `alt`; astromotion's deck checker has a
-  `bg-missing-image` rule and `pnpm build` fails on axe's `image-alt`.
-- Emit a new slide after the anchor, the same way the `figure` kind already
-  does --- see the `for entry in slide_figures:` block in `convert()`.
-- Files resolve relative to `src/decks/` (so `photos/...` can point at a new
-  `src/decks/photos/` directory, and `media/...` at the existing one).
+- A `bg` slide uses the **theme's own `hero` class**, which lays the caption
+  out bottom-left and paints a scrim between photograph and text (as an image
+  rather than a gradient, so the PDF export keeps it). `caption` is the
+  teaching line; `credit` sits under it.
+- A background image is a CSS background, so no element carries its `alt`.
+  The converter writes the `alt` into a visually hidden paragraph instead
+  (`.deck-sr-only` in `src/decks/theme.css`), which is why `alt` is required
+  whatever the layout.
+- `file` resolves under `src/decks/`, so `photos/...` (photography, new) and
+  `figures/...` (redrawings) both work. It has to live there: only
+  `src/decks/` is copied into `dist/`, so a deck cannot reference
+  `src/assets/`.
+- A deck with no publishable source picture takes its card hero on
+  `/lectures/` from its first added image.
 
-## Tasks 2-6: the five empty decks
+## What went into the five decks
 
-Read the deck before working on it; the headings below are the current ones.
-The 2023 PowerPoints in `../comp3540-materials/2023/Lectures/` are the best
-guide to **where Penny wanted pictures** --- she illustrated far more heavily
-in 2023 (168 distinct pictures over 731 slides) than in the 2024 rework (64).
-Use them as a brief, not as a source of files: the same copyright rules apply.
+Recorded so the reasoning survives; the entries themselves are in
+`scripts/deck-extras.json`.
 
-### week02-3-prototyping (15 slides, needs ~9) --- START HERE
+### week02-3-prototyping (25 slides, 10 images)
 
-The easiest win on the site. `src/assets/images/photos/` already holds **29
-photographs of COMP3540 students prototyping** --- paper grids, counters,
-clay, pipe cleaners, storyboards --- cropped, EXIF-stripped and with no
-identifiable faces. They are currently used only as page heroes, one each. They
-are exactly what this deck is about.
+Ten workshop photographs, one full-bleed slide each, anchored on source slides
+3 and 6-14: the materials, the paper grid, the core-mechanic sticks and
+counters, one per stage of Fullerton's build (foundation, structure, formal
+details, refinement) and three on the move to digital.
 
-Directly relevant: `paper-grid-prototype`, `prototyping-materials`,
-`hands-prototyping`, `sticks-and-counters`, `circles-and-sticks`,
-`maze-prototype`, `striped-prototype`, `path-prototype`, `clay-creature`,
-`pipecleaner-tangle`, `storyboard-sketches`, `terrain-cutouts`,
-`block-layout`, `counters-and-book`.
+### week01-1-play-and-games (22 slides, 10 images)
 
-Slides to illustrate: Physical Prototypes, Prototyping your game idea (x2),
-2. Structure, 3. Formal details, 4. Refinement, Types of digital prototypes
-(x2). Credit line: `COMP3540 workshop, 2024`.
+All Unsplash, and the most straightforwardly photographic deck on the site:
+children running for "what is play", a dog with an oversized stick for playful
+animals, then **one photograph per Caillois type** on the types-of-play slide
+--- runners (agon), falling dice (alea), carnival masks (mimicry), a spinning
+carousel (ilinx) --- a board game seen from above for play-with-structure, two
+chess knights for the formal definition, players reaching over a board for the
+magic circle, and a laid dinner table before the guests arrive for Fullerton's
+party-host analogy, which is the best single image in the set.
 
-`student-game-portal.jpg` is the one photo currently unused anywhere.
-There are also ~11 more frames in `2024/WW4-Photos` not yet cropped --- same
-rule, no identifiable faces, and **never** `IMG_9501`.
+### week02-2-idea-generation (19 slides, 8 images)
 
-### week09-2-conducting-playtesting (18 slides, needs ~11)
+Three Unsplash (a wall of sticky notes, a desk of sketches and a connected
+diagram, someone pinning sketches to a wall), two new figures
+(`idea-filters`, `narrowing-the-list`) for editing and narrowing, and three
+workshop photographs for choosing an idea and turning it into one
+(`annotated-design`, `spec-worksheet`, `design-diagram`).
 
-Six consecutive slides all headed "Conducting a Playtesting Session", then
-Methods, A Primer, Taking Notes, Usability Techniques, Data Gathering,
-Control Situations, Lens of Playtesting.
+### week09-2-conducting-playtesting (28 slides, 10 images)
 
-Mostly process, so mostly authored diagrams: a session timeline (brief ->
-play -> observe -> debrief), a seating/observation layout, a quantitative vs
-qualitative split, a note-taking template. `playtesting-hands.jpg` and
-`workshop-desk.jpg` fit the session slides. Unsplash for the observation and
-note-taking slides.
+Mostly process, so mostly figures: `playtest-observation` (who sits where),
+`playtest-session` (the test script as a timeline) and `playtest-notes` (the
+three parts of Fullerton's form, which is the figure that was dropped as too
+substantial an excerpt --- this is its structure, not her questions).
+Photographs for the rest: a recorded play session, a post-play conversation,
+friends on a couch for group testing, a clipboard for note-taking, an
+analytics dashboard for the quantitative slide, and two workshop shots.
 
-### week01-1-play-and-games (12 slides, needs ~7)
+### week07-1-agile-game-dev (11 slides, 4 images)
 
-What is play / types of play / what is a game / game experience. The most
-photographic deck of the five: children and animals playing, board games,
-playgrounds, sport --- all well served by Unsplash. 2023 Lecture 1 is the
-richest source deck (76 slides, 60 pictures) and shows what Penny used,
-including a "20 published games" spread.
+Two figures (`sprint-cycle`, `burndown`), a backlog wall and a standup. The
+Agile Manifesto poster stays dropped, but the **twelve principles are now a
+two-column table** (`scripts/deck-snippets/agile-principles.md`, paraphrased
+and linked to agilemanifesto.org) on the slide where the poster was --- that
+closes the loose end the deck comment recorded.
 
-Note this deck already links a YouTube video on the first content slide
-(Promise of Play); a still is not needed.
+## What is left
 
-### week02-2-idea-generation (11 slides, needs ~7)
-
-Brainstorming, Alternative Methods, Brainstorming Tips, Editing and Refining,
-Narrowing the list, Choosing an Idea, Turning ideas into a game.
-
-Unsplash territory --- sticky notes, whiteboards, sketchbooks, group work ---
-plus one or two authored diagrams (a diverge/converge double diamond for
-narrowing the list; a simple funnel for editing and refining). The workshop
-photos `annotated-design`, `design-diagram`, `mechanics-worksheet` and
-`spec-worksheet` also fit.
-
-### week07-1-agile-game-dev (7 slides, needs ~4)
-
-The thinnest deck on the site. The Agile Manifesto poster was dropped as a
-third-party infographic, but **the four value statements and the twelve
-principles are freely reproducible from agilemanifesto.org with its notice** ---
-set them as text, not an image.
-
-Authored diagrams: the sprint/iteration cycle, a burndown chart, a release
-train or milestone plan for "Agile Project Planning". `scripts/make-deck-figures.py`
-already has the Graphviz and matplotlib helpers for both.
+- **The thin decks**, bolded in the table above. `week08-1-learning-and-training`
+  (one image over 22 slides) is the worst; `week01-2-formal-elements`,
+  `week02-1-playcentric-design-process`, `week03-2-designing-to-engage` and
+  `week09-1-playtesting-process` are next.
+- **Unused workshop photographs**: `circles-and-sticks`, `counters-and-book`,
+  `pipecleaner-tangle`, `mechanics-worksheet`, `interface-sketch`,
+  `stick-maze-level`, `grid-figure`, `teal-board-figure`,
+  `student-game-portal`. There are also ~11 more frames in
+  `2024/WW4-Photos` not yet cropped --- same rule, no identifiable faces, and
+  **never** `IMG_9501`.
+- **The 2023 PowerPoints** in `../comp3540-materials/2023/Lectures/` remain the
+  best guide to where Penny wanted pictures: she illustrated far more heavily
+  in 2023 (168 distinct pictures over 731 slides) than in the 2024 rework
+  (64). Use them as a brief, not as a source of files --- the same copyright
+  rules apply.
+- **The Poll Everywhere prompts.** The 2023 decks carry ~70 live-poll slides
+  whose questions are real teaching content. Not images, but the other thing
+  these decks lack.
 
 ## Conventions
 
@@ -177,18 +192,49 @@ already has the Graphviz and matplotlib helpers for both.
 result" sections of `scripts/deck-images.README.md` first. Run
 `python3 scripts/make-deck-figures.py --check` --- it enforces palette,
 4.5:1 contrast on the deck background, a 16 css px minimum label size at the
-rendered size, and the alt/credit rules. Note that a figure drawn for a slide
-that never had a picture has no source SHA, so its `alt`/`credit`/`terms`
-metadata needs to live in `deck-extras.json` rather than `deck-images.json`;
-teach `--check` to read both.
+rendered size, and the alt/credit rules. A figure drawn for a slide that never
+had a picture has no source SHA, so its `alt`/`credit`/`terms` live in
+`deck-extras.json` with `"layout": "figure"`; `--check` reads both files.
+A diagram of our own is still credited, with the pages it was drawn from:
+`Drawn for COMP3540 from Fullerton pp. 431-440`. `--check` insists on the
+word *from* or *after* so nothing here is ever mistaken for a scan.
 
 **Unsplash photographs** follow the comp1720 convention: the file is named
 `<photographer-name>-<unsplash-id>-unsplash.jpg`, so attribution survives in
 the filename (65 of comp1720's 345 deck images are Unsplash, all named this
 way). Keep the `credit` field as `Photo by <name> on Unsplash`. Unsplash's
 licence does not require attribution but crediting is right and matches the
-other courses. Download at a sensible width --- these are backgrounds, 2000px
-is plenty --- and put them in `src/decks/photos/`.
+other courses.
+
+`scripts/fetch-deck-photos.py` does the fetching, with no API key:
+
+```sh
+python3 scripts/fetch-deck-photos.py search "children playing outdoors" -n 12
+python3 scripts/fetch-deck-photos.py get DldEn-9g78k
+```
+
+`search` writes a numbered contact sheet to /tmp --- **look at it**, because
+the first hit is rarely the right one --- and `get` downloads at 2000px into
+`src/decks/photos/` under the naming convention.
+
+**Unsplash+ is the trap.** Those results sit alongside the free ones in every
+search, the licence is a paid one, and the file you are served is
+**watermarked**. Four of them (Andy Quezada, Kateryna Hliznitsova, Andrej
+Lišakov, Devin Nelson) got into the decks on 2026-09-22 before this was
+noticed; they were swapped for free equivalents the same day. The `plus` flag
+in the API is the reliable signal, and the script now acts on it: `search`
+leaves those results out entirely and `get` refuses them. Run
+
+```sh
+python3 scripts/fetch-deck-photos.py audit
+```
+
+before any commit that adds photography --- it re-checks every committed
+Unsplash file against its current licence, since the flag can be granted
+after the fact. It was clean on 2026-09-22 (20 photographs).
+
+The other thing to watch is composition: pick images that work at full bleed
+behind a caption, so dark, or with a quiet bottom-left corner.
 
 **Workshop photographs** are credited `COMP3540 workshop, 2024`.
 
@@ -200,6 +246,28 @@ without it.
 `python3 scripts/convert-pptx-decks.py`.
 
 ## Checking
+
+To print the source slide numbering that an anchor refers to:
+
+```sh
+python3 - <<'SLIDES'
+import importlib.util, pathlib, re, zipfile
+import xml.etree.ElementTree as ET
+spec = importlib.util.spec_from_file_location("conv", "scripts/convert-pptx-decks.py")
+c = importlib.util.module_from_spec(spec); spec.loader.exec_module(c)
+SLUG = "week02-3-prototyping"
+src = [p for p in pathlib.Path("../comp3540-materials/2024/Theory").glob("*/*.pptx")
+       if c.deck_slug(p) == SLUG][0]
+z = zipfile.ZipFile(src)
+names = sorted((n for n in z.namelist() if re.fullmatch(r"ppt/slides/slide\d+\.xml", n)),
+               key=lambda n: int(re.search(r"\d+", n.rsplit("/", 1)[1]).group()))
+for i, n in enumerate(names, 1):
+    tree = ET.fromstring(z.read(n)).find(f"{c.P}cSld/{c.P}spTree")
+    main = [s for s in c.collect_shapes(tree) if s.kind == "text" and s.is_main]
+    paras = [p for s in sorted(main, key=lambda s: (s.y, s.x)) for p in c.shape_paragraphs(s)]
+    print(f"{i:3d}  {paras[0][1][:70] if paras else '(no text)'}")
+SLIDES
+```
 
 ```sh
 python3 scripts/convert-pptx-decks.py     # regenerate all 18 decks
@@ -257,3 +325,30 @@ PY
 - **Watermarked screenshots.** Several published files carry a third-party
   site's watermark (IGN, eurogamer.gr, GameSpot). `kind: "photo"` exists to
   swap in a cleaner capture from `src/decks/media/` one entry at a time.
+
+## Next: a formatting pass (Charles, 2026-09-22)
+
+**The deck formatting is bad**, and now that every deck has images it is the
+next job --- before any more images go in. The converter takes whatever the
+source slide contains, so a generated slide can carry a twenty-item bullet
+list, a heading that is really a citation, an `aside` of loose text boxes and
+a table, all at once. Every slide has to make sense rendered, at projector
+size. Known offenders:
+
+- **`week05-2-level-design`**: every slide is headed
+  `"Theory: Level Design Rudolf Kremers. (2009) ... Richard Rouse III (2005)"`
+  --- the sidebar label and the full citation have been promoted to `##`, and
+  the real headings (*Level Separation*, *Components of a Level: Puzzles*) are
+  stranded as the first body bullet. A converter bug.
+- **Twenty-bullet slides** (`week04-2-mechanics`, `week08-1-learning-and-training`,
+  `week09-2` primer slides). `theme.css` steps the font down to 0.64em, which
+  is a workaround, not a fix: these want splitting into two slides.
+- **Loose text boxes** appended as a second unexplained bullet list after the
+  main one (see the end of `week02-3-prototyping`, "Kinesthetics - feel /
+  Game Mechanics / Aesthetics"). They are diagram labels from the source
+  slide, with the diagram gone.
+- **Repeated `(cont.)` headings**, and asides that repeat the same test-script
+  list on six consecutive slides in `week09-2`.
+- **The dense new slides**: the Agile Manifesto slide now carries the four
+  values *and* a six-row table; the twelve principles probably want their own
+  slide.

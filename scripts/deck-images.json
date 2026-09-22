@@ -61,9 +61,9 @@
     "kind": "source",
     "file": "gameflow-affordances.png",
     "alt": "The eight GameFlow elements on the left mapped onto seven GameFlow affordances on the right.",
-    "credit": "Figure from Sweetser & Ozdowska (2024), GameFlow Affordances, CHI EA '24, doi:10.1145/3613905.3650887 \u2014 reproduced by permission",
+    "credit": "Figure from Sweetser & Ozdowska (2024), GameFlow Affordances, CHI EA '24, doi:10.1145/3613905.3650887 — reproduced by permission",
     "own_slide": true,
-    "permission": "Copyright is held by the authors, not ACM (the paper's notice reads '\u00a9 2024 Copyright held by the owner/author(s)' and carries no CC licence). Penny Kyburz (Sweetser), as an author and the course convenor, gave permission to publish it on this site, 2026-09-22."
+    "permission": "Copyright is held by the authors, not ACM (the paper's notice reads '© 2024 Copyright held by the owner/author(s)' and carries no CC licence). Penny Kyburz (Sweetser), as an author and the course convenor, gave permission to publish it on this site, 2026-09-22."
   },
   "d4f009b761fbbbf0564cfde41c6946fac4556b6e268b992a9d16c145638d5b44": {
     "kind": "figure",
@@ -226,8 +226,9 @@
     "credit": "After Kass & Bryla's five-way rock-paper-scissors; see Fullerton ch. 10"
   },
   "0ea46f2ebfdd1d5165ec3599d975ef32fcd03673ae707fa41a4c3f2186d80b57": {
-    "kind": "drop",
-    "note": "Third-party infographic of the 12 Agile principles. The principles themselves are reproducible from agilemanifesto.org with its notice -- set them as a list rather than an image."
+    "kind": "snippet",
+    "file": "agile-principles.md",
+    "credit": "Paraphrased from the twelve principles, agilemanifesto.org"
   },
   "1fbe668efaeb183425ea1507392921fd095d9b507755f7481b15fbaba590d50f": {
     "kind": "snippet",

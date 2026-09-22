@@ -585,6 +585,185 @@ def rpsls():
         engine="neato")
 
 
+# --- figures for slides that never had a picture (scripts/deck-extras.json).
+# These are not redrawings: nothing on the slide was dropped. They are drawn
+# from the bullets the slide already carries and the pages it cites.
+
+@figure("narrowing-the-list")
+def narrowing_the_list():
+    """Fullerton's funnel from a brainstorm to one game. Counts are the ones
+    the slide gives; the second pass back into the funnel is the point."""
+    plt = _plt()
+    fig, ax = plt.subplots(figsize=(8.0, 4.4))
+    bands = [
+        ("Everything you brainstormed", 5.0, PALETTE["muted"]),
+        ("Shortlist: 5-10 ideas", 3.4, PALETTE["gold"]),
+        ("Three ideas", 2.0, PALETTE["teal"]),
+        ("One game to prototype", 0.9, PALETTE["accent"]),
+    ]
+    h = 1.0
+    for k, (label, w, colour) in enumerate(bands):
+        y1 = -k * h
+        y0 = y1 - h
+        w1 = w / 2
+        w0 = (bands[k + 1][1] if k + 1 < len(bands) else w) / 2
+        ax.add_patch(plt.matplotlib.patches.Polygon(
+            [(-w1, y1), (w1, y1), (w0, y0), (-w0, y0)], closed=True,
+            facecolor=colour, alpha=0.20, edgecolor=PALETTE["muted"],
+            linewidth=1.2))
+        ax.text(0, y1 - h / 2, label, color=PALETTE["text"], fontsize=16,
+                ha="center", va="center")
+    ax.annotate("", (-3.5, -3.6), (-3.5, -1.1),
+                arrowprops=dict(arrowstyle="->", color=PALETTE["gold"], lw=1.6,
+                                connectionstyle="arc3,rad=0.4"))
+    ax.text(-4.8, -2.35, "Brainstorm\nagain on each", color=PALETTE["gold"],
+            fontsize=14, ha="center", va="center")
+    ax.set_xlim(-6.1, 2.9)
+    ax.set_ylim(-4.15, 0.15)
+    ax.axis("off")
+    return _save(plt, fig, "narrowing-the-list")
+
+
+@figure("idea-filters")
+def idea_filters():
+    """The four questions Fullerton edits a brainstormed list with. Drawn as
+    gates rather than a checklist: an idea has to pass all four."""
+    return _dot("idea-filters", _graph("""
+  long  [label="A long list\nof ideas" color="%(muted)s"];
+  tech  [label="Can you\nbuild it?"];
+  market[label="Will people\nplay it?"];
+  love  [label="Do you\nlove it?"];
+  cost  [label="Can you\nafford it?"];
+  short [label="The list\nworth testing" color="%(accent)s"];
+  long -> tech -> market -> love -> cost -> short;
+""" % PALETTE, rankdir="LR", ranksep="0.35"))
+
+
+@figure("sprint-cycle")
+def sprint_cycle():
+    """The sprint loop the Agile slides describe in prose: plan, build, show,
+    reflect, reprioritise. Two to four weeks, then round again."""
+    return _dot("sprint-cycle", _graph("""
+  node [fontsize=20];
+  backlog [label="Prioritised backlog"];
+  plan    [label="Sprint planning"];
+  build   [label="Build (2-4 weeks)"];
+  demo    [label="Demo day"];
+  retro   [label="Retrospective"];
+  backlog -> plan -> build -> demo -> retro -> backlog;
+""", engine="circo", mindist="1.5"), engine="circo")
+
+
+@figure("burndown")
+def burndown():
+    """A burndown chart. Conceptual, not data: the point is that the real
+    line is above the ideal one and that new work pushes it back up."""
+    plt = _plt()
+    fig, ax = plt.subplots(figsize=(8.0, 4.3))
+    ideal_x = [0, 10]
+    ideal_y = [10, 0]
+    real_x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    real_y = [10, 9.6, 9.0, 8.8, 9.9, 9.0, 7.4, 6.2, 4.4, 2.4, 0.6]
+    ax.plot(ideal_x, ideal_y, color=DIM, lw=2, ls="--")
+    ax.plot(real_x, real_y, color=PALETTE["gold"], lw=2.6, marker="o", ms=5)
+    ax.annotate("Scope added", (4, 9.9), textcoords="offset points",
+                xytext=(6, 14), color=PALETTE["red"], fontsize=15)
+    ax.plot([4], [9.9], marker="o", ms=9, color=PALETTE["red"])
+    ax.text(8.3, 1.6, "Ideal", color=PALETTE["muted"], fontsize=15)
+    ax.text(6.2, 7.2, "Actual", color=PALETTE["gold"], fontsize=15)
+    ax.set_xlim(0, 10.6)
+    ax.set_ylim(0, 11)
+    _bare(ax, "Days in the sprint \u2192", "Work remaining \u2192")
+    return _save(plt, fig, "burndown")
+
+
+@figure("playtest-session")
+def playtest_session():
+    """The test script Fullerton asks for, as a timeline. The play session is
+    the short part: most of the hour is framing it and talking afterwards."""
+    plt = _plt()
+    fig, ax = plt.subplots(figsize=(9.0, 3.0))
+    parts = [
+        ("Introduction", 3, PALETTE["muted"]),
+        ("Warm-up", 5, PALETTE["teal"]),
+        ("Play session", 20, PALETTE["gold"]),
+        ("Discussion", 20, PALETTE["accent"]),
+        ("Wrap-up", 5, PALETTE["violet"]),
+    ]
+    x = 0
+    for k, (label, mins, colour) in enumerate(parts):
+        ax.add_patch(plt.matplotlib.patches.Rectangle(
+            (x, 0), mins, 1, facecolor=colour, alpha=0.22,
+            edgecolor=PALETTE["muted"], linewidth=1.2))
+        # The three-minute block is too narrow for its own name, so the
+        # labels step up and down on a leader rather than colliding.
+        top = 1.9 if k % 2 else 1.3
+        ax.plot([x + mins / 2, x + mins / 2], [1.05, top - 0.08], color=DIM,
+                lw=1.1)
+        ax.text(x + mins / 2, top, label, color=PALETTE["text"], fontsize=15,
+                ha="center", va="bottom")
+        ax.text(x + mins / 2, 0.5, f"{mins} min", color=PALETTE["muted"],
+                fontsize=13, ha="center", va="center")
+        x += mins
+    ax.annotate("", (0, -0.5), (x, -0.5),
+                arrowprops=dict(arrowstyle="<->", color=PALETTE["muted"], lw=1.4))
+    ax.text(x / 2, -1.05, "About an hour per playtester", color=PALETTE["muted"],
+            fontsize=14, ha="center")
+    ax.set_xlim(-2.5, x + 2.5)
+    ax.set_ylim(-1.5, 2.6)
+    ax.axis("off")
+    return _save(plt, fig, "playtest-session")
+
+
+@figure("playtest-notes")
+def playtest_notes():
+    """The three parts of Fullerton's note-taking form. Her own form is a
+    full page of her questions, so this is the structure, not the content."""
+    plt = _plt()
+    fig, ax = plt.subplots(figsize=(9.0, 3.6))
+    cols = [
+        ("In-game observations", "what they did, chose,\nfound, got stuck on",
+         PALETTE["teal"], "while they play"),
+        ("Post-game questions", "appeal, challenge,\nunderstanding, changes",
+         PALETTE["gold"], "after they play"),
+        ("Revision ideas", "yours, written while\nit is still fresh",
+         PALETTE["accent"], "after they leave"),
+    ]
+    for k, (title, body, colour, when) in enumerate(cols):
+        x = k * 3.8
+        ax.add_patch(plt.matplotlib.patches.FancyBboxPatch(
+            (x, 0), 3.0, 2.4, boxstyle="round,pad=0.06,rounding_size=0.12",
+            facecolor=colour, alpha=0.16, edgecolor=PALETTE["muted"],
+            linewidth=1.3))
+        ax.text(x + 1.5, 1.92, title, color=PALETTE["text"], fontsize=15,
+                ha="center", va="center")
+        ax.text(x + 1.5, 1.15, body, color=PALETTE["muted"], fontsize=13,
+                ha="center", va="center", linespacing=1.4)
+        ax.text(x + 1.5, 0.35, when, color=colour, fontsize=13, ha="center",
+                va="center")
+    ax.set_xlim(-0.3, 10.9)
+    ax.set_ylim(-0.3, 2.7)
+    ax.axis("off")
+    return _save(plt, fig, "playtest-notes")
+
+
+@figure("playtest-observation")
+def playtest_observation():
+    """Where everyone sits. The slide's advice -- run it yourself or watch
+    from a distance -- is a diagram, and it is easier to follow as one."""
+    return _dot("playtest-observation", _graph("""
+  tester [label="Playtester" color="%(gold)s"];
+  game   [label="The game,\nunexplained"];
+  aloud  [label="Thinking aloud" shape=plaintext color="%(bg)s"];
+  you    [label="You: watching,\nnot helping" color="%(accent)s"];
+  notes  [label="Notes and\nrecording"];
+  tester -> game [label="plays"];
+  tester -> aloud;
+  aloud -> you;
+  you -> notes;
+  { rank=same; tester; game; }
+""" % dict(PALETTE, bg=BG), rankdir="LR", ranksep="0.5"))
+
 # --------------------------------------------------------------------- lint
 
 def _luminance(hex_colour: str) -> float:
@@ -650,7 +829,8 @@ def check_svg(path: pathlib.Path, spec: dict | None) -> list[str]:
     if spec:
         alt = spec.get("alt", "")
         if not alt:
-            bad.append(f"{path.name}: no alt text in deck-images.json")
+            bad.append(f"{path.name}: no alt text in deck-images.json "
+                       "or deck-extras.json")
         elif len(alt) > 160:
             bad.append(f"{path.name}: alt text is {len(alt)} chars (keep under 160)")
         if not spec.get("credit"):
@@ -698,12 +878,23 @@ def main() -> int:
     ap.add_argument("only", nargs="*", help="figure names (default: all)")
     args = ap.parse_args()
 
+    # A figure that replaces a source picture is described in
+    # deck-images.json; one drawn for a slide that never had a picture is
+    # described in deck-extras.json. Both carry the alt, credit and taught
+    # terms this lints against.
     specs = {}
     images = HERE / "deck-images.json"
     if images.exists():
         for entry in json.loads(images.read_text()).values():
             if entry.get("kind") == "figure" and entry.get("file"):
                 specs[pathlib.Path(entry["file"]).stem] = entry
+    extras = HERE / "deck-extras.json"
+    if extras.exists():
+        for entries in json.loads(extras.read_text()).values():
+            for entry in entries:
+                f = entry.get("file", "")
+                if f.startswith("figures/"):
+                    specs[pathlib.Path(f).stem] = entry
 
     names = args.only or sorted(_figures)
     unknown = [n for n in names if n not in _figures]

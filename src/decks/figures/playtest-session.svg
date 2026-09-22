@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="527.633017pt" height="183.6pt" viewBox="0 0 527.633017 183.6" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-22T14:50:12.209275</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 183.6 
+L 527.633017 183.6 
+L 527.633017 0 
+L 0 0 
+L 0 183.6 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 38.439569 114.11122 
+L 64.415431 114.11122 
+L 64.415431 73.545366 
+L 38.439569 73.545366 
+z
+" clip-path="url(#pc840d16a56)" style="fill: #9aa3ab; opacity: 0.22; stroke: #9aa3ab; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 64.415431 114.11122 
+L 107.708534 114.11122 
+L 107.708534 73.545366 
+L 64.415431 73.545366 
+z
+" clip-path="url(#pc840d16a56)" style="fill: #5ec9c0; opacity: 0.22; stroke: #9aa3ab; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 107.708534 114.11122 
+L 280.880948 114.11122 
+L 280.880948 73.545366 
+L 107.708534 73.545366 
+z
+" clip-path="url(#pc840d16a56)" style="fill: #e9b44c; opacity: 0.22; stroke: #9aa3ab; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 280.880948 114.11122 
+L 454.053362 114.11122 
+L 454.053362 73.545366 
+L 280.880948 73.545366 
+z
+" clip-path="url(#pc840d16a56)" style="fill: #be830e; opacity: 0.22; stroke: #9aa3ab; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 454.053362 114.11122 
+L 497.346466 114.11122 
+L 497.346466 73.545366 
+L 454.053362 73.545366 
+z
+" clip-path="url(#pc840d16a56)" style="fill: #c3a6f0; opacity: 0.22; stroke: #9aa3ab; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 51.4275 71.517073 
+L 51.4275 64.620878 
+" clip-path="url(#pc840d16a56)" style="fill: none; stroke: #6f7a84; stroke-width: 1.1; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 86.061983 71.517073 
+L 86.061983 40.281366 
+" clip-path="url(#pc840d16a56)" style="fill: none; stroke: #6f7a84; stroke-width: 1.1; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 194.294741 71.517073 
+L 194.294741 64.620878 
+" clip-path="url(#pc840d16a56)" style="fill: none; stroke: #6f7a84; stroke-width: 1.1; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 367.467155 71.517073 
+L 367.467155 40.281366 
+" clip-path="url(#pc840d16a56)" style="fill: none; stroke: #6f7a84; stroke-width: 1.1; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 475.699914 71.517073 
+L 475.699914 64.620878 
+" clip-path="url(#pc840d16a56)" style="fill: none; stroke: #6f7a84; stroke-width: 1.1; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: #f2f2f2; font: 15px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="51.4275" y="58.961547" transform="rotate(-0 51.4275 58.961547)">Introduction</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: #9aa3ab; font: 13px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="51.4275" y="97.611496" transform="rotate(-0 51.4275 97.611496)">3 min</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: #f2f2f2; font: 15px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="86.061983" y="34.622035" transform="rotate(-0 86.061983 34.622035)">Warm-up</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: #9aa3ab; font: 13px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="86.061983" y="97.611496" transform="rotate(-0 86.061983 97.611496)">5 min</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: #f2f2f2; font: 15px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="194.294741" y="58.90061" transform="rotate(-0 194.294741 58.90061)">Play session</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: #9aa3ab; font: 13px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="194.294741" y="97.611496" transform="rotate(-0 194.294741 97.611496)">20 min</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: #f2f2f2; font: 15px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="367.467155" y="34.622035" transform="rotate(-0 367.467155 34.622035)">Discussion</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: #9aa3ab; font: 13px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="367.467155" y="97.611496" transform="rotate(-0 367.467155 97.611496)">20 min</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: #f2f2f2; font: 15px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="475.699914" y="58.961547" transform="rotate(-0 475.699914 58.961547)">Wrap-up</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: #9aa3ab; font: 13px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="475.699914" y="97.611496" transform="rotate(-0 475.699914 97.611496)">5 min</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 493.782043 134.394146 
+Q 267.892149 134.394146 42.002254 134.394146 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 487.782043 131.394146 
+L 493.782043 134.394146 
+L 487.782043 137.394146 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 48.002254 137.394146 
+L 42.002254 134.394146 
+L 48.002254 131.394146 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="text_11">
+    <text style="fill: #9aa3ab; font: 14px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="267.893017" y="156.705366" transform="rotate(-0 267.893017 156.705366)">About an hour per playtester</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pc840d16a56">
+   <rect x="16.793017" y="8.64" width="502.2" height="166.32"/>
+  </clipPath>
+ </defs>
+</svg>

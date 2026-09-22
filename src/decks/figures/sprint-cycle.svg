@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+
+<svg width="635pt" height="527pt"
+ viewBox="0.00 0.00 635.00 527.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 522.96)">
+<title>G</title>
+
+<g id="node1" class="node">
+<title>backlog</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M466.01,-44.16C466.01,-44.16 284.33,-44.16 284.33,-44.16 278.33,-44.16 272.33,-38.16 272.33,-32.16 272.33,-32.16 272.33,-12 272.33,-12 272.33,-6 278.33,0 284.33,0 284.33,0 466.01,0 466.01,0 472.01,0 478.01,-6 478.01,-12 478.01,-12 478.01,-32.16 478.01,-32.16 478.01,-38.16 472.01,-44.16 466.01,-44.16"/>
+<text xml:space="preserve" text-anchor="middle" x="375.17" y="-15.08" font-family='"Public Sans", system-ui, sans-serif' font-size="20.00" fill="#f2f2f2">Prioritised backlog</text>
+</g>
+
+<g id="node2" class="node">
+<title>plan</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M171.18,-134.84C171.18,-134.84 21,-134.84 21,-134.84 15,-134.84 9,-128.84 9,-122.84 9,-122.84 9,-102.68 9,-102.68 9,-96.68 15,-90.68 21,-90.68 21,-90.68 171.18,-90.68 171.18,-90.68 177.18,-90.68 183.18,-96.68 183.18,-102.68 183.18,-102.68 183.18,-122.84 183.18,-122.84 183.18,-128.84 177.18,-134.84 171.18,-134.84"/>
+<text xml:space="preserve" text-anchor="middle" x="96.09" y="-105.76" font-family='"Public Sans", system-ui, sans-serif' font-size="20.00" fill="#f2f2f2">Sprint planning</text>
+</g>
+
+<g id="edge1" class="edge">
+<title>backlog&#45;&gt;plan</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M305.11,-44.85C265.88,-57.59 216.81,-73.53 176.08,-86.77"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="175.23,-84.1 168.49,-89.24 176.96,-89.43 175.23,-84.1"/>
+</g>
+
+<g id="node3" class="node">
+<title>build</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M180.18,-428.28C180.18,-428.28 12,-428.28 12,-428.28 6,-428.28 0,-422.28 0,-416.28 0,-416.28 0,-396.12 0,-396.12 0,-390.12 6,-384.12 12,-384.12 12,-384.12 180.18,-384.12 180.18,-384.12 186.18,-384.12 192.18,-390.12 192.18,-396.12 192.18,-396.12 192.18,-416.28 192.18,-416.28 192.18,-422.28 186.18,-428.28 180.18,-428.28"/>
+<text xml:space="preserve" text-anchor="middle" x="96.09" y="-399.2" font-family='"Public Sans", system-ui, sans-serif' font-size="20.00" fill="#f2f2f2">Build (2&#45;4 weeks)</text>
+</g>
+
+<g id="edge2" class="edge">
+<title>plan&#45;&gt;build</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M96.09,-135.3C96.09,-186.83 96.09,-313.42 96.09,-373.51"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="93.29,-373.17 96.09,-381.17 98.89,-373.17 93.29,-373.17"/>
+</g>
+
+<g id="node4" class="node">
+<title>demo</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M424.39,-518.96C424.39,-518.96 325.96,-518.96 325.96,-518.96 319.96,-518.96 313.96,-512.96 313.96,-506.96 313.96,-506.96 313.96,-486.8 313.96,-486.8 313.96,-480.8 319.96,-474.8 325.96,-474.8 325.96,-474.8 424.39,-474.8 424.39,-474.8 430.39,-474.8 436.39,-480.8 436.39,-486.8 436.39,-486.8 436.39,-506.96 436.39,-506.96 436.39,-512.96 430.39,-518.96 424.39,-518.96"/>
+<text xml:space="preserve" text-anchor="middle" x="375.17" y="-489.88" font-family='"Public Sans", system-ui, sans-serif' font-size="20.00" fill="#f2f2f2">Demo day</text>
+</g>
+
+<g id="edge3" class="edge">
+<title>build&#45;&gt;demo</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M166.15,-428.97C208.1,-442.6 261.28,-459.88 303.51,-473.6"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="302.39,-476.18 310.86,-475.99 304.12,-470.85 302.39,-476.18"/>
+</g>
+
+<g id="node5" class="node">
+<title>retro</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M615.24,-281.56C615.24,-281.56 480.06,-281.56 480.06,-281.56 474.06,-281.56 468.06,-275.56 468.06,-269.56 468.06,-269.56 468.06,-249.4 468.06,-249.4 468.06,-243.4 474.06,-237.4 480.06,-237.4 480.06,-237.4 615.24,-237.4 615.24,-237.4 621.24,-237.4 627.24,-243.4 627.24,-249.4 627.24,-249.4 627.24,-269.56 627.24,-269.56 627.24,-275.56 621.24,-281.56 615.24,-281.56"/>
+<text xml:space="preserve" text-anchor="middle" x="547.65" y="-252.48" font-family='"Public Sans", system-ui, sans-serif' font-size="20.00" fill="#f2f2f2">Retrospective</text>
+</g>
+
+<g id="edge4" class="edge">
+<title>demo&#45;&gt;retro</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M391.71,-474.12C422.81,-431.31 490.04,-338.79 525.19,-290.39"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="527.31,-292.25 529.74,-284.13 522.78,-288.96 527.31,-292.25"/>
+</g>
+
+<g id="edge5" class="edge">
+<title>retro&#45;&gt;backlog</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M531.12,-236.72C500.01,-193.91 432.79,-101.38 397.63,-52.99"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="400.05,-51.56 393.08,-46.73 395.52,-54.85 400.05,-51.56"/>
+</g>
+</g>
+</svg>

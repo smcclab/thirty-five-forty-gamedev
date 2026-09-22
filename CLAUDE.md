@@ -21,7 +21,9 @@ Penny Kyburz and reuse should be confirmed with her; the deck converter must
 never extract images from the slide relationship list (they are webcam stills
 of the lecturer); what happens to each slide figure is set per-picture in
 `scripts/deck-images.json` (published, redrawn by
-`scripts/make-deck-figures.py`, turned into a table, or dropped); and the
+`scripts/make-deck-figures.py`, turned into a table, or dropped), while an
+image *added* to a slide that never had one is set in
+`scripts/deck-extras.json`; and the
 peer-assessment spreadsheets, the tutor brief and student names must not be
 published.
 
@@ -120,8 +122,12 @@ the comp1720 and comp4350 repos.
   styled in `src/decks/theme.css`, layered over the theme's `deck.css`; the
   stylesheet also has to cope with dense converted slides, so it steps the
   font size down as a slide's bullet count grows and lays several images out
-  in a row. Background images would be `![bg contain|cover](./assets/<path>)`
-  from `src/decks/assets/`.
+  in a row. A background image is `![bg cover|contain](./photos/<file>)`, and
+  the slides that carry one are generated from `scripts/deck-extras.json`
+  (see `IMAGE-PLAN.md`); deck imagery lives in `src/decks/` --- `photos/`
+  (workshop and Unsplash photography), `figures/` (our own SVG drawings),
+  `assets/<deck>/` (pictures extracted from the source slides) --- because
+  only `src/decks/` is copied into `dist/`.
 - `src/pages/` --- `index.mdx` (home, with `CourseJsonLd`), `policies.mdx`,
   `404.mdx`, and the collection index pages (`lectures/index.mdx`,
   `workshops/index.mdx`, `assessments/index.mdx`, `resources/index.mdx`) which
@@ -162,13 +168,18 @@ python3 scripts/convert-pptx-decks.py                                      # reg
 python3 scripts/convert-pptx-decks.py --review /tmp/deck-images            # triage slide figures
 python3 scripts/make-deck-figures.py                                       # redraw src/decks/figures/*.svg
 python3 scripts/make-deck-figures.py --check                               # lint them
+python3 scripts/fetch-deck-photos.py search "sticky notes wall"            # Unsplash candidates + contact sheet
+python3 scripts/fetch-deck-photos.py get <photo-id>                        # download one into src/decks/photos/
+python3 scripts/fetch-deck-photos.py audit                                 # re-check their licences (Unsplash+ is watermarked)
 ```
 
 **Work in progress: `IMAGE-PLAN.md`.** The decks are being brought up to the
-0.6 images-per-slide that comp1720 and comp4350 run at. Phases 1 (redrawn
-figures) and 2 (game screenshots) are done; Phase 3 adds images to the slides
-that never had one, starting with the five decks still at zero. Read that file
-before doing any image work, and delete it when the decks reach the target.
+0.6 images-per-slide that comp1720 and comp4350 run at; they sit at 0.25.
+Phases 1 (redrawn figures) and 2 (game screenshots) are done, and so are the
+five decks that had no images at all. Read that file before doing any image
+work, and delete it when the decks reach the target. **The next job it records
+is a formatting pass**, not more images: the generated slides often do not
+make sense as rendered.
 
 The decks teach from Fullerton and Schell, whose figures cannot be
 republished, so the conceptual ones are **redrawn** as original transparent

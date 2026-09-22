@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="482.633125pt" height="275.841394pt" viewBox="0 0 482.633125 275.841394" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-22T14:49:20.286517</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 275.841394 
+L 482.633125 275.841394 
+L 482.633125 0 
+L 0 0 
+L 0 275.841394 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 27.593125 248.337331 
+L 473.993125 248.337331 
+L 473.993125 9.945331 
+L 27.593125 9.945331 
+L 27.593125 248.337331 
+z
+" style="fill: none"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="text_1">
+     <text style="fill: #f2f2f2; font: 15px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="250.793125" y="264.726394" transform="rotate(-0 250.793125 264.726394)">Days in the sprint →</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="text_2">
+     <text style="fill: #f2f2f2; font: 15px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="21.029062" y="129.141331" transform="rotate(-90 21.029062 129.141331)">Work remaining →</text>
+    </g>
+   </g>
+   <g id="line2d_1">
+    <path d="M 27.593125 31.617331 
+L 448.7252 248.337331 
+" clip-path="url(#p1e9d2bb4d8)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #6f7a84; stroke-width: 2"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 27.593125 31.617331 
+L 69.706333 40.286131 
+L 111.81954 53.289331 
+L 153.932748 57.623731 
+L 196.045955 33.784531 
+L 238.159163 53.289331 
+L 280.27237 87.964531 
+L 322.385578 113.970931 
+L 364.498785 152.980531 
+L 406.611993 196.324531 
+L 448.7252 235.334131 
+" clip-path="url(#p1e9d2bb4d8)" style="fill: none; stroke: #e9b44c; stroke-width: 2.6; stroke-linecap: square"/>
+    <defs>
+     <path id="mc9a65cdee3" d="M 0 2.5 
+C 0.663008 2.5 1.29895 2.236584 1.767767 1.767767 
+C 2.236584 1.29895 2.5 0.663008 2.5 0 
+C 2.5 -0.663008 2.236584 -1.29895 1.767767 -1.767767 
+C 1.29895 -2.236584 0.663008 -2.5 0 -2.5 
+C -0.663008 -2.5 -1.29895 -2.236584 -1.767767 -1.767767 
+C -2.236584 -1.29895 -2.5 -0.663008 -2.5 0 
+C -2.5 0.663008 -2.236584 1.29895 -1.767767 1.767767 
+C -1.29895 2.236584 -0.663008 2.5 0 2.5 
+z
+" style="stroke: #e9b44c"/>
+    </defs>
+    <g clip-path="url(#p1e9d2bb4d8)">
+     <use xlink:href="#mc9a65cdee3" x="27.593125" y="31.617331" style="fill: #e9b44c; stroke: #e9b44c"/>
+     <use xlink:href="#mc9a65cdee3" x="69.706333" y="40.286131" style="fill: #e9b44c; stroke: #e9b44c"/>
+     <use xlink:href="#mc9a65cdee3" x="111.81954" y="53.289331" style="fill: #e9b44c; stroke: #e9b44c"/>
+     <use xlink:href="#mc9a65cdee3" x="153.932748" y="57.623731" style="fill: #e9b44c; stroke: #e9b44c"/>
+     <use xlink:href="#mc9a65cdee3" x="196.045955" y="33.784531" style="fill: #e9b44c; stroke: #e9b44c"/>
+     <use xlink:href="#mc9a65cdee3" x="238.159163" y="53.289331" style="fill: #e9b44c; stroke: #e9b44c"/>
+     <use xlink:href="#mc9a65cdee3" x="280.27237" y="87.964531" style="fill: #e9b44c; stroke: #e9b44c"/>
+     <use xlink:href="#mc9a65cdee3" x="322.385578" y="113.970931" style="fill: #e9b44c; stroke: #e9b44c"/>
+     <use xlink:href="#mc9a65cdee3" x="364.498785" y="152.980531" style="fill: #e9b44c; stroke: #e9b44c"/>
+     <use xlink:href="#mc9a65cdee3" x="406.611993" y="196.324531" style="fill: #e9b44c; stroke: #e9b44c"/>
+     <use xlink:href="#mc9a65cdee3" x="448.7252" y="235.334131" style="fill: #e9b44c; stroke: #e9b44c"/>
+    </g>
+   </g>
+   <g id="line2d_3">
+    <path d="M 196.045955 33.784531 
+" clip-path="url(#p1e9d2bb4d8)" style="fill: none; stroke: #f08a7a; stroke-width: 1.5; stroke-linecap: square"/>
+    <defs>
+     <path id="m4447db9665" d="M 0 4.5 
+C 1.193414 4.5 2.338109 4.025852 3.181981 3.181981 
+C 4.025852 2.338109 4.5 1.193414 4.5 0 
+C 4.5 -1.193414 4.025852 -2.338109 3.181981 -3.181981 
+C 2.338109 -4.025852 1.193414 -4.5 0 -4.5 
+C -1.193414 -4.5 -2.338109 -4.025852 -3.181981 -3.181981 
+C -4.025852 -2.338109 -4.5 -1.193414 -4.5 0 
+C -4.5 1.193414 -4.025852 2.338109 -3.181981 3.181981 
+C -2.338109 4.025852 -1.193414 4.5 0 4.5 
+z
+" style="stroke: #f08a7a"/>
+    </defs>
+    <g clip-path="url(#p1e9d2bb4d8)">
+     <use xlink:href="#m4447db9665" x="196.045955" y="33.784531" style="fill: #f08a7a; stroke: #f08a7a"/>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 27.593125 248.337331 
+L 27.593125 9.945331 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.4; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 27.593125 248.337331 
+L 473.993125 248.337331 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.4; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_3">
+    <text style="fill: #f08a7a; font: 15px 'Public Sans', 'system-ui', sans-serif; text-anchor: start" x="202.045955" y="19.784531" transform="rotate(-0 202.045955 19.784531)">Scope added</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: #9aa3ab; font: 15px 'Public Sans', 'system-ui', sans-serif; text-anchor: start" x="377.132748" y="213.662131" transform="rotate(-0 377.132748 213.662131)">Ideal</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: #e9b44c; font: 15px 'Public Sans', 'system-ui', sans-serif; text-anchor: start" x="288.695012" y="92.298931" transform="rotate(-0 288.695012 92.298931)">Actual</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p1e9d2bb4d8">
+   <rect x="27.593125" y="9.945331" width="446.4" height="238.392"/>
+  </clipPath>
+ </defs>
+</svg>

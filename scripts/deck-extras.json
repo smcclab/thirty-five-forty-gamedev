@@ -1,0 +1,381 @@
+{
+  "week02-3-prototyping": [
+    {
+      "after_source_slide": 3,
+      "file": "photos/prototyping-materials.jpg",
+      "layout": "bg cover",
+      "alt": "A desk covered in felt pens, pom-poms, modelling clay and a sheet of sketched game ideas.",
+      "caption": "A prototype is made of whatever is on the table. Nothing here takes more than a minute to change.",
+      "credit": "COMP3540 workshop, 2024"
+    },
+    {
+      "after_source_slide": 6,
+      "file": "photos/paper-grid-prototype.jpg",
+      "layout": "bg cover",
+      "alt": "Coloured buttons and foam triangles placed on a grid drawn in pencil on a sheet of paper.",
+      "caption": "A grid, some buttons, a legend down the side: enough to play a turn and find out whether the rule works.",
+      "credit": "COMP3540 workshop, 2024"
+    },
+    {
+      "after_source_slide": 7,
+      "file": "photos/sticks-and-counters.jpg",
+      "layout": "bg cover",
+      "alt": "A hand laying out coloured matchsticks above a flower of buttons on white paper.",
+      "caption": "Start with the action the player repeats: lay it out, do it by hand, see whether it is worth doing twice.",
+      "credit": "COMP3540 workshop, 2024"
+    },
+    {
+      "after_source_slide": 8,
+      "file": "photos/maze-prototype.jpg",
+      "layout": "bg cover",
+      "alt": "A circular maze drawn on blue card, scattered with googly eyes, counters and a torn paper square labelled MAP.",
+      "caption": "Foundation: a space, the pieces that move in it, and one resource worth crossing it for.",
+      "credit": "COMP3540 workshop, 2024"
+    },
+    {
+      "after_source_slide": 9,
+      "file": "photos/block-layout.jpg",
+      "layout": "bg cover",
+      "alt": "Yellow and orange paper tiles and green triangles arranged as platforms between two red rails on black card.",
+      "caption": "Structure: the rails and platforms first. Weapons, vehicles and scoring are features, and each one brings ten more rules.",
+      "credit": "COMP3540 workshop, 2024"
+    },
+    {
+      "after_source_slide": 10,
+      "file": "photos/path-prototype.jpg",
+      "layout": "bg cover",
+      "alt": "Pipe cleaners and foam shapes laid on black card as a branching path between a start token and a goal disc.",
+      "caption": "Formal details: add one rule, play it, keep it only if the game cannot work without it.",
+      "credit": "COMP3540 workshop, 2024"
+    },
+    {
+      "after_source_slide": 11,
+      "file": "photos/striped-prototype.jpg",
+      "layout": "bg cover",
+      "alt": "Folded red paper strips over black card forming a side-on platform level, with a pipe-cleaner creature and hand-drawn pickup tokens.",
+      "caption": "Refinement: the pickups and the enemy come last, one at a time, each tested and written up.",
+      "credit": "COMP3540 workshop, 2024"
+    },
+    {
+      "after_source_slide": 12,
+      "file": "photos/terrain-cutouts.jpg",
+      "layout": "bg cover",
+      "alt": "Torn paper mountains standing up from a grey card base, with counters marking positions in the valley between them.",
+      "caption": "Paper answers the design questions. How the terrain reads, and how it feels to move through, is a question for the digital build.",
+      "credit": "COMP3540 workshop, 2024"
+    },
+    {
+      "after_source_slide": 13,
+      "file": "photos/storyboard-sketches.jpg",
+      "layout": "bg cover",
+      "alt": "Two sheets of marker sketches: labelled ability icons above, and three hand-drawn monster designs below.",
+      "caption": "An aesthetic prototype: icons and characters drawn in minutes, to settle what the game looks like before anything is modelled.",
+      "credit": "COMP3540 workshop, 2024"
+    },
+    {
+      "after_source_slide": 14,
+      "file": "photos/clay-creature.jpg",
+      "layout": "bg cover",
+      "alt": "A modelling-clay character with a pipe-cleaner weapon, standing on blue card labelled Main Character.",
+      "caption": "Build the toy first. If the character is not fun to pick up and move, no amount of technology will fix it.",
+      "credit": "COMP3540 workshop, 2024"
+    }
+  ],
+  "week01-1-play-and-games": [
+    {
+      "after_source_slide": 3,
+      "file": "photos/alaric-sim-0N4UJja6jEU-unsplash.jpg",
+      "layout": "bg cover",
+      "alt": "Two small children in a park, one reaching up to catch a red balloon.",
+      "caption": "Play first, games later: loud, physical, unscripted, and not obviously for anything.",
+      "credit": "Photo by Alaric Sim on Unsplash"
+    },
+    {
+      "after_source_slide": 4,
+      "file": "photos/jamie-street-uNNCs5kL70Q-unsplash.jpg",
+      "layout": "bg cover",
+      "alt": "A retriever standing in a muddy track carrying a branch far longer than itself.",
+      "caption": "Nobody taught the dog this. Play rehearses the skills the adult will need.",
+      "credit": "Photo by Jamie Street on Unsplash"
+    },
+    {
+      "after_source_slide": 6,
+      "file": "photos/nicholas-wilson-5r6xg6MAnnY-unsplash.jpg",
+      "layout": "bg cover",
+      "alt": "Runners in lanes on a track, one ahead of the field.",
+      "caption": "Agon: competition. The contest is the point, and the rules make it fair enough to be worth winning.",
+      "credit": "Photo by Nicholas Wilson on Unsplash"
+    },
+    {
+      "after_source_slide": 6,
+      "file": "photos/jonathan-greenaway-TNUEQ73frkA-unsplash.jpg",
+      "layout": "bg cover",
+      "alt": "Wooden dice tumbling in mid-air against a black background.",
+      "caption": "Alea: chance. The player submits to the roll, which is exactly why it is exciting.",
+      "credit": "Photo by Jonathan Greenaway on Unsplash"
+    },
+    {
+      "after_source_slide": 6,
+      "file": "photos/llanydd-lloyd-5kL77tAHTqQ-unsplash.jpg",
+      "layout": "bg cover",
+      "alt": "A stall of ornate Venetian carnival masks in reds, golds and blues.",
+      "caption": "Mimicry: make-believe. The mask is permission to be someone else for a while.",
+      "credit": "Photo by Llanydd Lloyd on Unsplash"
+    },
+    {
+      "after_source_slide": 6,
+      "file": "photos/kiko-camaclang-eM9BhjDCmO0-unsplash.jpg",
+      "layout": "bg cover",
+      "alt": "A swing carousel spinning at night, its lights drawn into streaks.",
+      "caption": "Ilinx: vertigo. Play that works on the body by disturbing it.",
+      "credit": "Photo by Kiko Camaclang on Unsplash"
+    },
+    {
+      "after_source_slide": 8,
+      "file": "photos/2h-media-pm7QgL2pnSQ-unsplash.jpg",
+      "layout": "bg cover",
+      "alt": "Two people leaning over a brightly coloured board game, mid-turn, cards and money spread around it.",
+      "caption": "A game is play with structure: the rules are the rigid part, and the freedom to act inside them is the play.",
+      "credit": "Photo by 2H Media on Unsplash"
+    },
+    {
+      "after_source_slide": 9,
+      "file": "photos/hassan-pasha-7SjEuEF06Zw-unsplash.jpg",
+      "layout": "bg cover",
+      "alt": "A black chess knight and a white chess knight facing each other on a board.",
+      "caption": "A closed formal system, structured conflict, an unequal outcome. Entered willingly.",
+      "credit": "Photo by Hassan Pasha on Unsplash"
+    },
+    {
+      "after_source_slide": 10,
+      "file": "photos/2h-media-43AGGcjA5tA-unsplash.jpg",
+      "layout": "bg cover",
+      "alt": "Two players reaching across a dark table strewn with tokens and cards mid-game.",
+      "caption": "Inside the magic circle a piece of cardboard is a territory worth fighting over. The lusory attitude is what puts it there.",
+      "credit": "Photo by 2H Media on Unsplash"
+    },
+    {
+      "after_source_slide": 11,
+      "file": "photos/m-f-fb0_wj2MZk4-unsplash.jpg",
+      "layout": "bg cover",
+      "alt": "A long dining table laid with candles and flowers in a dark room, before the guests arrive.",
+      "caption": "You can set the table, but you cannot make the party. The game affords the experience; the experience happens between the player and the game.",
+      "credit": "Photo by M F on Unsplash"
+    }
+  ],
+  "week02-2-idea-generation": [
+    {
+      "after_source_slide": 3,
+      "file": "photos/hugo-rocha-qFpnvZ_j9HU-unsplash.jpg",
+      "layout": "bg cover",
+      "alt": "A wall covered in hundreds of clustered sticky notes in green, yellow and pink.",
+      "caption": "Put it on the wall and go for a hundred. Criticism comes later, on a different day.",
+      "credit": "Photo by Hugo Rocha on Unsplash"
+    },
+    {
+      "after_source_slide": 4,
+      "file": "photos/am-lie-mourichon-xZgvBXDB9wE-unsplash.jpg",
+      "layout": "bg cover",
+      "alt": "Hand-drawn screen sketches and a connected node diagram spread across a desk.",
+      "caption": "Vary the method: lists, cards, mind maps, cut-ups. Different structures suit different people.",
+      "credit": "Photo by Amélie Mourichon on Unsplash"
+    },
+    {
+      "after_source_slide": 5,
+      "file": "photos/lvaro-bernal-QPRd_UC3nE4-unsplash.jpg",
+      "layout": "bg cover",
+      "alt": "A person pinning hand-drawn sketches onto a wall already covered with them.",
+      "caption": "The writing on the wall: get up, sketch, and let the space remember where the ideas are.",
+      "credit": "Photo by Álvaro Bernal on Unsplash"
+    },
+    {
+      "after_source_slide": 6,
+      "file": "figures/idea-filters.svg",
+      "layout": "figure",
+      "alt": "Five gates in a row between a long list of ideas and the list worth testing: can you build it, will people play it, do you love it, can you afford it.",
+      "credit": "Drawn for COMP3540 from Fullerton pp. 181-182",
+      "terms": [
+        "A long list",
+        "build it",
+        "play it",
+        "love it",
+        "afford it"
+      ]
+    },
+    {
+      "after_source_slide": 7,
+      "file": "figures/narrowing-the-list.svg",
+      "layout": "figure",
+      "alt": "A funnel from everything brainstormed, to a shortlist of five to ten, to three ideas, to one game, with a loop back to brainstorm each again.",
+      "credit": "Drawn for COMP3540 from Fullerton pp. 182-188",
+      "terms": [
+        "Shortlist",
+        "Three ideas",
+        "One game"
+      ]
+    },
+    {
+      "after_source_slide": 8,
+      "file": "photos/annotated-design.jpg",
+      "layout": "bg cover",
+      "alt": "A workshop desk with an annotated design sheet, a pencilled grid and modelling materials.",
+      "caption": "Something changes when you pick one. The flaws get clearer, and so do the reasons you chose it.",
+      "credit": "COMP3540 workshop, 2024"
+    },
+    {
+      "after_source_slide": 9,
+      "file": "photos/spec-worksheet.jpg",
+      "layout": "bg cover",
+      "alt": "A paper worksheet mapping out a game with coloured sticks, counters and labels for monsters, treasure and health.",
+      "caption": "Turning an idea into a game starts with the formal elements: rules, procedures, turns, players, goals.",
+      "credit": "COMP3540 workshop, 2024"
+    },
+    {
+      "after_source_slide": 10,
+      "file": "photos/design-diagram.jpg",
+      "layout": "bg cover",
+      "alt": "A ruled notebook page with a hand-drawn diagram of level sections, annotated with jumps, enemies and checkpoints.",
+      "caption": "Map a typical turn or the core loop as a flowchart. It is the fastest way to find the rule you have not written.",
+      "credit": "COMP3540 workshop, 2024"
+    }
+  ],
+  "week07-1-agile-game-dev": [
+    {
+      "after_source_slide": 4,
+      "file": "photos/jo-szczepanska-5aiRb5f464A-unsplash.jpg",
+      "layout": "bg cover",
+      "alt": "A person adding a sticky note to a wall plan already dense with notes under handwritten headings.",
+      "caption": "The backlog is a list sorted by priority. Things are added, removed and reordered every sprint.",
+      "credit": "Photo by Jo Szczepanska on Unsplash"
+    },
+    {
+      "after_source_slide": 4,
+      "file": "figures/sprint-cycle.svg",
+      "layout": "figure",
+      "alt": "A loop from a prioritised backlog through sprint planning, two to four weeks of building, demo day and a retrospective, back to the backlog.",
+      "credit": "Drawn for COMP3540 from Schell pp. 103-105 and Fullerton pp. 431-440",
+      "terms": [
+        "Prioritised backlog",
+        "Sprint planning",
+        "Demo day",
+        "Retrospective"
+      ]
+    },
+    {
+      "after_source_slide": 5,
+      "file": "photos/sable-flow-KHpjeuaWOec-unsplash.jpg",
+      "layout": "bg cover",
+      "alt": "A small team standing and sitting together in a sunlit office, one holding a tablet, mid-discussion.",
+      "caption": "Scrum: ten minutes, standing up. What I did, what I am doing, what is in my way. Solutions afterwards.",
+      "credit": "Photo by Sable Flow on Unsplash"
+    },
+    {
+      "after_source_slide": 6,
+      "file": "figures/burndown.svg",
+      "layout": "figure",
+      "alt": "A burndown chart: work remaining against days in the sprint, with the real line above the ideal one and a jump where scope was added.",
+      "credit": "Drawn for COMP3540 from Fullerton pp. 431-440",
+      "terms": [
+        "Ideal",
+        "Actual",
+        "Scope added"
+      ]
+    }
+  ],
+  "week09-2-conducting-playtesting": [
+    {
+      "after_source_slide": 3,
+      "file": "figures/playtest-observation.svg",
+      "layout": "figure",
+      "alt": "Playtester plays the game unexplained and thinks aloud; you watch without helping and write notes.",
+      "credit": "Drawn for COMP3540 from Fullerton ch. 9, pp. 277-310",
+      "terms": [
+        "Playtester",
+        "Thinking aloud",
+        "not helping"
+      ]
+    },
+    {
+      "after_source_slide": 4,
+      "file": "figures/playtest-session.svg",
+      "layout": "figure",
+      "alt": "A session timeline: three minutes of introduction, five of warm-up, twenty of play, twenty of discussion and five to wrap up.",
+      "credit": "Drawn for COMP3540 from Fullerton ch. 9, pp. 277-310",
+      "terms": [
+        "Introduction",
+        "Warm-up",
+        "Play session",
+        "Discussion",
+        "Wrap-up"
+      ]
+    },
+    {
+      "after_source_slide": 5,
+      "file": "photos/ella-don-ElEM6GJ_H8w-unsplash.jpg",
+      "layout": "bg cover",
+      "alt": "A player at a desktop computer seen from behind over their shoulder, the game on screen.",
+      "caption": "Watch from behind, or watch remotely. Either way, ask them to think aloud — and keep reminding them.",
+      "credit": "Photo by ELLA DON on Unsplash"
+    },
+    {
+      "after_source_slide": 6,
+      "file": "photos/linkedin-sales-solutions-W3Jl3jREpDY-unsplash.jpg",
+      "layout": "bg cover",
+      "alt": "Two people sitting across a table in conversation, one listening with hands folded.",
+      "caption": "The discussion afterwards is half the session. Probe for appeal, challenge and understanding — and do not defend the game.",
+      "credit": "Photo by LinkedIn Sales Solutions on Unsplash"
+    },
+    {
+      "after_source_slide": 9,
+      "file": "photos/emily-wade-nVk581BTI_U-unsplash.jpg",
+      "layout": "bg cover",
+      "alt": "Two players seen from behind, side by side, watching a split-screen game on a television.",
+      "caption": "Group dynamics are good for generating ideas and bad for evaluating them. Test individually when you want the truth.",
+      "credit": "Photo by Emily Wade on Unsplash"
+    },
+    {
+      "after_source_slide": 10,
+      "file": "photos/playtesting-hands.jpg",
+      "layout": "bg cover",
+      "alt": "Hands moving a pipe-cleaner character across a paper prototype during a workshop.",
+      "caption": "Playtest before you think you are ready. The first one always finds something the tenth would not.",
+      "credit": "COMP3540 workshop, 2024"
+    },
+    {
+      "after_source_slide": 12,
+      "file": "photos/vladislav-igumnov-WNlFy0_apVQ-unsplash.jpg",
+      "layout": "bg cover",
+      "alt": "A hand writing on a clipboard, lit against a dark background.",
+      "caption": "You will remember what you hoped to hear. Write down what actually happened.",
+      "credit": "Photo by Vladislav Igumnov on Unsplash"
+    },
+    {
+      "after_source_slide": 13,
+      "file": "figures/playtest-notes.svg",
+      "layout": "figure",
+      "alt": "A note-taking form in three parts: in-game observations while they play, post-game questions after they play, revision ideas after they leave.",
+      "credit": "Drawn for COMP3540 from Fullerton ch. 9, pp. 277-310",
+      "terms": [
+        "In-game observations",
+        "Post-game questions",
+        "Revision ideas"
+      ]
+    },
+    {
+      "after_source_slide": 15,
+      "file": "photos/luke-chesser-JKUTrJ4vK00-unsplash.jpg",
+      "layout": "bg cover",
+      "alt": "A dark analytics dashboard of histograms and time-series charts on a laptop screen.",
+      "caption": "Numbers tell you what happened, never why. Decide what you want to know before you measure anything.",
+      "credit": "Photo by Luke Chesser on Unsplash"
+    },
+    {
+      "after_source_slide": 16,
+      "file": "photos/workshop-desk.jpg",
+      "layout": "bg cover",
+      "alt": "A workshop desk with a small paper prototype set up mid-game beside pens and spare pieces.",
+      "caption": "A control situation: set the board to the moment you care about and play only that, as many times as you need.",
+      "credit": "COMP3540 workshop, 2024"
+    }
+  ]
+}

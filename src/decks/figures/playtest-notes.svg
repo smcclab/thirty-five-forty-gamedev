@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="519.48pt" height="216.864pt" viewBox="0 0 519.48 216.864" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-22T14:50:12.221913</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 216.864 
+L 519.48 216.864 
+L 519.48 0 
+L 0 0 
+L 0 216.864 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 24.782143 192.25728 
+L 153.919286 192.25728 
+Q 159.3 192.25728 159.3 184.27392 
+L 159.3 32.59008 
+Q 159.3 24.60672 153.919286 24.60672 
+L 24.782143 24.60672 
+Q 19.401429 24.60672 19.401429 32.59008 
+L 19.401429 184.27392 
+Q 19.401429 192.25728 24.782143 192.25728 
+z
+" clip-path="url(#pc44d0240fd)" style="fill: #5ec9c0; opacity: 0.16; stroke: #9aa3ab; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 195.171429 192.25728 
+L 324.308571 192.25728 
+Q 329.689286 192.25728 329.689286 184.27392 
+L 329.689286 32.59008 
+Q 329.689286 24.60672 324.308571 24.60672 
+L 195.171429 24.60672 
+Q 189.790714 24.60672 189.790714 32.59008 
+L 189.790714 184.27392 
+Q 189.790714 192.25728 195.171429 192.25728 
+z
+" clip-path="url(#pc44d0240fd)" style="fill: #e9b44c; opacity: 0.16; stroke: #9aa3ab; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 365.560714 192.25728 
+L 494.697857 192.25728 
+Q 500.078571 192.25728 500.078571 184.27392 
+L 500.078571 32.59008 
+Q 500.078571 24.60672 494.697857 24.60672 
+L 365.560714 24.60672 
+Q 360.18 24.60672 360.18 32.59008 
+L 360.18 184.27392 
+Q 360.18 192.25728 365.560714 192.25728 
+z
+" clip-path="url(#pc44d0240fd)" style="fill: #be830e; opacity: 0.16; stroke: #9aa3ab; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: #f2f2f2; font: 15px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="89.350714" y="64.822074" transform="rotate(-0 89.350714 64.822074)">In-game observations</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: #9aa3ab; font: 13px 'Public Sans', 'system-ui', sans-serif" transform="translate(25.804074 107.643088)">what they did, chose,</text>
+    <text style="fill: #9aa3ab; font: 13px 'Public Sans', 'system-ui', sans-serif" transform="translate(30.942121 123.310119)">found, got stuck on</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: #5ec9c0; font: 13px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="89.350714" y="168.737597" transform="rotate(-0 89.350714 168.737597)">while they play</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: #f2f2f2; font: 15px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="259.74" y="64.747074" transform="rotate(-0 259.74 64.747074)">Post-game questions</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: #9aa3ab; font: 13px 'Public Sans', 'system-ui', sans-serif" transform="translate(204.463594 107.604494)">appeal, challenge,</text>
+    <text style="fill: #9aa3ab; font: 13px 'Public Sans', 'system-ui', sans-serif" transform="translate(186.877031 123.348713)">understanding, changes</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: #e9b44c; font: 13px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="259.74" y="168.737597" transform="rotate(-0 259.74 168.737597)">after they play</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: #f2f2f2; font: 15px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="430.129286" y="64.897074" transform="rotate(-0 430.129286 64.897074)">Revision ideas</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: #9aa3ab; font: 13px 'Public Sans', 'system-ui', sans-serif" transform="translate(370.855379 107.708088)">yours, written while</text>
+    <text style="fill: #9aa3ab; font: 13px 'Public Sans', 'system-ui', sans-serif" transform="translate(389.157958 123.375119)">it is still fresh</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: #be830e; font: 13px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="430.129286" y="168.737597" transform="rotate(-0 430.129286 168.737597)">after they leave</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pc44d0240fd">
+   <rect x="8.64" y="8.64" width="502.2" height="199.584"/>
+  </clipPath>
+ </defs>
+</svg>

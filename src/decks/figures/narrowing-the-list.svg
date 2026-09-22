@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="463.68pt" height="261.216pt" viewBox="0 0 463.68 261.216" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-22T14:50:35.718654</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 261.216 
+L 463.68 261.216 
+L 463.68 0 
+L 0 0 
+L 0 261.216 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 187.2 17.149395 
+L 435.2 17.149395 
+L 395.52 73.878698 
+L 226.88 73.878698 
+z
+" clip-path="url(#p9c87bdc931)" style="fill: #9aa3ab; opacity: 0.2; stroke: #9aa3ab; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 226.88 73.878698 
+L 395.52 73.878698 
+L 360.8 130.608 
+L 261.6 130.608 
+z
+" clip-path="url(#p9c87bdc931)" style="fill: #e9b44c; opacity: 0.2; stroke: #9aa3ab; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 261.6 130.608 
+L 360.8 130.608 
+L 333.52 187.337302 
+L 288.88 187.337302 
+z
+" clip-path="url(#p9c87bdc931)" style="fill: #5ec9c0; opacity: 0.2; stroke: #9aa3ab; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 288.88 187.337302 
+L 333.52 187.337302 
+L 333.52 244.066605 
+L 288.88 244.066605 
+z
+" clip-path="url(#p9c87bdc931)" style="fill: #be830e; opacity: 0.2; stroke: #9aa3ab; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: #f2f2f2; font: 16px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="311.2" y="50.090297" transform="rotate(-0 311.2 50.090297)">Everything you brainstormed</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: #f2f2f2; font: 16px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="311.2" y="106.899599" transform="rotate(-0 311.2 106.899599)">Shortlist: 5-10 ideas</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: #f2f2f2; font: 16px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="311.2" y="163.628901" transform="rotate(-0 311.2 163.628901)">Three ideas</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: #f2f2f2; font: 16px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="311.2" y="220.198203" transform="rotate(-0 311.2 220.198203)">One game to prototype</text>
+   </g>
+   <g id="patch_6">
+    <path d="M 136.358736 81.120565 
+Q 82.11187 150.463374 135.256702 218.397241 
+" style="fill: none; stroke: #e9b44c; stroke-width: 1.6; stroke-linecap: round"/>
+    <path d="M 133.922616 211.823033 
+L 135.256702 218.397241 
+L 129.196884 215.519985 
+" style="fill: none; stroke: #e9b44c; stroke-width: 1.6; stroke-linecap: round"/>
+   </g>
+   <g id="text_5">
+    <text style="fill: #e9b44c; font: 14px 'Public Sans', 'system-ui', sans-serif" transform="translate(37.032812 147.099975)">Brainstorm</text>
+    <text style="fill: #e9b44c; font: 14px 'Public Sans', 'system-ui', sans-serif" transform="translate(28.173437 161.834975)">again on each</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p9c87bdc931">
+   <rect x="8.64" y="8.64" width="446.4" height="243.936"/>
+  </clipPath>
+ </defs>
+</svg>
