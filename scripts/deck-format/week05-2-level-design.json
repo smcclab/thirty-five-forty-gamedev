@@ -1,0 +1,378 @@
+{
+  "slides": {
+    "2": {
+      "heading": "In this lecture",
+      "why": "the title block was the deck title plus its two readings; the readings are in the credit line"
+    },
+    "3": {
+      "heading": "What is a level?",
+      "bullets": [
+        "  Levels are distinct areas in a game: separated by geographical area, content or gameplay",
+        "  Many older games had one level: a variation in gameplay (Space Invaders, Centipede) or of one level (Pac-Man)",
+        "  Real-time strategy – a map and a set of objectives",
+        "  Racing – a track",
+        "  Sports – stadium, other team, aesthetic",
+        "  Simulation – no levels: the player constructs play, the whole game is one level"
+      ],
+      "split_after": [
+        2
+      ],
+      "continuations": [
+        "Levels by genre"
+      ],
+      "why": "dropped “constrained/” and the “e.g.,” hedges; the four genres move to their own slide"
+    },
+    "4": {
+      "heading": "Level separation",
+      "bullets": [
+        "  How gameplay is broken into levels has a big impact on the flow of a game",
+        "    Players play one level at a time – “just until I finish this level”",
+        "    Save points can be limited to after a level",
+        "    Player feels accomplishment after a level",
+        "  A level is like a chapter or act: tension/release on a dramatic curve",
+        "  Level order matters to the flow and pacing of the game – the order of level types, bosses",
+        "  Story-centric games (BioShock) need lots of planning: levels must support story events, environment, enemies",
+        "  No story constraints in some games (Doom) – earlier levels easier, restricted creatures"
+      ],
+      "split_after": [
+        2
+      ],
+      "continuations": [
+        "Level order"
+      ],
+      "loose": "drop",
+      "image_layout": "row",
+      "why": "the Level Order text box was a second, unheaded list on the source slide; it becomes the second slide here. Dropped “or put off stopping” and “book … in play”"
+    },
+    "5": {
+      "heading": "Components of a level",
+      "bullets": [
+        "  Design of levels is core to gameplay: “where the rubber hits the road”",
+        "  The goal of each level – an engaging gameplay experience",
+        "  What is the game trying to accomplish?",
+        "  How important are the different aspects of the game?",
+        "  What will the level do to support the game’s type of gameplay?",
+        "  How is the level different from others?",
+        "  Is this a “thinking” level after an action one?",
+        "  Is it about exploration and discovery, or building up the player’s character?"
+      ],
+      "loose": "drop",
+      "why": "the whole slide was loose text boxes; dropped the lead-in “Keep in mind the focus of the game”, since the six questions are the slide"
+    },
+    "6": {
+      "heading": "Components of a level: puzzles",
+      "bullets": [
+        "  Progressing through a level may involve more than finding a path while fighting",
+        "  Figuring out how to open a door or clear an obstacle – “switch flipping”, or placing explosives in FPS games",
+        "  More sophisticated variants: understanding game physics to solve a physics puzzle",
+        "  Not just finding it, but finding it and figuring it out",
+        "  Puzzles must enhance the experience, not delay gameplay or pad out the game",
+        "  What is the role and importance of puzzles in this game?"
+      ],
+      "split_after": [
+        2
+      ],
+      "continuations": [
+        "Puzzles: how much emphasis?"
+      ],
+      "loose": "drop",
+      "image_layout": "row",
+      "why": "loose text restored as the second slide; dropped “Player must figure something out to progress” (repeats the bullet above) and “Important to determine emphasis on puzzles” (the heading and question say it)"
+    },
+    "7": {
+      "heading": "Components of a level: exploration",
+      "bullets": [
+        "  Important in adventure, open-world and RPGs (Fallout, Grand Theft Auto)",
+        "  Not just a bridge between action – the thrill of exploring a new world",
+        "  Not just architecture: finding new things is the reward for exploring",
+        "  What cool piece of art will they see around the next corner?",
+        "  How excited will players be to find new areas? Playtest with fresh eyes",
+        "  Flow of the level is central to exploration:",
+        "    One way to proceed, or several paths to explore?",
+        "    Obvious, or does the player have to find it?",
+        "    Action games lead players to the next conflict; exploration games make paths less obvious"
+      ],
+      "split_after": [
+        3
+      ],
+      "continuations": [
+        "Exploration: the player’s route"
+      ],
+      "loose": "drop",
+      "image_layout": "row",
+      "why": "loose text restored as the second slide; dropped “Think about how the player will explore the level” as a lead-in"
+    },
+    "8": {
+      "heading": "Components of a level: aesthetics",
+      "bullets": [
+        "  Appearance is crucial to overall success, but the level must be fun to play",
+        "  Balance the level so it looks good, plays well, renders quickly and meets story needs",
+        "  Visual appearance can also affect gameplay",
+        "    Textures for visual cues, lighting for concealing – where the player can and can’t go",
+        "  Aesthetics might be done by artists, but the designer must know the effect on gameplay",
+        "  [Video: graphically stunning video game levels](https://www.youtube.com/watch?v=O_fvjzdFCNs)"
+      ],
+      "split_after": [
+        2
+      ],
+      "continuations": [
+        "Aesthetics and gameplay"
+      ],
+      "image_layout": "row",
+      "why": "the bare URL becomes a named link; nothing else"
+    },
+    "9": {
+      "heading": "Components of a level: story",
+      "bullets": [
+        "  Levels are vital for setting and storytelling",
+        "  Levels need to support the story: appearance of characters and story goals",
+        "  In story-driven games, level goals tie directly to the progression of the story",
+        "  Story goals must be known before the level is built; settings chosen to support the story",
+        "  The story must stay loose enough for the level designer to be creative",
+        "  Gameplay: balance strategy, action, puzzles and exploration",
+        "  You cannot balance before the level exists – the story may need to change for it"
+      ],
+      "split_after": [
+        3
+      ],
+      "continuations": [
+        "Story and gameplay"
+      ],
+      "loose": "drop",
+      "image_layout": "row",
+      "why": "loose text restored as the second slide; “story shouldn’t be overly restrictive” folded into the bullet above it"
+    },
+    "10": {
+      "heading": "How much action, at what pace?",
+      "class": "impact",
+      "bullets": [
+        "  Most games contain action – fighting, running, driving, jumping",
+        "  How much of the level should be action-filled?",
+        "  How many battles will the player fight? Is the action fast and furious?",
+        "  Are there breaks between conflicts, or a constant fear of death?",
+        "  How does the enemy AI function, and how does the map support conflicts?",
+        "  What geometry gives players cover to duck behind while dodging enemy fire?",
+        "  How can the level let players work out their own strategy for winning?"
+      ],
+      "split_after": [
+        1
+      ],
+      "continuations": [
+        "Components of a level: action"
+      ],
+      "loose": "drop",
+      "image_layout": "row",
+      "why": "the slide’s own first question heads it as the deck’s impact slide; loose text restored as the last three questions, with “Designer needs to consider” dropped as a lead-in"
+    },
+    "11": {
+      "heading": "Level flow: action/adventure",
+      "bullets": [
+        "  Player plays a level from a distinct beginning to end",
+        "  Exploring the space is central – much less fun to play more than once",
+        "  Encounters with characters and adversaries are predetermined and set up",
+        "  Gameplay is identical each time: linear, with a few choices of A to B",
+        "  Role-playing games: similar to action, with a bit less linearity",
+        "  The designer intends a particular route, but players choose the order of actions",
+        "  “Hub” gameplay branches off different adventures from a central location – a town – where players pick challenges to hone their skills"
+      ],
+      "split_after": [
+        4
+      ],
+      "continuations": [
+        "Level flow: role-playing games"
+      ],
+      "loose": "drop",
+      "image_layout": "row",
+      "why": "the role-playing text box was loose and becomes the second slide; “significantly” and “carefully” dropped"
+    },
+    "12": {
+      "heading": "Level flow: strategy",
+      "bullets": [
+        "  Action is less “canned”: battles can take place anywhere",
+        "  Different locations give strategic advantages; a battle can move from one to another",
+        "  Exploration is not central – map sections can go unexplored",
+        "  Gameplay is less predictable, flow less defined",
+        "  Deathmatch is close to strategy flow: exploration matters less, combat anywhere",
+        "  Players stick to one map for a while – you must know it thoroughly to win",
+        "  Exploration and memorisation are integral to the meta-game: a means to an end, not an end in itself"
+      ],
+      "split_after": [
+        4
+      ],
+      "continuations": [
+        "Level flow: FPS deathmatch"
+      ],
+      "loose": "drop",
+      "image_layout": "row",
+      "why": "the deathmatch text box was loose and becomes the second slide; dropped “and unexploited”"
+    },
+    "13": {
+      "heading": "Level flow: open world",
+      "bullets": [
+        "  Combines elements of RPG, strategy and FPS level flow",
+        "  Players go to different locations to get missions (RPG)",
+        "  Action and combat can flow all over the map (strategy)",
+        "  Players only excel once they have memorised the streets and can get around quickly (deathmatch)"
+      ],
+      "image_layout": "row",
+      "why": "nothing dropped; the screenshot moves out of the 40% panel, which cropped it"
+    },
+    "14": {
+      "heading": "Level flow: sports",
+      "bullets": [
+        "  Non-linear flow, like deathmatch and strategy levels",
+        "  Action takes place all over the court",
+        "  Movement flows back and forth over the same ground, unpredictably",
+        "  No exploration: the whole court is always visible",
+        "  Distinct start and end like exploration-led action games, but the same place – a loop",
+        "  The race path is repeated, non-linear in how players race opponents",
+        "  Modern racing games borrow exploration: visually stunning, varied levels",
+        "  Alternate paths and shortcuts for varied gameplay (SSX)"
+      ],
+      "split_after": [
+        4
+      ],
+      "continuations": [
+        "Level flow: racing"
+      ],
+      "loose": "drop",
+      "image_layout": "row",
+      "why": "the racing text box was loose and becomes the second slide; “in unique and unpredictable ways” compressed"
+    },
+    "15": {
+      "heading": "Good level design: progression",
+      "bullets": [
+        "  Players cannot get stuck – progression blockers: a blocked path, a trap, a vital character killed, or simply too hard",
+        "  Good planning and lots of playtesting; multiple ways to progress",
+        "  Success the first time? Too easy if most players win first time, but the possibility should exist and the player should feel they have a fair chance",
+        "  Landmarks: memorable landmarks ease exploration – an ornate room, a large statue, a pool of lava",
+        "  Limited backtracking: don’t make players backtrack large sections; branching paths lead back",
+        "  Navigable areas clearly marked: lighting, textures and obstacles show where you can and can’t go"
+      ],
+      "split_after": [
+        3
+      ],
+      "continuations": [
+        "Good level design: navigating"
+      ],
+      "loose": "drop",
+      "split_image": {
+        "file": "photos/ben-griffiths-xlh612vmUp8-unsplash.jpg",
+        "alt": "A gate closed across a worn footpath through a field: the progression blocker a level must never have.",
+        "credit": "Photo by Ben Griffiths on Unsplash"
+      },
+      "why": "the navigating text box was loose and becomes the second slide; nothing dropped"
+    },
+    "16": {
+      "heading": "Good level design: goals",
+      "bullets": [
+        "  Critical path: the primary goal of the level – head north, kill the creature – gives a sense of direction",
+        "  Sub-goals: tasks contributing to the final goal, with feedback and rewards for getting closer to victory",
+        "  Choice in how to accomplish the goals",
+        "    FPS – bonus items, ways to kill the enemies",
+        "    Strategy – places to battle, rally, gather resources",
+        "    Adventure – multiple solutions to puzzles, different characters",
+        "  Real choices: not both options leading to the same outcome, and not one clearly superior"
+      ],
+      "split_after": [
+        2
+      ],
+      "continuations": [
+        "Good level design: choices"
+      ],
+      "loose": "drop",
+      "why": "the choices text box was loose and becomes the second slide; the two “not” cases are one bullet"
+    },
+    "17": {
+      "heading": "Process of level design",
+      "bullets": [
+        "  1. Preliminary",
+        "  2. Conceptual and sketched outline",
+        "  3. Base architecture / block out",
+        "  4. Refine architecture (until fun)",
+        "  5. Base gameplay",
+        "  6. Refine gameplay (until fun) – repeat 5, may return to 3",
+        "  7. Refine aesthetics",
+        "  8. Playtesting",
+        "  Which gameplay and mechanics are close to final, and which are incomplete?",
+        "    How much will the game change, and how will that impact your level?",
+        "    Levels and gameplay are designed in tandem – both evolve over development",
+        "  What does the level need to do from a gameplay and story perspective?",
+        "    Challenges, environments, pace, rewards, story elements?",
+        "    Sketch the layout once you know what the level must accomplish",
+        "    Changes to a sketch are easier than to a built level – use it for feedback"
+      ],
+      "split_after": [
+        8,
+        9
+      ],
+      "continuations": [
+        "1. Preliminary",
+        "2. Conceptual and sketched outline"
+      ],
+      "aside": "drop",
+      "loose": "drop",
+      "split_image": {
+        "file": "photos/studio-crevettes-b588L1sZHy0-unsplash.jpg",
+        "alt": "A hand sketching a plan in pencil on paper — step 2 of the process, before anything is built.",
+        "credit": "Photo by Studio Crevettes on Unsplash"
+      },
+      "why": "the eight steps were a sidebar repeated on five consecutive slides; they become this slide and are dropped from the steps that follow"
+    },
+    "18": {
+      "heading": "3. Base architecture",
+      "bullets": [
+        "  When you are happy with the sketch, begin construction",
+        "    Create the base layout so players can navigate it and reach every location",
+        "    Get a sense of whether the layout feels right",
+        "  Does the level as a whole make sense and flow as you hoped?",
+        "    Navigating it as a player is how you tell whether it is working",
+        "    Repeat steps 3-4 until the level feels right and moving through it is fun"
+      ],
+      "split_after": [
+        1
+      ],
+      "continuations": [
+        "4. Refine architecture"
+      ],
+      "aside": "drop",
+      "loose": "drop",
+      "split_image": {
+        "file": "photos/fernando-andrade-GCWOrIT29TE-unsplash.jpg",
+        "alt": "A card model of plain building volumes: architecture blocked out before any detail, as step 3 asks.",
+        "credit": "Photo by Fernando Andrade on Unsplash"
+      },
+      "why": "step 4 was a loose text box and becomes the second slide; the step numbers move into the headings"
+    },
+    "19": {
+      "heading": "5. Base gameplay",
+      "bullets": [
+        "  When navigation feels right, start implementing gameplay",
+        "    You planned it thoroughly before you started; now see if it works",
+        "    Experience gives you the ability to predict whether an abstract idea will be fun",
+        "    A level’s gameplay is the actions the player can make in that level",
+        "    FPS – place monsters and items; RPG – plus puzzles, characters, quests; RTS – unit placement, quantities, reinforcements",
+        "  6. Refine gameplay until it is fun: repeat step 5",
+        "    You may need to go back to step 3 and refine the architecture"
+      ],
+      "aside": "drop",
+      "loose": "drop",
+      "why": "step 6 and the three genre examples were loose text boxes and are restored here; “you had the gameplay in mind through all steps” compressed"
+    },
+    "20": {
+      "heading": "7. Refine aesthetics",
+      "bullets": [
+        "  Now it is playing well, make it look good: textures, lighting, decorations",
+        "    May be given to artists",
+        "    Put aesthetics off until gameplay is finished, or time is wasted on art that gets scrapped",
+        "    Don’t break gameplay when putting the aesthetics in",
+        "  8. Playtesting: show it to other people, let them play, get feedback",
+        "    Give it to someone and ask what they think, or be there and observe",
+        "    Do they get stuck or lost? Is it challenging enough? Is it fun?"
+      ],
+      "aside": "drop",
+      "loose": "drop",
+      "why": "step 8 was a loose text box and is restored here; “flesh out visually” dropped as a repeat"
+    }
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "slides": {
+    "2": {
+      "heading": "In this lecture",
+      "why": "the title block was the deck title plus its reading; Schell Ch. 10, 11, 18 is in the credit line"
+    },
+    "3": {
+      "heading": "Flow",
+      "bullets": [
+        "  Mihaly Csikszentmihalyi, a psychologist, set out to identify the elements of enjoyment across different people and activities",
+        "  He found that enjoyment is described the same:",
+        "    the world over, regardless of age, gender, social class, culture",
+        "    across activities – playing music, chess, sports, painting",
+        "  Flow is an experience “so gratifying that people are willing to do it for its own sake, with little concern for what they will get out of it, even when it is difficult or dangerous”",
+        "    The goal is an excuse for the process"
+      ],
+      "split_after": [
+        2
+      ],
+      "continuations": [
+        "Flow: the experience"
+      ],
+      "why": "nothing dropped; the definition and its gloss move to their own slide so the quotation fits"
+    },
+    "4": {
+      "heading": "The conditions for flow",
+      "bullets": [
+        "  a task that can be completed",
+        "  the ability to concentrate on the task",
+        "  concentration is possible because the task has clear goals",
+        "  concentration is possible because the task provides immediate feedback",
+        "  the ability to exercise a sense of control over actions",
+        "  a deep but effortless involvement that removes awareness of the frustrations of everyday life",
+        "  concern for self disappears, but sense of self emerges stronger afterwards",
+        "  the sense of the duration of time is altered"
+      ],
+      "split_after": [
+        5
+      ],
+      "continuations": [
+        "Flow: losing yourself"
+      ],
+      "split_image": {
+        "file": "photos/ella-don-ElEM6GJ_H8w-unsplash.jpg",
+        "alt": "A player at a computer seen over their shoulder, absorbed in the game: concentration on a task with clear goals.",
+        "credit": "Photo by ELLA DON on Unsplash"
+      },
+      "why": "Csikszentmihalyi's eight conditions are kept word for word and broken across two slides; the heading no longer repeats “Flow”"
+    },
+    "5": {
+      "heading": "Skill-challenge balance",
+      "bullets": [
+        "  Skill-challenge balance is central",
+        "    Too high challenge – frustration",
+        "    Too low challenge – boredom",
+        "  Aiming to keep the player in the “flow channel”",
+        "    Represents overall skill-challenge balance",
+        "    Not moment-to-moment pacing"
+      ],
+      "split_image": {
+        "file": "photos/stacie-ong-0olPY6OO4dI-unsplash.jpg",
+        "alt": "A climber working a route on an indoor wall of coloured holds: a challenge picked to match the skill.",
+        "credit": "Photo by Stacie Ong on Unsplash"
+      },
+      "why": "nothing dropped; the source's “-->” arrows become dashes"
+    },
+    "6": {
+      "heading": "GameFlow",
+      "bullets": [
+        "  A model of player enjoyment in video games: 38 criteria, 8 elements",
+        "  Maps to Csikszentmihalyi’s concept of flow",
+        "  Criteria derived from games UX/PX literature",
+        "  Heuristics for design and evaluation",
+        "  Widely cited (>3000) and used (>200) – games and game-like experiences",
+        "  Concentration",
+        "  Challenge",
+        "  Player Skills",
+        "  Control",
+        "  Clear Goals",
+        "  Feedback",
+        "  Immersion",
+        "  Social Interaction"
+      ],
+      "split_after": [
+        5
+      ],
+      "continuations": [
+        "The eight GameFlow elements"
+      ],
+      "table": "drop",
+      "why": "the nine-row GAMEFLOW table did not fit beside the list and the Sweetser & Wyeth reference; its eight elements are written out as the second slide"
+    },
+    "7": {
+      "heading": "GameFlow Affordances",
+      "bullets": [
+        "  Seven affordances rather than elements: game designers do not directly create gameplay experiences",
+        "    The experience exists between the player and the game",
+        "  No specific or prescriptive criteria, only high-level affordances"
+      ],
+      "why": "the first sentence's second half becomes its own sub-bullet; nothing dropped"
+    },
+    "8": {
+      "heading": "How the elements map",
+      "bullets": [
+        "  Involvement captures Concentration and Immersion: attention-demanding tasks and sensory stimuli",
+        "  Skill-Challenge Balance maps to the central corresponding component of flow",
+        "  Learning & Mastery captures the integration of learning and play, and the need for mastery and reward",
+        "  Control & Agency includes lower-level and direct control, plus choice and meaningful impact in the game",
+        "  Goals & Progression includes Clear Goals, and Feedback in terms of progression",
+        "  Comfort & Safety relates to the player’s connection to an external influence, their environment"
+      ],
+      "split_after": [
+        3
+      ],
+      "continuations": [
+        "Mapping: control, goals, comfort"
+      ],
+      "why": "each sentence becomes a fragment led by its affordance; “(i.e., tasks)” and “(i.e., stimuli)” lose the hedge. Comfort & Safety came from the same source slide and stays with it"
+    },
+    "9": {
+      "heading": "The seven affordances",
+      "bullets": [
+        "  Involvement — engages the player cognitively, physically and emotionally with satisfying tasks and stimuli (quality, quantity, variety)",
+        "  Skill-Challenge Balance — for different players and throughout the game; progression is bi-directional, rising skill driving challenge and rising challenge driving skill",
+        "  Learning & Mastery — learning and play integrated seamlessly; the player can demonstrate mastery and is rewarded appropriately",
+        "  Control & Agency — control of movement, interaction, interface, controls and play sessions; agency over actions, strategies and impact on the world, with feedback on both",
+        "  Goals & Progression — overarching and intermediate goals clearly presented, or set by the player, with feedback on progress and status",
+        "  Comfort & Safety — play space, body position, movement and wellness, for different players and throughout the session",
+        "  Social Interaction — social play (competition, cooperation, observation) and social connection, inside and outside the game"
+      ],
+      "split_after": [
+        2,
+        4
+      ],
+      "continuations": [
+        "Affordances: mastery and control",
+        "Affordances: goals, comfort, social"
+      ],
+      "split_image": {
+        "file": "photos/hiboy-gJu87Qyjd4M-unsplash.jpg",
+        "alt": "An adult steadying a small child on a balance bike: challenge matched to skill, where falling is safe.",
+        "credit": "Photo by Hiboy on Unsplash"
+      },
+      "why": "Sweetser & Ozdowska's seven definitions were a two-column table the converter flattened into seven paragraph-long bullets; they are kept in full, one bullet each, across three slides, with the repeated “The game affords” stem dropped",
+      "table": "drop"
+    },
+    "12": {
+      "heading": "Self-Determination Theory (SDT)",
+      "bullets": [
+        "  Explains motivation based on innate psychological needs",
+        "  Competence – need for challenge and feelings of effectance",
+        "    I need to feel good at something",
+        "  Autonomy – sense of volition or willingness",
+        "    I need freedom to do things my own way",
+        "  Relatedness – sense of belonging and connectedness to others",
+        "    I need to connect with other people",
+        "  Satisfying the needs can enhance intrinsic motivation",
+        "  Intrinsic motivation: doing something because it is inherently interesting or enjoyable",
+        "    Behaviours people often do for no external reward: play, exploration, challenge seeking",
+        "  Extrinsic motivation: doing something because it leads to a separable outcome"
+      ],
+      "split_after": [
+        4
+      ],
+      "continuations": [
+        "Intrinsic and extrinsic motivation"
+      ],
+      "links": "drop",
+      "split_image": {
+        "file": "photos/linkedin-sales-solutions-W3Jl3jREpDY-unsplash.jpg",
+        "alt": "Two people talking across a table, one listening: relatedness, the need to connect with other people.",
+        "credit": "Photo by LinkedIn Sales Solutions on Unsplash"
+      },
+      "why": "the four loose text boxes (Ryan & Deci's definitions of intrinsic and extrinsic motivation) were hidden in a comment and are restored as the second slide; the DOI is already in the credit line, so the link bullet goes",
+      "loose": "drop"
+    },
+    "13": {
+      "heading": "#22 The Lens of Needs",
+      "bullets": [
+        "  On which levels of Maslow's hierarchy is my game operating?",
+        "  Does it fill the needs of competence, autonomy, and relatedness?",
+        "  How can I make my game fill more basic needs than it already does?",
+        "  For the needs my game is already filling, how can it fill those needs even better?",
+        "  What motivations do players have to play my game?",
+        "  Which motivations are most internal? Which are most external?",
+        "  Which are pleasure seeking? Which are pain avoiding?",
+        "  Which motivations support each other?",
+        "  Which motivations are in conflict?"
+      ],
+      "split_after": [
+        4
+      ],
+      "continuations": [
+        "#23 The Lens of Motivation"
+      ],
+      "why": "two lenses shared one source slide; every question is kept word for word and the second lens takes its own heading instead of “(cont.)”"
+    },
+    "15": {
+      "heading": "Gamification and gameful design",
+      "bullets": [
+        "  Design strategy of using game design elements in non-game contexts",
+        "  Selection and usage of the game design elements is key",
+        "    Can play to intrinsic or extrinsic motivation",
+        "  Play is central to games: rules and goals alone do not make a game",
+        "  Meaningful gamification – using game design elements to build intrinsic motivation and meaning in non-game settings",
+        "  Points, levels, leaderboards, achievements",
+        "  Rewards can undermine or damage intrinsic motivation",
+        "  Can be experienced as more or less controlling",
+        "  Leaderboards can be experienced as goal setting",
+        "  Game platform achievements can be competence or ego boosts"
+      ],
+      "split_after": [
+        4
+      ],
+      "continuations": [
+        "Reward-based gamification"
+      ],
+      "why": "“Meaningful gamification” and its definition are one bullet; “Reward-based gamification” was a label on the source slide and becomes the second slide's heading"
+    }
+  }
+}

@@ -1,0 +1,290 @@
+{
+  "slides": {
+    "2": {
+      "heading": "In this lecture",
+      "why": "the title block was the deck title; nothing dropped"
+    },
+    "3": {
+      "heading": "Introduction to playtesting",
+      "bullets": [
+        "  The single most important activity a designer engages in",
+        "    Often the least understood, and left to last",
+        "  Misconception: playtesting is just playing the game and giving feedback",
+        "  Reality: a full process – selection, recruiting, preparation, controls, analysis",
+        "  Internal design review – developers play the game and discuss the features",
+        "  Quality assurance – testing and searching for flaws and bugs",
+        "  Focus group testing – marketing bring people in to play and ask about price and selling points",
+        "  Usability testing – recording mouse movements, eye movements and navigation patterns"
+      ],
+      "split_after": [
+        3
+      ],
+      "continuations": [
+        "Often confused with playtesting"
+      ],
+      "why": "the four other kinds of testing become their own slide; dropped “etc” from usability testing and “marketing questions” as a restatement"
+    },
+    "4": {
+      "heading": "Ways to playtest",
+      "bullets": [
+        "  Informal and qualitative – 10 friends in your garage",
+        "  Structured and quantitative – hundreds in a professional lab",
+        "  Goal: useful feedback from players to improve your game",
+        "  Make sure your game is:",
+        "    Functioning as intended",
+        "    Internally complete",
+        "    Balanced and fun to play"
+      ],
+      "split_image": {
+        "file": "photos/workshop-desk.jpg",
+        "alt": "A workshop desk with a small paper prototype set up mid-game beside pens and spare pieces.",
+        "credit": "COMP3540 workshop, 2024"
+      },
+      "why": "dropped the lead-in “numerous ways to conduct playtesting” — the heading says it — and the “e.g.,” hedges"
+    },
+    "5": {
+      "heading": "Playtesting and iterative design",
+      "bullets": [
+        "  The designer is the player’s advocate throughout development",
+        "  A continual iterative process",
+        "    Cycles get tighter as production moves forward",
+        "    Smaller and smaller issues to solve and changes to make",
+        "    No fundamental or dramatic changes towards the end",
+        "  Playtesting in beta – a fully functional game – is too late",
+        "    No fundamental changes: you are stuck with the core gameplay",
+        "  Playtest and iterate from the start"
+      ],
+      "why": "nothing dropped; the nesting is one level and the sub-points sit under the claim they qualify"
+    },
+    "6": {
+      "heading": "Self-testing (you!)",
+      "bullets": [
+        "  You, individually or as a team – and throughout the project",
+        "  Early stages: experiment with concepts and core mechanics",
+        "  Fix obvious problems",
+        "  Try playing with a “fresh” mind",
+        "  You will rely on others more as you go",
+        "  Confidants – people you know well, outside the design team",
+        "    Fresh eyes, but they are not objective",
+        "  An incomplete prototype – you might need to explain things",
+        "  Aim for a prototype they can play without much intervention",
+        "    Physical prototype – write down the full set of rules",
+        "    Digital prototype – interface in place, some written rules",
+        "  Wean yourself off confidants once the prototype is playable – for balanced feedback"
+      ],
+      "split_after": [
+        5
+      ],
+      "continuations": [
+        "Playtesting with confidants"
+      ],
+      "aside": "drop",
+      "split_image": {
+        "file": "photos/kamil-switalski-aluVvXXZJtc-unsplash.jpg",
+        "alt": "Two hands holding a games controller: self-testing is playing your own game, over and over.",
+        "credit": "Photo by Kamil Switalski on Unsplash"
+      },
+      "why": "the aside’s two sentences fold into the first and last self-testing bullets, so the slide can carry a photograph; confidants become their own slide"
+    },
+    "7": {
+      "heading": "People you don’t know",
+      "bullets": [
+        "  Strangers: difficult to let them play your incomplete game",
+        "  You need their fresh perspective",
+        "    Nothing to lose or gain by telling you how they feel",
+        "    No knowledge of the game",
+        "  People who represent your target audience",
+        "    They spend money on games like yours – more relevant feedback",
+        "    They compare your game to others, and know what they like and dislike",
+        "    Insight no one else can give; the more diverse the group the better"
+      ],
+      "split_after": [
+        1
+      ],
+      "continuations": [
+        "Strangers and the target audience"
+      ],
+      "why": "the first bullet is alone on the slide the Fullerton fig. 8.2 table lands on; the two groups of outsiders share the second slide. “vocal about it” and “within target audience” compressed"
+    },
+    "8": {
+      "heading": "Who should be there?",
+      "class": "impact",
+      "bullets": [
+        "  It depends on why you are testing",
+        "  Developers – convenient and know the game, but too close to it and biased",
+        "  Friends – available and comfortable, but biased and not honest",
+        "  Expert players in your genre – detailed feedback and comparison with similar games, but not representative of most players",
+        "  New players – fresh eyes on usability and initial appeal, but you also want to test long-term play"
+      ],
+      "split_after": [
+        1
+      ],
+      "continuations": [
+        "Who to invite, and why"
+      ],
+      "why": "the slide’s own question heads it as the deck’s impact slide; nothing dropped"
+    },
+    "9": {
+      "heading": "Finding ideal playtesters",
+      "bullets": [
+        "  Advertise for testers – recruit from a range of sources",
+        "  Screen applicants",
+        "    Articulate enough to convey opinions",
+        "    Can they hold a conversation on the phone?",
+        "    Basic demographics: hobbies, why they applied",
+        "    How often do they buy these games?",
+        "  Recruiting like this is not relevant for your projects",
+        "    You can make use of other students in your workshop",
+        "    Students in other workshops will peer assess your game – do not get them to playtest it"
+      ],
+      "split_after": [
+        2
+      ],
+      "continuations": [
+        "Playtesters for your project"
+      ],
+      "split_image": {
+        "file": "photos/linkedin-sales-solutions-W3Jl3jREpDY-unsplash.jpg",
+        "alt": "Two people talking across a table, one listening: screening an applicant is a conversation.",
+        "credit": "Photo by LinkedIn Sales Solutions on Unsplash"
+      },
+      "why": "the screening questions become sub-bullets short enough for the narrow column; nothing dropped"
+    },
+    "10": {
+      "heading": "Playtesting in phases",
+      "bullets": [
+        "  Discrete phases, each focused on part of the design",
+        "  The basic idea is fun and engaging, with the potential to reach your design goals",
+        "  Might be the core mechanic and nothing else",
+        "  Will likely just be self-testing"
+      ],
+      "split_after": [
+        1
+      ],
+      "continuations": [
+        "Phase 1: Foundation"
+      ],
+      "loose": "drop",
+      "why": "the two loose text boxes (“break playtesting into discrete phases”, “each focuses on specific aspects of design”) become the first bullet, cut to one line because it shares the slide with the Fullerton fig. 9.1 table; the “Playtesting” label and the loose “Fullerton Ch.10 p.311-320” pointer are dropped, and that reading is in the credit line from Phase 3 on"
+    },
+    "11": {
+      "heading": "Phase 2: Structure",
+      "bullets": [
+        "  Playable by people without a full vision of the end – confidants",
+        "  Does the foundation hold up under real players?",
+        "  Are the formal elements working together in this basic state?",
+        "  Is your experience goal starting to take shape?",
+        "  Is there a beginning, middle and end to the experience?",
+        "  Can players reach the objective? Are they engaging in the conflict you designed?",
+        "  Are they enjoying that challenge? Is there a spark to your game?",
+        "  Should you continue with this idea, or start again?"
+      ],
+      "split_after": [
+        2
+      ],
+      "continuations": [
+        "Structure: the questions to ask"
+      ],
+      "loose": "drop",
+      "split_image": {
+        "file": "photos/playtesting-hands.jpg",
+        "alt": "Hands moving a pipe-cleaner character across a paper prototype during a workshop.",
+        "credit": "COMP3540 workshop, 2024"
+      },
+      "why": "the nine questions were loose text boxes off a dropped diagram; they are what the Structure phase tests for, so they are restored as the second slide. “Rigours of” and the loose “Functionality and fun” label are dropped — the questions below ask both"
+    },
+    "12": {
+      "heading": "Phase 3: Formal details",
+      "bullets": [
+        "  Build a fully functional version of the game system",
+        "  Focus on making your game functional, internally complete and balanced",
+        "  Fun is difficult at this stage, but look for the promise of fun",
+        "  The game should be functional, complete and balanced",
+        "  Is it fun? Is it accessible?"
+      ],
+      "split_after": [
+        3
+      ],
+      "continuations": [
+        "Phase 4: Refinement"
+      ],
+      "aside": "drop",
+      "why": "Refinement becomes its own slide; the aside repeats the “discrete phases” text that is now a bullet on the phases slide"
+    },
+    "13": {
+      "heading": "Testing for functionality",
+      "bullets": [
+        "  Someone who knows nothing can sit down and play it",
+        "  The system’s components interact properly",
+        "  A resolution can be achieved",
+        "  Paper – players follow the rules and never reach an impasse",
+        "  Software – the controls and core loop let players progress"
+      ],
+      "split_image": {
+        "file": "photos/2h-media-43AGGcjA5tA-unsplash.jpg",
+        "alt": "Two players reaching across a table strewn with tokens and cards, mid-game.",
+        "credit": "Photo by 2H Media on Unsplash"
+      },
+      "why": "“the system is established to the point where” dropped as a lead-in; “procedures” folded into “the rules”"
+    },
+    "14": {
+      "heading": "Testing for completeness",
+      "bullets": [
+        "  An internally complete game: players can operate it without the gameplay or functionality being compromised",
+        "  You can say your game is complete at any stage – and no game is ever complete",
+        "  Gaps in the rules result in an exploit, a dead end or a complete breakdown",
+        "    “the rules don’t say either way”, “I’m completely stuck”, “you can’t do that”",
+        "  Go back to the rules and look for holes"
+      ],
+      "why": "nothing dropped; the definition is kept whole"
+    },
+    "15": {
+      "heading": "Completeness: loopholes",
+      "bullets": [
+        "  A loophole is a flaw users can exploit to gain an unfair or unintended advantage",
+        "    Ruins the experience for all players",
+        "  Players ferret them out – it can take over the main gameplay",
+        "  Loopholes vs. features – do they improve the experience, or ruin it for some players?",
+        "  You won’t find them all in a complex game – too many possibilities",
+        "    A public beta test",
+        "    Use control situations to test aspects in isolation",
+        "    Find people who enjoy this, and instruct players to disrupt the system"
+      ],
+      "split_after": [
+        3
+      ],
+      "continuations": [
+        "Loopholes: finding them"
+      ],
+      "why": "how to find them becomes the second slide; nothing dropped"
+    },
+    "16": {
+      "heading": "Completeness: dead ends",
+      "bullets": [
+        "  The player gets stuck",
+        "    Cannot continue towards the objective, whatever they do",
+        "  Adventure games are susceptible – objects collected to use later",
+        "  Strategy – the player runs out of resources",
+        "  FPS – a space the player stumbles into and cannot get out of"
+      ],
+      "split_image": {
+        "file": "photos/fr0ggy5-vlZEh7SrOGQ-unsplash.jpg",
+        "alt": "A yellow DEAD END sign beside a road running into trees.",
+        "credit": "Photo by fr0ggy5 on Unsplash"
+      },
+      "why": "dropped the “e.g.,” hedge on the adventure-game example; nothing else"
+    },
+    "17": {
+      "heading": "Balance and fun",
+      "bullets": [
+        "  Balance (Week 4 theory) – the game meets the goals you set for the player experience",
+        "    The system is of the scope and complexity you envisioned",
+        "    The elements work together without undesired results",
+        "  Fun (Week 3 theory) – is your game fun?",
+        "  Is your game accessible to new players? Can someone pick up and play?",
+        "  Test people who are part of the target audience, objective (not friends), and have never played the game"
+      ],
+      "why": "the two phases fit one slide, so the source’s “(cont.)” slide is gone; nothing dropped"
+    }
+  }
+}

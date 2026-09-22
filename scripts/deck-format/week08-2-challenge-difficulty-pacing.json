@@ -1,0 +1,272 @@
+{
+  "slides": {
+    "3": {
+      "heading": "Why we need challenge",
+      "bullets": [
+        "  Challenge measures our strength of character, or tests our skills",
+        "    Positive and negative challenges",
+        "    Empowerment and reward for meeting a challenge",
+        "  Challenges test player skills; enjoyment comes from:",
+        "    Learning to use the gameplay mechanics",
+        "    New, enjoyable ways to test your ability"
+      ],
+      "split_image": {
+        "file": "photos/stacie-ong-0olPY6OO4dI-unsplash.jpg",
+        "alt": "A climber working a route on an indoor wall of coloured holds: a challenge taken on to test a skill.",
+        "credit": "Photo by Stacie Ong on Unsplash"
+      },
+      "why": "dropped “in life in order to”, “at a certain activity”, “a great way to”, “feel a sense of” and “being confronted with”, to fit the 6-word lines of a split column; both of Penny's enjoyment sources kept"
+    },
+    "4": {
+      "heading": "Challenge is not a goal",
+      "bullets": [
+        "  Challenge is not a desirable goal in itself – inserting extra challenges does not increase the value of the experience",
+        "  If there is no reason for the challenge, the player:",
+        "    Suffers desensitisation and boredom",
+        "    Loses motivation and builds up resentment",
+        "    Stops taking it seriously",
+        "    Stops feeling an emotional connection",
+        "  Without context, challenge is just hardship",
+        "    Serve a higher goal – why am I doing this? – and allow a positive outcome – what will I get?"
+      ],
+      "why": "the source's first two lines are one bullet, and its last two questions are one; nothing else dropped, so the whole slide fits where the converter had split it into a “(cont.)”"
+    },
+    "5": {
+      "heading": "What difficulty is",
+      "bullets": [
+        "  Challenge is a formal invitation or demand to overcome adversity",
+        "  Difficulty is how well the player is equipped for it",
+        "    Challenge relative to player skill",
+        "  The same challenge differs in difficulty per player",
+        "    Humans have wildly different abilities and skills",
+        "    Suitable for one, insurmountable for another"
+      ],
+      "split_image": {
+        "file": "photos/hassan-pasha-7SjEuEF06Zw-unsplash.jpg",
+        "alt": "A black chess knight and a white chess knight facing each other on a board: a formal invitation to overcome adversity.",
+        "credit": "Photo by Hassan Pasha on Unsplash"
+      },
+      "why": "both definitions keep their “is”; dropped “on the player”, “describes”, “the level of”, “human beings”, “can pose … to different players” and the “one danger of game design is to create an experience that is” lead-in, for the split column"
+    },
+    "6": {
+      "heading": "Misjudging the player",
+      "bullets": [
+        "  Misjudging the abilities of the player:",
+        "    Can make a level too easy or too hard",
+        "    Can lead to boredom or frustration",
+        "    Can severely damage a player’s enjoyment of a game",
+        "  Frustration can lead players to quit the game",
+        "  Avoiding boredom is not just a matter of increasing difficulty",
+        "    An activity that requires no new skills, and does not refine current skill sets, becomes less interesting and less rewarding"
+      ],
+      "why": "nothing dropped; “cause a level to be” compressed"
+    },
+    "7": {
+      "heading": "Two major aspects of challenge",
+      "bullets": [
+        "  Skill needs to balance with challenge",
+        "  Balance is subject to considerations of challenge context",
+        "  Challenge can test players, affect pacing, or let players measure their own strength",
+        "  The final boss is different from an idle puzzle along the way",
+        "  Players might choose a difficulty level – ridiculously hard",
+        "  Some games aim to be particularly hard or easy"
+      ],
+      "loose": "drop",
+      "why": "the five “challenge context” text boxes were content, not diagram labels, and are restored as bullets; dropped the “Challenge context” label itself and the “e.g.,” hedge"
+    },
+    "8": {
+      "heading": "Dynamic difficulty adjustment",
+      "bullets": [
+        "  The game reacts to the apparent skill level of the player and adjusts difficulty accordingly",
+        "  The experience is tailored to the varying skill levels and play styles of its players",
+        "  Example – adjust AI based on player deaths",
+        "    Player dies too many times in a conflict area – adjust difficulty downwards, making AI shooting less accurate",
+        "  Many ways to implement it",
+        "  Good results if it is not overly obvious to the player"
+      ],
+      "why": "dropped “allowing”, “game experience is” and “can yield”; the AI accuracy example kept"
+    },
+    "9": {
+      "heading": "What can the data tell us?",
+      "class": "impact",
+      "bullets": [
+        "  Must evaluate the need to adjust the difficulty",
+        "    Gather and interpret performance data first – accuracy, health after encounters",
+        "  Performance data gives limited info for important decisions",
+        "    What if the player enjoys a playing style that leaves them close to death most of the time?",
+        "    What if the player enjoys shooting the scenery as well as shooting enemies?",
+        "  We cannot gather data that objectively tells us the player’s real emotions and experiences",
+        "    Although there is active research on this topic",
+        "    Reactive/passive difficulty adjustment will always be based on subjective guesses",
+        "    Interpretation can yield wrong conclusions and bad adjustments"
+      ],
+      "split_after": [
+        1
+      ],
+      "continuations": [
+        "Data cannot read emotions"
+      ],
+      "why": "the slide's own doubt becomes its heading as the deck's impact slide; both “what if” questions kept word for word, and the “(cont.)” slide the converter made is folded back in; “incorrect conclusions, resulting in inappropriate adjustments” shortened"
+    },
+    "10": {
+      "heading": "Player-controlled difficulty",
+      "bullets": [
+        "  flOw – core game mechanics based on player-controlled difficulty adjustment",
+        "  Proactive difficulty adjustment, controlled by the players themselves",
+        "  Difficulty choices in the player’s hands, rather than a self-regulating system that interprets player actions",
+        "  A primitive marine organism that has to find food to evolve",
+        "  Can dive to more dangerous depths to find more food",
+        "  Players find a gameplay space they are comfortable with",
+        "  [Video: flOw gameplay](https://www.youtube.com/watch?v=9pRBptP3i1Q)"
+      ],
+      "split_after": [
+        3
+      ],
+      "continuations": [
+        "flOw: diving deeper"
+      ],
+      "links": "drop",
+      "why": "the “Example – flOw” sub-heading moves into the first bullet and the bare URL becomes a named link; nothing else dropped. The screenshot stays an inline row: a 40% panel would crop it."
+    },
+    "11": {
+      "heading": "Difficulty tips",
+      "bullets": [
+        "  Challenge is a tool for something specific, not a goal in itself",
+        "  Arbitrary difficulty – pointless challenge",
+        "    Takes an existing game mechanic and makes it awkward for no reason",
+        "  Prohibitive difficulty – some games are too hard to enjoy",
+        "    Designers play so much that they reach an atypical skill level and entertain themselves",
+        "    Entertain your audience, not yourself",
+        "  Unfair challenges",
+        "    Some designers think of the player as their enemy and try to kill them as harshly as possible"
+      ],
+      "why": "dropped “for achieving”, “provides”, “for most people”, “without any good reason” shortened, and “need to”; the three kinds of bad difficulty all fit one slide, so the converter's “(cont.)” slide is gone"
+    },
+    "12": {
+      "heading": "Unfair ways to challenge",
+      "bullets": [
+        "  Gameplay can test a player’s skills, but should not present tasks or obstacles unfairly:",
+        "    Instant death, unannounced",
+        "    Something extremely hard without training the player first",
+        "    Obscure nonsensical puzzles",
+        "    Extended memory-based gameplay",
+        "    Overly harsh restrictions – impossibly short time trials",
+        "    Lack of save points",
+        "    One-way doors that close behind the player without warning"
+      ],
+      "why": "all seven unfair devices kept; “challenge players to do tasks or overcome obstacles presented in an unfair way, such as” compressed"
+    },
+    "13": {
+      "heading": "Pacing and the flow channel",
+      "bullets": [
+        "  Exert control over the timing and intensity of the gameplay experience",
+        "  Pacing should keep players in “the zone” – the flow channel",
+        "    The perfect state where immersion and enjoyment keep players in gaming bliss",
+        "    As a level progresses, maintain the balance between challenge and ability, along a learning curve that develops over time",
+        "  Maintain a sensible learning curve",
+        "  Under-challenge – the player becomes bored, but can still try to entertain themselves",
+        "  Over-challenge – the player becomes frustrated and may stop playing"
+      ],
+      "split_after": [
+        2
+      ],
+      "continuations": [
+        "Designing for game pacing"
+      ],
+      "why": "dropped “we want to” and the “designing for game pacing” label, which becomes the second slide's heading; the flow-channel figure follows on its own slide"
+    },
+    "14": {
+      "heading": "Pacing: linear progression",
+      "bullets": [
+        "  Linear progression – a straight path from A to B",
+        "    Effective if it is not overused",
+        "    Great clarity: progression along one path",
+        "    Enjoyable when players must finish an obstacle course to progress",
+        "    Pacing is controlled by the gameplay along the way",
+        "    Easy to create and test such a formal environment",
+        "  Loops – the player ends up at the starting point",
+        "    All the linear advantages apply",
+        "    Can show the player their goal from the start – enhances the context in which players act"
+      ],
+      "split_after": [
+        1
+      ],
+      "continuations": [
+        "Pacing: loops"
+      ],
+      "split_image": {
+        "file": "photos/nicholas-wilson-5r6xg6MAnnY-unsplash.jpg",
+        "alt": "Runners in lanes on a track, one ahead of the field: a straight path from A to B.",
+        "credit": "Photo by Nicholas Wilson on Unsplash"
+      },
+      "why": "dropped “has clear advantages and can be a very effective method of controlling pacing in a level/game”, “gives the player a great sense of”, “this kind of direct challenge can be enjoyable, especially if it is clear to players” and “greatly”"
+    },
+    "15": {
+      "heading": "Pacing: sandbox",
+      "bullets": [
+        "  Sandbox – players come up with their own solutions, or at least the illusion that they can",
+        "    The world does not feel too prescribed",
+        "    Raw building material to make the player’s own mark on the world, bend it to their will",
+        "  Not always easy to influence pacing in such an environment",
+        "    Place conditional events in the world, create natural-looking bottlenecks",
+        "    The player must be of a particular strength to access an area; a monster is only released once the player has a certain weapon"
+      ],
+      "why": "dropped “player feels that”, “provides the”, “but much can be done by” and “certain type of”"
+    },
+    "16": {
+      "heading": "Pacing: stickiness",
+      "bullets": [
+        "  Stickiness – slow the player down with areas that are sticky",
+        "  Positive reasons for staying in an area:",
+        "    A safe area with some fun activity",
+        "    RPG selling, crafting and buying",
+        "    A tempting discrete challenge that may yield a great reward",
+        "  If stickiness is optional, the player never feels resentful about this manipulation",
+        "  Half-Life 2 – many optional areas, filled with opportunities for almost carefree play"
+      ],
+      "why": "dropped “by creating”, “provide”, “in which the player can engage in”, “creating” and “instances of”; Half-Life 2 kept"
+    },
+    "17": {
+      "heading": "Pacing: push and pull",
+      "bullets": [
+        "  Elements that influence progress, forcibly or by necessity",
+        "  Push – players go down a lift",
+        "    It breaks: no backtracking",
+        "  Pull – chased by a strong enemy",
+        "    A health pack visible ahead",
+        "  Pacing adjustments by pushing and pulling",
+        "    Natural if done well"
+      ],
+      "split_image": {
+        "file": "photos/joaquin-arenas-9903l2rs4kw-unsplash.jpg",
+        "alt": "Hands gripping a thick rope in a tug of war, pulling in opposite directions.",
+        "credit": "Photo by Joaquin Arenas on Unsplash"
+      },
+      "why": "both of Penny's examples kept but cut to the bone for the split column: dropped “in the environment that seek to”, “the player's progression”, “when they get to the bottom the lift”, “makes backtracking impossible” shortened, “somewhere in front of them they can see” and “games/levels are full of opportunities of”"
+    },
+    "18": {
+      "heading": "Pacing: space",
+      "bullets": [
+        "  Pacing is as much determined by what you leave out as what you put in",
+        "  Game design needs spaces where nothing happens",
+        "    Spaces between gameplay events are part of the gameplay experience as a whole",
+        "    Sometimes leaving empty space is a game design event in its own right",
+        "  Room for the player to breathe, reflect, think, observe, contemplate and strategise",
+        "    As vital as the action-packed moments in the game"
+      ],
+      "why": "dropped “there is need in game design for”, “incredibly important” and “the full picture has to incorporate”"
+    },
+    "19": {
+      "heading": "Pacing: other methods",
+      "bullets": [
+        "  Puzzles as pacing devices – the likely duration of a puzzle sequence gives some control over pacing",
+        "  Fear – scare players into adjusting their pace of progression",
+        "  Hurry – create a necessity to rush",
+        "  Time – affect the progression of time to create pacing changes",
+        "  Physics – let the properties of the environment determine progress",
+        "  AI – let the player depend on the progression of an NPC"
+      ],
+      "why": "the “other methods” label dropped into the heading; all five methods kept word for word"
+    }
+  }
+}

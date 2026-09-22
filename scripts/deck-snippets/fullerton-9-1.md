@@ -1,5 +1,4 @@
-What you are testing for changes as the prototype matures: fun comes first and
-last, while the structural questions are asked in the middle.
+What you test for changes too: fun comes first and last.
 
 | Prototyping stage | Functional? | Internally complete? | Balanced? | Fun? | Accessible? |
 | --- | --- | --- | --- | --- | --- |

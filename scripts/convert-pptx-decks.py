@@ -66,6 +66,15 @@ CHROME_RE = re.compile(
 )
 #: A reading citation, e.g. "Fullerton p.102-103" or "Schell Ch. 2, 4".
 CITATION_RE = re.compile(r"^(Fullerton|Schell)\b", re.I)
+#: A full bibliographic reference typed into a heading or a sidebar, e.g.
+#: "Rudolf Kremers. (2009) Level Design: Concept, Theory, and Practice" or
+#: "Richard Rouse III (2005) Game Design: Theory & Practice, 2nd Ed. Ch. 23."
+#: Those belong under the slide with the reading citations, never in the `##`.
+REFERENCE_RE = re.compile(r"\(\d{4}\)|\b(?:Ch|Chs|pp?)\.\s*\d|\bEd\.")
+
+
+def is_citation(text: str) -> bool:
+    return bool(CITATION_RE.match(text) or REFERENCE_RE.search(text))
 
 #: Fixes for source typos that would otherwise reach the site. Keep this
 #: short: prefer fixing the converter to adding an entry here.
@@ -89,11 +98,236 @@ SNIPPETS = pathlib.Path(__file__).parent / "deck-snippets"
 #: Replacement photography and screenshots, captured or re-sourced for this
 #: site rather than lifted from the source slides. Unlike src/decks/figures/
 #: these are not ours: every one carries its own credit.
-MEDIA = pathlib.Path(__file__).parent.parent / "src" / "decks" / "media"
+DECKS = pathlib.Path(__file__).parent.parent / "src" / "decks"
+MEDIA = DECKS / "media"
 
 ALLOWED_IMAGES: dict[str, dict[str, str]] = json.loads(
     (pathlib.Path(__file__).parent / "deck-images.json").read_text()
 ) if (pathlib.Path(__file__).parent / "deck-images.json").exists() else {}
+
+#: Images ADDED to slides that never carried a picture, keyed by deck slug.
+#: deck-images.json can only ever replace a source picture, and the source
+#: slides are mostly bullet lists, so this is the other half: photographs and
+#: figures placed against a slide of the source deck.
+#:
+#: Each entry is anchored on `after_source_slide`, the slide number in the
+#: PowerPoint, not the output slide number -- the source never changes, while
+#: output numbers shift every time a figure is added ahead of them.
+#:
+#:   layout "bg cover"    a new full-bleed slide after the anchor (photographs)
+#:   layout "bg contain"  a new slide fitting the whole image (screenshots)
+#:   layout "figure"      a new slide holding it as a captioned .deck-figure,
+#:                        the same treatment a redrawing from deck-images.json
+#:                        gets (drawings, which want a caption, not a scrim)
+#:   layout "inline"      into the anchor slide's .slide-media row
+#:
+#: `file` resolves under src/decks/, so `photos/x.jpg` and `figures/x.svg`.
+EXTRA_IMAGES: dict[str, list[dict]] = json.loads(
+    (pathlib.Path(__file__).parent / "deck-extras.json").read_text()
+) if (pathlib.Path(__file__).parent / "deck-extras.json").exists() else {}
+
+EXTRA_LAYOUTS = {"bg cover", "bg contain", "inline", "figure", "split"}
+
+#: Per-slide formatting, one file per deck in scripts/deck-format/ so all
+#: eighteen decks can be worked on independently. Keyed by the SOURCE slide
+#: number for the same reason deck-extras.json is: output numbering shifts
+#: whenever a slide ahead of it is split. scripts/deck-format.README.md is the
+#: rulebook; this is the only place a slide's words may be rewritten, since
+#: the decks themselves are generated.
+FORMAT_DIR = pathlib.Path(__file__).parent / "deck-format"
+#: Everything a slide entry may set. An unknown key is a typo, and a typo that
+#: silently did nothing would look exactly like a rule that did not work.
+FORMAT_KEYS = {
+    "heading",       # replace the generated `##`
+    "bullets",       # replace the body list; two spaces of indent per level
+    "continuations", # headings for the 2nd, 3rd ... slide of a split list
+    "split_after",   # break the list after these top-level bullet numbers
+    "aside",         # "keep" (default) | "drop"
+    "loose",         # "comment" (default) | "keep" | "drop"
+    "table",         # "keep" (default) | "drop"
+    "class",         # a slide class, e.g. "impact"
+    "image_layout",  # "auto" (default) | "split" | "row"
+    "split_image",   # {file, alt, credit}: a photograph for the right column
+    "why",           # what the rewrite left out and why; kept as a comment
+    "drop",          # true: emit no slide for this source slide at all
+    "links",         # "keep" (default) or "drop" for the source's hyperlinks
+}
+LOOSE_MODES = {"comment", "keep", "drop"}
+
+
+def load_deck_formats() -> dict[str, dict]:
+    formats: dict[str, dict] = {}
+    if not FORMAT_DIR.is_dir():
+        return formats
+    for path in sorted(FORMAT_DIR.glob("*.json")):
+        data = json.loads(path.read_text())
+        slides = data.get("slides", {})
+        if not isinstance(slides, dict):
+            raise SystemExit(f"{path.name}: `slides` must be an object")
+        for key, entry in slides.items():
+            where = f"deck-format/{path.name}: slide {key}"
+            if not re.fullmatch(r"\d+", str(key)):
+                raise SystemExit(f"{where} is not a source slide number")
+            unknown = set(entry) - FORMAT_KEYS
+            if unknown:
+                raise SystemExit(
+                    f"{where} sets {', '.join(sorted(unknown))}; use one of "
+                    + ", ".join(sorted(FORMAT_KEYS))
+                )
+            if entry.get("loose", "comment") not in LOOSE_MODES:
+                raise SystemExit(f"{where} has an unknown `loose` mode")
+            if entry.get("links", "keep") not in {"keep", "drop"}:
+                raise SystemExit(f"{where} has an unknown `links` mode")
+            if entry.get("image_layout", "auto") not in {"auto", "split", "row"}:
+                raise SystemExit(f"{where} has an unknown `image_layout`")
+            img = entry.get("split_image")
+            if img is not None:
+                if not img.get("file") or not img.get("alt"):
+                    raise SystemExit(f"{where}: split_image needs a file and an alt")
+                target = DECKS / img["file"].lstrip("./")
+                if not target.exists():
+                    raise SystemExit(
+                        f"{where}: split_image points at {target}, which is missing"
+                    )
+        formats[path.stem] = data
+    return formats
+
+
+DECK_FORMATS = load_deck_formats()
+
+
+# --------------------------------------------------------------------------
+# fitting a slide to the canvas
+
+#: A Reveal deck scales a fixed 1280x720 canvas, and the theme pads a slide by
+#: 64px top and bottom, 80px each side: a content box of 1120x592. Body text
+#: is 1.75rem (28px) at line-height 1.5, so a line costs 42px and a slide is
+#: fourteen of them; the `##` takes 52px of that. A full-width line holds
+#: about 74 characters, the content column of a 40% split about 42.
+#:
+#: Everything below is measured in those 42px lines. It is an estimate, and
+#: deliberately a cheap one -- its whole job is to decide where to break a
+#: list before anything is rendered. The instrument that decides whether a
+#: slide really fits is `scripts/check-decks.sh`, which measures every slide
+#: of every deck in a browser. See scripts/deck-format.README.md.
+SLIDE_LINES = 14.0
+HEADING_LINES = 1.25
+#: Characters per line by bullet depth, full width and in a split slide's
+#: 60% content column.
+CHARS_PER_LINE = {0: 74, 1: 68, 2: 62}
+SPLIT_CHARS_PER_LINE = {0: 42, 1: 38, 2: 34}
+#: A .slide-media row caps an image at 30vh, plus its margins.
+MEDIA_ROW_LINES = 5.6
+#: li margin-block, as a fraction of a line.
+BULLET_MARGIN_LINES = 0.2
+#: A table row at 0.8em with the theme's cell padding, plus the block margins.
+TABLE_ROW_LINES = 1.35
+TABLE_CHROME_LINES = 1.0
+#: A .slide-aside is 0.92em with a rule down its left and its own margins.
+ASIDE_CHROME_LINES = 0.8
+
+
+def text_lines(paras: list[tuple[int, str]], widths=CHARS_PER_LINE,
+               scale: float = 1.0) -> float:
+    """How many body lines a list of (level, text) paragraphs is likely to run."""
+    total = 0.0
+    for lvl, text in paras:
+        width = widths.get(min(lvl, 2), widths[2])
+        wrapped = max(1, -(-len(text) // max(8, int(width / scale))))
+        total += wrapped * scale + BULLET_MARGIN_LINES
+    return total
+
+
+def bullet_groups(paras: list[tuple[int, str]]) -> list[list[tuple[int, str]]]:
+    """Split a body list into top-level bullets with their children."""
+    if not paras:
+        return []
+    top = min(lvl for lvl, _ in paras)
+    groups: list[list[tuple[int, str]]] = []
+    for para in paras:
+        if para[0] <= top or not groups:
+            groups.append([para])
+        else:
+            groups[-1].append(para)
+    return groups
+
+
+def chunk_groups(groups, budget: float, widths=CHARS_PER_LINE,
+                 breaks: list[int] | None = None) -> list[list[tuple[int, str]]]:
+    """Break a body list into slide-sized pieces, never inside a bullet.
+
+    `breaks` (deck-format's `split_after`) is a list of top-level bullet
+    numbers to break after; it wins over the budget, because where a list
+    divides is a teaching decision and the budget only knows about pixels.
+    """
+    if not groups:
+        return []
+    if breaks:
+        pieces, start = [], 0
+        # 0 is a legitimate break: it puts the slide's table or figure on a
+        # slide of its own and starts the list on the next one.
+        for b in sorted({b for b in breaks if 0 <= b < len(groups)}):
+            pieces.append([p for g in groups[start:b] for p in g])
+            start = b
+        pieces.append([p for g in groups[start:] for p in g])
+        return pieces
+    pieces, current, used = [], [], 0.0
+    for group in groups:
+        cost = text_lines(group, widths)
+        if current and used + cost > budget:
+            pieces.append(current)
+            current, used = [], 0.0
+        current += group
+        used += cost
+    if current:
+        pieces.append(current)
+    return pieces
+
+
+def split_bg(src: str, alt: str, percent: int = 40) -> list[str]:
+    """The image half of a two-column slide: content left, image right.
+
+    astromotion turns a `bg right:N%` image into .split-layout, wrapping
+    everything else on the slide into a .split-content column beside it. The
+    image lands as a CSS background, so nothing on the slide carries its alt
+    and the deck writes the description out for screen readers itself.
+    """
+    return [
+        "",
+        f"![bg right:{percent}%]({src})",
+        "",
+        f'<p class="deck-sr-only">{mdx_escape(alt)}</p>' if alt else "",
+    ]
+
+
+#: A heading the source typed as the list's first line. It is a heading when
+#: it is short, unpunctuated, and the line under it is a sentence rather than
+#: another label -- which is what separates "Components of a Level: Puzzles"
+#: from an agenda of seven equally short items.
+HEADING_CHARS = 58
+
+
+def promote_heading(paras: list[tuple[int, str]]):
+    """(heading, remaining paragraphs), or None if the first line is a bullet."""
+    if len(paras) < 3:
+        return None
+    (lvl, first), (next_lvl, second) = paras[0], paras[1]
+    if lvl != min(l for l, _ in paras):
+        return None
+    if len(first) > HEADING_CHARS or first.endswith((".", ",", ";", ":")):
+        return None
+    if next_lvl <= lvl and len(second) <= HEADING_CHARS:
+        return None  # a list of labels, e.g. the agenda slide
+    return first, paras[1:]
+
+
+def format_paras(entries: list[str]) -> list[tuple[int, str]]:
+    """deck-format's `bullets` as (level, text): two spaces of indent a level."""
+    paras = []
+    for line in entries:
+        text = line.lstrip(" ")
+        paras.append(((len(line) - len(text)) // 2, text))
+    return paras
 
 
 # --------------------------------------------------------------------------
@@ -271,7 +505,7 @@ def mdx_escape(text: str) -> str:
     return text
 
 
-def bullets(paras: list[tuple[int, str]]) -> list[str]:
+def bullets(paras: list[tuple[int, str]], sub_headings: bool = True) -> list[str]:
     """Render (level, text) pairs as a nested Markdown list.
 
     Body paragraphs in these decks sit at indent level 2 and deeper, so
@@ -282,10 +516,13 @@ def bullets(paras: list[tuple[int, str]]) -> list[str]:
     if not paras:
         return []
     body_levels = [lvl for lvl, _ in paras if lvl > 0]
-    base = min(body_levels) if body_levels else min(lvl for lvl, _ in paras)
+    if sub_headings and body_levels:
+        base = min(body_levels)
+    else:
+        base = min(lvl for lvl, _ in paras)
     out: list[str] = []
     for lvl, text in paras:
-        if lvl == 0 and base > 0:
+        if lvl == 0 and base > 0 and sub_headings:
             out += ["", f"### {mdx_escape(text)}", ""]
         else:
             out.append("  " * max(0, lvl - base) + "- " + mdx_escape(text))
@@ -456,6 +693,86 @@ def deck_week(path: pathlib.Path) -> int | None:
     return int(m.group(1)) if m else None
 
 
+def deck_extras(slug: str, decks_dir: pathlib.Path) -> dict[int, list[dict]]:
+    """This deck's deck-extras.json entries, checked and grouped by anchor."""
+    by_slide: dict[int, list[dict]] = {}
+    for n, entry in enumerate(EXTRA_IMAGES.get(slug, []), 1):
+        where = f"deck-extras.json: {slug}[{n}]"
+        anchor = entry.get("after_source_slide")
+        if not isinstance(anchor, int):
+            raise SystemExit(f"{where} needs an integer after_source_slide")
+        layout = entry.get("layout", "bg cover")
+        if layout not in EXTRA_LAYOUTS:
+            raise SystemExit(
+                f"{where} has layout {layout!r}; use one of "
+                + ", ".join(sorted(EXTRA_LAYOUTS))
+            )
+        # The build fails on a missing alt, and a background image reaches the
+        # page as a CSS background with no element to carry one, so the deck
+        # has to write the description out itself. Either way it is required.
+        if not entry.get("alt"):
+            raise SystemExit(f"{where} needs an alt")
+        target = decks_dir / entry.get("file", "")
+        if not entry.get("file") or not target.exists():
+            raise SystemExit(f"{where} points at {target}, which is missing")
+        by_slide.setdefault(anchor, []).append(entry)
+    return by_slide
+
+
+def extra_src(entry: dict) -> str:
+    """An added image's path, relative to the deck beside it in src/decks."""
+    return "./" + entry["file"].lstrip("./")
+
+
+def figure_slide(entry: dict, heading: str) -> str:
+    """A slide holding one figure and its credit, and nothing else.
+
+    It keeps its parent slide's heading, unchanged: the two slides are one
+    thought, the bullets and then the picture of what they describe.
+    """
+    fig: list[str] = []
+    if heading:
+        fig.append(f"## {mdx_escape(heading)}")
+        fig.append("")
+    fig.append('<figure class="deck-figure">')
+    fig.append("")
+    fig.append(f'![{mdx_escape(entry["alt"])}]({entry["src"]})')
+    fig.append("")
+    if entry.get("credit"):
+        fig.append(f'<figcaption>{mdx_escape(entry["credit"])}</figcaption>')
+        fig.append("")
+    fig.append("</figure>")
+    return "\n".join(fig).rstrip() + "\n"
+
+
+def extra_slide(entry: dict) -> str:
+    """A slide carrying one added image, full-bleed or fitted."""
+    layout = entry.get("layout", "bg cover")
+    lines = [
+        # The theme's own full-bleed slide class: it lays the content out
+        # bottom-left and paints a scrim between the photograph and the text,
+        # as an image rather than a gradient so the PDF export keeps it.
+        "{/* _class: hero */}",
+        "",
+        f'![{layout}]({extra_src(entry)})',
+        "",
+        # A background image is a CSS background, so nothing on the slide
+        # describes it: say what it shows for anyone who cannot see it.
+        f'<p class="deck-sr-only">{mdx_escape(entry["alt"])}</p>',
+    ]
+    caption = mdx_escape(entry.get("caption", ""))
+    credit = mdx_escape(entry.get("credit", ""))
+    if caption or credit:
+        lines.append("")
+        lines.append('<div class="photo-caption">')
+        if caption:
+            lines.append(caption)
+        if credit:
+            lines.append(f'<span class="photo-credit">{credit}</span>')
+        lines.append("</div>")
+    return "\n".join(lines).rstrip() + "\n"
+
+
 def convert(path: pathlib.Path, decks_dir: pathlib.Path, verbose=False,
             review_dir: pathlib.Path | None = None,
             review_index: list | None = None) -> dict:
@@ -475,13 +792,25 @@ def convert(path: pathlib.Path, decks_dir: pathlib.Path, verbose=False,
     title = title_from_slide(z, slide_names) or deck_title(path)
 
     week_no = deck_week(path)
+    extras = deck_extras(slug, decks_dir)
+    slide_fmt = DECK_FORMATS.get(slug, {}).get("slides", {})
+    used_formats: set[str] = set()
+    # A photograph moved into a slide's right-hand column is no longer a
+    # full-bleed slide of its own. Saying so here, rather than editing
+    # deck-extras.json, keeps one deck's formatting inside one file.
+    claimed = {
+        f.get("split_image", {}).get("file", "").lstrip("./")
+        for f in slide_fmt.values() if f.get("split_image")
+    }
+    used_anchors: set[int] = set()
     stats = {"slug": slug, "slides": 0, "images": 0, "figures": 0,
              "snippets": 0, "pending": 0, "tables": 0, "links": 0, "notes": 0,
-             "omitted": 0}
+             "omitted": 0, "extras": 0}
     out: list[str] = []
     hero: str | None = None
     subtitle = ""
     prev_heading = ""
+    prev_aside: list[str] = []
     seen_notes: set[str] = set()
     seen_images: set[str] = set()
     seen_snippets: set[str] = set()
@@ -501,6 +830,9 @@ def convert(path: pathlib.Path, decks_dir: pathlib.Path, verbose=False,
         pics = [s for s in shapes if s.kind == "pic" and PICTURE_NAME_RE.match(s.name)]
 
         # --- heading and body
+        fmt = slide_fmt.get(str(i), {})
+        used_formats.add(str(i))
+
         main_paras: list[tuple[int, str]] = []
         for s in sorted(main, key=lambda s: (s.y, s.x)):
             main_paras += shape_paragraphs(s)
@@ -510,19 +842,18 @@ def convert(path: pathlib.Path, decks_dir: pathlib.Path, verbose=False,
         heading_cites: list[str] = []
         if main_paras and title_ph:
             # A title placeholder holds the whole heading, split over soft
-            # line breaks, sometimes with the week's readings appended.
+            # line breaks, sometimes with the week's readings appended -- and
+            # in week05-2 with the two books the lecture is drawn from, which
+            # is how every slide of that deck came to be headed by a
+            # bibliography.
             lines = [t for _, t in main_paras]
-            heading_cites = [t for t in lines if CITATION_RE.match(t)]
-            keep = [t for t in lines if not CITATION_RE.match(t)]
-            heading = " ".join(keep).replace(": ", ": ").strip()
+            heading_cites = [t for t in lines if is_citation(t)]
+            keep = [t for t in lines if not is_citation(t)]
+            heading = " ".join(keep).strip()
             main_paras = []
         elif main_paras and main_paras[0][0] == 0:
             heading = main_paras[0][1]
             main_paras = main_paras[1:]
-        elif main_paras:
-            # No level-0 first paragraph: this slide continues the previous
-            # one. Do not promote a bullet to the heading.
-            heading = f"{prev_heading} (cont.)" if prev_heading else (topic or title)
 
         # --- topic label and citation
         side_paras = []
@@ -531,12 +862,10 @@ def convert(path: pathlib.Path, decks_dir: pathlib.Path, verbose=False,
         # The sidebar holds a topic label, then reading citations, then (on
         # about a third of the slides) real explanatory bullets. Only the
         # label and citations are chrome; the rest is content.
-        citations = [t for t in side_paras if CITATION_RE.match(t)]
-        rest = [t for t in side_paras if not CITATION_RE.match(t)]
+        citations = [t for t in side_paras if is_citation(t)]
+        rest = [t for t in side_paras if not is_citation(t)]
         topic = rest[0] if rest else ""
         aside = rest[1:]
-
-        body: list[str] = []
 
         # Every deck closes with the same slide pointing at the 2024 Wattle
         # site. Replace it with a closing slide that will not go stale.
@@ -589,6 +918,24 @@ def convert(path: pathlib.Path, decks_dir: pathlib.Path, verbose=False,
             if m:
                 lens = f"{m.group(2)} (lens {m.group(1)})"
                 main_paras = main_paras[1:]
+
+        # The source writes a new topic as the first line of the body about
+        # forty times across the eighteen decks: the slide has no title
+        # placeholder, so the heading it deserves is sitting in the list under
+        # a bullet point while the slide itself is headed "... (cont.)".
+        if not heading or heading.strip().lower() == topic.strip().lower():
+            promoted = promote_heading(main_paras)
+            if promoted:
+                heading, main_paras = promoted
+
+        # The template writes the deck's own topic into the heading of its
+        # agenda slide ("Theory: Level Design"), which says nothing the page
+        # title has not already said.
+        if heading:
+            bare = re.sub(r"^Theory:\s*", "", heading).strip()
+            if bare.lower() in (title.lower(), topic.strip().lower()):
+                heading = "Overview" if i == 2 else bare
+
         if not heading:
             # No heading anywhere on the slide (an agenda, a figure-only
             # slide, or a list continuing the slide before it). Never fall
@@ -599,38 +946,68 @@ def convert(path: pathlib.Path, decks_dir: pathlib.Path, verbose=False,
                 heading = f"{prev_heading} (cont.)"
             else:
                 heading = topic or title
+        if fmt.get("heading"):
+            heading = fmt["heading"]
 
-        if lens:
-            body.append(f"## {mdx_escape(lens)}\n")
-        else:
-            body.append(f"## {mdx_escape(heading)}\n")
+        # --- the words, rewritten by deck-format.json if it says so
+        if fmt.get("bullets") is not None:
+            main_paras = format_paras(fmt["bullets"])
 
-        body += bullets(main_paras)
+        # --- the blocks the slide carries besides its list
+        aside_block: list[str] = []
+        aside_lines = 0.0
+        if aside and fmt.get("aside", "keep") != "drop":
+            if aside == prev_aside:
+                # The same definition box held on screen across a run of
+                # slides. It belongs on the first of them; repeating it six
+                # times (week09-2) reads as a rendering fault.
+                pass
+            else:
+                aside_block += ["", '<aside class="slide-aside">', ""]
+                aside_block += bullets([(0, t) for t in aside])
+                aside_block += ["", "</aside>"]
+                aside_lines = (text_lines([(0, t) for t in aside], scale=0.92)
+                               + ASIDE_CHROME_LINES)
+        prev_aside = aside
 
-        if aside:
-            body.append("")
-            body.append('<aside class="slide-aside">')
-            body.append("")
-            body += bullets([(0, t) for t in aside])
-            body.append("")
-            body.append("</aside>")
+        table_block: list[str] = []
+        table_lines = 0.0
+        if fmt.get("table", "keep") != "drop":
+            for s in sorted(tables, key=lambda s: (s.y, s.x)):
+                md = table_md(s)
+                if md:
+                    stats["tables"] += 1
+                    table_block += [""] + md
+                    table_lines += (len(md) * TABLE_ROW_LINES
+                                    + TABLE_CHROME_LINES)
 
-        for s in sorted(tables, key=lambda s: (s.y, s.x)):
-            md = table_md(s)
-            if md:
-                stats["tables"] += 1
-                body.append("")
-                body += md
-
+        # Loose text boxes: labels off a diagram the copyright review dropped,
+        # so on the rendered slide they are a second, unexplained list under
+        # the first. Keep the words in the source as a comment (they are
+        # Penny's) but do not show them, unless deck-format says otherwise.
         loose_paras: list[tuple[int, str]] = []
         for s in sorted(loose, key=lambda s: (s.y, s.x)):
             loose_paras += shape_paragraphs(s)
-        if loose_paras:
-            body.append("")
-            body += bullets([(0, t) for _, t in loose_paras])
+        # A reading citation is a citation wherever the source typed it, and
+        # some of them sit in a loose text box that is otherwise dropped.
+        for _, text in loose_paras:
+            if is_citation(text) and text not in citations:
+                citations.append(text)
+        loose_paras = [(l, t) for l, t in loose_paras if not is_citation(t)]
+        loose_block: list[str] = []
+        loose_lines = 0.0
+        loose_mode = fmt.get("loose", "comment")
+        if loose_paras and loose_mode == "keep":
+            loose_block = [""] + bullets([(0, t) for _, t in loose_paras])
+            loose_lines = text_lines([(0, t) for _, t in loose_paras])
+        elif loose_paras and loose_mode == "comment":
+            loose_block = ["", "```comment", "Loose text boxes from the source "
+                           "slide (labels off a diagram that was dropped):"]
+            loose_block += [f"- {t}" for _, t in loose_paras]
+            loose_block += ["```"]
 
         # --- images
-        slide_images: list[str] = []
+        slide_images: list[tuple[str, str]] = []
         image_credits: list[str] = []
         slide_figures: list[dict] = []
         slide_snippets: list[tuple[str, str]] = []
@@ -736,53 +1113,118 @@ def convert(path: pathlib.Path, decks_dir: pathlib.Path, verbose=False,
                 # beside a bullet list, so give it a slide like a redrawing.
                 slide_figures.append({"src": rel, "alt": alt, "credit": credit})
             else:
-                slide_images.append(f"![{alt}]({rel})")
+                slide_images.append((rel, alt))
                 if credit:
                     image_credits.append(mdx_escape(credit))
             stats["images"] += 1
 
-        if slide_images:
-            # A row, so several images on one slide scale together instead of
-            # stacking off the bottom of it.
-            body.append("")
-            body.append('<div class="slide-media">')
-            body.append("")
-            body += slide_images
-            body.append("")
-            body.append("</div>")
+        for entry in extras.get(i, []):
+            if entry.get("file", "").lstrip("./") in claimed:
+                continue
+            if entry.get("layout", "bg cover") not in ("inline", "split"):
+                continue
+            slide_images.append((extra_src(entry), mdx_escape(entry["alt"])))
+            if entry.get("credit"):
+                image_credits.append(mdx_escape(entry["credit"]))
+            stats["extras"] += 1
+            if entry.get("layout") == "split":
+                fmt = {**fmt, "image_layout": "split"}
 
+        if fmt.get("split_image") and not slide_images:
+            img = fmt["split_image"]
+            slide_images.append((extra_src(img), mdx_escape(img["alt"])))
+            if img.get("credit"):
+                image_credits.append(mdx_escape(img["credit"]))
+            fmt = {**fmt, "image_layout": "split"}
+            stats["extras"] += 1
+
+        snippet_block: list[str] = []
+        snippet_lines = 0.0
         for text, snippet_credit in slide_snippets:
-            body.append("")
-            body.append(text)
+            snippet_block += ["", text]
+            snippet_lines += len(text.splitlines()) * TABLE_ROW_LINES
             if snippet_credit:
                 image_credits.append(mdx_escape(snippet_credit))
 
-        # --- citation and links
-        urls = external_links(root, rels)
+        # --- the credit line: absolutely positioned, so it costs no height
+        # and is repeated on every slide a long list is broken across.
+        urls = [] if fmt.get("links") == "drop" else external_links(root, rels)
         stats["links"] += len(urls)
-        credit = []
-        if topic:
-            credit.append(mdx_escape(topic))
-        credit += [mdx_escape(c) for c in citations + heading_cites]
-        credit += image_credits
-        if credit:
-            body.append("")
-            body.append(f'<div class="image-credit">{" — ".join(credit)}</div>')
-        if urls:
-            body.append("")
-            # MDX parses <url> as JSX, so autolinks must be explicit links.
-            body += [f"- [{u}]({u})" for u in dict.fromkeys(urls)]
+        # The sidebar's topic label is the deck's own subject ("Agile",
+        # "Level Design", "Training"), printed on every slide of it. The page
+        # title says that already, so the credit line carries the readings and
+        # the picture credits only.
+        credit = [mdx_escape(c) for c in citations + heading_cites]
 
+        def credit_line(with_images: bool) -> list[str]:
+            # The readings belong to the slide's subject, so they repeat on
+            # every slide a list is broken across; a picture credit belongs to
+            # the picture, and only one of those slides carries it.
+            parts = credit + (image_credits if with_images else [])
+            if not parts:
+                return []
+            return ["", f'<div class="image-credit">{" — ".join(parts)}</div>']
+
+        # --- fit it to the canvas
+        #
+        # One image beside a list becomes a two-column slide (content left,
+        # image right) whenever the list fits the narrower column: that is the
+        # layout these lectures wanted all along, and it gives the picture
+        # 100% of the slide height instead of the 30vh a .slide-media row
+        # allows. Everything that does not fit is broken into a second slide
+        # rather than shrunk -- a 0.64em bullet is not readable from the back
+        # of a theatre, so type size is not a variable here.
+        groups = bullet_groups(main_paras)
+        layout_pref = fmt.get("image_layout", "auto")
+        fixed_lines = (HEADING_LINES + aside_lines + table_lines
+                       + snippet_lines + loose_lines)
+        as_split = False
+        if len(slide_images) == 1 and groups and layout_pref != "row":
+            if layout_pref == "split" or (
+                fixed_lines + text_lines(main_paras, SPLIT_CHARS_PER_LINE)
+                <= SLIDE_LINES
+            ):
+                as_split = True
+        media_lines = 0.0 if as_split or not slide_images else MEDIA_ROW_LINES
+        budget = max(2.0, SLIDE_LINES - fixed_lines - media_lines)
+        if as_split:
+            # The photograph is on the first slide only, so only the first is
+            # measured against the narrow column: a continuation slide has the
+            # whole width and should be allowed to use it.
+            pieces = chunk_groups(groups, budget, SPLIT_CHARS_PER_LINE,
+                                  fmt.get("split_after"))
+            if len(pieces) > 1 and not fmt.get("split_after"):
+                rest = bullet_groups([p for piece in pieces[1:] for p in piece])
+                pieces = [pieces[0]] + chunk_groups(rest, SLIDE_LINES - HEADING_LINES)
+        else:
+            pieces = chunk_groups(groups, budget, CHARS_PER_LINE,
+                                  fmt.get("split_after"))
+
+        media_block: list[str] = []
+        if as_split:
+            media_block = split_bg(*slide_images[0])
+        elif slide_images:
+            # A row, so several images on one slide scale together instead of
+            # stacking off the bottom of it.
+            media_block = ["", '<div class="slide-media">', ""]
+            media_block += [f"![{alt}]({src})" for src, alt in slide_images]
+            media_block += ["", "</div>"]
+
+        comment_block: list[str] = []
+        if fmt.get("why"):
+            # A rewrite that drops a sentence has to say so somewhere the next
+            # convenor will find it, and the slide it happened on is that
+            # place. ```comment is stripped from the built page.
+            comment_block += ["", "```comment", f'cut: {fmt["why"]}', "```"]
         if omitted and omitted[-1][0] == i:
             notes_for_slide = [o for o in omitted if o[0] == i]
-            body.append("")
-            body.append("```comment")
+            comment_block += ["", "```comment"]
             for _, h, c, note in notes_for_slide:
-                body.append(note or (
+                comment_block.append(note or (
                     "figure omitted pending copyright review"
                     + (f" (see {c})" if c else "")
                 ))
-            body.append("```")
+            comment_block.append("```")
 
         # --- speaker notes, kept but not rendered
         notes = notes_text(z, i)
@@ -791,37 +1233,102 @@ def convert(path: pathlib.Path, decks_dir: pathlib.Path, verbose=False,
         if notes:
             seen_notes.add(notes)
             stats["notes"] += 1
-            body.append("")
-            body.append("```comment")
-            body.append(notes)
-            body.append("```")
+            comment_block += ["", "```comment", notes, "```"]
+
+        # A PowerPoint build-up: four source slides revealing one bullet at a
+        # time, which convert to four slides each carrying a fragment. The
+        # last of them takes the whole list (`bullets`) and the ones before it
+        # are dropped -- while still anchoring their own figures and added
+        # images, which are placed against the source slide, not against what
+        # became of it.
+        continuations = fmt.get("continuations") or []
+        for k, piece in enumerate([] if fmt.get("drop") else (pieces or [[]])):
+            body: list[str] = []
+            if k == 0 and fmt.get("class"):
+                body += [f'{{/* _class: {fmt["class"]} */}}', ""]
+            if k == 0:
+                slide_heading = lens or heading
+            elif k - 1 < len(continuations):
+                slide_heading = continuations[k - 1]
+            elif heading.endswith("(cont.)"):
+                slide_heading = heading
+            else:
+                slide_heading = f"{heading} (cont.)"
+            body.append(f"## {mdx_escape(slide_heading)}\n")
+            body += bullets(piece, sub_headings=fmt.get("bullets") is None)
+            if k == 0:
+                body += aside_block + table_block + media_block + snippet_block
+                body += loose_block
+            body += credit_line(k == 0)
+            if k == 0 and urls:
+                # MDX parses <url> as JSX, so autolinks must be explicit
+                # links; and a link on a slide is read out, not typed in, so
+                # it is labelled with its host rather than printed in full.
+                body += [""] + [
+                    f"- [{re.sub(r'^www[.]', '', u.split('/')[2])}]({u})"
+                    for u in dict.fromkeys(urls)
+                ]
+            if k == 0:
+                body += comment_block
+            out.append("\n".join(x for x in body if x is not None).rstrip() + "\n")
+            stats["slides"] += 1
 
         if heading and not heading.endswith("(cont.)"):
             prev_heading = heading
-        out.append("\n".join(body).rstrip() + "\n")
-        stats["slides"] += 1
 
         # A redrawn figure gets a slide of its own. Beside a bullet list the
         # theme caps an image at 30vh, which is too small for any label to be
         # read from the back of a theatre; on its own slide it gets 60vh.
         for entry in slide_figures:
-            fig_heading = heading or prev_heading
-            if fig_heading and not fig_heading.endswith("(cont.)"):
-                fig_heading = f"{fig_heading} (cont.)"
-            fig: list[str] = []
-            if fig_heading:
-                fig.append(f"## {fig_heading}")
-                fig.append("")
-            fig.append('<figure class="deck-figure">')
-            fig.append("")
-            fig.append(f'![{mdx_escape(entry["alt"])}]({entry["src"]})')
-            fig.append("")
-            if entry.get("credit"):
-                fig.append(f'<figcaption>{mdx_escape(entry["credit"])}</figcaption>')
-                fig.append("")
-            fig.append("</figure>")
-            out.append("\n".join(fig).rstrip() + "\n")
+            out.append(figure_slide(entry, heading or prev_heading))
             stats["slides"] += 1
+
+        # Added images (deck-extras.json), anchored on this source slide.
+        used_anchors.add(i)
+        for entry in extras.get(i, []):
+            if entry.get("file", "").lstrip("./") in claimed:
+                continue
+            layout = entry.get("layout", "bg cover")
+            if layout in ("inline", "split"):
+                continue
+            if layout == "figure":
+                out.append(figure_slide(
+                    {"src": extra_src(entry), "alt": entry.get("alt", ""),
+                     "credit": entry.get("credit", "")},
+                    entry.get("heading") or heading or prev_heading))
+            else:
+                out.append(extra_slide(entry))
+            stats["slides"] += 1
+            stats["extras"] += 1
+
+    # The title slide and the closing slide are emitted without reaching the
+    # extras block, and a typo in an anchor would otherwise drop an image
+    # silently, so say so instead.
+    stray = sorted(set(slide_fmt) - used_formats, key=int)
+    if stray:
+        raise SystemExit(
+            f"deck-format/{slug}.json: slide(s) {', '.join(stray)} are not "
+            "content slides of this deck (the title and closing slides are "
+            "generated, and the deck has "
+            f"{len(slide_names)} source slides)"
+        )
+    unused = sorted(set(extras) - used_anchors)
+    if unused:
+        raise SystemExit(
+            f"deck-extras.json: {slug} anchors source slide(s) "
+            f"{', '.join(str(u) for u in unused)}, which carry no content"
+        )
+
+    # A deck with no publishable source picture has no hero for its card on
+    # /lectures/; an added photograph is a better one than the site default.
+    # A drawing is not: the cards want something representative of the topic,
+    # and an SVG diagram on a card reads as a rendering fault.
+    if hero is None:
+        for entry in EXTRA_IMAGES.get(slug, []):
+            f = entry.get("file", "").lstrip("./")
+            if f.startswith("photos/") and entry.get("layout") != "inline":
+                hero = f"/src/decks/{f}"
+                break
 
     # A pending screenshot also leaves a note on the slide, but it is not a
     # picture we decided to drop -- do not count it twice.
@@ -884,7 +1391,7 @@ def main() -> int:
 
     sources = sorted(theory.glob("*/*.pptx"), key=lambda p: (deck_week(p) or 99, p.stem))
     total = {"slides": 0, "images": 0, "figures": 0, "snippets": 0,
-             "pending": 0, "tables": 0, "links": 0, "omitted": 0}
+             "pending": 0, "tables": 0, "links": 0, "omitted": 0, "extras": 0}
     n = 0
     for src in sources:
         if args.only and args.only not in deck_slug(src):
@@ -900,11 +1407,18 @@ def main() -> int:
         uniq = {r["sha256"] for r in review_index}
         print(f"\nreview: {len(uniq)} distinct pictures -> {review_dir}")
 
+    unknown = sorted(set(EXTRA_IMAGES) - {deck_slug(p) for p in sources})
+    if unknown:
+        raise SystemExit(
+            "deck-extras.json names deck(s) that do not exist: "
+            + ", ".join(unknown)
+        )
+
     print(
         f"\n{n} deck(s): {total['slides']} slides, {total['images']} images published, "
         f"{total['figures']} figures redrawn, {total['snippets']} tables from "
         f"figures, {total['pending']} screenshots pending, "
-        f"{total['omitted']} pictures dropped, "
+        f"{total['omitted']} pictures dropped, {total['extras']} images added, "
         f"{total['tables']} tables, {total['links']} external links"
     )
     return 0

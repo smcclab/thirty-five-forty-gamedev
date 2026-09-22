@@ -1,0 +1,30 @@
+{
+  "slides": {
+    "3": {
+      "heading": "The Agile Manifesto",
+      "bullets": [],
+      "why": "the four values move to the slide the source builds them up on (slide 6); this slide carries the twelve principles on their own"
+    },
+    "4": {
+      "drop": true
+    },
+    "5": {
+      "drop": true
+    },
+    "6": {
+      "heading": "Four values",
+      "bullets": [
+        "Individuals and interactions over processes and tools",
+        "Working software over comprehensive documentation",
+        "Customer collaboration over contract negotiation",
+        "Responding to change over following a plan"
+      ],
+      "why": "the source reveals one value per slide; the four are one idea and read as one slide. The techtarget link stays in the credit line.",
+      "split_image": {
+        "file": "photos/sable-flow-KHpjeuaWOec-unsplash.jpg",
+        "alt": "Two people at a whiteboard covered in sticky notes, mid-conversation.",
+        "credit": "Photo by Sable Flow on Unsplash"
+      }
+    }
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "slides": {
+    "2": {
+      "heading": "Overview"
+    },
+    "3": {
+      "bullets": [
+        "  Reaching and exceeding goals",
+        "    One goal at the end, or subgoals along the way?",
+        "    Are your goals too hard or easy to reach?",
+        "    Are they clearly defined? Or hidden from view?",
+        "  Competing against opponents",
+        "    What opportunities are there to create competition?",
+        "    What is driving player competition?",
+        "  Stretching personal limits",
+        "    Accomplishment from setting your own goals and achieving them",
+        "    Can you incorporate this? Does it suit your players?",
+        "  Exercising difficult skills",
+        "    Opportunities to learn new skills; can players master and display them?",
+        "  Making interesting choices",
+        "    Are you providing choices with consequences? How can you improve them?"
+      ],
+      "split_after": [
+        2
+      ],
+      "continuations": [
+        "Challenge: limits, skills, choices"
+      ],
+      "why": "dropped \"in your game\", which the slide says already; the two questions about skills are one bullet"
+    },
+    "4": {
+      "bullets": [
+        "Living out fantasies: what aspirations does your game fulfil?",
+        "Social interaction: making the most of the possibilities?",
+        "Exploration and discovery: exciting, guiding but not directing?",
+        "Collection: people love completing collections",
+        "Stimulation: sight, sound, touch, movement",
+        "Self-expression and performance: a chance to show off who they are",
+        "Construction/destruction: investment in building, freedom in destroying"
+      ],
+      "split_after": [
+        4
+      ],
+      "continuations": [
+        "Play: senses, self and making"
+      ],
+      "split_image": {
+        "file": "photos/2h-media-f4BD7TnzLko-unsplash.jpg",
+        "alt": "Two friends leaning over a fantasy board game: the social and fantasy pleasures of play.",
+        "credit": "Photo by 2H Media on Unsplash"
+      },
+      "why": "each label and its question folded into one bullet; \"stimulating the senses\" and \"giving people a chance\" lead-ins dropped"
+    },
+    "5": {
+      "heading": "What makes a choice interesting?",
+      "class": "impact",
+      "bullets": [
+        "  Player choice is one of the most important aspects of fun",
+        "  How can you design choices that are more interesting?",
+        "  Consequence is key: the choice must alter the course of the game",
+        "  Decisions need potential upsides and downsides: risk versus reward",
+        "  Inconsequential or minor decisions should matter more, or be eliminated",
+        "  Not all decisions should be life and death",
+        "    Decisions rise and fall as the game progresses, mirroring the dramatic arc",
+        "  Critical: life and death",
+        "  Important: direct and immediate impact",
+        "  Necessary: indirect or delayed impact",
+        "  Minor: small impact, direct or indirect",
+        "  Inconsequential: no impact on outcome"
+      ],
+      "split_after": [
+        1,
+        6
+      ],
+      "continuations": [
+        "Improving Player Choices",
+        "Weighing a decision"
+      ],
+      "loose": "drop",
+      "why": "\"What makes a choice interesting versus not?\" became the opening question slide's heading; the five weight labels were loose text boxes off the dropped diagram and are now the \"Weighing a decision\" slide"
+    },
+    "6": {
+      "heading": "Types of decisions",
+      "bullets": [
+        "Hollow: no real consequences",
+        "Obvious: no real decision",
+        "Uninformed: an arbitrary choice",
+        "Informed: the player has ample information",
+        "Dramatic: taps into the player's emotional state",
+        "Weighted: balanced, consequences on both sides",
+        "Immediate: has an immediate impact",
+        "Long-term: impact will be felt down the road",
+        "Players must weigh the consequences carefully, with no optimal answer",
+        "Something is gained and lost either way",
+        "Can resonate emotionally with the player"
+      ],
+      "split_after": [
+        8
+      ],
+      "continuations": [
+        "Dilemmas"
+      ],
+      "why": "the two sub-headings \"Types of decisions\" and \"Dilemmas\" became the headings; the dilemma sentence is split in two"
+    },
+    "7": {
+      "heading": "Rewards and punishment",
+      "bullets": [
+        "Rewards are used more than punishment",
+        "Over-punishing the player makes them stop playing",
+        "Threat of punishment creates tension: stealth mode",
+        "A balanced system of rewards and punishment makes choices more interesting",
+        "Rewards useful in obtaining victory carry greater weight",
+        "Rewards with a romantic association (magic, gold) appear more valuable",
+        "Rewards tied to the storyline have an added impact",
+        "Timing and quantity matter: a small stream of rewards becomes meaningless",
+        "Larger, less frequent or random rewards are more effective, but beware gambling-like elements"
+      ],
+      "split_after": [
+        4
+      ],
+      "continuations": [
+        "Rewards: what carries weight"
+      ],
+      "split_image": {
+        "file": "photos/andrej-sachov-5IXeasHbnV8-unsplash.jpg",
+        "alt": "A heap of gold coins, a goblet and bars: the romantic reward Fullerton says players over-value.",
+        "credit": "Photo by Andrej Sachov on Unsplash"
+      },
+      "why": "dropped the \"Guidelines:\" lead-in and \"e.g.\"; the two timing sub-bullets are folded into their parents"
+    },
+    "8": {
+      "heading": "Anticipation and surprise",
+      "bullets": [
+        "  Anticipation: meaningful choices come from players seeing the consequences of their actions, as in Chess",
+        "    Incomplete information, such as fog of war, also builds anticipation",
+        "  Surprise: can reinvest players; balance randomness against meaningful choice",
+        "  Progress: satisfying to see choices result in progress",
+        "    Design milestones, small goals along the way, advertised and rewarded",
+        "    Mini-arcs of gameplay (~1hr) with memorable moments",
+        "  The end: defeating other players or working together to defeat the game, resolving the story, the final cutscene"
+      ],
+      "split_after": [
+        2
+      ],
+      "continuations": [
+        "Progress and the end"
+      ],
+      "why": "each \"e.g.\" became a clause; advertising and rewarding milestones folded into the milestone bullet"
+    },
+    "9": {
+      "heading": "The Lens of Surprise (lens 4)",
+      "bullets": [
+        "Surprise is the root of humour, strategy, problem solving",
+        "What will surprise players when they play my game?",
+        "Does the story/rules/art/tech in my game have surprises?",
+        "Do the rules give players ways to surprise each other/themselves?",
+        "Think about the player's motivations, not just the game goals",
+        "What questions does my game put into the player's mind?",
+        "What am I doing to make them care about these questions?",
+        "What can I do to make them invent even more questions?"
+      ],
+      "split_after": [
+        4
+      ],
+      "continuations": [
+        "The Lens of Curiosity (lens 6)"
+      ],
+      "why": "one lens per slide; the questions stay word for word"
+    },
+    "10": {
+      "heading": "The Lens of Endogenous Value (lens 7)",
+      "bullets": [
+        "The player's willingness to pretend the game is important",
+        "What is valuable to the players in my game?",
+        "How can I make it more valuable to them?",
+        "What is the relationship between value in the game and the player's motivations?",
+        "What problems does my game ask the player to solve?",
+        "Are there hidden problems to solve that arise as part of gameplay?",
+        "How can my game generate new problems so that players keep coming back?"
+      ],
+      "split_after": [
+        4
+      ],
+      "continuations": [
+        "The Lens of Problem Solving (lens 8)"
+      ],
+      "why": "one lens per slide; the questions stay word for word, but the source's \"does my game as the player to solve\" reads \"ask\""
+    },
+    "11": {
+      "heading": "The Lens of Resonance (lens 12)"
+    },
+    "12": {
+      "split_after": [
+        5
+      ],
+      "continuations": [
+        "Player types: makers and performers"
+      ]
+    },
+    "14": {
+      "heading": "Bartle's Taxonomy of Players",
+      "bullets": [
+        "Achievers: want to achieve game goals, challenge",
+        "Explorers: want to explore the game, discovery",
+        "Socialisers: relationships with others, fellowship",
+        "Killers: competing/defeating others, competition/destruction",
+        "What pleasures does your game give to players? Can these be improved?",
+        "What pleasures are missing from your experience? Why? Can they be added?"
+      ],
+      "split_after": [
+        4
+      ],
+      "continuations": [
+        "The Lens of Pleasure (lens 20)"
+      ],
+      "loose": "drop",
+      "why": "the Lens of Pleasure was a loose text box beside the diagram and is now a slide of its own; \"does you game\" reads \"does your game\""
+    },
+    "15": {
+      "split_after": [
+        5
+      ],
+      "continuations": [
+        "Pleasures: possibility to wonder"
+      ],
+      "split_image": {
+        "file": "photos/jonny-gios-ljN0zTXf7tQ-unsplash.jpg",
+        "alt": "A roller-coaster car of riders cresting a vertical climb: the pleasure of anticipation.",
+        "credit": "Photo by Jonny Gios on Unsplash"
+      }
+    },
+    "16": {
+      "bullets": [
+        "Aesthetic: the world, scenery, graphics, sound, art style; low = gameplay focus",
+        "Narrative: complex stories; low = less story, skip cutscenes",
+        "Goal: quests and tasks, 100%, all collections; low = optional quests unfinished",
+        "Social: playing with others, multiplayer and competitive communities; low = single player",
+        "Challenge: difficult games, hard challenges, fast-paced; low = easier or casual games"
+      ],
+      "split_after": [
+        1
+      ],
+      "continuations": [
+        "Traits: story, goals, others, difficulty"
+      ],
+      "why": "\"orientation\" dropped from each trait name and the longer example lists cut to the first few; the Tondello citation and the framing sentences stay in the aside"
+    }
+  }
+}

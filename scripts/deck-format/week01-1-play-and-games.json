@@ -1,0 +1,186 @@
+{
+  "slides": {
+    "2": {
+      "heading": "This lecture",
+      "why": "the `Theory: ...` title block is the deck title and its readings, not a heading"
+    },
+    "3": {
+      "heading": "What is play?",
+      "bullets": [
+        "  Loud, boisterous, physical",
+        "  Non-directed, not scripted",
+        "  Fun — and a child's work",
+        "  Not work; \"meaningless behaviour\"",
+        "  [Promise of Play (1 of 12): play in animals and children](https://www.youtube.com/watch?v=OkH9AE3y55Y)"
+      ],
+      "loose": "drop",
+      "links": "drop",
+      "image_layout": "split",
+      "split_image": {
+        "file": "photos/alaric-sim-0N4UJja6jEU-unsplash.jpg",
+        "alt": "Two small children in a park, one reaching up to catch a red balloon.",
+        "credit": "Photo by Alaric Sim on Unsplash"
+      },
+      "why": "the nine loose text boxes were the slide's whole content — a word cloud around the question — and are now its bullets; the bare YouTube URL becomes the named video link; the children photograph moves from a full-bleed slide into the column"
+    },
+    "4": {
+      "heading": "Playful animals",
+      "bullets": [
+        "  Play comes naturally to animals of a certain intelligence — pets",
+        "    Easy to start playing on simple, understandable rules",
+        "    Catch the ball, retrieve the stick, my hand is prey, obstacle course",
+        "  Young animals are particularly playful",
+        "    Almost anything in their environment is an excuse to start gameplay",
+        "    Without anyone teaching the animal the behaviour",
+        "  Play is fundamental to development and survival",
+        "    Young animals refine the skills they need to hunt, fight, mate and hide as adults"
+      ],
+      "split_after": [
+        1
+      ],
+      "continuations": [
+        "Play and survival"
+      ],
+      "image_layout": "split",
+      "split_image": {
+        "file": "photos/jamie-street-uNNCs5kL70Q-unsplash.jpg",
+        "alt": "A retriever standing in a muddy track carrying a branch far longer than itself.",
+        "credit": "Photo by Jamie Street on Unsplash"
+      },
+      "why": "\"(e.g., pets)\" becomes a dash clause and \"and many other activities that are key to survival as an adult\" is shortened; all four of Penny's animal-play examples kept; the dog photograph moves from a full-bleed slide into the column"
+    },
+    "5": {
+      "heading": "A playful approach",
+      "bullets": [
+        "  Play helps us learn skills, acquire knowledge, socialise, problem solve, relax, see things differently — \"fun\"",
+        "  A process of experimentation, pushing boundaries, trying new things",
+        "    Relevant to children, artists, scientists",
+        "  Not one thing — a state of mind, a \"playful approach\""
+      ],
+      "why": "nothing dropped; the dash list is set as one bullet"
+    },
+    "6": {
+      "heading": "Types of play (Caillois)",
+      "bullets": [
+        "  Roger Caillois. 1961. Man, Play, and Games — four fundamental types:",
+        "  Competitive (agon) — unregulated athletics: foot racing, wrestling",
+        "  Chance-based (alea) — counting-out rhymes: ini mini miny moe",
+        "  Make-believe (mimicry) — children's initiations, masks, disguises",
+        "  Vertigo (ilinx) — children \"whirling\", horseback riding, waltzing"
+      ],
+      "loose": "drop",
+      "why": "the four types were loose text boxes off Caillois's table and are now the list, so the table is dropped; the translator and publisher of the 1961 edition are dropped from the citation; \"Freeform play (paidia)\" is a column head, not a type, and moves to the paidia/ludus slide",
+      "table": "drop"
+    },
+    "7": {
+      "heading": "Paidia and ludus",
+      "bullets": [
+        "  \"Paidia\" and \"ludus\" for playing and gaming (Caillois, 1961) — two poles of play activities",
+        "    Paidia — uncontrolled, free-form, improvisational: freeform play",
+        "    Ludus — restricted, structured, goal-focused: rule-based play",
+        "  The same four types, played by rules:",
+        "    Agon — boxing, billiards, fencing, checkers, football, chess",
+        "    Alea — betting, roulette, lotteries",
+        "    Mimicry — theatre, spectatorship",
+        "    Ilinx — skiing, mountain climbing, tightrope walking"
+      ],
+      "loose": "drop",
+      "why": "the slide's section header (\"What is a game? How are games/play related/different?\") is the next two slides' headings and is dropped here; the table is written out as bullets, and its paidia column repeats slide 6, so only the ludus examples are listed",
+      "table": "drop"
+    },
+    "8": {
+      "heading": "How are games and play related?",
+      "class": "impact",
+      "bullets": [
+        "  Games are a form of play with structure",
+        "  Salen & Zimmerman (2003):",
+        "    Games — the constraints of the rules are the rigid structure",
+        "    Play — the freedom of players to act within those rules",
+        "  Rule-bound activities with goals, and at least one player who tries to fulfil them",
+        "  Games provide a safe context in which lessons can be learned through play"
+      ],
+      "split_after": [
+        1
+      ],
+      "continuations": [
+        "Rules and freedom"
+      ],
+      "why": "the source slide's own question heads it as the deck's impact slide, answered in one line; nothing else dropped"
+    },
+    "9": {
+      "heading": "What is a game?",
+      "bullets": [
+        "  A game is:",
+        "    A closed, formal system, that",
+        "    engages players in structured conflict, and",
+        "    resolves its uncertainty in an unequal outcome",
+        "  Games:",
+        "    Are entered wilfully",
+        "    Have goals, conflict, rules, challenge",
+        "    Can be won and lost",
+        "    Are interactive",
+        "    Can create their own internal value",
+        "    Engage players",
+        "    Are closed, formal systems"
+      ],
+      "split_after": [
+        1
+      ],
+      "continuations": [
+        "What every game has"
+      ],
+      "image_layout": "split",
+      "split_image": {
+        "file": "photos/hassan-pasha-7SjEuEF06Zw-unsplash.jpg",
+        "alt": "A black chess knight and a white chess knight facing each other on a board.",
+        "credit": "Photo by Hassan Pasha on Unsplash"
+      },
+      "why": "Fullerton's definition and the seven properties are unchanged, one to a slide; the chess photograph moves from a full-bleed slide into the column beside the definition"
+    },
+    "10": {
+      "heading": "The magic circle",
+      "bullets": [
+        "  Games involve accepting imposed boundaries and rules to your behaviour — \"suspension of disbelief\", the \"magic circle\"",
+        "    The gameplay experience is an artificial one",
+        "    Games are an abstract construct, governed by a set of formalised rules",
+        "    The rules that govern reality differ from those that govern the make-believe world",
+        "    Also crucial to the enjoyment of film, literature, art, music",
+        "  Suits (1978): the psychological attitude required of a player entering into the play of a game",
+        "  To adopt a lusory attitude is to accept the arbitrary rules of a game, to facilitate the resulting experience of play"
+      ],
+      "split_after": [
+        1
+      ],
+      "continuations": [
+        "The lusory attitude"
+      ],
+      "why": "\"Understand/accept\" dropped as a lead-in from three bullets; \"Lusory attitude\" becomes the second slide's heading so the bullet does not repeat it; both definitions kept word for word, and Suits and Huizinga stay in the sidebar"
+    },
+    "11": {
+      "heading": "The game experience",
+      "bullets": [
+        "  Designing a game is like being a party host (Fullerton)",
+        "    Get everything ready — food, drinks, music — then open the doors and see what happens",
+        "    Results are not always predictable, or what you envisioned",
+        "    Only fully realised after your guests arrive",
+        "    The party will vary based on your guests",
+        "  The game enables and affords the experience (Schell)",
+        "  We cannot create experiences, we can only create games",
+        "  The experience exists between the player and the game"
+      ],
+      "split_after": [
+        1
+      ],
+      "continuations": [
+        "The game is not the experience"
+      ],
+      "image_layout": "split",
+      "split_image": {
+        "file": "photos/m-f-fb0_wj2MZk4-unsplash.jpg",
+        "alt": "A long dining table laid with candles and flowers in a dark room, before the guests arrive.",
+        "credit": "Photo by M F on Unsplash"
+      },
+      "why": "\"An interactive experience that is\" dropped as a lead-in; \"The game is not the experience\" becomes the second slide's heading rather than repeating as its first bullet; both of Penny's framings kept; the laid-table photograph moves from a full-bleed slide into the column beside the party-host metaphor"
+    }
+  }
+}

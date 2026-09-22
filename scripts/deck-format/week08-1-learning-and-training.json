@@ -1,0 +1,299 @@
+{
+  "slides": {
+    "2": {
+      "heading": "Overview",
+      "why": "heading only: the source title block was standing in as the heading on this and the next two slides"
+    },
+    "3": {
+      "heading": "Play: a Week 1 recap",
+      "bullets": [
+        "  Play comes naturally to animals of a certain intelligence — pets",
+        "    Catch the ball, retrieve the stick, my hand is prey, obstacle course",
+        "  Simple, understandable rules make a game easy to start",
+        "  Young animals are particularly playful",
+        "    Anything in their environment is an excuse to start gameplay",
+        "    Nobody teaches the animal this behaviour",
+        "  Play is fundamental to development and survival",
+        "    Young animals refine the skills they need to hunt, fight, mate and hide as adults",
+        "  Play helps us learn, acquire knowledge, socialise, problem solve, relax, see things differently — “fun”"
+      ],
+      "split_after": [
+        2
+      ],
+      "continuations": [
+        "Play: why it matters"
+      ],
+      "split_image": {
+        "file": "photos/jamie-street-uNNCs5kL70Q-unsplash.jpg",
+        "alt": "A retriever carrying a branch far longer than itself along a muddy track.",
+        "credit": "Photo by Jamie Street on Unsplash"
+      },
+      "why": "dropped the “What is play?” lead-in (it is the heading) and the restated “activities key to survival as an adult”; kept all four pet examples and the full list of what play does for us. Reuses the Week 1 dog for the Week 1 recap."
+    },
+    "4": {
+      "heading": "Learning to play",
+      "bullets": [
+        "  Good game design teaches the player how to play and enjoy the game",
+        "    One of the most important concepts in game design",
+        "    Not fun if the player does not know how to play",
+        "    Awesome systems the player never exploits effectively do not exist",
+        "  From the smallest mechanic to whole levels, features and mechanics",
+        "    Environment physics, player abilities, enemy behaviour, reward systems",
+        "    The game as a whole suffers if these rules are not taught",
+        "  Designers must find the best teaching mechanisms for this training goal"
+      ],
+      "why": "nine source lines compressed to eight fragments; dropped “if the game design does not support learning through training, it will never be fully enjoyed” as a restatement of the first bullet, and the hedge “must try to find the best techniques available”"
+    },
+    "5": {
+      "heading": "Mastery",
+      "bullets": [
+        "  Good design teaches the rules, then makes using them rewarding and fun",
+        "    Much of the fun surfaces when the player is tested",
+        "  Show how play mechanics tie into the game’s reward mechanisms",
+        "  What actions and skills must the player master to be rewarded?",
+        "  What are the most enjoyable sections to be found?",
+        "  Which weapons provide the best results?",
+        "  What creatures are most fun to play with?",
+        "  What skills should the player train first?",
+        "  These questions are a teaching dialogue between designer and player"
+      ],
+      "split_after": [
+        2
+      ],
+      "continuations": [
+        "Mastery: the teaching dialogue"
+      ],
+      "why": "all five of Penny’s questions kept word for word bar the first, which loses “in order to get rewarded by the game”; the opening sentence is compressed to one fragment"
+    },
+    "6": {
+      "heading": "Key areas to be taught",
+      "bullets": [
+        "  Game’s main goals and rules",
+        "  Abilities and limitations of the player character",
+        "  Physics and scope of the gameplay world",
+        "  Abilities and limitations of the non-player characters",
+        "  Success strategies available to the player",
+        "  Players must learn what constitutes the core gameplay experience",
+        "    What the main objectives are and how to achieve them",
+        "    Early on, level by level and overall"
+      ],
+      "split_after": [
+        5
+      ],
+      "continuations": [
+        "Goals and rules"
+      ],
+      "why": "the five key areas are unchanged, with the line that named them now the heading; the two “Goals and Rules” sentences become three fragments on their own slide"
+    },
+    "7": {
+      "heading": "The player character",
+      "bullets": [
+        "  The player’s main interface to the game world",
+        "    They experience and interact with the world through their character",
+        "    Defines their abilities and limitations in the game’s reality",
+        "  Teach this early in the gameplay experience",
+        "    The sooner the player accepts it, the sooner disbelief is suspended",
+        "  Changes can come later, after the fundamental rules are taught",
+        "  Less central when play is not through an avatar",
+        "    Players still need to know how they can manipulate the virtual world"
+      ],
+      "split_after": [
+        1
+      ],
+      "continuations": [
+        "Player character: teach it early"
+      ],
+      "loose": "drop",
+      "why": "the three loose text boxes are content, so they are bullets here rather than a comment; the Tetris and FPS examples stay in the aside"
+    },
+    "8": {
+      "heading": "World physics and NPCs",
+      "bullets": [
+        "  Teach players how to interact with the game’s environment",
+        "    Actions mean little outside a defined physical context",
+        "  Teach players how to interact with friendly NPCs",
+        "    Keeping them friendly may be a challenge itself",
+        "  Teach players about enemy AI",
+        "    Abilities, hazards, strengths, weaknesses"
+      ],
+      "why": "dropped “gives further context in which to perform actions”, which the sub-bullet under it already says; the two source sub-headings are folded into one heading"
+    },
+    "9": {
+      "heading": "Success strategies",
+      "bullets": [
+        "  A video game needs to be worth playing",
+        "  Player actions must be rewarding, especially when linked to progression",
+        "  Strategies exist that produce an enjoyable progression",
+        "    Finding and perfecting them is part of the fun of the game",
+        "    Central to learning how to enjoy the game",
+        "  A success strategy is one that produces a fun gameplay experience",
+        "    Formal — predefined solutions to gameplay questions",
+        "    Informal — defined by the players themselves",
+        "    Players devise their own play through open interaction with the world",
+        "    Can be encouraged and supported through good design"
+      ],
+      "split_after": [
+        3
+      ],
+      "continuations": [
+        "Formal and informal strategies"
+      ],
+      "why": "the definition of a success strategy is kept; the third-level line about open interaction is folded up a level"
+    },
+    "10": {
+      "heading": "Training approaches"
+    },
+    "11": {
+      "heading": "Practical example",
+      "bullets": [
+        "  Learning by doing works best for many people",
+        "  Let players practise what they were taught as soon as possible",
+        "    A new mechanic: let the player try it immediately",
+        "    Easier while the lesson is fresh",
+        "  Actively reward players when they pass a skill test",
+        "    Or when they progress through a challenging scenario",
+        "  Taught that success has positive consequences, players become eager to engage"
+      ],
+      "split_after": [
+        2
+      ],
+      "continuations": [
+        "Positive reinforcement"
+      ],
+      "split_image": {
+        "file": "photos/stacie-ong-0olPY6OO4dI-unsplash.jpg",
+        "alt": "A climber working a route on an indoor wall of coloured holds — practising the skill by doing it.",
+        "credit": "Photo by Stacie Ong on Unsplash"
+      },
+      "why": "“give players a chance to” becomes “let players”; nothing else"
+    },
+    "12": {
+      "heading": "Safe environment",
+      "bullets": [
+        "  Teach important skills in a safe environment first",
+        "  Players must be able to learn comfortably",
+        "  Ramp up difficulty later with harder encounters",
+        "    Lessons at the start of the game should be forgiving",
+        "  Give the player the tools and knowledge before a test they can fail",
+        "  Lethal encounters are fine, but they must be fair",
+        "    Avoid unannounced or unavoidable instant-death traps",
+        "  Introduce new mechanics in non-frustrating ways",
+        "  Teach skills in a way that players cannot fail",
+        "    Let them practise until they can do the task"
+      ],
+      "split_after": [
+        3
+      ],
+      "continuations": [
+        "Fairness"
+      ],
+      "split_image": {
+        "file": "photos/hiboy-gJu87Qyjd4M-unsplash.jpg",
+        "alt": "An adult steadying a small child on a balance bike on a path — the first skill taught where falling is safe.",
+        "credit": "Photo by Hiboy on Unsplash"
+      },
+      "why": "“make sure players can comfortably learn the skills they need to learn” loses its hedge; the last source line keeps the practising point but drops “relevant to the teaching exercise”"
+    },
+    "13": {
+      "heading": "Don’t start with failure",
+      "bullets": [
+        "  Tempting to start with a very serious challenge",
+        "  Beginning on a tense note puts the player in grave peril",
+        "    Sounds good on paper, but a game is not a movie or book",
+        "    Serious danger means a serious chance the player fails",
+        "    Frustrating to fail at the very start of the game or level",
+        "  Off-putting rather than enjoyably tense — the game looks frustrating",
+        "    Discourages the player from playing"
+      ],
+      "why": "seven long sentences become seven fragments; “want to begin gameplay on a tense note” and “immediately put the player in grave peril” are one bullet"
+    },
+    "14": {
+      "heading": "Don’t taunt the player",
+      "bullets": [
+        "  A teaching section must end positively, however long mastery takes",
+        "    Struggling players need encouraging in a positive manner",
+        "    Don’t punish them for not mastering a mechanic or challenge",
+        "  Don’t shut off award paths or use taunting language",
+        "    It puts off exactly the players who are struggling",
+        "    They have the most to gain from an encouraging approach",
+        "    They might get fed up and stop playing completely"
+      ],
+      "why": "“employ any similar tactics” dropped as an etc.; everything else is one source line per bullet"
+    },
+    "15": {
+      "heading": "Training methods"
+    },
+    "16": {
+      "heading": "Tutorials and progression",
+      "bullets": [
+        "  Tutorials and in-game training are interactive learning experiences",
+        "    Introduce the player to mechanics, controls and concepts",
+        "    Good training is enjoyable and invisible to the player",
+        "    Use sparingly — don’t over-explain, give it in small bites",
+        "    Never a fall-back for bad design",
+        "  Gameplay needs to be introduced gradually",
+        "    Too slow and players are bored; too fast and they are confused",
+        "    Getting the progression right is key to enjoyment of the game"
+      ],
+      "why": "twelve source lines onto one slide: “don’t over-explain/complicate” and “small, manageable bites” share a bullet, and the bored/confused pair are one bullet. The flow-channel figure follows on its own slide."
+    },
+    "17": {
+      "heading": "Design to avoid training",
+      "bullets": [
+        "  Use industry standards",
+        "  Meet player expectations as much as possible",
+        "  Let players customise controls",
+        "  Don’t over-complicate mechanics or controls",
+        "  Keep game concepts simple and sensible",
+        "    If you can’t explain it, it’s too complicated"
+      ],
+      "split_image": {
+        "file": "photos/kamil-switalski-aluVvXXZJtc-unsplash.jpg",
+        "alt": "Two hands holding a games console controller — the layout players already know and expect.",
+        "credit": "Photo by Kamil Switalski on Unsplash"
+      },
+      "why": "“Design the game to avoid training” becomes the heading; the six practices are unchanged"
+    },
+    "18": {
+      "heading": "Controls and interface",
+      "bullets": [
+        "  Players must control and understand the game effortlessly",
+        "    Controls and interface become invisible if designed well",
+        "    Poor ones create barriers to immersion",
+        "    Frustrating to know what you want your character to do and not do it",
+        "  Keep controls as simple and minimal as possible, but sufficient",
+        "  Developers get accustomed to bad or unique controls",
+        "  Allow multiple ways to perform the same action",
+        "  Also see Week 5 theory"
+      ],
+      "why": "nothing cut; the source’s “also see Week 5 Theory” comes out of the heading and onto a bullet"
+    },
+    "19": {
+      "heading": "Output and feedback",
+      "bullets": [
+        "  Condense a huge amount of data effectively",
+        "  Give as much information as possible “in-game”",
+        "    Position, condition — animation, texture — weapons, spells in effect",
+        "  Use visual and audio, rather than text",
+        "  Use the GUI or HUD for the rest — score, lives, status",
+        "  Notify the player of important events",
+        "  Players need the status and outcome of their actions — feedback",
+        "  Also see Week 5 theory"
+      ],
+      "why": "nothing cut; the source’s “also see Week 5 Theory” comes out of the heading and onto a bullet"
+    },
+    "20": {
+      "heading": "Training summary",
+      "bullets": [
+        "  A direct and useful link between game design and learning to play",
+        "  Game design is a vehicle for teaching play and enjoyment",
+        "  Gameplay and game design function as a teaching mechanism",
+        "  Training applies to almost every aspect of gameplay",
+        "  Training should be practical, positive, safe and fair",
+        "  Training should be gradual and integrated with progression",
+        "  Design your game to minimise the training required"
+      ],
+      "why": "the slide that overflowed: seven long sentences cut to seven single-line fragments, each one source line, nothing dropped"
+    }
+  }
+}

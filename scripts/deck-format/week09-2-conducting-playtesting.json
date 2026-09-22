@@ -1,0 +1,296 @@
+{
+  "slides": {
+    "2": {
+      "heading": "This lecture",
+      "why": "the `Theory: ...` title block is the deck title, not a heading"
+    },
+    "3": {
+      "heading": "Your role: observer",
+      "bullets": [
+        "Your role is investigator and observer, not designer",
+        "Give playtesters access, lead a useful playtest, record what they do and say, then analyse their responses",
+        "Don't tell them what to think, or explain how it works",
+        "Let them play with minimal explanation, make mistakes, and see how each person approaches it",
+        "Ideally an objective person runs the test while you watch from a distance — behind glass or via video",
+        "Create a test script to keep you on track as observer"
+      ],
+      "why": "seven sentences become six fragments; \"minimal explanation\", \"make mistakes\" and \"see how each person approaches it\" are one bullet now"
+    },
+    "4": {
+      "heading": "The test script",
+      "bullets": [
+        "Introduction (2-3 mins)",
+        "Warm-up discussion (5 mins)",
+        "Play session (15-20 mins)",
+        "Discussion of game experience (15-20 mins)",
+        "Wrap-up",
+        "Welcome the playtesters and thank them for taking part",
+        "Introduce yourself, and anyone else present",
+        "Brief explanation of the playtesting process",
+        "Say if you are recording video or audio — for your reference, not for sharing",
+        "Write some questions to get them talking, such as:",
+        "What are some of the games you play?",
+        "What do you like about these games?",
+        "What was the last game you purchased?"
+      ],
+      "split_after": [
+        5,
+        9
+      ],
+      "continuations": [
+        "Introduction (2-3 mins)",
+        "Warm-up: get them talking"
+      ],
+      "aside": "drop",
+      "why": "the test-script sidebar, held on screen across five source slides, becomes this slide's own list; the introduction and warm-up details follow"
+    },
+    "5": {
+      "heading": "Play session (15-20 mins)",
+      "bullets": [
+        "Explain the game is still in development and you want their feedback — you are testing the game, not their skill",
+        "Any issues they hit will help improve the game",
+        "Then leave them alone and watch remotely, or watch quietly from behind",
+        "Either way, ask them to think aloud — what are they thinking, choosing, confused about?",
+        "You learn far more than by watching; they forget, so remind them and ask what they are trying to do now",
+        "It can feel weird — encourage them, let them practise"
+      ],
+      "aside": "drop",
+      "loose": "drop",
+      "why": "the think-aloud text boxes the converter had stranded in a comment are now the second half of the slide; the repeated test-script sidebar is gone"
+    },
+    "6": {
+      "heading": "Discussion (15-20 mins)",
+      "bullets": [
+        "One-on-one discussion after the play session",
+        "Probe for appeal, interest, challenge, understanding — for example:",
+        "Overall, what were your thoughts about the game?",
+        "What were your thoughts about the game play?",
+        "Were you able to learn quickly how to play?",
+        "What is the objective of the game?",
+        "How would you describe the game to someone else?",
+        "Is there anything you wish you knew before starting to play?",
+        "Is there anything you didn't like about the game?",
+        "Was there anything you found confusing?",
+        "You will have specific questions, based on your goals",
+        "Focus on the most important questions at this stage"
+      ],
+      "split_after": [
+        6
+      ],
+      "continuations": [
+        "Discussion: more questions"
+      ],
+      "aside": "drop",
+      "why": "all eight of Penny's example questions kept, word for word, across two slides; \"Example questions\" folded into the bullet above them"
+    },
+    "7": {
+      "heading": "What data will I collect?",
+      "bullets": [
+        "FFWWDD — after the play session:",
+        "  What was the most frustrating moment or aspect?",
+        "  What was your favourite moment or aspect?",
+        "  Was there anything you wanted to do that you couldn't?",
+        "  If you had a magic wand to change, add, remove anything, what would it be?",
+        "  What were you doing in the experience?",
+        "  How would you describe this game to your friends and family?"
+      ],
+      "why": "three levels of nesting flattened to two; Schell's six questions unchanged"
+    },
+    "8": {
+      "heading": "Wrap-up and tips",
+      "bullets": [
+        "Thank the playtesters; a token gift is a nice touch",
+        "Listen to their feedback without responding or defending; write criticisms down",
+        "You are looking for things to improve, not praise — and criticism of your own creation is hard to hear",
+        "Do not lead your playtesters to say what you want to hear",
+        "Better to hear the bad news now than after you release",
+        "In groups, people sway each other (group think) and some dominate (group dynamics)"
+      ],
+      "aside": "drop",
+      "why": "\"Tips\" as a sub-list flattened into the slide's bullets; the test-script sidebar appears once, earlier"
+    },
+    "9": {
+      "heading": "Methods of playtesting",
+      "bullets": [
+        "Individual vs. group: good for ideas, bad for evaluation",
+        "One-on-one: watch, take notes, ask questions",
+        "Group testing: they play together while you observe and ask",
+        "Feedback forms: a standard list after playing",
+        "Compare results — quantitative, shows how often a problem hits",
+        "Interview: face-to-face, in depth, after playing",
+        "Open discussion: individual or group, open or structured",
+        "Metrics: collected in-game or by other tools",
+        "What are players using, or not using? For tuning",
+        "Combine approaches: game, space, time, money",
+        "Not testing is not an option!"
+      ],
+      "split_after": [
+        5
+      ],
+      "continuations": [
+        "Methods: interviews and metrics"
+      ],
+      "split_image": {
+        "file": "photos/emily-wade-nVk581BTI_U-unsplash.jpg",
+        "alt": "Two players seen from behind, side by side, watching a split-screen game on a television.",
+        "credit": "Photo by Emily Wade on Unsplash"
+      },
+      "why": "each method keeps its name and its point in six words; the full-bleed photograph moves into the column beside them"
+    },
+    "10": {
+      "heading": "A primer for playtesting",
+      "bullets": [
+        "Playtest before you think you are ready",
+        "Strategise for early playtesting",
+        "Know why you are playtesting — what question are you answering?",
+        "Prepare variations",
+        "Be grateful to your playtesters (say thanks)",
+        "Design the learning experience (and playtest it)",
+        "Blame yourself, not your playtesters",
+        "Know your testers — hardcore gamer or new player",
+        "Don't explain — explain as little as possible",
+        "Take notes — it shows you care; prepare a notes sheet",
+        "Be selfish — you are there to learn, not for testers to have fun",
+        "Encourage your playtesters to talk aloud (and remind them)"
+      ],
+      "split_after": [
+        6
+      ],
+      "continuations": [
+        "Primer: know your testers"
+      ],
+      "why": "Zimmerman and Pozzie's twelve rules, unchanged, six to a slide"
+    },
+    "11": {
+      "heading": "Primer: notice everything",
+      "bullets": [
+        "Notice everything — what they did, chose, how long it took",
+        "Shut up — don't interfere, explain, or tell them what to do",
+        "See the big picture — what are the human reactions?",
+        "Don't be afraid of data — the right data will help you",
+        "Answer a question with a question — how do you think it works?",
+        "Hunger for failure — look for what is not working",
+        "Discuss what happened — focus on the most important aspects",
+        "Put feedback into context — players identify issues, not fixes",
+        "Collaborate with your playtesters — gather their fresh ideas",
+        "The cruelly honest playtest — the truth hurts",
+        "Embrace the unexpected — it might be better than the plan",
+        "The playtest's the thing — get the process right",
+        "Break these rules"
+      ],
+      "split_after": [
+        5,
+        9
+      ],
+      "continuations": [
+        "Primer: hunger for failure",
+        "Primer: break these rules"
+      ],
+      "why": "the remaining thirteen rules, unchanged, across three slides"
+    },
+    "12": {
+      "heading": "Taking notes",
+      "bullets": [
+        "You cannot remember every comment",
+        "You remember what you hoped to hear",
+        "Write down the date, their feedback, your own observations",
+        "Use a form to capture observations and comments",
+        "In-game observations as they play",
+        "Post-game questions on key aspects",
+        "Revision ideas for making it better",
+        "Use it alongside your script",
+        "Tailor it — not all questions are relevant",
+        "Write more questions than you need, then rank them by importance",
+        "Don't overwhelm playtesters — quality and focus"
+      ],
+      "split_after": [
+        3,
+        7
+      ],
+      "continuations": [
+        "The note-taking form",
+        "Choosing your questions"
+      ],
+      "split_image": {
+        "file": "photos/vladislav-igumnov-WNlFy0_apVQ-unsplash.jpg",
+        "alt": "A hand writing on a clipboard, lit against a dark background.",
+        "credit": "Photo by Vladislav Igumnov on Unsplash"
+      },
+      "why": "\"example on next slide\" dropped (the redrawn form follows); the photograph moves into the column"
+    },
+    "13": {
+      "drop": true,
+      "why": "the source slide is empty apart from Fullerton's page of questions, which is not reproduced; the redrawn form follows"
+    },
+    "14": {
+      "heading": "Usability: do not lead",
+      "bullets": [
+        "Quietly observe — do not lead",
+        "If they ask a question, ask what they think they should do",
+        "If they cannot proceed, you have found a problem",
+        "Remind playtesters to think aloud",
+        "Observing shows where problems occur, not why",
+        "Ask them to explain what they're thinking",
+        "Shows problems you didn't know existed",
+        "Most people need prompting to do it",
+        "Use feedback forms to generate quantitative data that shows trends",
+        "Use it to prioritise the severity of issues",
+        "Metrics — measuring what people do or report",
+        "Case studies p.303-306"
+      ],
+      "split_after": [
+        3,
+        8
+      ],
+      "continuations": [
+        "Usability: think aloud",
+        "Usability: data and metrics"
+      ],
+      "why": "one source slide of fourteen lines becomes three; the usability-research definition stays in its sidebar"
+    },
+    "15": {
+      "heading": "Quantitative data",
+      "bullets": [
+        "Measuring gives you lots of numbers",
+        "Know how to analyse them",
+        "Have clearly defined objectives",
+        "What do you want to know?",
+        "Use alongside qualitative data",
+        "Why that rating? Why so slow on the puzzle?",
+        "Time it takes to read the rules",
+        "Clicks to perform a function",
+        "Heat maps of where players explored",
+        "Speed players advance in a level",
+        "Rank ease of use, one to ten",
+        "Choose between options: which matter most?",
+        "Physiological signals — heart rate, skin response, eye tracking"
+      ],
+      "split_after": [
+        6,
+        10
+      ],
+      "continuations": [
+        "What to measure",
+        "More to measure"
+      ],
+      "split_image": {
+        "file": "photos/luke-chesser-JKUTrJ4vK00-unsplash.jpg",
+        "alt": "A dark analytics dashboard of histograms and time-series charts on a laptop screen.",
+        "credit": "Photo by Luke Chesser on Unsplash"
+      },
+      "why": "the \"Examples\" label becomes two slide headings; all seven examples kept; the photograph moves into the column"
+    },
+    "16": {
+      "heading": "Control situations",
+      "bullets": [
+        "Test a specific portion of the game mechanics — end of game, a rare random event, a special situation, a particular level, new features",
+        "Early: test basic functionality, without balance or fairness",
+        "Later: test for exploits and dead-ends; focus on the interface or balance",
+        "Repeat one event under a variety of conditions",
+        "You don't need to start from the beginning — start at any point",
+        "Control conditions, set variables, and see what happens"
+      ],
+      "why": "two generated slides become one; nothing dropped"
+    }
+  }
+}

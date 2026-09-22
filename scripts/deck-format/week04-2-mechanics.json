@@ -1,0 +1,325 @@
+{
+  "slides": {
+    "2": {
+      "heading": "Seven kinds of mechanic",
+      "why": "only the heading changed; the source slide had no title placeholder, so the converter used the 'Theory: Mechanics' title block"
+    },
+    "3": {
+      "heading": "What are mechanics?",
+      "bullets": [
+        "Procedures and rules of a game",
+        "Describe the goal of the game, how players can and can't try to achieve it, and what happens when they try",
+        "Mechanics make a game a game — not a movie",
+        "Seven categories: space, time, objects, actions, rules, skill, chance"
+      ],
+      "why": "the seven categories were a nested list repeating the agenda slide before it, so they are one bullet here"
+    },
+    "4": {
+      "heading": "Space",
+      "bullets": [
+        "Games take place in a space — the magic circle",
+        "Defines the places that can exist and how they are related",
+        "Tic-Tac-Toe: discrete 2D space, a 3x3 grid",
+        "How about chess, Monopoly, pool, soccer?",
+        "Discrete or continuous",
+        "Number of dimensions",
+        "Bounding areas, connected or not",
+        "Nested spaces — a continuous outdoor area with locations leading to indoor spaces: RPGs, campaign maps",
+        "Zero dimensions — no physical space at all: 20 questions",
+        "Consider the space first, without the aesthetics: what is the abstract construction?"
+      ],
+      "split_after": [
+        4
+      ],
+      "continuations": [
+        "Space: a mathematical construct"
+      ],
+      "aside": "drop",
+      "why": "the examples sidebar (Tic-Tac-Toe, chess, Monopoly, pool, soccer) is on the slide as bullets, because at eight lines it ran well past the four-line cap for an aside; 'as a mechanic, space is a mathematical construct' became the second slide's heading"
+    },
+    "6": {
+      "heading": "Time",
+      "bullets": [
+        "We travel forwards through time, with no control",
+        "Playing with or controlling time is an interesting game proposition",
+        "Discrete time: turns, with nothing between them",
+        "Continuous time: sports, most videogames, real-time",
+        "Some games mix time systems",
+        "Clocks set absolute time limits for activities",
+        "Boggle's sand timer, sports rounds; clocks can be nested — basketball",
+        "Races — no fixed time limit, but time pressure: car and foot races, Space Invaders",
+        "Controlling time — time-out, pause, speed up, rewind (retry/reload), Braid"
+      ],
+      "split_after": [
+        5
+      ],
+      "continuations": [
+        "Time: clocks and races"
+      ],
+      "split_image": {
+        "file": "photos/nathan-dumlao-5Hl5reICevY-unsplash.jpg",
+        "alt": "An hourglass with the sand half run through, lit against a dark background.",
+        "credit": "Photo by Nathan Dumlao on Unsplash"
+      },
+      "why": "'Real world –' dropped as a lead-in; 'discrete and continuous time' split into the two bullets it labelled"
+    },
+    "8": {
+      "heading": "Objects",
+      "bullets": [
+        "Game spaces have objects in them: characters, props, tokens, scoreboards",
+        "Objects have one or more attributes",
+        "Attribute categories: position, speed",
+        "Each attribute has a current state; attributes can be static or dynamic",
+        "Objects are nouns, attributes are adjectives",
+        "Some state changes must be shown to the player",
+        "Objects that behave the same should look the same, and the reverse",
+        "A state diagram can help",
+        "Secrets — what information is public, what is private?",
+        "Is the game about trying to guess or gather unknown information?",
+        "Or using complete information to devise strategies?",
+        "What does the game \"know\", and how does it use that information?"
+      ],
+      "split_after": [
+        6
+      ],
+      "continuations": [
+        "Objects: state and secrets"
+      ],
+      "aside": "drop",
+      "why": "the 'Ghost movement in PacMan' sidebar is dropped because the state-machine figure that follows carries it in its caption; 'categories of information about objects' shortened to 'attribute categories'",
+      "split_image": {
+        "file": "photos/mechanics-worksheet.jpg",
+        "alt": "A paper prototype of a roguelike: sticks as landforms, googly-eyed monsters, buttons as treasure, and drawn HP, energy and skill meters.",
+        "credit": "COMP3540 workshop, 2024"
+      }
+    },
+    "9": {
+      "bullets": [
+        "What are the objects in my game?",
+        "What are the attributes of the objects?",
+        "What are the possible states for each attribute?",
+        "What triggers the state changes for each attribute?",
+        "What is known by the game only?",
+        "What is known by all players?",
+        "What is known by some or only one player?",
+        "Would changing who knows what information improve my game in some way?"
+      ],
+      "split_after": [
+        4
+      ],
+      "continuations": [
+        "The Lens of Secrets (lens 29)"
+      ],
+      "why": "the two lenses the source stacked on one slide get a slide each; every question word for word"
+    },
+    "10": {
+      "heading": "Actions are the verbs",
+      "class": "impact",
+      "bullets": [
+        "What can players do in the game?",
+        "Two types: basic action, strategic action",
+        "Basic — the base actions a player can take: move a checker forward, jump an opponent",
+        "The building blocks of gameplay",
+        "Strategic — use basic actions to achieve a goal: protect a checker, sacrifice a checker",
+        "Meaningful in the larger picture of the game",
+        "Strategic actions that are not part of the rules, emerging from play",
+        "Create the playground, nurture the emergent play"
+      ],
+      "split_after": [
+        1,
+        6
+      ],
+      "continuations": [
+        "Basic and strategic actions",
+        "Emergent gameplay"
+      ],
+      "why": "'Actions are the verbs of game mechanics' becomes the heading so the question the source asks stands on its own slide; the two examples per action type move onto their bullet"
+    },
+    "11": {
+      "heading": "Cultivating emergent gameplay",
+      "bullets": [
+        "Add more verbs (basic actions): more potential for combinations and interactions",
+        "Too many verbs can bloat and confuse gameplay",
+        "Verbs that can act on many objects: more interconnections and interactions",
+        "Goals that can be achieved in more than one way",
+        "Incentivise players to look for interesting strategies; different strategies need to be balanced",
+        "Many subjects (instances) — multiple checkers versus just one",
+        "Strategic actions scale with (subjects x verbs x objects)",
+        "Side effects that change constraints",
+        "Multiple aspects of the game change with each basic action"
+      ],
+      "split_after": [
+        5
+      ],
+      "continuations": [
+        "Emergence: subjects and side effects"
+      ],
+      "why": "'Cultivating emergent gameplay' becomes the heading; twenty source lines over two slides, each sub-point folded onto its parent bullet"
+    },
+    "12": {
+      "bullets": [
+        "How many verbs do my players have?",
+        "How many objects can each verb act on?",
+        "How many ways can players achieve their goals?",
+        "How many subjects do the players control?",
+        "How do side effects change constraints?",
+        "What are the basic actions in my game?",
+        "What are the strategic actions?",
+        "What strategic actions would I like to see? How can I change my game in order to make those possible?",
+        "Am I happy with the ratio of strategic to basic actions?",
+        "What actions do players wish they could do in my game that they cannot? Can I enable these, as basic or strategic actions?"
+      ],
+      "split_after": [
+        5
+      ],
+      "continuations": [
+        "The Lens of Action (lens 31)"
+      ],
+      "why": "the two lenses the source stacked on one slide get a slide each; every question word for word"
+    },
+    "13": {
+      "heading": "Rules",
+      "bullets": [
+        "Rules define the space, timing, objects, actions, consequences, constraints and goals",
+        "Parlett's Rule Analysis — kinds of rule:",
+        "Operational: what players do to play the game",
+        "Foundational: the underlying formal structure — an abstract, mathematical representation of game state and how and when it changes",
+        "Behavioural: implicit to gameplay, \"good sportspersonship\"",
+        "Written: \"rules that come with the game\"",
+        "Laws: \"tournament rules\" for serious, competitive play",
+        "Official: written rules merged with laws for serious play",
+        "Advisory: \"rules of strategy\", tips to play better",
+        "House: players tune the rules to their own tastes, or to fix perceived deficiencies, or to mix it up"
+      ],
+      "split_after": [
+        6
+      ],
+      "continuations": [
+        "Rules: laws and house rules"
+      ],
+      "why": "the eight kinds of rule are a flat list so they can break across two slides; all eight kept with Parlett's wording"
+    },
+    "14": {
+      "heading": "Rules: modes and enforcement",
+      "bullets": [
+        "Modes: different rules during different parts of play",
+        "Players can get confused with too many modes; often one main mode and several sub-modes",
+        "Enforcer: who enforces the rules?",
+        "Traditional games — the players enforce them",
+        "Computer games — the computer does, so rules can be more complex, and become constraints",
+        "Players still need to be able to comprehend the rules",
+        "Cheatability: perceived and actual cheating, and the ability to cheat",
+        "Devalues the game and its endogenous value",
+        "Object of the game: the most important rule, it must be:",
+        "Concrete: players understand and can clearly state the goal",
+        "Achievable: players think they have a chance to achieve it",
+        "Rewarding: challenging, rewards, anticipation of rewards"
+      ],
+      "split_after": [
+        6
+      ],
+      "continuations": [
+        "Rules: cheating and the goal"
+      ],
+      "why": "sixteen source lines over two slides; the two mode sub-points folded onto one bullet"
+    },
+    "15": {
+      "bullets": [
+        "What is the ultimate goal of my game?",
+        "Is that goal clear to players?",
+        "If there a series of goals, do the players understand that?",
+        "Are the different goals related to each other in a meaningful way?",
+        "Are my goals concrete, achievable, and rewarding?",
+        "Do I have a good balance of short- and long-term goals?",
+        "Do players have a chance to decide on their own goals?",
+        "What are the foundational rules of my game? How do these differ from the operational rules?",
+        "Are there \"laws\" or \"house rules\" that are forming as the game develops? Should these be incorporated into my game directly?",
+        "Are there different modes in my game? Do these modes make things simpler, or more complex? Would the game be better with fewer modes? More modes?",
+        "Who enforces the rules?",
+        "Are the rules easy to understand, or is there confusion about them? If there is confusion, should I fix it by changing the rules or by explaining them more clearly?"
+      ],
+      "split_after": [
+        7
+      ],
+      "continuations": [
+        "The Lens of Rules (lens 33)"
+      ],
+      "loose": "drop",
+      "why": "lens 33 sat in loose text boxes beside lens 32 and now has its own slide; every question word for word"
+    },
+    "16": {
+      "heading": "Skill",
+      "bullets": [
+        "Matching skill to challenge is core for enjoyment (Week 3 Theory)",
+        "Most games blend different skills",
+        "Physical: strength, dexterity, coordination, endurance",
+        "Mental: memory, observation, puzzle solving, decisions",
+        "Social: reading or fooling an opponent, teamwork, intimidation",
+        "Real skills the player has, versus virtual skills the player is pretending to have",
+        "Enumerating skills — make a list of the skills required, general or very specific",
+        "Is your game testing the skills you want it to? Quick reactions, or memorising patterns?"
+      ],
+      "split_after": [
+        5
+      ],
+      "continuations": [
+        "Skill: real and virtual"
+      ],
+      "split_image": {
+        "file": "photos/reet-talreja-9QuN7yQn4nw-unsplash.jpg",
+        "alt": "Two hands working the sticks and buttons of a games controller, lit from the screen.",
+        "credit": "Photo by Reet Talreja on Unsplash"
+      },
+      "why": "'sports, game controllers, physical controllers' dropped from the physical bullet (the photograph beside it makes the point); 'communication' folded into 'teamwork'"
+    },
+    "17": {
+      "bullets": [
+        "What skills does my game require from the player?",
+        "Are there categories of skill that this game is missing?",
+        "Which skills are dominant?",
+        "Are these skills creating the experience I want?",
+        "Are some players much better at these skills than others? Does this make the game feel unfair?",
+        "Can players improve their skills with practice, leading to a feeling of mastery?",
+        "Does this game demand the right level of skill?",
+        "Are my players looking for mindless action or an intellectual challenge?",
+        "Would adding more places that involve puzzle solving in my game make it more interesting?",
+        "Are there places where the player can relax their brain and just play the game without thinking?",
+        "Can I give the player a choice – succeed either by exercising a high level of dexterity or by finding a clever strategy that works with a minimum of physical skill?",
+        "If \"1\" means all physical and \"10\" means all mental, what number would my game get?"
+      ],
+      "split_after": [
+        7
+      ],
+      "continuations": [
+        "The Lens of Head and Hands (lens 42)"
+      ],
+      "loose": "drop",
+      "why": "lens 42 sat in loose text boxes beside lens 34 and now has its own slide; every question word for word"
+    },
+    "18": {
+      "heading": "Chance",
+      "bullets": [
+        "Chance means uncertainty — surprises, fun!",
+        "Humans seek pleasure and avoid pain",
+        "People pay to eliminate the chance of regret — insurance",
+        "Risk versus reward mechanics",
+        "Manipulative monetisation mechanics",
+        "Skill and chance are entangled",
+        "Are my players here to be judged (skill) or to take risks (chance)?",
+        "Skill tends to be more serious than chance: is my game serious or casual?"
+      ],
+      "split_after": [
+        6
+      ],
+      "continuations": [
+        "The Lens of Skill vs Chance (lens 41)"
+      ],
+      "split_image": {
+        "file": "photos/muhammad-irfan-rr1l8zXPX64-unsplash.jpg",
+        "alt": "Two dice resting on a wooden table after a roll.",
+        "credit": "Photo by Muhammad Irfan on Unsplash"
+      },
+      "why": "'losing something' folded into 'regret'; lens 41 gets its own slide instead of an h3 inside this one"
+    }
+  }
+}

@@ -55,18 +55,16 @@
   line-height: 1.3;
 }
 
-/* The source slides vary from four bullets to twenty. Step the text down as
- * the list grows so a long slide still fits the 960x700 canvas. */
+/* One step down, and one only. A converted slide that ran to twenty bullets
+ * used to be shrunk to 0.64em to fit, which is 23px on the canvas: unreadable
+ * from the back of a theatre, so it fitted the slide and not the room. A slide
+ * with too much on it is now broken into two by the converter
+ * (scripts/convert-pptx-decks.py, and scripts/deck-format.README.md for the
+ * budget), and this step is the tripwire rather than the mechanism -- a slide
+ * that reaches nine bullets is close to the limit, and one that needs less
+ * than 0.86em should have been split instead. */
 .reveal .slides section:has(li:nth-child(9)) {
   font-size: 0.86em;
-}
-
-.reveal .slides section:has(li:nth-child(13)) {
-  font-size: 0.74em;
-}
-
-.reveal .slides section:has(li:nth-child(18)) {
-  font-size: 0.64em;
 }
 
 /* Tables converted from the decks' comparison grids. */
@@ -129,6 +127,42 @@
   max-height: 52vh;
 }
 
+/* ------------------------------------------------------- two-column slides */
+
+/* Bullets on the left, one photograph filling the right-hand 40% of the
+ * slide: the layout a lecture slide usually wants, and the one these decks
+ * had no way of asking for. astromotion builds it from `![bg right:40%]`
+ * (.split-layout > .split-content + .split-image) and the theme's base.css
+ * lays the columns out; what is left is the type inside the text column and
+ * the credit over the photograph.
+ *
+ * The column is 60% of a 1280px canvas, so it holds about 34 characters a
+ * line. That is the whole reason the converter only uses this layout for a
+ * slide whose list fits it -- a split slide is a short slide. */
+.reveal .slides section .split-content {
+  /* The theme pads the column with the slide's own gutter, which leaves the
+   * text a 5rem margin against the photograph. Half of that is enough, and
+   * the 20px it gives back is a line of text. */
+  padding: var(--at-slide-padding);
+  padding-inline-end: 2.5rem;
+  /* So the credit line below positions against the text column rather than
+   * against the whole slide, where it would sit over the photograph. */
+  position: relative;
+}
+
+.reveal .slides section .split-layout .image-credit {
+  right: 1.5rem;
+  bottom: 1rem;
+}
+
+/* The photograph is a CSS background on a 512x720 panel, cropped to fill it
+ * (base.css sets `cover`), so only photography belongs here: a screenshot or
+ * a diagram loses its edges. A hairline in the accent colour reads as an
+ * edge to the panel rather than a seam in the artwork. */
+.reveal .slides section .split-image {
+  border-inline-start: 2px solid rgb(190 131 14 / 35%);
+}
+
 /* A redrawn figure (scripts/make-deck-figures.py) gets a slide to itself, so
  * it can run to 60vh and its labels stay readable from the back of a theatre.
  * The SVGs are transparent and already drawn in the deck palette. */
@@ -175,8 +209,12 @@
 /* The topic label and the reading citation from the source slide's sidebar. */
 .reveal .slides section .image-credit {
   position: absolute;
-  right: 1em;
-  bottom: -0.6em;
+  /* Inside the slide's content box, in rem so the inset does not shrink with
+   * the credit's own 0.42em type. At -0.6em it sat in the gutter, which is
+   * both a hair's breadth from the bottom edge on a projector and a slide
+   * that astromotion-check reports as overflowing. */
+  right: 1.5rem;
+  bottom: 1rem;
   font-size: 0.42em;
   color: var(--gd-muted);
   text-align: right;
@@ -234,4 +272,44 @@
 .reveal .slides section.bg-black,
 .reveal .slides section.bg-black :where(h1, h2, h3, p, li) {
   color: #fff;
+}
+
+/* The caption on an added full-bleed image (scripts/deck-extras.json). The
+ * slide uses the theme's `hero` class, which lays content out bottom-left and
+ * paints the scrim, so this only has to set the type. */
+.reveal .slides section.hero .photo-caption {
+  color: #fff;
+  padding-left: 0.6em;
+  border-left: 4px solid var(--gd-accent);
+  font-size: 0.62em;
+  line-height: 1.35;
+  max-width: 26em;
+  text-wrap: pretty;
+}
+
+.reveal .slides section.hero .photo-caption p {
+  margin: 0;
+}
+
+.reveal .slides section .photo-caption .photo-credit {
+  display: block;
+  margin-top: 0.35em;
+  font-size: 0.7em;
+  font-style: italic;
+  color: rgb(255 255 255 / 72%);
+}
+
+/* The description of a background image. It is a CSS background, so there is
+ * no img element to carry an alt: the deck writes it out for screen readers
+ * instead (scripts/convert-pptx-decks.py). */
+.reveal .slides section .deck-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
 }
