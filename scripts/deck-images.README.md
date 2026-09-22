@@ -9,6 +9,7 @@ says which of four things to do with it:
 | `source` | Publishes the picture itself, with its `alt` and `credit`. Add `"own_slide": true` to give it a slide rather than squeezing it beside the bullets. |
 | `figure` | Publishes an **original redrawing** from `src/decks/figures/`, made by `scripts/make-deck-figures.py`. |
 | `snippet` | Replaces it with the Markdown in `scripts/deck-snippets/` — for source "figures" that are really tables. |
+| `photo` | Publishes a **replacement** from `src/decks/media/` — a cleaner capture of the same thing. Until that file exists the slide carries a note, so an entry can be written before the image is made. |
 | `drop` | Leaves it out, writing the entry's `note` into the deck source so a future convenor can see what was there and why. |
 
 A picture that is not listed is dropped with a generic note. To see the
@@ -96,7 +97,8 @@ The rest needs eyes, roughly two minutes per figure:
    least three of {layout, shapes, palette, label wording, data values}
    different from the original.
 
-## Still not published
+## The game screenshots
 
-The commercial game screenshots are a separate question from the figures and
-are not covered by any of this: see MATERIALS.md.
+The 24 commercial screenshots are a separate question from the figures, and
+they **are** published, credited to game, developer and year. The reasoning,
+and the two things worth improving about them, are in MATERIALS.md.

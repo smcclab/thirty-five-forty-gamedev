@@ -192,9 +192,39 @@ its SHA-256. As of 2026-09-22, of the 49 distinct pictures:
   alongside the figure, and the credit line says "reproduced by permission".
 - **2 are really tables** (Fullerton figs. 8.2 and 9.1) and become Markdown in
   `scripts/deck-snippets/`.
-- **30 are dropped**, each recording why in the deck source --- the commercial
-  game screenshots, the stock photography, Fullerton's fig. 9.10 question
-  page, and the Agile infographic.
+- **24 commercial game screenshots are published** under fair dealing for
+  education, each credited to its game, developer and year. See below.
+- **6 are dropped**, each recording why in the deck source --- Fullerton's
+  fig. 9.10 question page and the Agile infographic among them.
+
+### The game screenshots
+
+The 24 commercial screenshots --- Pac-Man, Space Invaders, Centipede, Half-Life
+2, Fallout 3, GTA IV, Bastion, Left 4 Dead, Dead Space, Pillars of Eternity,
+Tomb Raider, Warcraft III, StarCraft, Medieval II: Total War, Diablo II,
+Burnout, FIFA, flOw --- **are published**, with a credit naming the game, the
+developer and the year.
+
+These are the games the course is about. Copyright in a screenshot belongs to
+the game's publisher whether the frame was captured from a running copy or
+taken from a published page, so the source of the file does not change the
+analysis; using them to illustrate teaching about those very games is fair
+dealing. Substituting open-licensed games was considered and rejected: the
+point of these slides is that students recognise the games, and a permissive
+licence is not a reason a game is worth teaching.
+
+Two things a future convenor could improve, neither a blocker:
+
+- Several files carry a third-party site's watermark (IGN, eurogamer.gr,
+  GameSpot, and "Flow (c) Sony Computer Entertainment America"). A cleaner
+  capture of the same scene would look better. `kind: "photo"` exists for
+  exactly this: drop a replacement into `src/decks/media/` and point the entry
+  at it, and the slide keeps a note until the file is there.
+- Three are unidentified or generic and are flagged in `deck-images.json`: a
+  ruined-city concept painting (ask Penny), a stock stadium photograph (any
+  freely-licensed one would do), and a grid of ~20 arcade screens used to show
+  different viewpoints, which would be better rebuilt than re-sourced. The
+  Tomb Raider and FIFA editions are also unconfirmed.
 
 `scripts/deck-images.README.md` explains the four dispositions, how to draw a
 replacement without copying one, and how to check the result. To re-review the

@@ -242,5 +242,173 @@
   "0f0ea95f182f319c32f9106da53b39802b025e006b231e4f3cc40464dcb5065a": {
     "kind": "drop",
     "note": "A full page of Fullerton's own playtest questions (fig. 9.10, p. 300). Reproducing it verbatim is a substantial excerpt -- paraphrase a few per category and cite the page."
+  },
+  "73ab7ce97e06fc6cf2c1c637c36a8f235cbadf0fc2c865016574076e1281f4ed": {
+    "kind": "source",
+    "file": "centipede.png",
+    "alt": "Centipede: a field of mushrooms with the player's shooter at the bottom of a single fixed screen.",
+    "credit": "Centipede (Atari, 1981)",
+    "shows": "a single-screen game where each 'level' is a variation in difficulty, not a new space"
+  },
+  "8084ccd8271250174c4072fe37f87758cfccfdde80989efda7b22d9babef683f": {
+    "kind": "source",
+    "file": "space-invaders.jpeg",
+    "alt": "Space Invaders: ranks of aliens descending towards the player's gun at the foot of one screen.",
+    "credit": "Space Invaders (Taito, 1978)",
+    "shows": "the same point: one screen, escalating waves"
+  },
+  "e6062349e9f42174ccf8024be1e811a8258bdc77ecf58304a5579f27f757b62c": {
+    "kind": "source",
+    "file": "pac-man.gif",
+    "alt": "Pac-Man: the single maze, with Pac-Man, the ghosts and the dots that every level reuses.",
+    "credit": "Pac-Man (Namco, 1980)",
+    "shows": "one maze reused for every level"
+  },
+  "c61934614be3c8bd07370852af32fd2c5c6a15caf19d25d5080102b4c95fde8d": {
+    "kind": "source",
+    "file": "starcraft-map.jpeg",
+    "alt": "A StarCraft map seen from above: terrain, resource patches and the routes between bases.",
+    "credit": "StarCraft (Blizzard, 1998)",
+    "shows": "an RTS level is a map plus a set of objectives"
+  },
+  "363b45972049b1c9fbc39f81829b9d7158311d54d91b9f2ce6b287998868c524": {
+    "kind": "source",
+    "file": "stadium.jpeg",
+    "alt": "A packed stadium seen from the stands, the pitch lit below.",
+    "credit": "credit to be set when the replacement is sourced",
+    "shows": "a sports game's 'level' is the stadium and the opposing team -- a stock photograph of a stadium, replaceable with any freely-licensed one"
+  },
+  "41f056f5fded0966f1883c6d4110df798fc10a42b4b54229c1569d7824cae410": {
+    "kind": "source",
+    "file": "half-life-2-outdoors.jpeg",
+    "alt": "Half-Life 2: a crashed helicopter in a rocky outdoor area, the player's shotgun in view.",
+    "credit": "Half-Life 2 (Valve, 2004)",
+    "shows": "level separation: a distinct outdoor area with its own gameplay"
+  },
+  "644a4057d8fbe9e960ee4a9132b68cd5b9adff869041d925eda2a84d616f2045": {
+    "kind": "source",
+    "file": "half-life-2-coast.jpeg",
+    "alt": "Half-Life 2: a coastal shack and rubble, approached along a linear route.",
+    "credit": "Half-Life 2 (Valve, 2004)",
+    "shows": "level order and pacing across a linear chapter"
+  },
+  "1a48ca5b665b70de26e7cd3cde91c4daacb73db3a0233de9c82d3913463d643b": {
+    "kind": "source",
+    "file": "city-concept.jpeg",
+    "alt": "Concept art of a ruined city street beneath a suspension bridge.",
+    "credit": "credit to be set when the replacement is sourced",
+    "shows": "concept art of a ruined city -- UNIDENTIFIED, confirm with Penny or substitute"
+  },
+  "773b85e9e4325c9b4f9d8a7383891847c5da948ecce3de9c66dcaefd867a6c7a": {
+    "kind": "source",
+    "file": "fallout-3-ruins.jpeg",
+    "alt": "Fallout 3: burnt-out houses and a water tower in an open wasteland, a stop sign still standing.",
+    "credit": "Fallout 3 (Bethesda Game Studios, 2008)",
+    "shows": "an open world where the level is the whole space"
+  },
+  "1a6f441d3b579a4446a9c07ad9a953083efdddba53d040ce64109097708d8923": {
+    "kind": "source",
+    "file": "bastion.jpeg",
+    "alt": "Bastion: a brightly coloured isometric path assembling itself ahead of the player.",
+    "credit": "Bastion (Supergiant Games, 2011)",
+    "shows": "level as a composed, hand-built path through a space"
+  },
+  "45159745da260984c36901bc5f5c64aa58e8026e5ca23c101251bb013e51b8dd": {
+    "kind": "source",
+    "file": "half-life-2-characters.jpeg",
+    "alt": "Half-Life 2: two characters talking in a workshop, the level built around the scene.",
+    "credit": "Half-Life 2 (Valve, 2004)",
+    "shows": "story-centric level design: events and characters carry the level"
+  },
+  "a5ccb7fdef0acb8771c73d36dfc70d715ce114f935e792d594d6347682946214": {
+    "kind": "source",
+    "file": "left-4-dead.jpeg",
+    "alt": "Left 4 Dead: survivors silhouetted against a lit doorway as infected close in.",
+    "credit": "Left 4 Dead (Valve, 2008)",
+    "shows": "levels built for replay and dynamic pacing"
+  },
+  "7a07badf8ea3857ee70e12a1f74ed0536365fd7bd6976cddfe7807c469c3870d": {
+    "kind": "source",
+    "file": "burnout.jpeg",
+    "alt": "Burnout: a car crashing at speed on a highway, debris thrown across the track.",
+    "credit": "Burnout (Criterion Games, 2001)",
+    "shows": "a racing level is a track"
+  },
+  "7e91f41c680c4be10c81ca6bbaf8531f5893ffa957186398a58627a25f1dc47e": {
+    "kind": "source",
+    "file": "dead-space-art.jpeg",
+    "alt": "Dead Space: an armoured engineer facing a necromorph in a wrecked corridor.",
+    "credit": "Dead Space (EA Redwood Shores, 2008)",
+    "shows": "atmosphere and threat as level content"
+  },
+  "1fe8947b6c3fe441344786aa0d330374485bbb3a263c3769f48f6deb62aaa76c": {
+    "kind": "source",
+    "file": "pillars-of-eternity.jpeg",
+    "alt": "Pillars of Eternity: an isometric party crossing a stone bridge in an autumn forest.",
+    "credit": "Pillars of Eternity (Obsidian Entertainment, 2015)",
+    "shows": "an isometric level composed as a painting"
+  },
+  "b687bc073c6b1a1b829c45f3e30d709ce361f1888be4cadb404c1e52b7943d76": {
+    "kind": "source",
+    "file": "tomb-raider.jpeg",
+    "alt": "Tomb Raider: Lara Croft in an icy chamber, ledges and machinery framing the route.",
+    "credit": "Tomb Raider (Core Design / Crystal Dynamics)",
+    "shows": "puzzles and traversal as level content -- confirm which title"
+  },
+  "cbbefcb9b010e9349c02478e471e6b3b759a8a36a386da5ebf3d188e7475ed3c": {
+    "kind": "source",
+    "file": "dead-space.jpeg",
+    "alt": "Dead Space: figures lunging at the player in a dim, blood-marked room.",
+    "credit": "Dead Space (EA Redwood Shores, 2008)",
+    "shows": "encounter design inside a level"
+  },
+  "dff73f18d2a96bb0eb2d74bdce8a83495f0a74e76b7d5dfafccfd68a9dab3706": {
+    "kind": "source",
+    "file": "warcraft-iii.jpeg",
+    "alt": "Warcraft III: an army and base on a green map, with the command interface below.",
+    "credit": "Warcraft III (Blizzard, 2002)",
+    "shows": "an RTS level with objectives, base and terrain"
+  },
+  "8a8f6880e6d1725d9f81b66ed78402711042ea9bce717524370c9fe381582ec9": {
+    "kind": "source",
+    "file": "gta-iv.jpeg",
+    "alt": "Grand Theft Auto IV: a city street of traffic and police cars, a helicopter overhead.",
+    "credit": "Grand Theft Auto IV (Rockstar North, 2008)",
+    "shows": "an open-world city as a single continuous level"
+  },
+  "7970c4ed2fb913ca83cc9430217789533f33429632b07ee9fbe1a334faf61aef": {
+    "kind": "source",
+    "file": "fifa.jpeg",
+    "alt": "FIFA: a goalmouth scramble in a stadium, the scoreboard in the corner.",
+    "credit": "FIFA (EA Sports)",
+    "shows": "sports: the pitch is the level -- confirm which edition"
+  },
+  "62c8bfa1434b6ba382648c83e448289f6a93cb3b3a00412cc168f0b2b761d7a8": {
+    "kind": "source",
+    "file": "medieval-ii-total-war.png",
+    "alt": "Medieval II: Total War: the campaign map of Britain and France, armies and settlements labelled.",
+    "credit": "Medieval II: Total War (Creative Assembly, 2006)",
+    "shows": "balancing a large system: the campaign map and its many interacting values"
+  },
+  "d43d0c07e5cfc8d8fb27aa23844e1c9437f2500e5ed86f632f207d2e84353aac": {
+    "kind": "source",
+    "file": "viewpoints-grid.jpeg",
+    "alt": "A wall of arcade screens showing many games side by side, each with a different viewpoint.",
+    "credit": "credit to be set when the replacement is sourced",
+    "shows": "a grid of many games showing different viewpoints -- a composite of ~20 titles. Better rebuilt as our own grid from freely-licensed or open-source games than re-sourced"
+  },
+  "dde5c4907ee7f8ebffb4b025412989a3344e8ff4a64c66248ff3dacb1ea4c952": {
+    "kind": "source",
+    "file": "diablo-ii-inventory.jpeg",
+    "alt": "Diablo II: the inventory screen, equipment slots around a character silhouette above a grid of items.",
+    "credit": "Diablo II (Blizzard North, 2000)",
+    "shows": "an inventory screen as interface design"
+  },
+  "de7dc82779078a381df885104299f8fe51cefb36da57517b5af4e854885dd7ad": {
+    "kind": "source",
+    "file": "flow.jpeg",
+    "alt": "flOw: a pale organism trailing through deep blue water.",
+    "credit": "flOw (thatgamecompany, 2006)",
+    "shows": "player-controlled difficulty: the player chooses depth"
   }
 }

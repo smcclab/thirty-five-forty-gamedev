@@ -86,6 +86,10 @@ SOURCE_FIXUPS: dict[str, list[tuple[str, str]]] = {}
 #: An unlisted picture is dropped with a generic note. Regenerate the review
 #: material with --review to triage new pictures.
 SNIPPETS = pathlib.Path(__file__).parent / "deck-snippets"
+#: Replacement photography and screenshots, captured or re-sourced for this
+#: site rather than lifted from the source slides. Unlike src/decks/figures/
+#: these are not ours: every one carries its own credit.
+MEDIA = pathlib.Path(__file__).parent.parent / "src" / "decks" / "media"
 
 ALLOWED_IMAGES: dict[str, dict[str, str]] = json.loads(
     (pathlib.Path(__file__).parent / "deck-images.json").read_text()
@@ -472,7 +476,8 @@ def convert(path: pathlib.Path, decks_dir: pathlib.Path, verbose=False,
 
     week_no = deck_week(path)
     stats = {"slug": slug, "slides": 0, "images": 0, "figures": 0,
-             "snippets": 0, "tables": 0, "links": 0, "notes": 0, "omitted": 0}
+             "snippets": 0, "pending": 0, "tables": 0, "links": 0, "notes": 0,
+             "omitted": 0}
     out: list[str] = []
     hero: str | None = None
     subtitle = ""
@@ -678,6 +683,23 @@ def convert(path: pathlib.Path, decks_dir: pathlib.Path, verbose=False,
                 })
                 stats["figures"] += 1
                 continue
+            if kind == "photo":
+                # A screenshot re-sourced for this site. Until the capture is
+                # made the slide keeps a note, so a brief can be committed and
+                # filled in one entry at a time.
+                if not (MEDIA / entry["file"]).exists():
+                    omitted.append((i, heading, " / ".join(citations),
+                                    f"screenshot pending re-capture: "
+                                    f"{entry.get('credit', entry['file'])}"))
+                    stats["pending"] += 1
+                    continue
+                slide_figures.append({
+                    "src": f"./media/{entry['file']}",
+                    "alt": entry.get("alt", ""),
+                    "credit": entry.get("credit", ""),
+                })
+                stats["images"] += 1
+                continue
             if kind == "snippet":
                 if digest in seen_snippets:
                     continue  # a reference table held on screen across slides
@@ -801,7 +823,9 @@ def convert(path: pathlib.Path, decks_dir: pathlib.Path, verbose=False,
             out.append("\n".join(fig).rstrip() + "\n")
             stats["slides"] += 1
 
-    stats["omitted"] = len(omitted)
+    # A pending screenshot also leaves a note on the slide, but it is not a
+    # picture we decided to drop -- do not count it twice.
+    stats["omitted"] = len(omitted) - stats["pending"]
     week = week_no
     description = (
         f"Week {week} theory: {title.lower()}." if week else f"Theory: {title.lower()}."
@@ -860,7 +884,7 @@ def main() -> int:
 
     sources = sorted(theory.glob("*/*.pptx"), key=lambda p: (deck_week(p) or 99, p.stem))
     total = {"slides": 0, "images": 0, "figures": 0, "snippets": 0,
-             "tables": 0, "links": 0, "omitted": 0}
+             "pending": 0, "tables": 0, "links": 0, "omitted": 0}
     n = 0
     for src in sources:
         if args.only and args.only not in deck_slug(src):
@@ -879,7 +903,8 @@ def main() -> int:
     print(
         f"\n{n} deck(s): {total['slides']} slides, {total['images']} images published, "
         f"{total['figures']} figures redrawn, {total['snippets']} tables from "
-        f"figures, {total['omitted']} pictures dropped, "
+        f"figures, {total['pending']} screenshots pending, "
+        f"{total['omitted']} pictures dropped, "
         f"{total['tables']} tables, {total['links']} external links"
     )
     return 0
