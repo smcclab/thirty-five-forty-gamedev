@@ -164,6 +164,12 @@ python3 scripts/make-deck-figures.py                                       # red
 python3 scripts/make-deck-figures.py --check                               # lint them
 ```
 
+**Work in progress: `IMAGE-PLAN.md`.** The decks are being brought up to the
+0.6 images-per-slide that comp1720 and comp4350 run at. Phases 1 (redrawn
+figures) and 2 (game screenshots) are done; Phase 3 adds images to the slides
+that never had one, starting with the five decks still at zero. Read that file
+before doing any image work, and delete it when the decks reach the target.
+
 The decks teach from Fullerton and Schell, whose figures cannot be
 republished, so the conceptual ones are **redrawn** as original transparent
 SVGs in `src/decks/figures/` and get a slide of their own (`.deck-figure`,
