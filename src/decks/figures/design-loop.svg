@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+
+<svg width="397pt" height="345pt"
+ viewBox="0.00 0.00 397.00 345.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 341.25)">
+<title>G</title>
+
+<g id="node1" class="node">
+<title>model</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M242.73,-39.66C242.73,-39.66 133.8,-39.66 133.8,-39.66 127.8,-39.66 121.8,-33.66 121.8,-27.66 121.8,-27.66 121.8,-12 121.8,-12 121.8,-6 127.8,0 133.8,0 133.8,0 242.73,0 242.73,0 248.73,0 254.73,-6 254.73,-12 254.73,-12 254.73,-27.66 254.73,-27.66 254.73,-33.66 248.73,-39.66 242.73,-39.66"/>
+<text xml:space="preserve" text-anchor="middle" x="188.26" y="-14.38" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#f2f2f2">Mental model</text>
+</g>
+
+<g id="node2" class="node">
+<title>action</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M66.93,-188.46C66.93,-188.46 12,-188.46 12,-188.46 6,-188.46 0,-182.46 0,-176.46 0,-176.46 0,-160.8 0,-160.8 0,-154.8 6,-148.8 12,-148.8 12,-148.8 66.93,-148.8 66.93,-148.8 72.93,-148.8 78.93,-154.8 78.93,-160.8 78.93,-160.8 78.93,-176.46 78.93,-176.46 78.93,-182.46 72.93,-188.46 66.93,-188.46"/>
+<text xml:space="preserve" text-anchor="middle" x="39.47" y="-163.18" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#f2f2f2">Action</text>
+</g>
+
+<g id="edge1" class="edge">
+<title>model&#45;&gt;action</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M167.88,-40.21C141.76,-66.33 96.37,-111.73 67.14,-140.96"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="65.46,-138.67 61.79,-146.31 69.42,-142.63 65.46,-138.67"/>
+</g>
+
+<g id="node3" class="node">
+<title>rules</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M213.1,-337.25C213.1,-337.25 163.42,-337.25 163.42,-337.25 157.42,-337.25 151.42,-331.25 151.42,-325.25 151.42,-325.25 151.42,-309.59 151.42,-309.59 151.42,-303.59 157.42,-297.59 163.42,-297.59 163.42,-297.59 213.1,-297.59 213.1,-297.59 219.1,-297.59 225.1,-303.59 225.1,-309.59 225.1,-309.59 225.1,-325.25 225.1,-325.25 225.1,-331.25 219.1,-337.25 213.1,-337.25"/>
+<text xml:space="preserve" text-anchor="middle" x="188.26" y="-311.97" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#f2f2f2">Rules</text>
+</g>
+
+<g id="edge2" class="edge">
+<title>action&#45;&gt;rules</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M59.84,-189C85.96,-215.13 131.36,-260.52 160.59,-289.75"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="158.3,-291.43 165.94,-295.1 162.26,-287.47 158.3,-291.43"/>
+</g>
+
+<g id="node4" class="node">
+<title>feedback</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M377.27,-188.46C377.27,-188.46 296.84,-188.46 296.84,-188.46 290.84,-188.46 284.84,-182.46 284.84,-176.46 284.84,-176.46 284.84,-160.8 284.84,-160.8 284.84,-154.8 290.84,-148.8 296.84,-148.8 296.84,-148.8 377.27,-148.8 377.27,-148.8 383.27,-148.8 389.27,-154.8 389.27,-160.8 389.27,-160.8 389.27,-176.46 389.27,-176.46 389.27,-182.46 383.27,-188.46 377.27,-188.46"/>
+<text xml:space="preserve" text-anchor="middle" x="337.06" y="-163.18" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#f2f2f2">Feedback</text>
+</g>
+
+<g id="edge3" class="edge">
+<title>rules&#45;&gt;feedback</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M208.64,-297.05C234.76,-270.93 280.16,-225.53 309.39,-196.3"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="311.06,-198.59 314.74,-190.95 307.1,-194.63 311.06,-198.59"/>
+</g>
+
+<g id="edge4" class="edge">
+<title>feedback&#45;&gt;model</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M316.68,-148.25C290.56,-122.13 245.16,-76.73 215.93,-47.5"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="218.22,-45.83 210.58,-42.15 214.26,-49.79 218.22,-45.83"/>
+</g>
+</g>
+</svg>

@@ -155,7 +155,7 @@ bullets. Footers, slide numbers and dates are typed placeholders
 - every deck's stale "Visit Wattle" closing slide is replaced with a generated
   one.
 
-### Images: nothing is published by default
+### Images: figures are redrawn, screenshots are not published
 
 Two traps here, both of which the converter is built to avoid:
 
@@ -173,11 +173,32 @@ Two traps here, both of which the converter is built to avoid:
    photography. Fine in a PowerPoint behind Wattle under the educational
    statutory licence; not fine on a public website.
 
-So the converter publishes an image only if its SHA-256 appears in
-`scripts/deck-images.json`, which is **empty**. Every omission is recorded in
-the deck source as a ```comment naming the citation it sat beside, so a future
-convenor can see what was there. `scripts/deck-images.README.md` explains how
-to review and allow-list. To re-review:
+So `scripts/deck-images.json` decides what happens to each picture, keyed by
+its SHA-256. As of 2026-09-22, of the 49 distinct pictures:
+
+- **16 conceptual figures are redrawn from scratch** as transparent SVGs in
+  `src/decks/figures/`, by `scripts/make-deck-figures.py`. Copyright protects
+  the drawing, not the model --- and most of these models (Csikszentmihalyi,
+  Maslow, Bartle, Parlett, Cook) are third-party even inside Fullerton and
+  Schell, so the credits name the primary source. The 16 cover 22 uses.
+- **1 is published as-is**: the GameFlow affordances figure, which is Penny's
+  own (Sweetser & Ozdowska, CHI EA '24). The paper's notice reads "© 2024
+  Copyright held by the owner/author(s)" and carries no Creative Commons
+  licence, so the authors retain copyright and ACM holds only a licence to
+  publish; nothing is needed from ACM. **Penny gave permission to publish it
+  on this site on 2026-09-22**, which is what authorises it --- the notice's
+  own grant covers "personal or classroom use", and a public website is
+  broader than that. The permission is recorded in `scripts/deck-images.json`
+  alongside the figure, and the credit line says "reproduced by permission".
+- **2 are really tables** (Fullerton figs. 8.2 and 9.1) and become Markdown in
+  `scripts/deck-snippets/`.
+- **30 are dropped**, each recording why in the deck source --- the commercial
+  game screenshots, the stock photography, Fullerton's fig. 9.10 question
+  page, and the Agile infographic.
+
+`scripts/deck-images.README.md` explains the four dispositions, how to draw a
+replacement without copying one, and how to check the result. To re-review the
+source pictures:
 
 ```sh
 python3 scripts/convert-pptx-decks.py --review /tmp/deck-images

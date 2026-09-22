@@ -74,10 +74,19 @@ SOURCE_FIXUPS: dict[str, list[tuple[str, str]]] = {}
 #: Pictures cleared for publication, keyed by the SHA-256 of the image file.
 #: These decks teach from Fullerton and Schell and many of their figures are
 #: scans or web grabs, which were fine behind Wattle under the educational
-#: licence but are not fine on a public site. So nothing is published unless
-#: it appears here with an alt text and a credit. Everything else is replaced
-#: in the deck by a note recording what was left out.
-#: Regenerate the review material with --review to triage new pictures.
+#: licence but are not fine on a public site. So a source picture is published
+#: only if it appears here, and every entry says what to do with it:
+#:
+#:   kind "source"   publish the picture itself (it is cleared)
+#:   kind "figure"   publish an original redrawing from src/decks/figures/,
+#:                   made by scripts/make-deck-figures.py
+#:   kind "snippet"  replace it with the MDX in scripts/deck-snippets/
+#:   kind "drop"     leave it out, recording `note` in the deck source
+#:
+#: An unlisted picture is dropped with a generic note. Regenerate the review
+#: material with --review to triage new pictures.
+SNIPPETS = pathlib.Path(__file__).parent / "deck-snippets"
+
 ALLOWED_IMAGES: dict[str, dict[str, str]] = json.loads(
     (pathlib.Path(__file__).parent / "deck-images.json").read_text()
 ) if (pathlib.Path(__file__).parent / "deck-images.json").exists() else {}
@@ -462,15 +471,16 @@ def convert(path: pathlib.Path, decks_dir: pathlib.Path, verbose=False,
     title = title_from_slide(z, slide_names) or deck_title(path)
 
     week_no = deck_week(path)
-    stats = {"slug": slug, "slides": 0, "images": 0, "tables": 0, "links": 0,
-             "notes": 0, "omitted": 0}
+    stats = {"slug": slug, "slides": 0, "images": 0, "figures": 0,
+             "snippets": 0, "tables": 0, "links": 0, "notes": 0, "omitted": 0}
     out: list[str] = []
     hero: str | None = None
     subtitle = ""
     prev_heading = ""
     seen_notes: set[str] = set()
     seen_images: set[str] = set()
-    omitted: list[tuple[int, str, str]] = []
+    seen_snippets: set[str] = set()
+    omitted: list[tuple[int, str, str, str]] = []
 
     for i, sname in enumerate(slide_names, 1):
         root = ET.fromstring(z.read(sname))
@@ -617,6 +627,8 @@ def convert(path: pathlib.Path, decks_dir: pathlib.Path, verbose=False,
         # --- images
         slide_images: list[str] = []
         image_credits: list[str] = []
+        slide_figures: list[dict] = []
+        slide_snippets: list[tuple[str, str]] = []
         for s in sorted(pics, key=lambda s: (s.y, s.x)):
             target, cx, cy = pic_target(s, rels)
             if not target:
@@ -648,8 +660,38 @@ def convert(path: pathlib.Path, decks_dir: pathlib.Path, verbose=False,
 
             entry = ALLOWED_IMAGES.get(digest)
             if entry is None:
-                omitted.append((i, heading, " / ".join(citations)))
+                omitted.append((i, heading, " / ".join(citations), ""))
                 continue
+
+            kind = entry.get("kind", "source")
+            if kind == "drop":
+                omitted.append((i, heading, " / ".join(citations),
+                                entry.get("note", "")))
+                continue
+            if kind == "figure":
+                # A redrawing, so it is published every time it is used: the
+                # same model is taught on several slides across several decks.
+                slide_figures.append({
+                    "src": f"./figures/{entry['file']}",
+                    "alt": entry.get("alt", ""),
+                    "credit": entry.get("credit", ""),
+                })
+                stats["figures"] += 1
+                continue
+            if kind == "snippet":
+                if digest in seen_snippets:
+                    continue  # a reference table held on screen across slides
+                seen_snippets.add(digest)
+                snippet = SNIPPETS / entry["file"]
+                if not snippet.exists():
+                    raise SystemExit(
+                        f"deck-images.json points at {snippet}, which is missing"
+                    )
+                slide_snippets.append((snippet.read_text().rstrip(),
+                                       entry.get("credit", "")))
+                stats["snippets"] += 1
+                continue
+
             if digest in seen_images:
                 continue  # the same figure repeated on later slides
             seen_images.add(digest)
@@ -658,16 +700,23 @@ def convert(path: pathlib.Path, decks_dir: pathlib.Path, verbose=False,
             dest = asset_dir / (entry.get("file") or f"{digest[:12]}{suffix}")
             dest.write_bytes(data)
             rel = f"./assets/{slug}/{dest.name}"
-            if hero is None:
+            # A figure is never the deck's hero: the card on /lectures/ wants
+            # something representative of the topic, not a cited diagram.
+            if hero is None and not entry.get("own_slide"):
                 hero = f"/src/decks/assets/{slug}/{dest.name}"
             # The source has no alt text for these and the heading is not a
             # description of the image, so emit them as decorative (empty alt)
             # rather than inventing one.
             alt = mdx_escape(entry.get("alt", ""))
             credit = entry.get("credit", "")
-            slide_images.append(f"![{alt}]({rel})")
-            if credit:
-                image_credits.append(mdx_escape(credit))
+            if entry.get("own_slide"):
+                # A detailed diagram is unreadable at the 30vh an image gets
+                # beside a bullet list, so give it a slide like a redrawing.
+                slide_figures.append({"src": rel, "alt": alt, "credit": credit})
+            else:
+                slide_images.append(f"![{alt}]({rel})")
+                if credit:
+                    image_credits.append(mdx_escape(credit))
             stats["images"] += 1
 
         if slide_images:
@@ -679,6 +728,12 @@ def convert(path: pathlib.Path, decks_dir: pathlib.Path, verbose=False,
             body += slide_images
             body.append("")
             body.append("</div>")
+
+        for text, snippet_credit in slide_snippets:
+            body.append("")
+            body.append(text)
+            if snippet_credit:
+                image_credits.append(mdx_escape(snippet_credit))
 
         # --- citation and links
         urls = external_links(root, rels)
@@ -700,11 +755,11 @@ def convert(path: pathlib.Path, decks_dir: pathlib.Path, verbose=False,
             notes_for_slide = [o for o in omitted if o[0] == i]
             body.append("")
             body.append("```comment")
-            for _, h, c in notes_for_slide:
-                body.append(
-                    f"figure omitted pending copyright review"
+            for _, h, c, note in notes_for_slide:
+                body.append(note or (
+                    "figure omitted pending copyright review"
                     + (f" (see {c})" if c else "")
-                )
+                ))
             body.append("```")
 
         # --- speaker notes, kept but not rendered
@@ -723,6 +778,28 @@ def convert(path: pathlib.Path, decks_dir: pathlib.Path, verbose=False,
             prev_heading = heading
         out.append("\n".join(body).rstrip() + "\n")
         stats["slides"] += 1
+
+        # A redrawn figure gets a slide of its own. Beside a bullet list the
+        # theme caps an image at 30vh, which is too small for any label to be
+        # read from the back of a theatre; on its own slide it gets 60vh.
+        for entry in slide_figures:
+            fig_heading = heading or prev_heading
+            if fig_heading and not fig_heading.endswith("(cont.)"):
+                fig_heading = f"{fig_heading} (cont.)"
+            fig: list[str] = []
+            if fig_heading:
+                fig.append(f"## {fig_heading}")
+                fig.append("")
+            fig.append('<figure class="deck-figure">')
+            fig.append("")
+            fig.append(f'![{mdx_escape(entry["alt"])}]({entry["src"]})')
+            fig.append("")
+            if entry.get("credit"):
+                fig.append(f'<figcaption>{mdx_escape(entry["credit"])}</figcaption>')
+                fig.append("")
+            fig.append("</figure>")
+            out.append("\n".join(fig).rstrip() + "\n")
+            stats["slides"] += 1
 
     stats["omitted"] = len(omitted)
     week = week_no
@@ -782,7 +859,8 @@ def main() -> int:
         review_dir.mkdir(parents=True, exist_ok=True)
 
     sources = sorted(theory.glob("*/*.pptx"), key=lambda p: (deck_week(p) or 99, p.stem))
-    total = {"slides": 0, "images": 0, "tables": 0, "links": 0, "omitted": 0}
+    total = {"slides": 0, "images": 0, "figures": 0, "snippets": 0,
+             "tables": 0, "links": 0, "omitted": 0}
     n = 0
     for src in sources:
         if args.only and args.only not in deck_slug(src):
@@ -800,7 +878,8 @@ def main() -> int:
 
     print(
         f"\n{n} deck(s): {total['slides']} slides, {total['images']} images published, "
-        f"{total['omitted']} figures omitted pending review, "
+        f"{total['figures']} figures redrawn, {total['snippets']} tables from "
+        f"figures, {total['omitted']} pictures dropped, "
         f"{total['tables']} tables, {total['links']} external links"
     )
     return 0

@@ -19,9 +19,11 @@ sets out the rules about images — read it before doing any content work.**
 In short: 2024 is the source of truth; the material was written by Professor
 Penny Kyburz and reuse should be confirmed with her; the deck converter must
 never extract images from the slide relationship list (they are webcam stills
-of the lecturer); no slide figure is published unless it is allow-listed in
-`scripts/deck-images.json`, which is empty; and the peer-assessment
-spreadsheets, the tutor brief and student names must not be published.
+of the lecturer); what happens to each slide figure is set per-picture in
+`scripts/deck-images.json` (published, redrawn by
+`scripts/make-deck-figures.py`, turned into a table, or dropped); and the
+peer-assessment spreadsheets, the tutor brief and student names must not be
+published.
 
 **Credit and copyright.** The 2023 and 2024 offerings were designed and
 taught by Professor Penny Kyburz; the home page and the footer say so, and
@@ -152,13 +154,22 @@ fragments are not verified.
 ## Source materials
 
 See `MATERIALS.md` for the full survey, the 2024 course and assessment
-structure, what was converted and the image rules. Two scripts:
+structure, what was converted and the image rules. The scripts:
 
 ```sh
 python3 scripts/extract-ooxml.py ../comp3540-materials /tmp/comp3540-text  # text of every pptx/docx
 python3 scripts/convert-pptx-decks.py                                      # regenerate src/decks
 python3 scripts/convert-pptx-decks.py --review /tmp/deck-images            # triage slide figures
+python3 scripts/make-deck-figures.py                                       # redraw src/decks/figures/*.svg
+python3 scripts/make-deck-figures.py --check                               # lint them
 ```
+
+The decks teach from Fullerton and Schell, whose figures cannot be
+republished, so the conceptual ones are **redrawn** as original transparent
+SVGs in `src/decks/figures/` and get a slide of their own (`.deck-figure`,
+60vh --- a figure beside a bullet list is capped at 30vh and its labels are
+unreadable from the back of a theatre). `scripts/deck-images.README.md` is the
+rulebook: read it before touching a figure.
 
 Site photography is in `src/assets/images/photos/`: workshop prototype photos
 from `2024/WW4-Photos` (cropped, EXIF stripped, no identifiable faces — the

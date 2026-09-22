@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+
+<svg width="638pt" height="362pt"
+ viewBox="0.00 0.00 638.00 362.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 357.98)">
+<title>G</title>
+
+<g id="node1" class="node">
+<title>found</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M255.18,-353.98C255.18,-353.98 12,-353.98 12,-353.98 6,-353.98 0,-347.98 0,-341.98 0,-341.98 0,-306.82 0,-306.82 0,-300.82 6,-294.82 12,-294.82 12,-294.82 255.18,-294.82 255.18,-294.82 261.18,-294.82 267.18,-300.82 267.18,-306.82 267.18,-306.82 267.18,-341.98 267.18,-341.98 267.18,-347.98 261.18,-353.98 255.18,-353.98"/>
+<text xml:space="preserve" text-anchor="middle" x="133.59" y="-328.7" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#f2f2f2">Foundational rules</text>
+<text xml:space="preserve" text-anchor="middle" x="133.59" y="-309.2" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#f2f2f2">the abstract system underneath</text>
+</g>
+
+<g id="node2" class="node">
+<title>oper</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M240.56,-196.82C240.56,-196.82 26.62,-196.82 26.62,-196.82 20.63,-196.82 14.62,-190.82 14.62,-184.82 14.62,-184.82 14.62,-149.66 14.62,-149.66 14.62,-143.66 20.62,-137.66 26.62,-137.66 26.62,-137.66 240.56,-137.66 240.56,-137.66 246.55,-137.66 252.56,-143.66 252.56,-149.66 252.56,-149.66 252.56,-184.82 252.56,-184.82 252.56,-190.82 246.56,-196.82 240.56,-196.82"/>
+<text xml:space="preserve" text-anchor="middle" x="133.59" y="-171.54" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#f2f2f2">Operational rules</text>
+<text xml:space="preserve" text-anchor="middle" x="133.59" y="-152.04" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#f2f2f2">what the players actually do</text>
+</g>
+
+<g id="edge1" class="edge">
+<title>found&#45;&gt;oper</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M133.59,-294.22C133.59,-269.8 133.59,-234.75 133.59,-207.81"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="136.39,-207.98 133.59,-199.98 130.79,-207.98 136.39,-207.98"/>
+<text xml:space="preserve" text-anchor="middle" x="179.34" y="-240.57" font-family='"Public Sans", system-ui, sans-serif' font-size="15.00" fill="#9aa3ab">expressed as</text>
+</g>
+
+<g id="node4" class="node">
+<title>play</title>
+<path fill="none" stroke="#e9b44c" stroke-width="1.6" d="M234.18,-39.66C234.18,-39.66 195,-39.66 195,-39.66 189,-39.66 183,-33.66 183,-27.66 183,-27.66 183,-12 183,-12 183,-6 189,0 195,0 195,0 234.18,0 234.18,0 240.18,0 246.18,-6 246.18,-12 246.18,-12 246.18,-27.66 246.18,-27.66 246.18,-33.66 240.18,-39.66 234.18,-39.66"/>
+<text xml:space="preserve" text-anchor="middle" x="214.59" y="-14.38" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#e9b44c">Play</text>
+</g>
+
+<g id="edge2" class="edge">
+<title>oper&#45;&gt;play</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M121.47,-136.92C116.16,-119.33 113.06,-97.07 122.59,-79.66 133.42,-59.89 154.03,-45.79 173.01,-36.36"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="174.17,-38.91 180.24,-33 171.81,-33.84 174.17,-38.91"/>
+<text xml:space="preserve" text-anchor="middle" x="169.09" y="-83.41" font-family='"Public Sans", system-ui, sans-serif' font-size="15.00" fill="#9aa3ab">performed as</text>
+</g>
+
+<g id="node3" class="node">
+<title>behav</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M618.43,-196.82C618.43,-196.82 388.75,-196.82 388.75,-196.82 382.75,-196.82 376.75,-190.82 376.75,-184.82 376.75,-184.82 376.75,-149.66 376.75,-149.66 376.75,-143.66 382.75,-137.66 388.75,-137.66 388.75,-137.66 618.43,-137.66 618.43,-137.66 624.43,-137.66 630.43,-143.66 630.43,-149.66 630.43,-149.66 630.43,-184.82 630.43,-184.82 630.43,-190.82 624.43,-196.82 618.43,-196.82"/>
+<text xml:space="preserve" text-anchor="middle" x="503.59" y="-171.54" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#f2f2f2">Behavioural rules</text>
+<text xml:space="preserve" text-anchor="middle" x="503.59" y="-152.04" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#f2f2f2">the unwritten etiquette of play</text>
+</g>
+
+<g id="edge3" class="edge">
+<title>behav&#45;&gt;play</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M469.2,-136.99C446.35,-118.65 415.05,-95.56 384.59,-79.66 343.14,-58.02 292.02,-41.57 256.73,-31.64"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="257.55,-28.97 249.1,-29.54 256.07,-34.36 257.55,-28.97"/>
+<text xml:space="preserve" text-anchor="middle" x="453.64" y="-83.41" font-family='"Public Sans", system-ui, sans-serif' font-size="15.00" fill="#9aa3ab">shapes how</text>
+</g>
+
+<g id="edge4" class="edge">
+<title>play&#45;&gt;oper</title>
+<path fill="none" stroke="#e9b44c" stroke-width="1.6" d="M224.29,-40.46C230.82,-56.61 236.72,-79.69 227.59,-97.66 221.05,-110.54 210.82,-121.57 199.49,-130.78"/>
+<polygon fill="#e9b44c" stroke="#e9b44c" stroke-width="1.6" points="198.09,-128.33 193.42,-135.41 201.48,-132.79 198.09,-128.33"/>
+<text xml:space="preserve" text-anchor="middle" x="300.43" y="-83.41" font-family='"Public Sans", system-ui, sans-serif' font-size="15.00" fill="#e9b44c">players renegotiate</text>
+</g>
+</g>
+</svg>

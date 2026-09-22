@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+
+<svg width="548pt" height="158pt"
+ viewBox="0.00 0.00 548.00 158.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 154.16)">
+<title>G</title>
+
+<g id="node1" class="node">
+<title>player</title>
+<path fill="none" stroke="#e9b44c" stroke-width="1.6" d="M66.18,-94.41C66.18,-94.41 12,-94.41 12,-94.41 6,-94.41 0,-88.41 0,-82.41 0,-82.41 0,-66.75 0,-66.75 0,-60.75 6,-54.75 12,-54.75 12,-54.75 66.18,-54.75 66.18,-54.75 72.18,-54.75 78.18,-60.75 78.18,-66.75 78.18,-66.75 78.18,-82.41 78.18,-82.41 78.18,-88.41 72.18,-94.41 66.18,-94.41"/>
+<text xml:space="preserve" text-anchor="middle" x="39.09" y="-69.13" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#e9b44c">Player</text>
+</g>
+
+<g id="node2" class="node">
+<title>pin</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M208.36,-150.16C208.36,-150.16 139.18,-150.16 139.18,-150.16 133.18,-150.16 127.18,-144.16 127.18,-138.16 127.18,-138.16 127.18,-103 127.18,-103 127.18,-97 133.18,-91 139.18,-91 139.18,-91 208.36,-91 208.36,-91 214.36,-91 220.36,-97 220.36,-103 220.36,-103 220.36,-138.16 220.36,-138.16 220.36,-144.16 214.36,-150.16 208.36,-150.16"/>
+<text xml:space="preserve" text-anchor="middle" x="173.77" y="-124.88" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#f2f2f2">Physical</text>
+<text xml:space="preserve" text-anchor="middle" x="173.77" y="-105.38" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#f2f2f2">input</text>
+</g>
+
+<g id="edge1" class="edge">
+<title>player&#45;&gt;pin</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M78.82,-88.01C90.77,-92.15 104.17,-96.8 117.03,-101.25"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="115.95,-103.85 124.43,-103.82 117.79,-98.55 115.95,-103.85"/>
+<text xml:space="preserve" text-anchor="middle" x="102.68" y="-101.33" font-family='"Public Sans", system-ui, sans-serif' font-size="15.00" fill="#9aa3ab">1</text>
+</g>
+
+<g id="node4" class="node">
+<title>vif</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M358.04,-104.16C358.04,-104.16 282.11,-104.16 282.11,-104.16 276.11,-104.16 270.11,-98.16 270.11,-92.16 270.11,-92.16 270.11,-57 270.11,-57 270.11,-51 276.11,-45 282.11,-45 282.11,-45 358.04,-45 358.04,-45 364.04,-45 370.04,-51 370.04,-57 370.04,-57 370.04,-92.16 370.04,-92.16 370.04,-98.16 364.04,-104.16 358.04,-104.16"/>
+<text xml:space="preserve" text-anchor="middle" x="320.08" y="-78.88" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#f2f2f2">Virtual</text>
+<text xml:space="preserve" text-anchor="middle" x="320.08" y="-59.38" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#f2f2f2">interface</text>
+</g>
+
+<g id="edge2" class="edge">
+<title>pin&#45;&gt;vif</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M220.83,-105.9C233.18,-101.96 246.72,-97.64 259.69,-93.51"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="260.39,-96.23 267.16,-91.13 258.69,-90.89 260.39,-96.23"/>
+<text xml:space="preserve" text-anchor="middle" x="245.24" y="-102.71" font-family='"Public Sans", system-ui, sans-serif' font-size="15.00" fill="#9aa3ab">2</text>
+</g>
+
+<g id="node3" class="node">
+<title>pout</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M208.36,-59.16C208.36,-59.16 139.18,-59.16 139.18,-59.16 133.18,-59.16 127.18,-53.16 127.18,-47.16 127.18,-47.16 127.18,-12 127.18,-12 127.18,-6 133.18,0 139.18,0 139.18,0 208.36,0 208.36,0 214.36,0 220.36,-6 220.36,-12 220.36,-12 220.36,-47.16 220.36,-47.16 220.36,-53.16 214.36,-59.16 208.36,-59.16"/>
+<text xml:space="preserve" text-anchor="middle" x="173.77" y="-33.88" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#f2f2f2">Physical</text>
+<text xml:space="preserve" text-anchor="middle" x="173.77" y="-14.38" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#f2f2f2">output</text>
+</g>
+
+<g id="edge6" class="edge">
+<title>pout&#45;&gt;player</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M126.53,-44.18C117.13,-47.22 107.32,-50.46 98.18,-53.58 95.03,-54.65 91.8,-55.78 88.54,-56.92"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="87.66,-54.26 81.05,-59.57 89.53,-59.54 87.66,-54.26"/>
+<text xml:space="preserve" text-anchor="middle" x="102.68" y="-57.33" font-family='"Public Sans", system-ui, sans-serif' font-size="15.00" fill="#9aa3ab">6</text>
+</g>
+
+<g id="edge5" class="edge">
+<title>vif&#45;&gt;pout</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M269.47,-59.11C256.9,-55.19 243.32,-50.96 230.48,-46.95"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="231.61,-44.37 223.14,-44.66 229.94,-49.72 231.61,-44.37"/>
+<text xml:space="preserve" text-anchor="middle" x="245.24" y="-55.83" font-family='"Public Sans", system-ui, sans-serif' font-size="15.00" fill="#9aa3ab">5</text>
+</g>
+
+<g id="node5" class="node">
+<title>world</title>
+<path fill="none" stroke="#5ec9c0" stroke-width="1.6" d="M527.97,-94.41C527.97,-94.41 431.79,-94.41 431.79,-94.41 425.79,-94.41 419.79,-88.41 419.79,-82.41 419.79,-82.41 419.79,-66.75 419.79,-66.75 419.79,-60.75 425.79,-54.75 431.79,-54.75 431.79,-54.75 527.97,-54.75 527.97,-54.75 533.97,-54.75 539.97,-60.75 539.97,-66.75 539.97,-66.75 539.97,-82.41 539.97,-82.41 539.97,-88.41 533.97,-94.41 527.97,-94.41"/>
+<text xml:space="preserve" text-anchor="middle" x="479.88" y="-69.13" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#5ec9c0">Game world</text>
+</g>
+
+<g id="edge3" class="edge">
+<title>vif&#45;&gt;world</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M370.57,-74.58C382.7,-74.58 395.9,-74.58 408.79,-74.58"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="408.61,-77.38 416.61,-74.58 408.61,-71.78 408.61,-77.38"/>
+<text xml:space="preserve" text-anchor="middle" x="394.92" y="-78.33" font-family='"Public Sans", system-ui, sans-serif' font-size="15.00" fill="#9aa3ab">3</text>
+</g>
+
+<g id="edge4" class="edge">
+<title>world&#45;&gt;vif</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M437.28,-54.02C422.52,-48.97 405.69,-45.73 390.04,-48.58 386.83,-49.16 383.58,-49.89 380.32,-50.73"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="379.82,-47.96 372.9,-52.85 381.36,-53.34 379.82,-47.96"/>
+<text xml:space="preserve" text-anchor="middle" x="394.92" y="-52.33" font-family='"Public Sans", system-ui, sans-serif' font-size="15.00" fill="#9aa3ab">4</text>
+</g>
+</g>
+</svg>

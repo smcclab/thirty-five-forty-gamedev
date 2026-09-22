@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+
+<svg width="668pt" height="48pt"
+ viewBox="0.00 0.00 668.00 48.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 43.66)">
+<title>G</title>
+
+<g id="node1" class="node">
+<title>model</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M120.93,-39.66C120.93,-39.66 12,-39.66 12,-39.66 6,-39.66 0,-33.66 0,-27.66 0,-27.66 0,-12 0,-12 0,-6 6,0 12,0 12,0 120.93,0 120.93,0 126.93,0 132.93,-6 132.93,-12 132.93,-12 132.93,-27.66 132.93,-27.66 132.93,-33.66 126.93,-39.66 120.93,-39.66"/>
+<text xml:space="preserve" text-anchor="middle" x="66.47" y="-14.38" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#f2f2f2">Mental model</text>
+</g>
+
+<g id="node2" class="node">
+<title>action</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M239.86,-39.66C239.86,-39.66 184.93,-39.66 184.93,-39.66 178.93,-39.66 172.93,-33.66 172.93,-27.66 172.93,-27.66 172.93,-12 172.93,-12 172.93,-6 178.93,0 184.93,0 184.93,0 239.86,0 239.86,0 245.86,0 251.86,-6 251.86,-12 251.86,-12 251.86,-27.66 251.86,-27.66 251.86,-33.66 245.86,-39.66 239.86,-39.66"/>
+<text xml:space="preserve" text-anchor="middle" x="212.4" y="-14.38" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#f2f2f2">Action</text>
+</g>
+
+<g id="edge1" class="edge">
+<title>model&#45;&gt;action</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M133.53,-19.83C143.2,-19.83 153,-19.83 162.25,-19.83"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="161.99,-22.63 169.99,-19.83 161.99,-17.03 161.99,-22.63"/>
+</g>
+
+<g id="node3" class="node">
+<title>rules</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M353.54,-39.66C353.54,-39.66 303.86,-39.66 303.86,-39.66 297.86,-39.66 291.86,-33.66 291.86,-27.66 291.86,-27.66 291.86,-12 291.86,-12 291.86,-6 297.86,0 303.86,0 303.86,0 353.54,0 353.54,0 359.54,0 365.54,-6 365.54,-12 365.54,-12 365.54,-27.66 365.54,-27.66 365.54,-33.66 359.54,-39.66 353.54,-39.66"/>
+<text xml:space="preserve" text-anchor="middle" x="328.7" y="-14.38" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#f2f2f2">Rules</text>
+</g>
+
+<g id="edge2" class="edge">
+<title>action&#45;&gt;rules</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M252.41,-19.83C261.53,-19.83 271.33,-19.83 280.75,-19.83"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="280.75,-22.63 288.75,-19.83 280.75,-17.03 280.75,-22.63"/>
+</g>
+
+<g id="node4" class="node">
+<title>feedback</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M497.97,-39.66C497.97,-39.66 417.54,-39.66 417.54,-39.66 411.54,-39.66 405.54,-33.66 405.54,-27.66 405.54,-27.66 405.54,-12 405.54,-12 405.54,-6 411.54,0 417.54,0 417.54,0 497.97,0 497.97,0 503.97,0 509.97,-6 509.97,-12 509.97,-12 509.97,-27.66 509.97,-27.66 509.97,-33.66 503.97,-39.66 497.97,-39.66"/>
+<text xml:space="preserve" text-anchor="middle" x="457.76" y="-14.38" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#f2f2f2">Feedback</text>
+</g>
+
+<g id="edge3" class="edge">
+<title>rules&#45;&gt;feedback</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M366.11,-19.83C375.14,-19.83 385.08,-19.83 394.96,-19.83"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="394.77,-22.63 402.77,-19.83 394.77,-17.03 394.77,-22.63"/>
+</g>
+
+<g id="node5" class="node">
+<title>done</title>
+<path fill="none" stroke="#e9b44c" stroke-width="1.6" d="M648.4,-39.66C648.4,-39.66 561.97,-39.66 561.97,-39.66 555.97,-39.66 549.97,-33.66 549.97,-27.66 549.97,-27.66 549.97,-12 549.97,-12 549.97,-6 555.97,0 561.97,0 561.97,0 648.4,0 648.4,0 654.4,0 660.4,-6 660.4,-12 660.4,-12 660.4,-27.66 660.4,-27.66 660.4,-33.66 654.4,-39.66 648.4,-39.66"/>
+<text xml:space="preserve" text-anchor="middle" x="605.19" y="-14.38" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#e9b44c">Exhausted</text>
+</g>
+
+<g id="edge4" class="edge">
+<title>feedback&#45;&gt;done</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M510.44,-19.83C519.67,-19.83 529.4,-19.83 538.95,-19.83"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="538.8,-22.63 546.8,-19.83 538.8,-17.03 538.8,-22.63"/>
+</g>
+</g>
+</svg>

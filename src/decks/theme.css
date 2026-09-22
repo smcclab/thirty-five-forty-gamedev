@@ -129,6 +129,43 @@
   max-height: 52vh;
 }
 
+/* A redrawn figure (scripts/make-deck-figures.py) gets a slide to itself, so
+ * it can run to 60vh and its labels stay readable from the back of a theatre.
+ * The SVGs are transparent and already drawn in the deck palette. */
+.reveal .slides section .deck-figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.reveal .slides section .deck-figure img {
+  max-height: 60vh;
+  max-width: 100%;
+  width: auto;
+  object-fit: contain;
+  margin: 0;
+}
+
+/* A published figure that is not one of ours may be black-on-white artwork,
+ * which would otherwise float on the dark slide as a bare rectangle. Give it
+ * a light card so it reads as a figure rather than a rendering fault. */
+.reveal .slides section .deck-figure img[src*=".png"],
+.reveal .slides section .deck-figure img[src*=".jpg"],
+.reveal .slides section .deck-figure img[src*=".jpeg"] {
+  background: #f2f2f2;
+  padding: 0.6em;
+  border-radius: 4px;
+}
+
+.reveal .slides section .deck-figure figcaption {
+  font-size: 0.42em;
+  color: var(--gd-muted);
+  text-align: center;
+  max-width: 44ch;
+}
+
 .reveal .slides section img {
   border: 0;
   box-shadow: none;

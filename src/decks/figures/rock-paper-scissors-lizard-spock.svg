@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+
+<svg width="458pt" height="377pt"
+ viewBox="0.00 0.00 458.00 377.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 372.71)">
+<title>G</title>
+
+<g id="node1" class="node">
+<title>Rock</title>
+<ellipse fill="none" stroke="#9aa3ab" stroke-width="1.6" cx="230.79" cy="-340.67" rx="48.39" ry="28.04"/>
+<text xml:space="preserve" text-anchor="middle" x="230.79" y="-335.22" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#f2f2f2">Rock</text>
+</g>
+
+<g id="node4" class="node">
+<title>Lizard</title>
+<ellipse fill="none" stroke="#9aa3ab" stroke-width="1.6" cx="129.2" cy="-28.04" rx="54.22" ry="28.04"/>
+<text xml:space="preserve" text-anchor="middle" x="129.2" y="-22.59" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#f2f2f2">Lizard</text>
+</g>
+
+<g id="edge3" class="edge">
+<title>Rock&#45;&gt;Lizard</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M221.6,-312.37C203.24,-255.88 162.04,-129.08 141.43,-65.66"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="144.19,-65.1 139.05,-58.35 138.86,-66.83 144.19,-65.1"/>
+</g>
+
+<g id="node5" class="node">
+<title>Scissors</title>
+<ellipse fill="none" stroke="#9aa3ab" stroke-width="1.6" cx="66.42" cy="-221.29" rx="66.42" ry="28.04"/>
+<text xml:space="preserve" text-anchor="middle" x="66.42" y="-215.84" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#f2f2f2">Scissors</text>
+</g>
+
+<g id="edge10" class="edge">
+<title>Rock&#45;&gt;Scissors</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M200.26,-318.49C174.49,-299.78 137.32,-272.78 108.69,-251.99"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="110.55,-249.88 102.43,-247.45 107.26,-254.41 110.55,-249.88"/>
+</g>
+
+<g id="node2" class="node">
+<title>Spock</title>
+<ellipse fill="none" stroke="#9aa3ab" stroke-width="1.6" cx="395.17" cy="-221.29" rx="55.28" ry="28.04"/>
+<text xml:space="preserve" text-anchor="middle" x="395.17" y="-215.84" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#f2f2f2">Spock</text>
+</g>
+
+<g id="edge9" class="edge">
+<title>Spock&#45;&gt;Rock</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M363.09,-244.59C336.39,-263.98 298.27,-291.66 269.81,-312.33"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="268.47,-309.85 263.64,-316.81 271.76,-314.38 268.47,-309.85"/>
+</g>
+
+<g id="edge5" class="edge">
+<title>Spock&#45;&gt;Scissors</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M339.4,-221.29C285.63,-221.29 203.8,-221.29 143.75,-221.29"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="143.97,-218.49 135.97,-221.29 143.97,-224.09 143.97,-218.49"/>
+</g>
+
+<g id="node3" class="node">
+<title>Paper</title>
+<ellipse fill="none" stroke="#9aa3ab" stroke-width="1.6" cx="332.39" cy="-28.04" rx="53.16" ry="28.04"/>
+<text xml:space="preserve" text-anchor="middle" x="332.39" y="-22.59" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#f2f2f2">Paper</text>
+</g>
+
+<g id="edge2" class="edge">
+<title>Paper&#45;&gt;Rock</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M323.19,-56.34C304.83,-112.84 263.63,-239.63 243.02,-303.05"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="240.45,-301.89 240.64,-310.36 245.78,-303.62 240.45,-301.89"/>
+</g>
+
+<g id="edge8" class="edge">
+<title>Paper&#45;&gt;Spock</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M341.52,-56.14C352.41,-89.68 370.68,-145.91 382.83,-183.3"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="380.04,-183.8 385.18,-190.54 385.37,-182.07 380.04,-183.8"/>
+</g>
+
+<g id="edge4" class="edge">
+<title>Lizard&#45;&gt;Spock</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M161.28,-51.35C209.81,-86.61 301.81,-153.46 354.82,-191.97"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="352.9,-194.04 361.02,-196.48 356.19,-189.51 352.9,-194.04"/>
+</g>
+
+<g id="edge7" class="edge">
+<title>Lizard&#45;&gt;Paper</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M184.19,-28.04C210.24,-28.04 241.51,-28.04 268.61,-28.04"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="268.34,-30.84 276.34,-28.04 268.34,-25.24 268.34,-30.84"/>
+</g>
+
+<g id="edge1" class="edge">
+<title>Scissors&#45;&gt;Paper</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M100.37,-196.62C149.46,-160.96 240.06,-95.12 292.34,-57.14"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="293.92,-59.46 298.74,-52.49 290.63,-54.92 293.92,-59.46"/>
+</g>
+
+<g id="edge6" class="edge">
+<title>Scissors&#45;&gt;Lizard</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M75.68,-192.78C86.61,-159.14 104.82,-103.1 116.92,-65.86"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="119.45,-67.14 119.25,-58.66 114.12,-65.41 119.45,-67.14"/>
+</g>
+</g>
+</svg>

@@ -1,1 +1,246 @@
-{}
+{
+  "97f6350bcdb6ae809bb4c99c51c8af63f0875447ff60413c295aa0adbf59a8fd": {
+    "kind": "figure",
+    "file": "flow-channel.svg",
+    "teaches": "Enjoyment lives in a diagonal band where challenge and skill rise together; too much challenge is anxiety, too little is boredom.",
+    "terms": [
+      "Flow channel",
+      "Anxiety",
+      "Boredom"
+    ],
+    "alt": "Challenge plotted against player skill: a diagonal flow channel runs between anxiety above it and boredom below it.",
+    "credit": "Redrawn after Csikszentmihalyi (1990); see Schell ch. 11"
+  },
+  "6ab846ff41b2a38243f370d616110b208dbf4cfb78aef2f5834d030104f9856d": {
+    "kind": "figure",
+    "file": "flow-octants.svg",
+    "teaches": "The flow channel refines into eight states, so a game can fail in more ways than 'too hard' and 'too easy'.",
+    "terms": [
+      "Flow",
+      "Control",
+      "Arousal",
+      "Anxiety",
+      "Worry",
+      "Apathy",
+      "Boredom",
+      "Relaxation"
+    ],
+    "alt": "Eight states arranged by challenge and skill, with flow at high challenge and high skill and apathy at low both.",
+    "credit": "Redrawn after Massimini & Carli (1988)"
+  },
+  "43c67c45dc1e4c1282a2df0eaf0e969b1fabbab5997464b90a5a5e3eb953d7d0": {
+    "kind": "figure",
+    "file": "maslow-hierarchy.svg",
+    "teaches": "Games can serve needs at every level, but a game that fails a lower need cannot deliver a higher one.",
+    "terms": [
+      "Physiological",
+      "Safety",
+      "Belonging",
+      "Esteem",
+      "Self-actualisation"
+    ],
+    "alt": "Five bands of human need from physiological up to self-actualisation, each with the kind of play that serves it.",
+    "credit": "After Maslow (1943); the pyramid is a later convention, not his"
+  },
+  "2904c705cb82a791dda6298509f59d6bc2fece8a1e9d7a16f84e91d602c4a5b0": {
+    "kind": "figure",
+    "file": "bartle-taxonomy.svg",
+    "teaches": "Players divide by whether they act or interact, and whether they are oriented to other players or to the world.",
+    "terms": [
+      "Achievers",
+      "Killers",
+      "Socialisers",
+      "Explorers",
+      "Acting",
+      "Interacting"
+    ],
+    "alt": "Four player types on two axes: acting against interacting, and oriented to players against oriented to the world.",
+    "credit": "Redrawn after Bartle (1996); see Fullerton ch. 4"
+  },
+  "0c3ba95e63f23166e110907a95a9478cfbfe6539b9171d9a4b68ec7d0e989f8a": {
+    "kind": "source",
+    "file": "gameflow-affordances.png",
+    "alt": "The eight GameFlow elements on the left mapped onto seven GameFlow affordances on the right.",
+    "credit": "Figure from Sweetser & Ozdowska (2024), GameFlow Affordances, CHI EA '24, doi:10.1145/3613905.3650887 \u2014 reproduced by permission",
+    "own_slide": true,
+    "permission": "Copyright is held by the authors, not ACM (the paper's notice reads '\u00a9 2024 Copyright held by the owner/author(s)' and carries no CC licence). Penny Kyburz (Sweetser), as an author and the course convenor, gave permission to publish it on this site, 2026-09-22."
+  },
+  "d4f009b761fbbbf0564cfde41c6946fac4556b6e268b992a9d16c145638d5b44": {
+    "kind": "figure",
+    "file": "dramatic-arc.svg",
+    "teaches": "Dramatic tension builds to a single climax and resolves; game stories borrow the shape.",
+    "terms": [
+      "Exposition",
+      "Rising",
+      "Climax",
+      "Falling",
+      "Denouement"
+    ],
+    "alt": "Tension over time rising from exposition through rising action to a climax, then falling to a denouement.",
+    "credit": "After Freytag (1863); see Fullerton ch. 4"
+  },
+  "6654d4d9c213d9aebc2396bffbffb673db5f26760925e6486c250f552dab0622": {
+    "kind": "figure",
+    "file": "interest-curve.svg",
+    "teaches": "A good experience hooks quickly, then alternates rise and release with each peak higher than the last.",
+    "terms": [
+      "Hook",
+      "Climax",
+      "Release"
+    ],
+    "alt": "Interest over time: an early hook, then alternating peaks and troughs each higher than the last, to a climax and release.",
+    "credit": "Redrawn after Schell ch. 16; beats are our own"
+  },
+  "11de703cdb416cf51e045364e297460a2fabd16a2d6fc4a5fa981218e8b2bfdd": {
+    "kind": "figure",
+    "file": "interest-curve-nested.svg",
+    "teaches": "The interest curve is fractal: the same shape governs a whole game, one level and one encounter.",
+    "terms": [
+      "Whole game",
+      "One level",
+      "One encounter"
+    ],
+    "alt": "The same interest curve shown at three scales: the whole game, one level and one encounter.",
+    "credit": "Redrawn after Schell ch. 16"
+  },
+  "d4487ce0f678c1d99f369bb982e70108f0510831216fa6b79fc7869fb2501a3d": {
+    "kind": "figure",
+    "file": "iterative-design-cycle.svg",
+    "teaches": "Playcentric design is a loop, and problems found on test send you back to generating ideas rather than forward.",
+    "terms": [
+      "Generate",
+      "Formalise",
+      "Test",
+      "Evaluate",
+      "problems found"
+    ],
+    "alt": "A four-stage loop: generate ideas, formalise, test, evaluate, with problems found feeding back to generate.",
+    "credit": "Redrawn after Fullerton ch. 1"
+  },
+  "f43aaf77f1a0b70ac6d660676ec60c5295221f9a256cbd0ce4753455132de723": {
+    "kind": "figure",
+    "file": "production-funnel.svg",
+    "teaches": "Iterations get more numerous, shorter and cheaper as a project moves from concept towards launch.",
+    "terms": [
+      "Concept",
+      "Pre-production",
+      "Production",
+      "QA",
+      "Launch"
+    ],
+    "alt": "A timeline from concept to launch, with design iterations shown as circles that grow more numerous and smaller.",
+    "credit": "After Fullerton ch. 1; redesigned as a timeline"
+  },
+  "31160cfeb37784ad686053fd139a70f90c0d619e6fa710b0aee5d291c284391b": {
+    "kind": "figure",
+    "file": "design-loop.svg",
+    "teaches": "A loop is a closed cycle of mental model, action, rules and feedback that the player can repeat indefinitely.",
+    "terms": [
+      "Mental model",
+      "Action",
+      "Rules",
+      "Feedback"
+    ],
+    "alt": "A closed cycle: mental model leads to action, action to rules, rules to feedback, feedback back to mental model.",
+    "credit": "Redrawn after Cook, 'Loops and Arcs' (Lostgarden, 2012)"
+  },
+  "814805c35a8dcbb05aa794cbc3c91fc748e1f7e6c92f88755c54ffb19aee8450": {
+    "kind": "figure",
+    "file": "design-arc.svg",
+    "teaches": "An arc runs the same four stages once and then is exhausted; that is what makes it different from a loop.",
+    "terms": [
+      "Mental model",
+      "Action",
+      "Rules",
+      "Feedback",
+      "Exhausted"
+    ],
+    "alt": "The same four stages as an open chain that ends once exhausted, rather than closing into a cycle.",
+    "credit": "Redrawn after Cook, 'Loops and Arcs' (Lostgarden, 2012)"
+  },
+  "7dc58cf22d0fba3c1f1241fe5e5e6293c946585443042781ab6959d8160ca95a": {
+    "kind": "figure",
+    "file": "interface-model.svg",
+    "teaches": "The player never touches the game world directly; every action and every response passes through the interface.",
+    "terms": [
+      "Player",
+      "Physical",
+      "Virtual",
+      "Game world"
+    ],
+    "alt": "The player reaches the game world only through physical input, a virtual interface and physical output, numbered in a loop.",
+    "credit": "Redrawn after Schell ch. 15"
+  },
+  "0a476edc19ecf6c5eccbcadff2cfe6a833933f225c6252dfd5b65b70525bbc0c": {
+    "kind": "figure",
+    "file": "rules-taxonomy.svg",
+    "teaches": "A game has three layers of rule: the abstract system, what players actually do, and the unwritten etiquette.",
+    "terms": [
+      "Foundational rules",
+      "Operational rules",
+      "Behavioural rules",
+      "Play"
+    ],
+    "alt": "Foundational rules are expressed as operational rules and performed as play, which behavioural rules also shape.",
+    "credit": "Redrawn after Parlett, via Salen & Zimmerman (2004)"
+  },
+  "eef9ffb0856b6710484f589d02667604d1b3760de034ef2942abe4381bb15723": {
+    "kind": "figure",
+    "file": "interaction-patterns.svg",
+    "teaches": "Who competes or cooperates with whom is a design choice, and there are only a handful of basic shapes.",
+    "terms": [
+      "Single player",
+      "Player vs player",
+      "Cooperative play",
+      "Team competition"
+    ],
+    "alt": "Seven player interaction patterns drawn with dots for players and rings for the game, from solo play to team competition.",
+    "credit": "After Fullerton ch. 3; redrawn with our own notation"
+  },
+  "48a3323901dfcc466cc112890f81ca91f87bbc889291ddff0567db9fc19e9d8e": {
+    "kind": "figure",
+    "file": "pacman-ghost-fsm.svg",
+    "teaches": "A small state machine with a few transitions produces behaviour players read as intelligence.",
+    "terms": [
+      "In base",
+      "Chasing",
+      "Fleeing",
+      "Flashing",
+      "Eyes to base"
+    ],
+    "alt": "A state machine for a Pac-Man ghost: in base, chasing, fleeing, flashing and eyes returning to base, with the events between them.",
+    "credit": "After the observable behaviour of Pac-Man (Namco, 1980)"
+  },
+  "22488afbc6ad8e83d7eea5081014e923a0e556168bfa33184e9f16888553d994": {
+    "kind": "figure",
+    "file": "rock-paper-scissors-lizard-spock.svg",
+    "teaches": "Intransitive balance: every option beats two others and loses to two, so no option dominates.",
+    "terms": [
+      "Rock",
+      "Paper",
+      "Scissors",
+      "Lizard",
+      "Spock"
+    ],
+    "alt": "Five options where each beats two of the others and loses to the remaining two, so none dominates.",
+    "credit": "After Kass & Bryla's five-way rock-paper-scissors; see Fullerton ch. 10"
+  },
+  "0ea46f2ebfdd1d5165ec3599d975ef32fcd03673ae707fa41a4c3f2186d80b57": {
+    "kind": "drop",
+    "note": "Third-party infographic of the 12 Agile principles. The principles themselves are reproducible from agilemanifesto.org with its notice -- set them as a list rather than an image."
+  },
+  "1fbe668efaeb183425ea1507392921fd095d9b507755f7481b15fbaba590d50f": {
+    "kind": "snippet",
+    "file": "fullerton-9-1.md",
+    "credit": "After Fullerton, fig. 9.1"
+  },
+  "cd3303f9244777cedd1a1fe6781aaf77b3844c731d594b77f23c21c82b7c6db9": {
+    "kind": "snippet",
+    "file": "fullerton-8-2.md",
+    "credit": "After Fullerton, fig. 8.2"
+  },
+  "0f0ea95f182f319c32f9106da53b39802b025e006b231e4f3cc40464dcb5065a": {
+    "kind": "drop",
+    "note": "A full page of Fullerton's own playtest questions (fig. 9.10, p. 300). Reproducing it verbatim is a substantial excerpt -- paraphrase a few per category and cite the page."
+  }
+}

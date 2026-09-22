@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="741.0725pt" height="215.097031pt" viewBox="0 0 741.0725 215.097031" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-22T13:21:22.949143</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 215.097031 
+L 741.0725 215.097031 
+L 741.0725 0 
+L 0 0 
+L 0 215.097031 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 26.45625 188.640781 
+L 250.981667 188.640781 
+L 250.981667 29.784531 
+L 26.45625 29.784531 
+L 26.45625 188.640781 
+z
+" style="fill: none"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="text_1">
+     <text style="fill: #f2f2f2; font: 14px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="138.718958" y="204.203906" transform="rotate(-0 138.718958 204.203906)">Time →</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="text_2">
+     <text style="fill: #f2f2f2; font: 14px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="20.203125" y="109.212656" transform="rotate(-90 20.203125 109.212656)">Interest →</text>
+    </g>
+   </g>
+   <g id="line2d_1">
+    <path d="M 32.635849 168.78375 
+L 51.174644 120.795924 
+L 69.71344 147.271966 
+L 94.431835 115.831667 
+L 117.090363 135.688698 
+L 143.868624 99.284141 
+L 164.467286 122.450677 
+L 189.18568 84.391367 
+L 209.784343 112.522161 
+L 228.323138 49.641563 
+L 238.622469 138.998203 
+" clip-path="url(#pab324faaeb)" style="fill: none; stroke: #e9b44c; stroke-width: 2.2; stroke-linecap: square"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 26.45625 188.640781 
+L 26.45625 29.784531 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.4; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 26.45625 188.640781 
+L 250.981667 188.640781 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.4; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_3">
+    <text style="fill: #f2f2f2; font: 15px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="138.718958" y="19.784531" transform="rotate(-0 138.718958 19.784531)">Whole game</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_5">
+    <path d="M 267.181667 188.640781 
+L 491.707083 188.640781 
+L 491.707083 29.784531 
+L 267.181667 29.784531 
+L 267.181667 188.640781 
+z
+" style="fill: none"/>
+   </g>
+   <g id="matplotlib.axis_3">
+    <g id="text_4">
+     <text style="fill: #f2f2f2; font: 14px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="379.444375" y="204.203906" transform="rotate(-0 379.444375 204.203906)">Time →</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_4"/>
+   <g id="line2d_2">
+    <path d="M 273.361265 168.78375 
+L 291.900061 120.795924 
+L 310.438857 147.271966 
+L 335.157252 115.831667 
+L 357.81578 135.688698 
+L 384.594041 99.284141 
+L 405.192703 122.450677 
+L 429.911097 84.391367 
+L 450.509759 112.522161 
+L 469.048555 49.641563 
+L 479.347886 138.998203 
+" clip-path="url(#pb17fc4b078)" style="fill: none; stroke: #e9b44c; stroke-width: 2.2; stroke-linecap: square"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 267.181667 188.640781 
+L 267.181667 29.784531 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.4; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 267.181667 188.640781 
+L 491.707083 188.640781 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.4; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_5">
+    <text style="fill: #f2f2f2; font: 15px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="379.444375" y="19.784531" transform="rotate(-0 379.444375 19.784531)">One level</text>
+   </g>
+  </g>
+  <g id="axes_3">
+   <g id="patch_8">
+    <path d="M 507.907083 188.640781 
+L 732.4325 188.640781 
+L 732.4325 29.784531 
+L 507.907083 29.784531 
+L 507.907083 188.640781 
+z
+" style="fill: none"/>
+   </g>
+   <g id="matplotlib.axis_5">
+    <g id="text_6">
+     <text style="fill: #f2f2f2; font: 14px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="620.169792" y="204.203906" transform="rotate(-0 620.169792 204.203906)">Time →</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_6"/>
+   <g id="line2d_3">
+    <path d="M 514.086682 168.78375 
+L 532.625478 120.795924 
+L 551.164274 147.271966 
+L 575.882668 115.831667 
+L 598.541196 135.688698 
+L 625.319457 99.284141 
+L 645.918119 122.450677 
+L 670.636514 84.391367 
+L 691.235176 112.522161 
+L 709.773972 49.641563 
+L 720.073303 138.998203 
+" clip-path="url(#pd60370e916)" style="fill: none; stroke: #e9b44c; stroke-width: 2.2; stroke-linecap: square"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 507.907083 188.640781 
+L 507.907083 29.784531 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.4; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 507.907083 188.640781 
+L 732.4325 188.640781 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.4; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_7">
+    <text style="fill: #f2f2f2; font: 15px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="620.169792" y="19.784531" transform="rotate(-0 620.169792 19.784531)">One encounter</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pab324faaeb">
+   <rect x="26.45625" y="29.784531" width="224.525417" height="158.85625"/>
+  </clipPath>
+  <clipPath id="pb17fc4b078">
+   <rect x="267.181667" y="29.784531" width="224.525417" height="158.85625"/>
+  </clipPath>
+  <clipPath id="pd60370e916">
+   <rect x="507.907083" y="29.784531" width="224.525417" height="158.85625"/>
+  </clipPath>
+ </defs>
+</svg>

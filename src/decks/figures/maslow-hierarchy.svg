@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="486pt" height="294.48pt" viewBox="0 0 486 294.48" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-22T13:22:13.484622</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 294.48 
+L 486 294.48 
+L 486 0 
+L 0 0 
+L 0 294.48 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 66.034286 271.697143 
+L 467.794286 271.697143 
+L 439.671086 221.914286 
+L 94.157486 221.914286 
+z
+" clip-path="url(#p2670d974cc)" style="fill: #f08a7a; opacity: 0.22; stroke: #9aa3ab; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 94.157486 221.914286 
+L 439.671086 221.914286 
+L 411.547886 172.131429 
+L 122.280686 172.131429 
+z
+" clip-path="url(#p2670d974cc)" style="fill: #d9c9a3; opacity: 0.22; stroke: #9aa3ab; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 122.280686 172.131429 
+L 411.547886 172.131429 
+L 383.424686 122.348571 
+L 150.403886 122.348571 
+z
+" clip-path="url(#p2670d974cc)" style="fill: #8fd18a; opacity: 0.22; stroke: #9aa3ab; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 150.403886 122.348571 
+L 383.424686 122.348571 
+L 355.301486 72.565714 
+L 178.527086 72.565714 
+z
+" clip-path="url(#p2670d974cc)" style="fill: #5ec9c0; opacity: 0.22; stroke: #9aa3ab; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 178.527086 72.565714 
+L 355.301486 72.565714 
+L 327.178286 22.782857 
+L 206.650286 22.782857 
+z
+" clip-path="url(#p2670d974cc)" style="fill: #c3a6f0; opacity: 0.22; stroke: #9aa3ab; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: #f2f2f2; font: 16px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="266.914286" y="245.724821" transform="rotate(-0 266.914286 245.724821)">Physiological</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: #9aa3ab; font: 12px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="266.914286" y="265.006473" transform="rotate(-0 266.914286 265.006473)">food, warmth, rest</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: #f2f2f2; font: 16px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="266.914286" y="195.956964" transform="rotate(-0 266.914286 195.956964)">Safety</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: #9aa3ab; font: 12px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="266.914286" y="215.199241" transform="rotate(-0 266.914286 215.199241)">security, predictable rules</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: #f2f2f2; font: 16px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="266.914286" y="146.159107" transform="rotate(-0 266.914286 146.159107)">Belonging</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: #9aa3ab; font: 12px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="266.914286" y="165.380759" transform="rotate(-0 266.914286 165.380759)">guilds, co-op play, a team</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: #f2f2f2; font: 16px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="266.914286" y="96.45625" transform="rotate(-0 266.914286 96.45625)">Esteem</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: #9aa3ab; font: 12px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="266.914286" y="115.597902" transform="rotate(-0 266.914286 115.597902)">mastery, rank, recognition</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: #f2f2f2; font: 16px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="266.914286" y="46.673393" transform="rotate(-0 266.914286 46.673393)">Self-actualisation</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: #9aa3ab; font: 12px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="266.914286" y="65.85067" transform="rotate(-0 266.914286 65.85067)">creative play, self-expression</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 49.294286 269.695528 
+Q 49.294286 147.239487 49.294286 26.348694 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 46.294286 32.348694 
+L 49.294286 26.348694 
+L 52.294286 32.348694 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="text_11">
+    <text style="fill: #9aa3ab; font: 13px 'Public Sans', 'system-ui', sans-serif" transform="translate(43.511775 213.358203) rotate(-90)">Lower needs met first</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p2670d974cc">
+   <rect x="8.64" y="8.64" width="468.72" height="277.2"/>
+  </clipPath>
+ </defs>
+</svg>

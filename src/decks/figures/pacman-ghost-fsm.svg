@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+
+<svg width="472pt" height="416pt"
+ viewBox="0.00 0.00 472.00 416.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 411.96)">
+<title>G</title>
+
+<g id="node1" class="node">
+<title>base</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M102.55,-111.82C102.55,-111.82 34.87,-111.82 34.87,-111.82 28.87,-111.82 22.87,-105.82 22.87,-99.82 22.87,-99.82 22.87,-81.91 22.87,-81.91 22.87,-75.91 28.87,-69.91 34.87,-69.91 34.87,-69.91 102.55,-69.91 102.55,-69.91 108.55,-69.91 114.55,-75.91 114.55,-81.91 114.55,-81.91 114.55,-99.82 114.55,-99.82 114.55,-105.82 108.55,-111.82 102.55,-111.82"/>
+<text xml:space="preserve" text-anchor="middle" x="68.71" y="-84.64" font-family='"Public Sans", system-ui, sans-serif' font-size="18.00" fill="#f2f2f2">In base</text>
+</g>
+
+<g id="node2" class="node">
+<title>chase</title>
+<path fill="none" stroke="#e9b44c" stroke-width="1.6" d="M321.84,-41.91C321.84,-41.91 245.91,-41.91 245.91,-41.91 239.91,-41.91 233.91,-35.91 233.91,-29.91 233.91,-29.91 233.91,-12 233.91,-12 233.91,-6 239.91,0 245.91,0 245.91,0 321.84,0 321.84,0 327.84,0 333.84,-6 333.84,-12 333.84,-12 333.84,-29.91 333.84,-29.91 333.84,-35.91 327.84,-41.91 321.84,-41.91"/>
+<text xml:space="preserve" text-anchor="middle" x="283.87" y="-14.73" font-family='"Public Sans", system-ui, sans-serif' font-size="18.00" fill="#e9b44c">Chasing</text>
+</g>
+
+<g id="edge1" class="edge">
+<title>base&#45;&gt;chase</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M115.14,-75.78C146.98,-65.43 189.53,-51.61 223.93,-40.43"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="224.36,-43.24 231.1,-38.1 222.63,-37.91 224.36,-43.24"/>
+<text xml:space="preserve" text-anchor="middle" x="136.16" y="-41.96" font-family='"Public Sans", system-ui, sans-serif' font-size="17.00" fill="#9aa3ab">timer up</text>
+</g>
+
+<g id="node3" class="node">
+<title>flee</title>
+<path fill="none" stroke="#7fb3ea" stroke-width="1.6" d="M452.19,-224.93C452.19,-224.93 381.51,-224.93 381.51,-224.93 375.51,-224.93 369.51,-218.93 369.51,-212.93 369.51,-212.93 369.51,-195.02 369.51,-195.02 369.51,-189.02 375.51,-183.02 381.51,-183.02 381.51,-183.02 452.19,-183.02 452.19,-183.02 458.19,-183.02 464.19,-189.02 464.19,-195.02 464.19,-195.02 464.19,-212.93 464.19,-212.93 464.19,-218.93 458.19,-224.93 452.19,-224.93"/>
+<text xml:space="preserve" text-anchor="middle" x="416.85" y="-197.75" font-family='"Public Sans", system-ui, sans-serif' font-size="18.00" fill="#7fb3ea">Fleeing</text>
+</g>
+
+<g id="edge2" class="edge">
+<title>chase&#45;&gt;flee</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M299.65,-42.67C323.34,-75.28 368.19,-137 395.01,-173.92"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="392.7,-175.51 399.67,-180.33 397.23,-172.22 392.7,-175.51"/>
+<text xml:space="preserve" text-anchor="middle" x="308.33" y="-113.14" font-family='"Public Sans", system-ui, sans-serif' font-size="17.00" fill="#9aa3ab">power pill</text>
+</g>
+
+<g id="node4" class="node">
+<title>blink</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M323.34,-407.96C323.34,-407.96 244.41,-407.96 244.41,-407.96 238.41,-407.96 232.41,-401.96 232.41,-395.96 232.41,-395.96 232.41,-378.05 232.41,-378.05 232.41,-372.05 238.41,-366.05 244.41,-366.05 244.41,-366.05 323.34,-366.05 323.34,-366.05 329.34,-366.05 335.34,-372.05 335.34,-378.05 335.34,-378.05 335.34,-395.96 335.34,-395.96 335.34,-401.96 329.34,-407.96 323.34,-407.96"/>
+<text xml:space="preserve" text-anchor="middle" x="283.87" y="-380.78" font-family='"Public Sans", system-ui, sans-serif' font-size="18.00" fill="#f2f2f2">Flashing</text>
+</g>
+
+<g id="edge3" class="edge">
+<title>flee&#45;&gt;blink</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M401.07,-225.69C377.38,-258.3 332.53,-320.03 305.71,-356.94"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="303.49,-355.24 301.05,-363.36 308.02,-358.53 303.49,-355.24"/>
+<text xml:space="preserve" text-anchor="middle" x="327.52" y="-296.17" font-family='"Public Sans", system-ui, sans-serif' font-size="17.00" fill="#9aa3ab">fading</text>
+</g>
+
+<g id="node5" class="node">
+<title>eyes</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M125.43,-338.05C125.43,-338.05 12,-338.05 12,-338.05 6,-338.05 0,-332.05 0,-326.05 0,-326.05 0,-308.14 0,-308.14 0,-302.14 6,-296.14 12,-296.14 12,-296.14 125.43,-296.14 125.43,-296.14 131.43,-296.14 137.43,-302.14 137.43,-308.14 137.43,-308.14 137.43,-326.05 137.43,-326.05 137.43,-332.05 131.43,-338.05 125.43,-338.05"/>
+<text xml:space="preserve" text-anchor="middle" x="68.72" y="-310.87" font-family='"Public Sans", system-ui, sans-serif' font-size="18.00" fill="#f2f2f2">Eyes to base</text>
+</g>
+
+<g id="edge5" class="edge">
+<title>flee&#45;&gt;eyes</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M368.81,-219.59C311.11,-238.33 213.62,-270.01 145.46,-292.16"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="144.67,-289.47 137.93,-294.61 146.4,-294.8 144.67,-289.47"/>
+<text xml:space="preserve" text-anchor="middle" x="234.63" y="-260.72" font-family='"Public Sans", system-ui, sans-serif' font-size="17.00" fill="#9aa3ab">eaten</text>
+</g>
+
+<g id="edge4" class="edge">
+<title>blink&#45;&gt;chase</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M283.87,-365.47C283.87,-303.81 283.87,-126.31 283.87,-53.11"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="286.67,-53.11 283.87,-45.11 281.07,-53.11 286.67,-53.11"/>
+<text xml:space="preserve" text-anchor="middle" x="250.5" y="-214.14" font-family='"Public Sans", system-ui, sans-serif' font-size="17.00" fill="#9aa3ab">pill ends</text>
+</g>
+
+<g id="edge6" class="edge">
+<title>blink&#45;&gt;eyes</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M231.79,-370.08C205.75,-361.62 173.75,-351.22 145.01,-341.88"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="146.17,-339.32 137.7,-339.51 144.44,-344.64 146.17,-339.32"/>
+<text xml:space="preserve" text-anchor="middle" x="165.9" y="-360.83" font-family='"Public Sans", system-ui, sans-serif' font-size="17.00" fill="#9aa3ab">eaten</text>
+</g>
+
+<g id="edge7" class="edge">
+<title>eyes&#45;&gt;base</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M68.72,-295.4C68.72,-255.28 68.71,-169.34 68.71,-122.65"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="71.52,-122.91 68.72,-114.91 65.92,-122.91 71.52,-122.91"/>
+<text xml:space="preserve" text-anchor="middle" x="41.71" y="-213.87" font-family='"Public Sans", system-ui, sans-serif' font-size="17.00" fill="#9aa3ab">arrives</text>
+</g>
+</g>
+</svg>

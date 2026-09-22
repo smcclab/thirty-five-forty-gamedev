@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+
+<svg width="377pt" height="337pt"
+ viewBox="0.00 0.00 377.00 337.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 332.68)">
+<title>G</title>
+
+<g id="node1" class="node">
+<title>gen</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M224.56,-59.16C224.56,-59.16 148.63,-59.16 148.63,-59.16 142.63,-59.16 136.63,-53.16 136.63,-47.16 136.63,-47.16 136.63,-12 136.63,-12 136.63,-6 142.63,0 148.63,0 148.63,0 224.56,0 224.56,0 230.56,0 236.56,-6 236.56,-12 236.56,-12 236.56,-47.16 236.56,-47.16 236.56,-53.16 230.56,-59.16 224.56,-59.16"/>
+<text xml:space="preserve" text-anchor="middle" x="186.6" y="-33.88" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#f2f2f2">Generate</text>
+<text xml:space="preserve" text-anchor="middle" x="186.6" y="-14.38" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#f2f2f2">ideas</text>
+</g>
+
+<g id="node2" class="node">
+<title>form</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M91.68,-193.92C91.68,-193.92 12,-193.92 12,-193.92 6,-193.92 0,-187.92 0,-181.92 0,-181.92 0,-146.76 0,-146.76 0,-140.76 6,-134.76 12,-134.76 12,-134.76 91.68,-134.76 91.68,-134.76 97.68,-134.76 103.68,-140.76 103.68,-146.76 103.68,-146.76 103.68,-181.92 103.68,-181.92 103.68,-187.92 97.68,-193.92 91.68,-193.92"/>
+<text xml:space="preserve" text-anchor="middle" x="51.84" y="-168.64" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#f2f2f2">Formalise</text>
+<text xml:space="preserve" text-anchor="middle" x="51.84" y="-149.14" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#f2f2f2">ideas</text>
+</g>
+
+<g id="edge1" class="edge">
+<title>gen&#45;&gt;form</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M156.36,-59.82C136.5,-79.68 110.4,-105.78 89.24,-126.94"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="87.37,-124.85 83.69,-132.49 91.33,-128.81 87.37,-124.85"/>
+</g>
+
+<g id="node3" class="node">
+<title>test</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M210.31,-328.68C210.31,-328.68 162.88,-328.68 162.88,-328.68 156.88,-328.68 150.88,-322.68 150.88,-316.68 150.88,-316.68 150.88,-281.52 150.88,-281.52 150.88,-275.52 156.88,-269.52 162.88,-269.52 162.88,-269.52 210.31,-269.52 210.31,-269.52 216.31,-269.52 222.31,-275.52 222.31,-281.52 222.31,-281.52 222.31,-316.68 222.31,-316.68 222.31,-322.68 216.31,-328.68 210.31,-328.68"/>
+<text xml:space="preserve" text-anchor="middle" x="186.6" y="-303.4" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#f2f2f2">Test</text>
+<text xml:space="preserve" text-anchor="middle" x="186.6" y="-283.9" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#f2f2f2">ideas</text>
+</g>
+
+<g id="edge2" class="edge">
+<title>form&#45;&gt;test</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M82.08,-194.58C101.94,-214.44 128.04,-240.54 149.2,-261.7"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="147.11,-263.57 154.75,-267.25 151.07,-259.61 147.11,-263.57"/>
+</g>
+
+<g id="node4" class="node">
+<title>eval</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M357.07,-193.92C357.07,-193.92 285.64,-193.92 285.64,-193.92 279.64,-193.92 273.64,-187.92 273.64,-181.92 273.64,-181.92 273.64,-146.76 273.64,-146.76 273.64,-140.76 279.64,-134.76 285.64,-134.76 285.64,-134.76 357.07,-134.76 357.07,-134.76 363.07,-134.76 369.07,-140.76 369.07,-146.76 369.07,-146.76 369.07,-181.92 369.07,-181.92 369.07,-187.92 363.07,-193.92 357.07,-193.92"/>
+<text xml:space="preserve" text-anchor="middle" x="321.36" y="-168.64" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#f2f2f2">Evaluate</text>
+<text xml:space="preserve" text-anchor="middle" x="321.36" y="-149.14" font-family='"Public Sans", system-ui, sans-serif' font-size="16.00" fill="#f2f2f2">results</text>
+</g>
+
+<g id="edge3" class="edge">
+<title>test&#45;&gt;eval</title>
+<path fill="none" stroke="#9aa3ab" stroke-width="1.6" d="M216.84,-268.86C236.7,-249 262.8,-222.9 283.96,-201.74"/>
+<polygon fill="#9aa3ab" stroke="#9aa3ab" stroke-width="1.6" points="285.83,-203.83 289.51,-196.19 281.87,-199.87 285.83,-203.83"/>
+</g>
+
+<g id="edge4" class="edge">
+<title>eval&#45;&gt;gen</title>
+<path fill="none" stroke="#e9b44c" stroke-width="1.6" d="M291.12,-134.1C271.26,-114.24 245.16,-88.14 224,-66.98"/>
+<polygon fill="#e9b44c" stroke="#e9b44c" stroke-width="1.6" points="226.09,-65.11 218.45,-61.43 222.13,-69.07 226.09,-65.11"/>
+<text xml:space="preserve" text-anchor="middle" x="202.43" y="-104.29" font-family='"Public Sans", system-ui, sans-serif' font-size="15.00" fill="#e9b44c">problems found</text>
+</g>
+</g>
+</svg>

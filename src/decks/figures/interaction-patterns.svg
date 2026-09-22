@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="771.613483pt" height="367.218263pt" viewBox="0 0 771.613483 367.218263" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-22T13:21:22.895063</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 367.218263 
+L 771.613483 367.218263 
+L 771.613483 0 
+L 0 0 
+L 0 367.218263 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 130.252339 126.422697 
+C 134.283835 126.422697 138.150754 124.820966 141.001452 121.970268 
+C 143.852151 119.11957 145.453881 115.25265 145.453881 111.221154 
+C 145.453881 107.189658 143.852151 103.322739 141.001452 100.472041 
+C 138.150754 97.621342 134.283835 96.019612 130.252339 96.019612 
+C 126.220843 96.019612 122.353923 97.621342 119.503225 100.472041 
+C 116.652527 103.322739 115.050796 107.189658 115.050796 111.221154 
+C 115.050796 115.25265 116.652527 119.11957 119.503225 121.970268 
+C 122.353923 124.820966 126.220843 126.422697 130.252339 126.422697 
+L 130.252339 126.422697 
+z
+" clip-path="url(#pfca2dac98a)" style="fill: none; stroke: #5ec9c0; stroke-width: 2.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_1">
+    <defs>
+     <path id="m1fa3f7ce60" d="M 0 5.5 
+C 1.458617 5.5 2.857689 4.920485 3.889087 3.889087 
+C 4.920485 2.857689 5.5 1.458617 5.5 0 
+C 5.5 -1.458617 4.920485 -2.857689 3.889087 -3.889087 
+C 2.857689 -4.920485 1.458617 -5.5 0 -5.5 
+C -1.458617 -5.5 -2.857689 -4.920485 -3.889087 -3.889087 
+C -4.920485 -2.857689 -5.5 -1.458617 -5.5 0 
+C -5.5 1.458617 -4.920485 2.857689 -3.889087 3.889087 
+C -2.857689 4.920485 -1.458617 5.5 0 5.5 
+z
+" style="stroke: #e9b44c"/>
+    </defs>
+    <g clip-path="url(#pfca2dac98a)">
+     <use xlink:href="#m1fa3f7ce60" x="54.244627" y="111.221154" style="fill: #e9b44c; stroke: #e9b44c"/>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 63.249203 111.221154 
+Q 91.252375 111.221154 117.578496 111.221154 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 111.578496 108.221154 
+L 117.578496 111.221154 
+L 111.578496 114.221154 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: #f2f2f2; font: 13.5px 'Public Sans', 'system-ui', sans-serif" transform="translate(50.57778 18.670078)">Single player</text>
+    <text style="fill: #f2f2f2; font: 13.5px 'Public Sans', 'system-ui', sans-serif" transform="translate(66.190319 33.013828)">vs game</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_4">
+    <path d="M 331.80311 126.422697 
+C 335.834606 126.422697 339.701525 124.820966 342.552224 121.970268 
+C 345.402922 119.11957 347.004652 115.25265 347.004652 111.221154 
+C 347.004652 107.189658 345.402922 103.322739 342.552224 100.472041 
+C 339.701525 97.621342 335.834606 96.019612 331.80311 96.019612 
+C 327.771614 96.019612 323.904694 97.621342 321.053996 100.472041 
+C 318.203298 103.322739 316.601568 107.189658 316.601568 111.221154 
+C 316.601568 115.25265 318.203298 119.11957 321.053996 121.970268 
+C 323.904694 124.820966 327.771614 126.422697 331.80311 126.422697 
+L 331.80311 126.422697 
+z
+" clip-path="url(#pa1e1a91693)" style="fill: none; stroke: #5ec9c0; stroke-width: 2.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_2">
+    <g clip-path="url(#pa1e1a91693)">
+     <use xlink:href="#m1fa3f7ce60" x="240.593856" y="77.017684" style="fill: #e9b44c; stroke: #e9b44c"/>
+    </g>
+   </g>
+   <g id="line2d_3">
+    <g clip-path="url(#pa1e1a91693)">
+     <use xlink:href="#m1fa3f7ce60" x="240.593856" y="111.221154" style="fill: #e9b44c; stroke: #e9b44c"/>
+    </g>
+   </g>
+   <g id="line2d_4">
+    <g clip-path="url(#pa1e1a91693)">
+     <use xlink:href="#m1fa3f7ce60" x="240.593856" y="145.424624" style="fill: #e9b44c; stroke: #e9b44c"/>
+    </g>
+   </g>
+   <g id="patch_5">
+    <path d="M 249.019467 80.177288 
+Q 285.261311 93.76798 319.932883 106.769819 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 315.368279 101.854091 
+L 319.932883 106.769819 
+L 313.261538 107.472066 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 249.592865 111.221154 
+Q 285.197317 111.221154 319.124718 111.221154 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 313.124718 108.221154 
+L 319.124718 111.221154 
+L 313.124718 114.221154 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 249.019467 142.26502 
+Q 285.261311 128.674329 319.932883 115.672489 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 313.261538 114.970242 
+L 319.932883 115.672489 
+L 315.368279 120.588217 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_2">
+    <text style="fill: #f2f2f2; font: 13.5px 'Public Sans', 'system-ui', sans-serif" transform="translate(235.146334 18.750234)">Multiple players</text>
+    <text style="fill: #f2f2f2; font: 13.5px 'Public Sans', 'system-ui', sans-serif" transform="translate(260.140319 33.013828)">vs game</text>
+   </g>
+  </g>
+  <g id="axes_3">
+   <g id="line2d_5">
+    <g clip-path="url(#p8dbe4ebd40)">
+     <use xlink:href="#m1fa3f7ce60" x="442.144627" y="111.221154" style="fill: #e9b44c; stroke: #e9b44c"/>
+    </g>
+   </g>
+   <g id="line2d_6">
+    <g clip-path="url(#p8dbe4ebd40)">
+     <use xlink:href="#m1fa3f7ce60" x="518.152339" y="111.221154" style="fill: #e9b44c; stroke: #e9b44c"/>
+    </g>
+   </g>
+   <g id="patch_8">
+    <path d="M 452.826254 111.221154 
+Q 479.152375 111.221154 505.478496 111.221154 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 458.826254 114.221154 
+L 452.826254 111.221154 
+L 458.826254 108.221154 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 499.478496 108.221154 
+L 505.478496 111.221154 
+L 499.478496 114.221154 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_3">
+    <text style="fill: #f2f2f2; font: 13.5px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="480.148483" y="33.013828" transform="rotate(-0 480.148483 33.013828)">Player vs player</text>
+   </g>
+  </g>
+  <g id="axes_4">
+   <g id="line2d_7">
+    <g clip-path="url(#pc18b2ab66f)">
+     <use xlink:href="#m1fa3f7ce60" x="674.098483" y="73.217298" style="fill: #e9b44c; stroke: #e9b44c"/>
+    </g>
+   </g>
+   <g id="line2d_8">
+    <g clip-path="url(#pc18b2ab66f)">
+     <use xlink:href="#m1fa3f7ce60" x="632.294241" y="141.624239" style="fill: #e9b44c; stroke: #e9b44c"/>
+    </g>
+   </g>
+   <g id="line2d_9">
+    <g clip-path="url(#pc18b2ab66f)">
+     <use xlink:href="#m1fa3f7ce60" x="715.902724" y="141.624239" style="fill: #e9b44c; stroke: #e9b44c"/>
+    </g>
+   </g>
+   <g id="patch_9">
+    <path d="M 636.986502 133.945994 
+Q 652.673698 108.276037 667.486396 84.037076 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 661.797851 87.592417 
+L 667.486396 84.037076 
+L 666.917542 90.721117 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 711.210464 133.945994 
+Q 695.523267 108.276037 680.710569 84.037076 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 681.279424 90.721117 
+L 680.710569 84.037076 
+L 686.399115 87.592417 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_4">
+    <text style="fill: #f2f2f2; font: 13.5px 'Public Sans', 'system-ui', sans-serif" transform="translate(643.16028 18.805078)">Unilateral</text>
+    <text style="fill: #f2f2f2; font: 13.5px 'Public Sans', 'system-ui', sans-serif" transform="translate(636.625436 33.013828)">competition</text>
+   </g>
+  </g>
+  <g id="axes_5">
+   <g id="line2d_10">
+    <g clip-path="url(#p9c9f446606)">
+     <use xlink:href="#m1fa3f7ce60" x="92.248483" y="239.246156" style="fill: #e9b44c; stroke: #e9b44c"/>
+    </g>
+   </g>
+   <g id="line2d_11">
+    <g clip-path="url(#p9c9f446606)">
+     <use xlink:href="#m1fa3f7ce60" x="51.437225" y="309.933327" style="fill: #e9b44c; stroke: #e9b44c"/>
+    </g>
+   </g>
+   <g id="line2d_12">
+    <g clip-path="url(#p9c9f446606)">
+     <use xlink:href="#m1fa3f7ce60" x="133.059741" y="309.933327" style="fill: #e9b44c; stroke: #e9b44c"/>
+    </g>
+   </g>
+   <g id="patch_11">
+    <path d="M 86.908862 248.49465 
+Q 72.341498 273.726065 57.774134 298.957479 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 81.310786 252.190802 
+L 86.908862 248.49465 
+L 86.506938 255.190802 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 63.37221 295.261327 
+L 57.774134 298.957479 
+L 58.176058 292.261327 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 62.116466 309.933327 
+Q 91.251195 309.933327 120.385923 309.933327 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 68.116466 312.933327 
+L 62.116466 309.933327 
+L 68.116466 306.933327 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 114.385923 306.933327 
+L 120.385923 309.933327 
+L 114.385923 312.933327 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 127.72012 300.684833 
+Q 113.152756 275.453418 98.585392 250.222004 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 127.318196 293.988681 
+L 127.72012 300.684833 
+L 122.122044 296.988681 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 98.987315 256.918156 
+L 98.585392 250.222004 
+L 104.183468 253.918156 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_5">
+    <text style="fill: #f2f2f2; font: 13.5px 'Public Sans', 'system-ui', sans-serif" transform="translate(55.367116 193.954861)">Multilateral</text>
+    <text style="fill: #f2f2f2; font: 13.5px 'Public Sans', 'system-ui', sans-serif" transform="translate(54.775436 208.163611)">competition</text>
+   </g>
+  </g>
+  <g id="axes_6">
+   <g id="patch_14">
+    <path d="M 333.323264 320.574407 
+C 337.35476 320.574407 341.221679 318.972677 344.072378 316.121978 
+C 346.923076 313.27128 348.524806 309.404361 348.524806 305.372865 
+C 348.524806 301.341369 346.923076 297.474449 344.072378 294.623751 
+C 341.221679 291.773053 337.35476 290.171322 333.323264 290.171322 
+C 329.291768 290.171322 325.424849 291.773053 322.57415 294.623751 
+C 319.723452 297.474449 318.121722 301.341369 318.121722 305.372865 
+C 318.121722 309.404361 319.723452 313.27128 322.57415 316.121978 
+C 325.424849 318.972677 329.291768 320.574407 333.323264 320.574407 
+L 333.323264 320.574407 
+z
+" clip-path="url(#p620f5884d6)" style="fill: none; stroke: #5ec9c0; stroke-width: 2.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_13">
+    <g clip-path="url(#p620f5884d6)">
+     <use xlink:href="#m1fa3f7ce60" x="239.073702" y="267.369009" style="fill: #e9b44c; stroke: #e9b44c"/>
+    </g>
+   </g>
+   <g id="line2d_14">
+    <g clip-path="url(#p620f5884d6)">
+     <use xlink:href="#m1fa3f7ce60" x="286.198483" y="267.369009" style="fill: #e9b44c; stroke: #e9b44c"/>
+    </g>
+   </g>
+   <g id="patch_15">
+    <path d="M 247.423509 270.735867 
+Q 285.273351 285.9979 321.567826 300.632769 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 317.125082 295.606634 
+L 321.567826 300.632769 
+L 314.881272 301.171283 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 293.202196 273.017165 
+Q 308.981011 285.742016 323.454387 297.414093 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 320.667166 291.312339 
+L 323.454387 297.414093 
+L 316.900652 295.982818 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_6">
+    <text style="fill: #f2f2f2; font: 13.5px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="286.198483" y="208.163611" transform="rotate(-0 286.198483 208.163611)">Cooperative play</text>
+   </g>
+  </g>
+  <g id="axes_7">
+   <g id="line2d_15">
+    <g clip-path="url(#p00a9ec7eee)">
+     <use xlink:href="#m1fa3f7ce60" x="425.42293" y="263.568623" style="fill: #e9b44c; stroke: #e9b44c"/>
+    </g>
+   </g>
+   <g id="line2d_16">
+    <g clip-path="url(#p00a9ec7eee)">
+     <use xlink:href="#m1fa3f7ce60" x="425.42293" y="309.17325" style="fill: #e9b44c; stroke: #e9b44c"/>
+    </g>
+   </g>
+   <g id="line2d_17">
+    <g clip-path="url(#p00a9ec7eee)">
+     <use xlink:href="#m1fa3f7ce60" x="534.874035" y="263.568623" style="fill: #e9b44c; stroke: #e9b44c"/>
+    </g>
+   </g>
+   <g id="line2d_18">
+    <g clip-path="url(#p00a9ec7eee)">
+     <use xlink:href="#m1fa3f7ce60" x="534.874035" y="309.17325" style="fill: #e9b44c; stroke: #e9b44c"/>
+    </g>
+   </g>
+   <g id="patch_17">
+    <path d="M 436.101774 286.370937 
+Q 479.148393 286.370937 522.195013 286.370937 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 442.101774 289.370937 
+L 436.101774 286.370937 
+L 442.101774 283.370937 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 516.195013 283.370937 
+L 522.195013 286.370937 
+L 516.195013 289.370937 
+" style="fill: none; stroke: #9aa3ab; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_7">
+    <text style="fill: #f2f2f2; font: 13.5px 'Public Sans', 'system-ui', sans-serif; text-anchor: middle" x="480.148483" y="208.163611" transform="rotate(-0 480.148483 208.163611)">Team competition</text>
+   </g>
+  </g>
+  <g id="axes_8">
+   <g id="text_8">
+    <text style="fill: #9aa3ab; font: 14px 'Public Sans', 'system-ui', sans-serif" transform="translate(645.288014 282.863062)">●  player</text>
+    <text style="fill: #9aa3ab; font: 14px 'Public Sans', 'system-ui', sans-serif" transform="translate(635.220045 299.048812)">○  the game</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pfca2dac98a">
+   <rect x="8.64" y="39.013828" width="167.216966" height="144.414652"/>
+  </clipPath>
+  <clipPath id="pa1e1a91693">
+   <rect x="202.59" y="39.013828" width="167.216966" height="144.414652"/>
+  </clipPath>
+  <clipPath id="p8dbe4ebd40">
+   <rect x="396.54" y="39.013828" width="167.216966" height="144.414652"/>
+  </clipPath>
+  <clipPath id="pc18b2ab66f">
+   <rect x="590.49" y="39.013828" width="167.216966" height="144.414652"/>
+  </clipPath>
+  <clipPath id="p9c9f446606">
+   <rect x="8.64" y="214.163611" width="167.216966" height="144.414652"/>
+  </clipPath>
+  <clipPath id="p620f5884d6">
+   <rect x="202.59" y="214.163611" width="167.216966" height="144.414652"/>
+  </clipPath>
+  <clipPath id="p00a9ec7eee">
+   <rect x="396.54" y="214.163611" width="167.216966" height="144.414652"/>
+  </clipPath>
+ </defs>
+</svg>
