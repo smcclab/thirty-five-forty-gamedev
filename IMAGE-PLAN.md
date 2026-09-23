@@ -47,7 +47,7 @@ Per-deck state (`grep -c '!\[' src/decks/*.deck.mdx` to recheck):
 | week01-1-play-and-games | 22 | 10 |
 | week01-2-formal-elements | 17 | **1** |
 | week02-1-playcentric-design-process | 17 | **1** |
-| week02-2-idea-generation | 19 | 8 |
+| week02-2-idea-generation | 24 | 8 |
 | week02-3-prototyping | 25 | 10 |
 | week03-1-engaging-the-player | 20 | 6 |
 | week03-2-designing-to-engage | 18 | **1** |
