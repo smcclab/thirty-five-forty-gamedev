@@ -1,0 +1,269 @@
+{
+  "slides": {
+    "2": {
+      "heading": "In this lecture",
+      "why": "the `Theory: Engaging the Player` title block is the deck title plus its two readings, which are in the credit line"
+    },
+    "3": {
+      "heading": "What engages players?",
+      "bullets": [
+        "Different things for different players",
+        "Challenge — games create conflict the player works to resolve, and that conflict creates tension",
+        "Play — imagination, fantasy, inspiration, social skills, free-form interaction",
+        "Premise — context for the formal elements, even in simple, abstract games",
+        "  Monopoly: players are landlords buying, selling and developing real estate to become the richest player",
+        "  Space Invaders: a lone spaceship defending against an alien invasion, surviving as long as possible",
+        "Character — agents through which dramatic stories are told, and our entry points into situations and conflicts",
+        "Story — unfolds during the game, integrating with gameplay in different ways",
+        "Dramatic elements — engage players emotionally, creating a dramatic context for the formal elements"
+      ],
+      "split_after": [
+        3
+      ],
+      "continuations": [
+        "Premise, character and story"
+      ],
+      "aside": "drop",
+      "loose": "drop",
+      "image_layout": "split",
+      "split_image": {
+        "file": "photos/2h-media-43AGGcjA5tA-unsplash.jpg",
+        "alt": "Two players reaching across a table strewn with tokens and cards, mid-game.",
+        "credit": "Photo by 2H Media on Unsplash"
+      },
+      "why": "Story and Dramatic Elements were loose text boxes and are restored as the last two bullets; the premise aside becomes the two sub-bullets under Premise, so Monopoly and Space Invaders stay; \"that players must work to resolve, this conflict challenges the player\" compressed"
+    },
+    "4": {
+      "heading": "Challenge",
+      "bullets": [
+        "Not just difficult — tasks that are satisfying to complete",
+        "The right amount and type of work to create accomplishment and enjoyment",
+        "Individualised — determined by the abilities of the specific player",
+        "Dynamic — what a player finds challenging changes as they play",
+        "Play was Week 1; premise, character and story are not this course's focus"
+      ],
+      "loose": "drop",
+      "image_layout": "split",
+      "split_image": {
+        "file": "photos/stacie-ong-0olPY6OO4dI-unsplash.jpg",
+        "alt": "A climber working a route on an indoor wall of coloured holds: a task set to the climber's own ability.",
+        "credit": "Photo by Stacie Ong on Unsplash"
+      },
+      "why": "the loose text boxes were course-scoping notes off the engagement diagram; they become the last bullet, and the pointers to Week 1 Formal Elements and to \"the player's story (next)\" are dropped as navigation"
+    },
+    "5": {
+      "heading": "Conflict and the dramatic arc",
+      "bullets": [
+        "Conflict is the heart of good drama",
+        "  Keeps players from accomplishing their goals too easily",
+        "  Creates tension about the outcome, drawing players in emotionally",
+        "Traditional drama: conflict occurs when the protagonist faces an obstacle that keeps them from their goal",
+        "  Character vs character, nature, machine, self, society or fate",
+        "Games: player vs player, player vs players, player vs game system, team vs team",
+        "  Integrate the dramatic premise with the formal elements",
+        "The dramatic arc is the backbone of dramatic media, including games",
+        "  Once conflict is set in motion, it must escalate to be effective",
+        "  Escalating conflict creates tension: it gets worse before it gets better"
+      ],
+      "split_after": [
+        2
+      ],
+      "continuations": [
+        "Games and the dramatic arc"
+      ],
+      "loose": "drop",
+      "why": "the whole of traditional drama, the conflict types and the dramatic arc were loose text boxes off the dropped diagram and are restored here as bullets; nothing cut"
+    },
+    "6": {
+      "heading": "The dramatic arc",
+      "bullets": [
+        "Exposition — the story or game begins here",
+        "  Introduces settings, characters, important concepts",
+        "Conflict is introduced — the point of attack",
+        "  The protagonist's goal is opposed by the environment or an antagonist",
+        "Rising action — a series of events caused by the conflict, and by the protagonist's attempts to resolve it",
+        "  In games, rising action is linked to the dramatic and formal systems",
+        "Climax — the deciding factor or event is introduced",
+        "Falling action — a series of events in which the conflict resolves",
+        "Resolution, or denouement — the conflict is finally resolved"
+      ],
+      "split_after": [
+        3
+      ],
+      "continuations": [
+        "The arc after the climax"
+      ],
+      "aside": "drop",
+      "why": "the aside on games and rising action becomes the sub-bullet under Rising action; the stage names move out of \"Story/game begins with exposition\" into the bullets themselves"
+    },
+    "7": {
+      "bullets": [
+        "What is the relationship between the main character and the goal? Why does the character care about it?",
+        "What are the obstacles between the character and the goal?",
+        "Is there an antagonist who is behind the obstacles? What is the relationship between the protagonist and the antagonist?",
+        "Do the obstacles gradually increase in difficulty?",
+        "Some say \"the bigger the obstacle, the better the story\". Are your obstacles big enough? Can they be bigger?",
+        "Great stories often involve the protagonist transforming in order to overcome the obstacle. How does your protagonist transform?"
+      ],
+      "split_after": [
+        3
+      ],
+      "continuations": [
+        "Bigger obstacles, better stories"
+      ],
+      "loose": "drop",
+      "why": "two of Schell's lens 74 questions were in loose text boxes and are restored, so all six are on the slides word for word; the story-ingredients aside stays"
+    },
+    "8": {
+      "heading": "What are the key moments?",
+      "class": "impact",
+      "bullets": [
+        "An experience is a series of moments",
+        "  Some are more powerful than others",
+        "  An interest curve charts the most powerful moments",
+        "  How best to arrange the moments for your experience",
+        "What are the key moments in my game?",
+        "How can I make each moment as powerful as possible?",
+        "A — enter the experience, at some level of interest",
+        "B — \"the hook\": grabs attention and gets you excited",
+        "C-F — interest continually rises, with temporary peaks",
+        "G — climax",
+        "H — resolved"
+      ],
+      "split_after": [
+        1,
+        3
+      ],
+      "continuations": [
+        "The Lens of Moments (lens 68)",
+        "Reading an interest curve"
+      ],
+      "why": "the source's own question heads the slide; Schell's two lens 68 questions get their own slide instead of an h3 inside the list, and the A-H beats get a third, beside the curve; nothing cut"
+    },
+    "9": {
+      "heading": "Interest curves at three scales",
+      "bullets": [
+        "Overall game — an introduction, a series of levels of rising interest, a major climax, and the player defeats the game",
+        "Each level — new aesthetics and challenges engage the player at the start, a series of challenges (battles, puzzles) raise interest, ending in a \"boss battle\"",
+        "Each challenge — an interesting introduction, then stepped rising challenges",
+        "If I draw an interest curve of my experience, how is it generally shaped?",
+        "Does it have a hook?",
+        "Does it have a gradually rising interest, punctuated by periods of rest?",
+        "Is there a grand finale, more interesting than everything else?",
+        "What changes would give me a better interest curve?",
+        "Is there a fractal structure to my interest curve? Should there be?",
+        "Do my intuitions about the interest curve match the observed interest of the players? If I ask playtesters to draw an interest curve, what does it look like?"
+      ],
+      "split_after": [
+        3
+      ],
+      "continuations": [
+        "The Lens of the Interest Curve"
+      ],
+      "loose": "drop",
+      "why": "Schell's lens 69 was a loose text box; its seven questions are restored word for word on a slide of their own"
+    },
+    "10": {
+      "heading": "Three interest factors",
+      "bullets": [
+        "Factor 1: Inherent Interest — some things are more interesting than others",
+        "Factor 2: Poetry of Presentation — beauty",
+        "Factor 3: Projection — empathy and imagination",
+        "What aspects of my game will capture the interest of a player immediately?",
+        "Does my game let the player see or do something they have never seen or done before?",
+        "What base instincts does my game appeal to? Can it appeal to more of them?",
+        "What higher instincts does my game appeal to? Can it appeal to more of those?",
+        "Does dramatic change and anticipation of dramatic change happen in my game? How can it be more dramatic?"
+      ],
+      "split_after": [
+        3
+      ],
+      "continuations": [
+        "The Lens of Inherent Interest"
+      ],
+      "loose": "drop",
+      "why": "Schell's lens 70 was a loose text box; its five questions are restored word for word on a slide of their own"
+    },
+    "11": {
+      "bullets": [
+        "What is there in my game that players can relate to? What else can I do?",
+        "What is there in my game that will capture a player's imagination? What else can I add?",
+        "Are there places in the game that players have always wanted to visit?",
+        "Does the player get to be a character they could imagine themselves to be?",
+        "Are there other characters in the game that the players would be interested to meet (or to spy on)?",
+        "Do the players get to do things they would like to do in real life, but can't?",
+        "Is there an activity in the game that once a player starts doing, it is hard to stop?"
+      ],
+      "split_after": [
+        5
+      ],
+      "continuations": [
+        "What players wish they could do"
+      ],
+      "why": "nothing cut; the seven lens 72 questions are word for word, and the break gets a heading of its own instead of \"(cont.)\""
+    },
+    "12": {
+      "heading": "The player's story",
+      "bullets": [
+        "Story in games is not necessarily scripted",
+        "  The plot can be the sum of the player's actions",
+        "Playing writes a story in the player's mind",
+        "  It emerges from their actions, immersion and choices",
+        "  That story is compelling and worthwhile for the player",
+        "Many of the themes are the emotions the player experiences, dealt with through the filter of play",
+        "  Designers go wrong forcing these into a linear, developer-constructed \"story\"",
+        "Penny Sweetser. 2008. Emergence in Games — three positions for the player:",
+        "  Player as Receiver — narrative is delivered to the player",
+        "  Player as Discoverer — the player actively uncovers the plot",
+        "  Player as Creator — the story is a function of the player's actions and interactions in the game world",
+        "The game cannot tell the player how to feel, and the player is not the player character",
+        "Give the player the chance to create experiences that form an interesting narrative, and a sense of control and ownership over their story"
+      ],
+      "split_after": [
+        2,
+        4
+      ],
+      "continuations": [
+        "Emotion and the player's part",
+        "Control and ownership"
+      ],
+      "aside": "drop",
+      "loose": "drop",
+      "image_layout": "split",
+      "split_image": {
+        "file": "photos/emily-wade-nVk581BTI_U-unsplash.jpg",
+        "alt": "Two players seen from behind watching a split-screen game: each of them is writing a different story.",
+        "credit": "Photo by Emily Wade on Unsplash"
+      },
+      "why": "Sweetser's three positions were the aside and the last two bullets were loose text boxes; both are restored as bullets so the citation and the definitions stay. On the split slide \"the act of playing a game\", \"a story emerges based on\" and \"the choices made while playing\" are compressed to fit the narrow column"
+    },
+    "13": {
+      "heading": "The story machine",
+      "bullets": [
+        "A story is a sequence of events that someone relates to someone else",
+        "Have you ever told someone about a series of events in a game you played?",
+        "Sports games and matches generate lots of stories",
+        "Some games are designed as story generators — Minecraft, The Sims",
+        "When players have different choices about how to achieve goals, new and different stories can arise. How can I add more of these choices?",
+        "Different conflicts lead to different stories. How can I allow more types of conflict to arise from my game?",
+        "When players can personalise the characters and setting, they will care more about story outcomes, and similar stories can start to feel very different. How can I let players personalise the story?",
+        "Good stories have good interest curves. Do my rules lead to stories with good interest curves?",
+        "A story is only good if you can tell it. Who can your players tell the story to that will actually care?"
+      ],
+      "split_after": [
+        4
+      ],
+      "continuations": [
+        "The Lens of the Story Machine"
+      ],
+      "loose": "drop",
+      "image_layout": "split",
+      "split_image": {
+        "file": "photos/james-sestric-BWRkppsh46U-unsplash.jpg",
+        "alt": "Friends sitting close around a campfire at night, one of them talking.",
+        "credit": "Photo by James Sestric on Unsplash"
+      },
+      "why": "Schell's lens 73 was a loose text box; its five questions are restored word for word on a slide of their own"
+    }
+  }
+}

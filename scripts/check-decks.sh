@@ -30,8 +30,19 @@ done
 # managed dev server takes a per-project lock, so with several decks being
 # worked on at once the check could not start one at all. --ignore-lock and a
 # port of our own give each run its own server, freshly parsed.
+#
+# And stop it again on the way out. The same fact that makes the kill above
+# necessary -- the managed server outlives the command that started it --
+# means a run that does not clean up leaves a server behind for good: an
+# afternoon of per-deck checks on ports of their own left seven of them
+# running, none of which any later run would ever think to free.
 if ! curl -fs -o /dev/null "http://localhost:$PORT/courses/comp3540/"; then
   (cd "$root" && npx astro dev --port "$PORT" --ignore-lock >/dev/null 2>&1 &)
+  trap 'for p in $(lsof -ti:"$PORT" 2>/dev/null || true); do
+          case "$(ps -o command= -p "$p" 2>/dev/null)" in
+            *"$root"*) kill "$p" 2>/dev/null || true ;;
+          esac
+        done' EXIT INT TERM
   i=0
   while [ "$i" -lt 60 ]; do
     curl -fs -o /dev/null "http://localhost:$PORT/courses/comp3540/" && break
@@ -42,4 +53,5 @@ if [ -z "$ASTROMOTION_CHROME_PATH" ] && [ -x "/Applications/Google Chrome.app/Co
   ASTROMOTION_CHROME_PATH="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
   export ASTROMOTION_CHROME_PATH
 fi
-exec npx astromotion-check --prefix=/courses/comp3540/lectures --port="$PORT" "$@"
+# Not `exec`: that would replace this shell and the trap with it.
+npx astromotion-check --prefix=/courses/comp3540/lectures --port="$PORT" "$@"

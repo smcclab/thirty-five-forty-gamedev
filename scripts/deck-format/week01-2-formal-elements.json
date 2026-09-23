@@ -1,0 +1,294 @@
+{
+  "slides": {
+    "2": {
+      "heading": "This lecture",
+      "loose": "drop",
+      "why": "the `Theory: Formal Elements Fullerton Ch. 2, 3` text box is the deck title plus its reading, not slide content; the eight-item agenda is unchanged"
+    },
+    "3": {
+      "heading": "The structure of games",
+      "bullets": [
+        "Players — the active participants",
+        "Objectives — what players try to achieve",
+        "Procedures — how players achieve the objectives",
+        "Rules — what governs the game, and the players",
+        "Resources — what is valuable to the players",
+        "Conflict — arises between the rules and the objectives",
+        "Boundaries — the game takes place within them",
+        "Outcome — the game drives towards an unequal one"
+      ],
+      "why": "the eight elements were full sentences all beginning \"Games have\" or \"Players\"; each is now the element and what it is. The lead-in \"Formal elements form the structure of a game\" is the heading"
+    },
+    "4": {
+      "heading": "Players",
+      "bullets": [
+        "Number of players — single or multiple, set or variable",
+        "Roles of players — uniform or different, and balanced",
+        "  Sports, Mastermind and Team Fortress give players different roles",
+        "Interaction patterns structure play between a player, the game system and other players",
+        "  Single player vs. game",
+        "  Multiple individual players vs. game — bingo",
+        "  Player vs. player, head to head — Mortal Kombat",
+        "  Unilateral competition, 2+ vs. 1 — tag",
+        "  Multilateral competition, 3+ players — StarCraft, poker",
+        "  Cooperative play, 2+ vs. the game — Portal 2",
+        "  Team competition, 2+ groups — team sports, DOTA"
+      ],
+      "split_after": [
+        2
+      ],
+      "continuations": [
+        "Players: interaction patterns"
+      ],
+      "split_image": {
+        "file": "photos/emily-wade-nVk581BTI_U-unsplash.jpg",
+        "alt": "Two players seen from behind, side by side, watching a split-screen game on a television.",
+        "credit": "Photo by Emily Wade on Unsplash"
+      },
+      "why": "\"Games are designed for players\" dropped as a restatement of the heading; the one example and the seven interaction-pattern examples come from Penny's speaker notes for this slide, which the deck otherwise only kept in a comment; the notes' fuller glosses (bingo as \"a single-player game in the company of other players\", tag, Mortal Kombat as head-to-head) are compressed to the game names"
+    },
+    "5": {
+      "heading": "Objectives",
+      "bullets": [
+        "What players are trying to accomplish within the game rules",
+        "Challenging but achievable",
+        "Can set the tone of the game",
+        "Different objectives for different players",
+        "Players choose from several objectives",
+        "Partial objectives help players achieve the main objective",
+        "What are some objectives of games you've played?",
+        "What impact do these objectives have on the tone of the game?",
+        "Do certain game types lend themselves to certain objectives?",
+        "What about multiple objectives? Or player-defined objectives?",
+        "Do objectives need to be explicit?"
+      ],
+      "split_after": [
+        6
+      ],
+      "continuations": [
+        "Objectives: for you to think about"
+      ],
+      "why": "\"Define\" dropped from the definition, which the heading supplies; \"For you to think about:\" becomes the second slide's heading instead of a bullet, and all five of Penny's questions are kept word for word"
+    },
+    "6": {
+      "heading": "Common objective categories",
+      "bullets": [
+        "Capture — take the opponent's terrain or units without being captured or killed (chess, checkers, capture the flag)",
+        "Chase — catch or elude an opponent",
+        "Race — reach a goal, physical or conceptual, before other players",
+        "Alignment — arrange game pieces (puzzles, Tetris, tic-tac-toe)",
+        "Rescue or Escape — get defined units to safety (Super Mario Bros)",
+        "Forbidden Act — get the competition to \"break the rules\" (Twister)",
+        "Construction — build, maintain or manage objects (Minecraft)",
+        "Exploration — explore game areas (Zelda, GTA)",
+        "Solution — solve a puzzle before the competition (Tetris, Zelda)",
+        "Outwit — gain and use knowledge to defeat players (trivia)"
+      ],
+      "split_after": [
+        5
+      ],
+      "continuations": [
+        "Five more objective categories"
+      ],
+      "why": "the ten categories are Fullerton's and all stay, with every game Penny named; only the \"e.g.,\" hedges and \"or\" chains are cut"
+    },
+    "7": {
+      "heading": "Procedures",
+      "bullets": [
+        "Methods of play, and the actions players take to achieve the objectives",
+        "Who does what, when and how",
+        "  Who can use the procedure?",
+        "  What exactly does the player do?",
+        "  Where (location) does the procedure occur?",
+        "  When (turn, time, game state) does it take place?",
+        "  How (input) does the player access the procedure?",
+        "Starting action — how to put the game into play",
+        "Progression of action — ongoing procedures after the start",
+        "Special actions — conditional on other elements or game state",
+        "Resolving actions — bring gameplay to a close"
+      ],
+      "split_after": [
+        2
+      ],
+      "continuations": [
+        "Most games have these procedures"
+      ],
+      "split_image": {
+        "file": "photos/2h-media-pm7QgL2pnSQ-unsplash.jpg",
+        "alt": "Two people leaning over a brightly coloured board game, mid-turn, cards and money spread around it.",
+        "credit": "Photo by 2H Media on Unsplash"
+      },
+      "why": "nothing cut: the five questions and the four kinds of procedure are Fullerton's and are unchanged, with the source's own sub-heading carried onto the second slide"
+    },
+    "8": {
+      "heading": "Procedures: Connect Four",
+      "bullets": [
+        "Choose a player to go first",
+        "On their turn, each player drops one of their colour checkers down any slot in the top of the grid",
+        "Play alternates until a player gets four checkers of their colour in a row — horizontal, vertical or diagonal",
+        "System procedures work behind the scenes, responding to situations and player actions",
+        "  Combat system — calculate the damage taken, from character and weapon attributes",
+        "  Board and paper games — the players calculate this themselves",
+        "  Digital games can have far more complex system procedures"
+      ],
+      "split_after": [
+        3
+      ],
+      "continuations": [
+        "System procedures"
+      ],
+      "loose": "drop",
+      "why": "the System procedures text box was loose on the source slide and is restored here as the second slide; the Connect Four rules are unchanged"
+    },
+    "9": {
+      "heading": "Rules",
+      "bullets": [
+        "Define the game objects, and the actions allowed to the player",
+        "  How do players learn the rules?",
+        "  How are the rules enforced?",
+        "  What kinds of rules work best in certain situations?",
+        "  Are there patterns to rule sets? What can we learn from those patterns?",
+        "Too many rules — unplayable; too few rules — too simple",
+        "The more complex the rules, the harder to understand",
+        "Objects and concepts can be entirely made up, or based on the real world — chess objects are abstractions of real ones, poker's are not",
+        "  Digital game objects can be more complex and more numerous",
+        "  How will players learn the nature of objects? Do they evolve?",
+        "Restrictions — can overlap with players or boundaries",
+        "Effects — triggered by certain circumstances"
+      ],
+      "split_after": [
+        3
+      ],
+      "continuations": [
+        "Rules: objects, actions, effects"
+      ],
+      "why": "the source's sub-heading \"Rules define objects/concepts, restrict actions, determine effects\" is too long for a heading and becomes the second slide's short form; nothing else cut"
+    },
+    "10": {
+      "heading": "What resources do you offer players?",
+      "class": "impact",
+      "bullets": [
+        "And how do you control access to them, to maintain the challenge?",
+        "Resources are assets that can be used to accomplish goals",
+        "  Most games use some form of resources",
+        "The designer manages resources, and how and when players reach them",
+        "Resources need utility and scarcity",
+        "  Otherwise they are useless or worthless"
+      ],
+      "split_after": [
+        1
+      ],
+      "continuations": [
+        "Resources"
+      ],
+      "why": "the slide's own two designer questions head it as the deck's impact slide; the definition and the utility/scarcity rule follow on the second slide, unchanged"
+    },
+    "11": {
+      "heading": "Common resource categories",
+      "bullets": [
+        "Lives — action and arcade games: a limited number to complete the goals",
+        "Units — strategy: same or different, static or evolving, finite or renewable, and they cost",
+        "Health — dramatises the loss of life; increased by pickups or rest",
+        "Currency — an in-game economy that allows trade, common in role-playing",
+        "Actions — moves or turns in card and board games; special, powerful actions",
+        "Power-ups — boost the player's variables; scarce, limited in time or number",
+        "Inventory — items for objectives, purchased or found; power balanced against scarcity",
+        "Special Terrain — strategy and board games: occupy or control it",
+        "Time — restricts actions and phases; an inherently dramatic force"
+      ],
+      "split_after": [
+        5
+      ],
+      "continuations": [
+        "More resource categories"
+      ],
+      "why": "all nine of Fullerton's categories stay, each expanded from its parenthesis into a clause; nothing cut"
+    },
+    "12": {
+      "heading": "Conflict",
+      "bullets": [
+        "Emerges from players pursuing the game's goals within its rules and boundaries",
+        "  Rules and procedures block the direct route to the goals",
+        "  They offer only inefficient means to the objectives",
+        "  Challenge players, forcing them to employ skills",
+        "  A sense of competition and play, enjoyment, achievement",
+        "Obstacles — physical and mental challenges, puzzles",
+        "Opponents — the primary conflict in multiplayer games",
+        "Dilemmas — choices the player has to make"
+      ],
+      "split_after": [
+        1
+      ],
+      "continuations": [
+        "Sources of conflict"
+      ],
+      "split_image": {
+        "file": "photos/joaquin-arenas-9903l2rs4kw-unsplash.jpg",
+        "alt": "Hands gripping a thick rope in a tug of war, pulling in opposite directions.",
+        "credit": "Photo by Joaquin Arenas on Unsplash"
+      },
+      "why": "\"trying to accomplish the goals of the game\" compressed to \"pursuing the game's goals\"; the three consequences of challenge (competition/play, enjoyable, achievement) are one bullet instead of three; the tug-of-war photograph is reused from the conflict material elsewhere in the course"
+    },
+    "13": {
+      "heading": "Boundaries",
+      "bullets": [
+        "Separates the game from everything that is not the game",
+        "  Physical — a playing field",
+        "  Conceptual — a social agreement to play",
+        "  Emotional — act differently, with no external consequences",
+        "Players agree to play and enter the \"magic circle\"",
+        "  Temporary — you can leave, which is the feeling of safety",
+        "The designer defines them, and how the player enters and exits",
+        "What if you played football with no boundaries?",
+        "What if you could add money to Monopoly? Or extra cards to poker?"
+      ],
+      "split_after": [
+        3
+      ],
+      "continuations": [
+        "Why are boundaries important?"
+      ],
+      "split_image": {
+        "file": "photos/scott-greer-PlY1JigSeDw-unsplash.jpg",
+        "alt": "A painted white line across a sports ground, grass on one side and bare dirt on the other.",
+        "credit": "Photo by Scott Greer on Unsplash"
+      },
+      "why": "\"separate game from life (permission to act differently...)\" compressed to the permission clause; the source's own question \"Why are boundaries important?\" becomes the second slide's heading and keeps both of Penny's examples"
+    },
+    "14": {
+      "heading": "Outcome",
+      "bullets": [
+        "A measurable and unequal win condition",
+        "  Producing a winner is the end state in most games",
+        "  Simulation, sandpit, open world, ongoing worlds",
+        "The outcome must be uncertain to hold attention",
+        "Types of outcome relate to interaction patterns and objectives",
+        "  Zero-sum games",
+        "  Ranking systems",
+        "  Statistics",
+        "  Multiple objectives"
+      ],
+      "split_after": [
+        2
+      ],
+      "continuations": [
+        "Types of outcome"
+      ],
+      "why": "nothing cut; the four types move to their own slide so the win condition is not crowded"
+    },
+    "15": {
+      "heading": "The formal elements, as questions",
+      "bullets": [
+        "Players — how many? Requirements? Roles?",
+        "Objectives — what is the objective of the game?",
+        "Procedures — what are the required actions for play?",
+        "Rules — any limits on player actions? Rules for behaviour?",
+        "Resources — what objects are valuable to players? Why?",
+        "Conflict — what causes conflict in the game?",
+        "Boundaries — what are they? Physical or conceptual?",
+        "Outcome — what are the potential outcomes?"
+      ],
+      "why": "the repeated sub-heading \"Formal elements form the structure of a game\" is folded into a heading that distinguishes this recap from the opening slide; all eight questions unchanged"
+    }
+  }
+}

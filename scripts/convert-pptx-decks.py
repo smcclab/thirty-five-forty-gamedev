@@ -1178,6 +1178,16 @@ def convert(path: pathlib.Path, decks_dir: pathlib.Path, verbose=False,
         layout_pref = fmt.get("image_layout", "auto")
         fixed_lines = (HEADING_LINES + aside_lines + table_lines
                        + snippet_lines + loose_lines)
+        # A break that falls outside the list does nothing at all, which on
+        # the page looks exactly like a rule that did not work -- the same
+        # reason an unknown deck-format key stops the converter.
+        breaks = fmt.get("split_after")
+        if breaks and any(not 0 <= b < len(groups) for b in breaks):
+            raise SystemExit(
+                f"{slug} slide {i}: split_after {breaks} is out of range; "
+                f"the list has {len(groups)} top-level bullets, so a break "
+                f"may be 0-{len(groups) - 1}."
+            )
         as_split = False
         if len(slide_images) == 1 and groups and layout_pref != "row":
             if layout_pref == "split" or (
@@ -1192,13 +1202,12 @@ def convert(path: pathlib.Path, decks_dir: pathlib.Path, verbose=False,
             # measured against the narrow column: a continuation slide has the
             # whole width and should be allowed to use it.
             pieces = chunk_groups(groups, budget, SPLIT_CHARS_PER_LINE,
-                                  fmt.get("split_after"))
-            if len(pieces) > 1 and not fmt.get("split_after"):
+                                  breaks)
+            if len(pieces) > 1 and not breaks:
                 rest = bullet_groups([p for piece in pieces[1:] for p in piece])
                 pieces = [pieces[0]] + chunk_groups(rest, SLIDE_LINES - HEADING_LINES)
         else:
-            pieces = chunk_groups(groups, budget, CHARS_PER_LINE,
-                                  fmt.get("split_after"))
+            pieces = chunk_groups(groups, budget, CHARS_PER_LINE, breaks)
 
         media_block: list[str] = []
         if as_split:

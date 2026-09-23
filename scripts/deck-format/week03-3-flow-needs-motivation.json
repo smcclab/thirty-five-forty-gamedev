@@ -88,7 +88,8 @@
         "The eight GameFlow elements"
       ],
       "table": "drop",
-      "why": "the nine-row GAMEFLOW table did not fit beside the list and the Sweetser & Wyeth reference; its eight elements are written out as the second slide"
+      "why": "the nine-row GAMEFLOW table did not fit beside the list and the Sweetser & Wyeth reference; its eight elements are written out as the second slide; the DOI link is already printed in full in the reference aside, so the converter's copy of it is dropped",
+      "links": "drop"
     },
     "7": {
       "heading": "GameFlow Affordances",
@@ -97,7 +98,8 @@
         "    The experience exists between the player and the game",
         "  No specific or prescriptive criteria, only high-level affordances"
       ],
-      "why": "the first sentence's second half becomes its own sub-bullet; nothing dropped"
+      "why": "the first sentence's second half becomes its own sub-bullet; nothing dropped; the DOI link is already printed in full in the reference aside, so the converter's copy of it is dropped",
+      "links": "drop"
     },
     "8": {
       "heading": "How the elements map",

@@ -1,0 +1,346 @@
+{
+  "slides": {
+    "2": {
+      "heading": "This lecture",
+      "why": "only the heading changed; the `Theory: Balance …` title block is the deck title and its readings, not a heading"
+    },
+    "3": {
+      "heading": "What balance means",
+      "bullets": [
+        "Making sure the game meets the player experience goals",
+        "  System is of the scope and complexity envisioned",
+        "  Elements work together without undesired results",
+        "Fairness: gives all players an equal opportunity to achieve game goals",
+        "Balance: availability of dominant strategies or overpowered objects",
+        "Multiplayer: starting positions and play are fair — no inherent advantage, no single dominant strategy",
+        "Single player: skill level properly adjusted to the target audience",
+        "Key balancing areas: variables, dynamics, starting conditions, skill",
+        "Key balancing issues: reinforcing relationships, dominant objects or strategies, rewards versus punishment, symmetrical versus asymmetrical games"
+      ],
+      "split_after": [
+        3
+      ],
+      "continuations": [
+        "What needs balancing"
+      ],
+      "aside": "drop",
+      "loose": "drop",
+      "split_image": {
+        "file": "photos/piret-ilver-98MbUldcDJY-unsplash.jpg",
+        "alt": "A two-pan balance scale on a workbench, the pans hanging level.",
+        "credit": "Photo by Piret Ilver on Unsplash"
+      },
+      "why": "the sidebar definitions of fairness and balance are bullets here, and the two loose text boxes (the key areas and the key issues, labels off a dropped diagram) are the second slide, which is what they were on the source slide; the one-bullet '(cont.)' slide the converter made of 'Single player …' is gone"
+    },
+    "4": {
+      "heading": "Variables and dynamics",
+      "why": "only the heading changed: the source repeated 'Balancing Game Systems' as the title of every slide, and this one is about variables and dynamics"
+    },
+    "5": {
+      "heading": "Reinforcing relationships",
+      "bullets": [
+        "A change in one part of the system causes another change in the same direction",
+        "Rewards stronger players over time; the game ends prematurely",
+        "Change a reinforcing relationship into a balancing relationship",
+        "Keep strong players from accumulating too much power",
+        "  Pay a price for a gain, add randomness, ganging up",
+        "Keep the scales balanced, without stagnating",
+        "At the end, the scale should tip dramatically",
+        "  After the climax, wrap it up quickly",
+        "  \"Mopping up\" in strategy games — Total War"
+      ],
+      "split_after": [
+        4
+      ],
+      "continuations": [
+        "Tipping the scales"
+      ],
+      "why": "'Reinforcing relationships:' drops off the definition because it is the heading; the source's third level of nesting is folded up one level; nothing else cut"
+    },
+    "6": {
+      "heading": "Dominant objects",
+      "bullets": [
+        "Similar objects should be proportional in terms of strength",
+        "Fighting game — no single unit significantly more powerful than others",
+        "Provide choices by using strengths and weaknesses:",
+        "  Rock, Paper, Scissors — also in strategy games",
+        "  Racing — good at hills, poor on corners",
+        "  Fighting — killer move, Achilles' heel",
+        "  Economic — durable, cost more",
+        "Asymmetric, but balanced, is difficult to do right"
+      ],
+      "why": "'Dominant objects:' drops off the definition because it is the heading; the source's third level of nesting is folded up one level; the source's 'Archilles'' is spelled Achilles'"
+    },
+    "7": {
+      "heading": "Dominant strategies",
+      "bullets": [
+        "A strategy that is strictly better than the others",
+        "Players should have interesting, meaningful choices",
+        "Makes a game dull if you always choose the same one",
+        "Tic-Tac-Toe has a dominant strategy — boring once you know it",
+        "Not the same as a \"favourite\" strategy",
+        "Multiplayer communities develop and evolve favourite strategies over time — StarCraft",
+        "What choices am I asking the player to make?",
+        "Are they meaningful? How?",
+        "Am I giving the player the right number of choices? Would more make them feel more powerful? Would less make the game clearer?"
+      ],
+      "split_after": [
+        6
+      ],
+      "continuations": [
+        "The Lens of Meaningful Choices (lens 39)"
+      ],
+      "why": "'Dominant strategies:' drops off the definition because it is the heading; lens 39 was stranded on a '(cont.)' slide as an h3 and now has a slide of its own, every question word for word"
+    },
+    "8": {
+      "heading": "Balancing starting positions",
+      "bullets": [
+        "Players start on an equal footing, with an equal opportunity to win",
+        "Not the same as giving everyone identical resources",
+        "Symmetrical games: the same setup, resources and information",
+        "Many board games — but play order needs balancing",
+        "Little strategic advantage to going first, a penalty for the first player, or randomness in the order",
+        "Asymmetrical games: different abilities, resources, rules or objectives — and still fair",
+        "Makes for interesting, varied, and more realistic games"
+      ],
+      "split_after": [
+        3
+      ],
+      "continuations": [
+        "Symmetry and asymmetry"
+      ],
+      "split_image": {
+        "file": "photos/nicholas-wilson-5r6xg6MAnnY-unsplash.jpg",
+        "alt": "Runners in lanes on a track, starting level with one another.",
+        "credit": "Photo by Nicholas Wilson on Unsplash"
+      },
+      "why": "'Balancing starting positions:' drops off the definition because it is the heading; 'setup' dropped from 'the same resources/setup'; the play-order line is flattened up one level from the source's third level"
+    },
+    "9": {
+      "heading": "Why make a game asymmetrical?",
+      "class": "impact",
+      "bullets": [
+        "Players have different goals",
+        "Simulating real-world situations — WWII",
+        "Giving players different ways to play and explore the game",
+        "Choices that suit players' skills and preferences",
+        "Levelling the playing field between different players",
+        "Creating more interesting play, choices and situations",
+        "Should my game be symmetrical? Why?",
+        "Should my game be asymmetrical? Why?",
+        "Which is more important: that my game is a reliable measure of who has the most skill or that it provide an interesting challenge to all players?",
+        "If I want players of different skill levels to play together, what means will I use to make the game interesting and challenging for everyone?"
+      ],
+      "split_after": [
+        1,
+        6
+      ],
+      "continuations": [
+        "Reasons for using asymmetry",
+        "The Lens of Fairness (lens 37)"
+      ],
+      "why": "the source's 'Reasons for using asymmetry: players have different goals' becomes the deck's impact question and its answer, with the five reasons on the next slide; lens 37 was stranded on a '(cont.)' slide as an h3 and now has a slide of its own, every question word for word"
+    },
+    "10": {
+      "heading": "Asymmetrical objectives",
+      "bullets": [
+        "Players have different goals",
+        "Ticking clock: a weak defender fends off a strong attacker",
+        "  Defender: hold out for a set amount of time",
+        "  Attacker: beat the defender before time runs out",
+        "  Common in mission-based games",
+        "Protection: trying to protect versus capture something",
+        "Combination: ticking clock and capture or protect",
+        "  Reach the HQ, steal the code, blow up the bridge",
+        "Individual objectives: specific, unique to each player",
+        "Complete asymmetry: each player or team has different objectives and different rules to achieve them"
+      ],
+      "split_after": [
+        2
+      ],
+      "continuations": [
+        "Objectives: protect and capture"
+      ],
+      "why": "'Asymmetrical objectives:' drops off the definition because it is the heading; the source's third level of nesting is folded up one level; the one-bullet '(cont.)' slide the converter made of 'Complete asymmetry …' is gone"
+    },
+    "11": {
+      "heading": "Rewards",
+      "bullets": [
+        "Players want to be rewarded for doing well",
+        "Praise: telling the player they did well — a statement, a sound",
+        "Points: a measure of player success",
+        "Prolonged play: more time to achieve their goal",
+        "Gateway: unlocking or moving to a new area",
+        "Spectacle: music, animation, cutscene",
+        "Expression: special clothes, decorations, emotes",
+        "Powers: gaining power, helps to reach goals",
+        "Resources: use to reach goals or unlock other rewards",
+        "Status: leaderboard ranking, achievement",
+        "Completion: completing all the goals"
+      ],
+      "split_after": [
+        5
+      ],
+      "continuations": [
+        "Rewards: spectacle to completion"
+      ],
+      "split_image": {
+        "file": "photos/andrej-sachov-5IXeasHbnV8-unsplash.jpg",
+        "alt": "A heap of gold coins, a goblet and bars of bullion: treasure as the reward.",
+        "credit": "Photo by Andrej Sachov on Unsplash"
+      },
+      "why": "the label 'Types of rewards in games:' is dropped, since the ten named kinds follow it and the continuation heading says so; Schell's ten kinds of reward are otherwise unchanged"
+    },
+    "12": {
+      "heading": "Punishment",
+      "bullets": [
+        "Punishment can increase enjoyment",
+        "Endogenous value: fear of losing something of value",
+        "Risk-taking: exciting — risk versus reward, and the chance of failure makes success more rewarding",
+        "Challenge: failure means a punishing setback",
+        "Shaming: the opposite of praise — message, sound, music",
+        "Loss of points: painful, use sparingly",
+        "Shortened play: timer, lives",
+        "Terminated play: game over",
+        "Setback: back to a checkpoint or the start of the level",
+        "Removal of powers: tread carefully, players treasure their powers — could remove temporarily",
+        "Resource depletion: money, goods, ammunition, shields, hit points — a common punishment"
+      ],
+      "split_after": [
+        4
+      ],
+      "continuations": [
+        "Seven kinds of punishment"
+      ],
+      "why": "the label 'Types of punishment:' is dropped, since the continuation heading says it; 'loss of' dropped from the resource-depletion list; Schell's seven kinds otherwise unchanged"
+    },
+    "13": {
+      "bullets": [
+        "What rewards is my game giving out now? Can it give out others as well?",
+        "Are players excited when they get rewards in my game, or are they bored by them? Why?",
+        "Getting a reward you don’t understand is like getting no reward at all. Do my players understand the rewards they are getting?",
+        "Are the rewards my game gives out too regular? Can they be given out in a more variable way?",
+        "How are my rewards related to one another? Is there a way that they could be better connected?",
+        "How are my rewards building? Too fast, to slow, or just right?",
+        "What are the punishments in my game?",
+        "Why am I punishing the players? What do I hope to achieve by it?",
+        "Do my punishments seem fair to the players? Why or why not?",
+        "Is there a way to turn these punishments into rewards and get the same or a better effect?",
+        "Are my strong punishments balanced against commensurately strong rewards?"
+      ],
+      "split_after": [
+        6
+      ],
+      "continuations": [
+        "The Lens of Punishment (lens 47)"
+      ],
+      "why": "the two lenses the source stacked on one slide get a slide each, instead of lens 47 sitting as an h3 on a '(cont.)' slide; every question word for word, including Schell's 'to slow'"
+    },
+    "14": {
+      "heading": "Balancing for skill",
+      "bullets": [
+        "Matching challenge level to player skill level (Week 8)",
+        "Every player has a different skill level",
+        "Offer difficulty levels, player chooses",
+        "  Modifies some variables — hitpoints",
+        "Otherwise, balance against \"median\" skill",
+        "Balancing for median skill: between high and low skill",
+        "Requires extensive playtesting with players of different skill",
+        "  Find the high and low skill points, then fix between",
+        "Increase difficulty over the course of the game — missions",
+        "Balancing dynamically: adjusting difficulty to the player's skill as they play, increasing as they get better",
+        "Tetris — increase block speed as the score increases",
+        "Racing — \"rubber band\" to players",
+        "Usually want this to be invisible to the player"
+      ],
+      "split_after": [
+        4,
+        7
+      ],
+      "continuations": [
+        "Balancing for median skill",
+        "Balancing dynamically"
+      ],
+      "split_image": {
+        "file": "photos/stacie-ong-0olPY6OO4dI-unsplash.jpg",
+        "alt": "A climber on an indoor wall of coloured holds, on a route chosen to match their skill.",
+        "credit": "Photo by Stacie Ong on Unsplash"
+      },
+      "why": "'Matching game challenge level' shortened to 'Matching challenge level' and '(e.g., hitpoints)' to a dash clause, so the first bullets fit the column beside the photograph; three slides instead of a slide and a '(cont.)', each with the sub-points folded up from the source's third level"
+    },
+    "15": {
+      "heading": "Techniques for balancing skill",
+      "bullets": [
+        "Increase difficulty with every success",
+        "Allow skilled players to get through easy parts fast",
+        "Create “layers of challenge” — a score or rating to beat next time",
+        "Let players choose the difficulty level — easy, medium, hard",
+        "Playtest with a variety of players",
+        "Give the losers a break or a helping hand — extra powerups"
+      ],
+      "why": "the lead-in 'Some techniques for balancing for skill level' becomes the heading; '(e.g., …)' parentheticals become dash clauses; all six of Schell's techniques kept"
+    },
+    "16": {
+      "bullets": [
+        "What are the challenges in my game?",
+        "Are they too easy, too hard, or just right?",
+        "Can my challenges accommodate a wide variety of skill levels?",
+        "How does the level of challenge increase as the player succeeds?",
+        "Is there enough variety in the challenges?",
+        "What is the maximum level of challenge in my game?",
+        "Does my game give a fair measurement of player skill?",
+        "Do people want to win my game? Why?",
+        "Is winning this game something people can be proud of? Why?",
+        "Can novices meaningfully compete at my game?",
+        "Can experts meaningfully compete at my game?",
+        "Can experts generally be sure they will defeat novices?"
+      ],
+      "split_after": [
+        6
+      ],
+      "continuations": [
+        "The Lens of Competition (lens 43)"
+      ],
+      "why": "the two lenses the source stacked on one slide get a slide each, instead of lens 43 sitting as an h3 on a '(cont.)' slide; every question word for word"
+    },
+    "17": {
+      "heading": "Techniques for balancing",
+      "bullets": [
+        "Think modular: most games are a set of interrelated sub-systems, broken into functional units",
+        "  The more interconnected, the harder to balance",
+        "  Isolate subsystems and abstract them from one another — then a change shows its effects",
+        "Purity of purpose: every component has a single, clearly defined mission",
+        "  Nothing exists without reason or with more than one function",
+        "  Break mechanics down into building blocks with a flowchart",
+        "One change at a time: then test, so the cause of an effect is known",
+        "Spreadsheets: track everything in a spreadsheet — see it all at once, and model changes and their effects"
+      ],
+      "split_after": [
+        1
+      ],
+      "continuations": [
+        "Purity of purpose"
+      ],
+      "why": "'every component of your game' shortened to 'every component'; 'makes it easier to balance' dropped from the spreadsheets bullet as a restatement of the slide; the one-bullet '(cont.)' slide the converter made of the spreadsheets line is gone"
+    },
+    "18": {
+      "heading": "Game balancing methodologies",
+      "bullets": [
+        "Use the lens of the problem statement: define the balance problem before trying to solve it",
+        "Doubling and halving: start with large changes to test the limits and save time",
+        "Train your intuition by guessing exactly: make a best guess, then test it",
+        "Document your model: a framework for your balancing — how do the variables and elements relate?",
+        "Tune your model as you tune your game: develop and refine the framework as you tune",
+        "Plan to balance: put systems in place that make it easy to change the values that need balancing",
+        "Let the players do it — to a limited extent, such as choosing the difficulty level"
+      ],
+      "split_after": [
+        4
+      ],
+      "continuations": [
+        "Methodologies: plan to balance"
+      ],
+      "why": "'you’ll develop intuition over time' dropped as a restatement of 'train your intuition'; all seven of Schell's methodologies kept with their names; the one-bullet '(cont.)' slide the converter made of the last two is gone"
+    }
+  }
+}
