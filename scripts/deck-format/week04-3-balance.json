@@ -11,14 +11,14 @@
         "  System is of the scope and complexity envisioned",
         "  Elements work together without undesired results",
         "Fairness: gives all players an equal opportunity to achieve game goals",
-        "Balance: availability of dominant strategies or overpowered objects",
         "Multiplayer: starting positions and play are fair — no inherent advantage, no single dominant strategy",
         "Single player: skill level properly adjusted to the target audience",
+        "Balance: availability of dominant strategies or overpowered objects",
         "Key balancing areas: variables, dynamics, starting conditions, skill",
         "Key balancing issues: reinforcing relationships, dominant objects or strategies, rewards versus punishment, symmetrical versus asymmetrical games"
       ],
       "split_after": [
-        3
+        2
       ],
       "continuations": [
         "What needs balancing"
@@ -30,7 +30,7 @@
         "alt": "A two-pan balance scale on a workbench, the pans hanging level.",
         "credit": "Photo by Piret Ilver on Unsplash"
       },
-      "why": "the sidebar definitions of fairness and balance are bullets here, and the two loose text boxes (the key areas and the key issues, labels off a dropped diagram) are the second slide, which is what they were on the source slide; the one-bullet '(cont.)' slide the converter made of 'Single player …' is gone"
+      "why": "the sidebar definition of fairness is a bullet here; the sidebar's 'Balance: availability of dominant strategies or overpowered objects' is word for word but moved to the second slide, beside the key balancing issues, because it names the balance *problem* and read as the definition of balance next to 'what balance means'; the two loose text boxes (the key areas and the key issues, labels off a dropped diagram) are on that second slide too, which is where they were on the source slide; the one-bullet '(cont.)' slide the converter made of 'Single player …' is gone"
     },
     "4": {
       "heading": "Variables and dynamics",
@@ -96,15 +96,15 @@
       "heading": "Balancing starting positions",
       "bullets": [
         "Players start on an equal footing, with an equal opportunity to win",
-        "Not the same as giving everyone identical resources",
+        "  Not the same as giving everyone identical resources",
         "Symmetrical games: the same setup, resources and information",
-        "Many board games — but play order needs balancing",
-        "Little strategic advantage to going first, a penalty for the first player, or randomness in the order",
+        "  Many board games — but play order needs balancing",
+        "  Little strategic advantage to going first, a penalty for the first player, or randomness in the order",
         "Asymmetrical games: different abilities, resources, rules or objectives — and still fair",
-        "Makes for interesting, varied, and more realistic games"
+        "  Makes for interesting, varied, and more realistic games"
       ],
       "split_after": [
-        3
+        1
       ],
       "continuations": [
         "Symmetry and asymmetry"
@@ -114,7 +114,7 @@
         "alt": "Runners in lanes on a track, starting level with one another.",
         "credit": "Photo by Nicholas Wilson on Unsplash"
       },
-      "why": "'Balancing starting positions:' drops off the definition because it is the heading; 'setup' dropped from 'the same resources/setup'; the play-order line is flattened up one level from the source's third level"
+      "why": "'Balancing starting positions:' drops off the definition because it is the heading; 'setup' dropped from 'the same resources/setup'; the source's nesting is kept, so the play-order lines stay under 'Symmetrical games' and the break falls between the definition and the symmetry/asymmetry pair rather than between a parent and its children"
     },
     "9": {
       "heading": "Why make a game asymmetrical?",
@@ -123,7 +123,7 @@
         "Players have different goals",
         "Simulating real-world situations — WWII",
         "Giving players different ways to play and explore the game",
-        "Choices that suit players' skills and preferences",
+        "Giving players choices that suit their skills and preferences",
         "Levelling the playing field between different players",
         "Creating more interesting play, choices and situations",
         "Should my game be symmetrical? Why?",
@@ -132,14 +132,14 @@
         "If I want players of different skill levels to play together, what means will I use to make the game interesting and challenging for everyone?"
       ],
       "split_after": [
-        1,
+        0,
         6
       ],
       "continuations": [
         "Reasons for using asymmetry",
         "The Lens of Fairness (lens 37)"
       ],
-      "why": "the source's 'Reasons for using asymmetry: players have different goals' becomes the deck's impact question and its answer, with the five reasons on the next slide; lens 37 was stranded on a '(cont.)' slide as an h3 and now has a slide of its own, every question word for word"
+      "why": "the impact question is ours, not Penny's: the source slide has no question here, only the label 'Reasons for using asymmetry: players have different goals', so the question puts that label to the room and the six reasons — 'players have different goals' first, as in the source — follow on the next slide; 'choice/options' shortened to 'choices' and 'skills/preferences' to 'skills and preferences'; lens 37 was stranded on a '(cont.)' slide as an h3 and now has a slide of its own, every question word for word"
     },
     "10": {
       "heading": "Asymmetrical objectives",
@@ -244,29 +244,27 @@
         "Offer difficulty levels, player chooses",
         "  Modifies some variables — hitpoints",
         "Otherwise, balance against \"median\" skill",
-        "Balancing for median skill: between high and low skill",
-        "Requires extensive playtesting with players of different skill",
+        "Median skill: between high and low skill",
+        "  Requires extensive playtesting with players of different skill",
         "  Find the high and low skill points, then fix between",
         "Increase difficulty over the course of the game — missions",
-        "Balancing dynamically: adjusting difficulty to the player's skill as they play, increasing as they get better",
-        "Tetris — increase block speed as the score increases",
-        "Racing — \"rubber band\" to players",
-        "Usually want this to be invisible to the player"
+        "Dynamic balancing: adjusting difficulty to the player's skill as they play, increasing as they get better",
+        "  Tetris — increase block speed as the score increases",
+        "  Racing — \"rubber band\" to players",
+        "  Usually want this to be invisible to the player"
       ],
       "split_after": [
-        4,
-        7
+        4
       ],
       "continuations": [
-        "Balancing for median skill",
-        "Balancing dynamically"
+        "Median and dynamic balancing"
       ],
       "split_image": {
         "file": "photos/stacie-ong-0olPY6OO4dI-unsplash.jpg",
         "alt": "A climber on an indoor wall of coloured holds, on a route chosen to match their skill.",
         "credit": "Photo by Stacie Ong on Unsplash"
       },
-      "why": "'Matching game challenge level' shortened to 'Matching challenge level' and '(e.g., hitpoints)' to a dash clause, so the first bullets fit the column beside the photograph; three slides instead of a slide and a '(cont.)', each with the sub-points folded up from the source's third level"
+      "why": "'Matching game challenge level' shortened to 'Matching challenge level' and '(e.g., hitpoints)' to a dash clause, so the first bullets fit the column beside the photograph; the median and the dynamic material share the second slide instead of taking one each, and their labels are shortened to 'Median skill:' and 'Dynamic balancing:' so they no longer restate a heading; the source's third level of nesting is folded up one level; nothing else cut"
     },
     "15": {
       "heading": "Techniques for balancing skill",
@@ -306,22 +304,16 @@
     "17": {
       "heading": "Techniques for balancing",
       "bullets": [
-        "Think modular: most games are a set of interrelated sub-systems, broken into functional units",
+        "Think modular: most games are interrelated sub-systems — break into functional units",
         "  The more interconnected, the harder to balance",
-        "  Isolate subsystems and abstract them from one another — then a change shows its effects",
+        "  Isolate and abstract subsystems, so a change shows its effects",
         "Purity of purpose: every component has a single, clearly defined mission",
         "  Nothing exists without reason or with more than one function",
         "  Break mechanics down into building blocks with a flowchart",
         "One change at a time: then test, so the cause of an effect is known",
         "Spreadsheets: track everything in a spreadsheet — see it all at once, and model changes and their effects"
       ],
-      "split_after": [
-        1
-      ],
-      "continuations": [
-        "Purity of purpose"
-      ],
-      "why": "'every component of your game' shortened to 'every component'; 'makes it easier to balance' dropped from the spreadsheets bullet as a restatement of the slide; the one-bullet '(cont.)' slide the converter made of the spreadsheets line is gone"
+      "why": "'a set of interrelated sub-systems, break down into' tightened to 'interrelated sub-systems — break into'; 'Isolate subsystems and abstract them from one another' and 'when you make a change, you can see its effects' become one bullet; 'every component of your game' shortened to 'every component'; 'makes it easier to balance' dropped from the spreadsheets bullet as a restatement of the slide; all four techniques are on the one slide, so neither the '(cont.)' slide nor the one-bullet split is left"
     },
     "18": {
       "heading": "Game balancing methodologies",

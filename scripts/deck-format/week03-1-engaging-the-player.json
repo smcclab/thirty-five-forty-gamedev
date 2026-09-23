@@ -7,18 +7,19 @@
     "3": {
       "heading": "What engages players?",
       "bullets": [
+        "Dramatic elements create a dramatic context for the formal elements",
+        "  Engaging players emotionally",
         "Different things for different players",
-        "Challenge — games create conflict the player works to resolve, and that conflict creates tension",
+        "Challenge — games create conflict the player resolves, creating tension",
         "Play — imagination, fantasy, inspiration, social skills, free-form interaction",
         "Premise — context for the formal elements, even in simple, abstract games",
         "  Monopoly: players are landlords buying, selling and developing real estate to become the richest player",
         "  Space Invaders: a lone spaceship defending against an alien invasion, surviving as long as possible",
         "Character — agents through which dramatic stories are told, and our entry points into situations and conflicts",
-        "Story — unfolds during the game, integrating with gameplay in different ways",
-        "Dramatic elements — engage players emotionally, creating a dramatic context for the formal elements"
+        "Story — unfolds during the game, integrating with gameplay in different ways"
       ],
       "split_after": [
-        3
+        4
       ],
       "continuations": [
         "Premise, character and story"
@@ -31,7 +32,7 @@
         "alt": "Two players reaching across a table strewn with tokens and cards, mid-game.",
         "credit": "Photo by 2H Media on Unsplash"
       },
-      "why": "Story and Dramatic Elements were loose text boxes and are restored as the last two bullets; the premise aside becomes the two sub-bullets under Premise, so Monopoly and Space Invaders stay; \"that players must work to resolve, this conflict challenges the player\" compressed"
+      "why": "Story and Dramatic Elements were loose text boxes off the engagement diagram and are restored as bullets; Dramatic Elements opens the slide because in Fullerton it is the umbrella the others sit under, not a sixth sibling, and it is a bullet plus a sub-bullet to fit the narrow column; the Premise Examples aside becomes the two sub-bullets under Premise, so Monopoly and Space Invaders stay; for the same column Challenge loses \"that players must work to resolve, this conflict challenges the player\" and Play loses \"games provide opportunities for players to use ... to engage with the challenges it offers\""
     },
     "4": {
       "heading": "Challenge",
@@ -39,8 +40,7 @@
         "Not just difficult — tasks that are satisfying to complete",
         "The right amount and type of work to create accomplishment and enjoyment",
         "Individualised — determined by the abilities of the specific player",
-        "Dynamic — what a player finds challenging changes as they play",
-        "Play was Week 1; premise, character and story are not this course's focus"
+        "Dynamic — what a player finds challenging changes as they play"
       ],
       "loose": "drop",
       "image_layout": "split",
@@ -49,7 +49,7 @@
         "alt": "A climber working a route on an indoor wall of coloured holds: a task set to the climber's own ability.",
         "credit": "Photo by Stacie Ong on Unsplash"
       },
-      "why": "the loose text boxes were course-scoping notes off the engagement diagram; they become the last bullet, and the pointers to Week 1 Formal Elements and to \"the player's story (next)\" are dropped as navigation"
+      "why": "the loose text boxes were scoping labels off the engagement diagram — Play covered in Week 1, Premise later, Character and Story not the focus apart from the player's story, Conflict in Week 1 and next — and are dropped rather than compressed into a bullet, because the deck does cover premise and the player's story; nothing from the slide's own list is cut"
     },
     "5": {
       "heading": "Conflict and the dramatic arc",
@@ -103,20 +103,24 @@
         "Is there an antagonist who is behind the obstacles? What is the relationship between the protagonist and the antagonist?",
         "Do the obstacles gradually increase in difficulty?",
         "Some say \"the bigger the obstacle, the better the story\". Are your obstacles big enough? Can they be bigger?",
-        "Great stories often involve the protagonist transforming in order to overcome the obstacle. How does your protagonist transform?"
+        "Great stories often involve the protagonist transforming in order to overcome the obstacle. How does your protagonist transform?",
+        "Main ingredients for a story:",
+        "  A character with a goal",
+        "  Obstacles that keep them from that goal",
+        "  Conflicts arise when they try to reach that goal"
       ],
       "split_after": [
-        3
+        6
       ],
       "continuations": [
-        "Bigger obstacles, better stories"
+        "Goals, obstacles and conflict"
       ],
+      "aside": "drop",
       "loose": "drop",
-      "why": "two of Schell's lens 74 questions were in loose text boxes and are restored, so all six are on the slides word for word; the story-ingredients aside stays"
+      "why": "two of Schell's lens 74 questions were in loose text boxes, so all six are now on one slide word for word; the sidebar's story-ingredients aside becomes the slide after it, under the source slide's own title, because the converter always names the first slide of a lens source after the lens"
     },
     "8": {
-      "heading": "What are the key moments?",
-      "class": "impact",
+      "heading": "Interest curves",
       "bullets": [
         "An experience is a series of moments",
         "  Some are more powerful than others",
@@ -138,13 +142,14 @@
         "The Lens of Moments (lens 68)",
         "Reading an interest curve"
       ],
-      "why": "the source's own question heads the slide; Schell's two lens 68 questions get their own slide instead of an h3 inside the list, and the A-H beats get a third, beside the curve; nothing cut"
+      "why": "the slide keeps the source's own heading; Schell's two lens 68 questions get their own slide instead of an h3 inside the list, and the A-H beats get a third, beside the curve; nothing cut"
     },
     "9": {
       "heading": "Interest curves at three scales",
       "bullets": [
         "Overall game — an introduction, a series of levels of rising interest, a major climax, and the player defeats the game",
-        "Each level — new aesthetics and challenges engage the player at the start, a series of challenges (battles, puzzles) raise interest, ending in a \"boss battle\"",
+        "Each level — new aesthetics and challenges engage the player at the start",
+        "  A series of challenges (battles, puzzles) raise interest, ending in a \"boss battle\"",
         "Each challenge — an interesting introduction, then stepped rising challenges",
         "If I draw an interest curve of my experience, how is it generally shaped?",
         "Does it have a hook?",
@@ -158,10 +163,10 @@
         3
       ],
       "continuations": [
-        "The Lens of the Interest Curve"
+        "The Lens of the Interest Curve (lens 69)"
       ],
       "loose": "drop",
-      "why": "Schell's lens 69 was a loose text box; its seven questions are restored word for word on a slide of their own"
+      "why": "Schell's lens 69 was a loose text box; its seven questions are restored word for word on a slide of their own; the 25-word \"Each level\" line becomes a bullet and a sub-bullet so that neither runs to three lines"
     },
     "10": {
       "heading": "Three interest factors",
@@ -179,7 +184,7 @@
         3
       ],
       "continuations": [
-        "The Lens of Inherent Interest"
+        "The Lens of Inherent Interest (lens 70)"
       ],
       "loose": "drop",
       "why": "Schell's lens 70 was a loose text box; its five questions are restored word for word on a slide of their own"
@@ -198,9 +203,9 @@
         5
       ],
       "continuations": [
-        "What players wish they could do"
+        "Lens of Projection: doing and staying"
       ],
-      "why": "nothing cut; the seven lens 72 questions are word for word, and the break gets a heading of its own instead of \"(cont.)\""
+      "why": "nothing cut; the seven lens 72 questions are word for word, and because seven two-line questions do not fit one slide the break gets a heading that says it is still the lens"
     },
     "12": {
       "heading": "The player's story",
@@ -221,11 +226,11 @@
       ],
       "split_after": [
         2,
-        4
+        3
       ],
       "continuations": [
-        "Emotion and the player's part",
-        "Control and ownership"
+        "Emotion through the filter of play",
+        "Three positions for the player"
       ],
       "aside": "drop",
       "loose": "drop",
@@ -239,9 +244,10 @@
     },
     "13": {
       "heading": "The story machine",
+      "class": "impact",
       "bullets": [
-        "A story is a sequence of events that someone relates to someone else",
         "Have you ever told someone about a series of events in a game you played?",
+        "A story is a sequence of events that someone relates to someone else",
         "Sports games and matches generate lots of stories",
         "Some games are designed as story generators — Minecraft, The Sims",
         "When players have different choices about how to achieve goals, new and different stories can arise. How can I add more of these choices?",
@@ -251,19 +257,15 @@
         "A story is only good if you can tell it. Who can your players tell the story to that will actually care?"
       ],
       "split_after": [
+        1,
         4
       ],
       "continuations": [
-        "The Lens of the Story Machine"
+        "Games as story generators",
+        "The Lens of the Story Machine (lens 73)"
       ],
       "loose": "drop",
-      "image_layout": "split",
-      "split_image": {
-        "file": "photos/james-sestric-BWRkppsh46U-unsplash.jpg",
-        "alt": "Friends sitting close around a campfire at night, one of them talking.",
-        "credit": "Photo by James Sestric on Unsplash"
-      },
-      "why": "Schell's lens 73 was a loose text box; its five questions are restored word for word on a slide of their own"
+      "why": "Schell's lens 73 was a loose text box; its five questions are restored word for word on a slide of their own. Penny's question is lifted ahead of the story definition — the deck's one reordering — so that it can carry the impact slide on its own; the campfire photograph is dropped from this source slide because the picture would land on that question slide"
     }
   }
 }

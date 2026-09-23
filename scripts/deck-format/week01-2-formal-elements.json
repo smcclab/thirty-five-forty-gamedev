@@ -11,7 +11,7 @@
         "Players — the active participants",
         "Objectives — what players try to achieve",
         "Procedures — how players achieve the objectives",
-        "Rules — what governs the game, and the players",
+        "Rules — govern the game; players abide by them",
         "Resources — what is valuable to the players",
         "Conflict — arises between the rules and the objectives",
         "Boundaries — the game takes place within them",
@@ -23,12 +23,12 @@
       "heading": "Players",
       "bullets": [
         "Number of players — single or multiple, set or variable",
-        "Roles of players — uniform or different, and balanced",
+        "Roles of players — uniform or different; balance",
         "  Sports, Mastermind and Team Fortress give players different roles",
         "Interaction patterns structure play between a player, the game system and other players",
         "  Single player vs. game",
         "  Multiple individual players vs. game — bingo",
-        "  Player vs. player, head to head — Mortal Kombat",
+        "  Player vs. player, 2 head to head — Mortal Kombat",
         "  Unilateral competition, 2+ vs. 1 — tag",
         "  Multilateral competition, 3+ players — StarCraft, poker",
         "  Cooperative play, 2+ vs. the game — Portal 2",
@@ -126,7 +126,7 @@
         "Choose a player to go first",
         "On their turn, each player drops one of their colour checkers down any slot in the top of the grid",
         "Play alternates until a player gets four checkers of their colour in a row — horizontal, vertical or diagonal",
-        "System procedures work behind the scenes, responding to situations and player actions",
+        "Work behind the scenes, responding to situations and player actions",
         "  Combat system — calculate the damage taken, from character and weapon attributes",
         "  Board and paper games — the players calculate this themselves",
         "  Digital games can have far more complex system procedures"
@@ -181,13 +181,13 @@
       "continuations": [
         "Resources"
       ],
-      "why": "the slide's own two designer questions head it as the deck's impact slide; the definition and the utility/scarcity rule follow on the second slide, unchanged"
+      "why": "reordered: the slide's own two designer questions are moved ahead of the definition so they can head the deck's impact slide; the definition and the utility/scarcity rule follow on the second slide, unchanged"
     },
     "11": {
       "heading": "Common resource categories",
       "bullets": [
         "Lives — action and arcade games: a limited number to complete the goals",
-        "Units — strategy: same or different, static or evolving, finite or renewable, and they cost",
+        "Units — strategy: same or different, static or evolving, finite or renewable, at a cost",
         "Health — dramatises the loss of life; increased by pickups or rest",
         "Currency — an in-game economy that allows trade, common in role-playing",
         "Actions — moves or turns in card and board games; special, powerful actions",
@@ -211,7 +211,7 @@
         "  Rules and procedures block the direct route to the goals",
         "  They offer only inefficient means to the objectives",
         "  Challenge players, forcing them to employ skills",
-        "  A sense of competition and play, enjoyment, achievement",
+        "  Creates competition and play — enjoyable, and a sense of achievement",
         "Obstacles — physical and mental challenges, puzzles",
         "Opponents — the primary conflict in multiplayer games",
         "Dilemmas — choices the player has to make"
@@ -227,7 +227,7 @@
         "alt": "Hands gripping a thick rope in a tug of war, pulling in opposite directions.",
         "credit": "Photo by Joaquin Arenas on Unsplash"
       },
-      "why": "\"trying to accomplish the goals of the game\" compressed to \"pursuing the game's goals\"; the three consequences of challenge (competition/play, enjoyable, achievement) are one bullet instead of three; the tug-of-war photograph is reused from the conflict material elsewhere in the course"
+      "why": "\"trying to accomplish the goals of the game\" compressed to \"pursuing the game's goals\"; the three consequences of challenge (competition/play, enjoyable, achievement) are one bullet instead of three, with the verb kept; the tug-of-war photograph is reused from the conflict material elsewhere in the course"
     },
     "13": {
       "heading": "Boundaries",
@@ -253,7 +253,7 @@
         "alt": "A painted white line across a sports ground, grass on one side and bare dirt on the other.",
         "credit": "Photo by Scott Greer on Unsplash"
       },
-      "why": "\"separate game from life (permission to act differently...)\" compressed to the permission clause; the source's own question \"Why are boundaries important?\" becomes the second slide's heading and keeps both of Penny's examples"
+      "why": "reordered: the three kinds of boundary (physical, conceptual, emotional) are nested under the definition, ahead of the magic circle and the designer, so the slide reads definition-then-kinds rather than the source's interleaving; \"separate game from life (permission to act differently...)\" compressed to the permission clause; the source's own question \"Why are boundaries important?\" becomes the second slide's heading and keeps both of Penny's examples"
     },
     "14": {
       "heading": "Outcome",
@@ -262,7 +262,7 @@
         "  Producing a winner is the end state in most games",
         "  Simulation, sandpit, open world, ongoing worlds",
         "The outcome must be uncertain to hold attention",
-        "Types of outcome relate to interaction patterns and objectives",
+        "Relate to interaction patterns and objectives",
         "  Zero-sum games",
         "  Ranking systems",
         "  Statistics",

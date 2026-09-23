@@ -20,8 +20,9 @@ images are full-bleed image-only slides and only 23 are inline.
 | | Slides | Images | Per slide |
 |---|---|---|---|
 | Before | 294 | 0 | 0.00 |
-| **Now** | 359 | 89 | **0.25** |
-| Target | ~420 | ~250 | 0.60 |
+| After the image pass | 359 | 89 | 0.25 |
+| **Now** (after the formatting pass) | 521 | 136 | **0.26** |
+| Target | ~520 | ~310 | 0.60 |
 
 Done so far:
 
@@ -40,33 +41,51 @@ Done so far:
   twelve Agile principles as a table instead of the dropped poster).
   `scripts/fetch-deck-photos.py` finds and downloads the Unsplash ones.
 
-Per-deck state (`grep -c '!\[' src/decks/*.deck.mdx` to recheck):
+Per-deck state after the formatting pass (2026-09-23). "Pictures" counts
+slides that carry one, as a share of the slides between the title and the
+closing slide; "run" is the longest stretch of consecutive bullet-only slides,
+which the rulebook caps at three.
 
-| Deck | Slides | Images |
-|---|---|---|
-| week01-1-play-and-games | 22 | 10 |
-| week01-2-formal-elements | 17 | **1** |
-| week02-1-playcentric-design-process | 17 | **1** |
-| week02-2-idea-generation | 24 | 8 |
-| week02-3-prototyping | 25 | 10 |
-| week03-1-engaging-the-player | 20 | 6 |
-| week03-2-designing-to-engage | 18 | **1** |
-| week03-3-flow-needs-motivation | 20 | 4 |
-| week04-1-systems | 13 | 2 |
-| week04-2-mechanics | 21 | **2** |
-| week04-3-balance | 20 | **2** |
-| week05-1-interface-design | 24 | **3** |
-| week05-2-level-design | 21 | 20 |
-| week07-1-agile-game-dev | 11 | 4 |
-| week08-1-learning-and-training | 22 | **1** |
-| week08-2-challenge-difficulty-pacing | 22 | 3 |
-| week09-1-playtesting-process | 19 | **1** |
-| week09-2-conducting-playtesting | 28 | 10 |
+| Deck | Slides | Images | Pictures | Splits | Bullet-only | Longest run |
+|---|---|---|---|---|---|---|
+| week01-1-play-and-games | 23 | 10 | 10 (48%) | 4 | 11 (52%) | 3 |
+| week01-2-formal-elements | 28 | 5 | 5 (**19%**) | 4 | 21 (81%) | 9 |
+| week02-1-playcentric-design-process | 29 | 5 | 5 (**19%**) | 4 | 22 (81%) | 7 |
+| week02-2-idea-generation | 24 | 8 | 8 (36%) | 4 | 14 (64%) | 4 |
+| week02-3-prototyping | 31 | 10 | 10 (34%) | 4 | 19 (66%) | 5 |
+| week03-1-engaging-the-player | 30 | 6 | 6 (**21%**) | 3 | 22 (79%) | 7 |
+| week03-2-designing-to-engage | 31 | 4 | 4 (**14%**) | 3 | 25 (86%) | **13** |
+| week03-3-flow-needs-motivation | 29 | 8 | 8 (30%) | 4 | 19 (70%) | 6 |
+| week04-1-systems | 22 | 6 | 6 (30%) | 4 | 14 (70%) | 5 |
+| week04-2-mechanics | 35 | 6 | 6 (**18%**) | 4 | 27 (82%) | **11** |
+| week04-3-balance | 33 | 6 | 6 (**19%**) | 4 | 24 (77%) | 7 |
+| week05-1-interface-design | 43 | 7 | 7 (**17%**) | 4 | 34 (83%) | 8 |
+| week05-2-level-design | 36 | 23 | 14 (41%) | 3 | 20 (59%) | 3 |
+| week07-1-agile-game-dev | 8 | 4 | 4 (67%) | 1 | 2 (33%) | 2 |
+| week08-1-learning-and-training | 29 | 5 | 5 (**19%**) | 4 | 22 (81%) | **12** |
+| week08-2-challenge-difficulty-pacing | 25 | 6 | 6 (26%) | 4 | 17 (74%) | 5 |
+| week09-1-playtesting-process | 28 | 7 | 7 (27%) | 6 | 19 (73%) | 5 |
+| week09-2-conducting-playtesting | 37 | 10 | 10 (29%) | 3 | 25 (71%) | 3 |
+
+521 slides, 136 images, **0.26 images per slide**. Recheck with:
+
+```sh
+grep -c '!\[' src/decks/*.deck.mdx
+```
 
 **The five zero-image decks came first** (Charles's call, 2026-09-22): a deck
 at zero reads as unfinished in a way a thin deck does not. All five are done.
-The bolded decks in the table above are the thin ones that remain, and
-`week08-1-learning-and-training` (22 slides, one image) is the worst of them.
+
+**What the formatting pass changed about this plan.** Splitting the dense
+slides took the decks from 359 to 521, so the same 136 images now cover half
+again as many slides: every deck gained pictures in absolute terms and most
+lost ground as a proportion. Eight decks are under the 25% picture floor and
+every deck but three breaks the three-in-a-row rule --- `week03-2` runs
+thirteen bullet-only slides together, `week08-1` twelve, `week04-2` eleven.
+Those runs, not the ratio, are the thing to fix, and they are all in
+`deck-extras.json`: **each of the eighteen decks now has a list of places a
+full-bleed photograph would land**, written into the per-deck reports of the
+pass. The bolded cells are where to start.
 
 ## Adding an image (task 1 --- done)
 
@@ -306,6 +325,52 @@ PY
   capped at 30vh and its labels cannot be read from the back of a theatre.
 
 ## Loose ends worth picking up
+
+- **One photograph is in the repo and in no deck.** James Sestric's campfire
+  (`photos/james-sestric-BWRkppsh46U-unsplash.jpg`) was added for the story
+  machine in week03-1 and freed again when that slide became the deck's impact
+  slide (media only ever lands on the first piece of a split list). It is kept
+  because it is the right picture for `Games as story generators`, which wants
+  a full-bleed hero and therefore a `deck-extras.json` entry. Check for others
+  with:
+
+  ```sh
+  for f in src/decks/photos/*; do b=$(basename "$f"); \
+    grep -rq "$b" src/decks/*.deck.mdx scripts/deck-extras.json \
+      scripts/deck-format/ || echo "unused: $b"; done
+  ```
+
+- **The same photograph is in five decks.** The formatting pass gave 38 slides
+  a photograph in the right-hand column, drawing on the pictures already in
+  `src/decks/photos/`, and it drew on some of them hard: Stacie Ong's climber
+  is in week03-1, week03-3, week04-3, week08-1 and week08-2; the workshop
+  playtesting hands are in four decks; six more photographs are in three each.
+  Twenty pictures in all are used by more than one deck. A student taking the
+  course sees the climber five times. The fix is more photography, not fewer
+  splits --- one new picture per over-used slot --- and it is an image-pass
+  job, not a formatting one. Recheck with:
+
+  ```sh
+  grep -oh './photos/[^)]*' src/decks/*.deck.mdx | sort | uniq -c | sort -rn
+  ```
+
+- **A figure is emitted once per source picture, not once per deck.** The
+  converter deduplicates a repeated source picture by SHA-256 (`seen_images`),
+  but the `kind: "figure"` branch returns before that check, so a redrawing
+  placed on a PowerPoint build-up appears on every slide of the build-up:
+  `dramatic-arc.svg` three times in week03-1, `interest-curve.svg` twice.
+  Fixed in the converter to deduplicate within a deck; a figure taught in
+  several decks still appears in each. Which slide of a build-up should carry
+  the figure is a separate question, and `deck-images.json` (keyed by hash)
+  has no way to say: the dramatic arc wants to be after source 6 and the
+  interest curve after source 8, and today they land wherever the picture
+  first appeared.
+
+- **No screenshot anchoring.** week04-3's Total War screenshot lands in the
+  media row of the first output slide, while the bullet it illustrates
+  ("'Mopping up' in strategy games --- Total War") is on the continuation. A
+  screenshot belongs on its own `bg contain` slide; there is no key that says
+  which piece of a split list it follows.
 
 - **A converter bug in `week05-2-level-design`.** Every slide is headed
   `"Theory: Level Design Rudolf Kremers. (2009) ... Richard Rouse III (2005)"`

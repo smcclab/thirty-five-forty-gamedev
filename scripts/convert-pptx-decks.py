@@ -1051,8 +1051,15 @@ def convert(path: pathlib.Path, decks_dir: pathlib.Path, verbose=False,
                                 entry.get("note", "")))
                 continue
             if kind == "figure":
-                # A redrawing, so it is published every time it is used: the
-                # same model is taught on several slides across several decks.
+                # A redrawing is published every time it is used, because the
+                # same model is taught in several decks -- but once per deck.
+                # `seen_images` is per deck, and a PowerPoint that reveals a
+                # diagram over four build-up slides carries the same picture on
+                # all four: week03-1 was emitting the dramatic arc three times
+                # and the interest curve twice, on its own slide each time.
+                if digest in seen_images:
+                    continue
+                seen_images.add(digest)
                 slide_figures.append({
                     "src": f"./figures/{entry['file']}",
                     "alt": entry.get("alt", ""),
